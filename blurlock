@@ -1,18 +1,22 @@
-#!/bin/bash
-# /usr/bin/blurlock
+#!/usr/bin/env bash
 
-# take screenshot
-import -window root /tmp/screenshot.png
+# Enable compton's fade-in effect so that the lockscreen gets a nice fade-in effect.
 
-# blur it
-# convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
-convert /tmp/screenshot.png -set colorspace Gray -separate -average -blur 5x5 /tmp/screenshotblur.png
-rm /tmp/screenshot.png
+dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:no_fading_openclose boolean:false
 
-# lock the screen
-i3lock -i /tmp/screenshotblur.png
+# If disable unredir_if_possible is enabled in compton's config, we may need to disable that to avoid flickering. YMMV. To try that, uncomment the following line and the last two lines in this script.
+# dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:unredir_if_possible boolean:false
 
-# sleep 1 adds a small delay to prevent possible race conditions with suspend
-sleep 1
+# Suspend dunst and lock, then resume dunst when unlocked.
+# pkill -u $USER -USR1 dunst
 
-exit 0
+i3lock -n -i ~/Pictures/wallpaper.png --insidecolor=37344500 --ringcolor=ffffffff --line-uses-inside --keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="x+960:y+540" --veriftext="" --wrongtext="" --greetertext="hello" --greetercolor=ffffffff --greeterpos="x+960:y+400" --ignore-empty-password --clock --wrongcolor=ffffffff --timecolor=ffffffff --timepos="x+1800:y+1000" --datecolor=ffffffff --datestr="%A, %d %B" --noinputtext="" --ring-width=10 --radius=70 --indicator --timestr="%I:%M %p"
+
+# pkill -u $USER -USR2 dunst
+
+# Revert compton's config changes.
+sleep 0.2
+dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:no_fading_openclose boolean:true
+
+# dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:unredir_if_possible boolean:true
+
