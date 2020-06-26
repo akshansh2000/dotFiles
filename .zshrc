@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +15,7 @@ export ZSH="/home/akshansh2000/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -165,22 +172,30 @@ alias py='python3'
 alias python='python3'
 alias chpl='/home/akshansh2000/Desktop/Repositories/chapel/bin/linux64-x86_64/chpl'
 alias update='source ~/.zshrc'
+alias upgrade='yes | pls pacman -Syu'
 alias open='xdg-open'
 alias pls='sudo'
-alias get='yes | sudo pacman -S'
+alias get='yes | sudo pacman -Sy'
 alias remove='yes | sudo pacman -R'
 alias hs='history | grep'
 alias aux='ps aux | grep'
 alias kx='kill -9'
 alias fr='flutter run'
+alias fpg='flutter pub get'
+alias fu='flutter upgrade'
 alias night='redshift -O 3000'
 alias morning='redshift -x'
 alias ls='ls -ACF --color=auto'
 alias rs='Rscript'
 alias rn='npx react-native'
-alias rnr='rn run-android'
+alias rns='npx react-native start'
+alias rnr='npx react-native run-android'
 alias cp='cpv'
 alias fast='fast -u'
+
+function rmdep() {
+  yes | sudo pacman -R `pacman -Qdt | perl -nle 'm/(.*(?=\s))/; print $1'`
+}
 
 alias repo='cd ~/Desktop/Repositories'
 alias win='cd /run/media/akshansh2000/18E633CBE633A7C0/Users/aksha'
@@ -196,6 +211,9 @@ alias adbscrcpy='scrcpy -b2M -m800'
 # alias scrcpy='ADB=~/Android/Sdk/adb scrcpy'
 alias pm='~/Postman/app/Postman &'
 alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29 -netdelay none -netspeed full &'
+alias em='emacsclient -nc -s emacsDaemon'
+alias sm='smlnj'
+alias tor='~/tor-browser_en-US/start-tor-browser.desktop'
 
 alias push='git push'
 alias pull='git pull'
@@ -275,7 +293,7 @@ function num() {
 function c() {
   file_name=`echo "$1" | perl -nle 'm/(.+(?=\.))/; print $1'`
   
-  g++ -o "$file_name" "$1"
+  g++ -std=c++17 -o "$file_name" "$@"
   
   if [ -f "$file_name" ]; then
     ./"$file_name" "${@:2}"
@@ -287,7 +305,7 @@ function c() {
 function ch() {
   file_name=`echo "$1" | perl -nle 'm/(.+(?=\.))/; print $1'`
   
-  chpl -o "$file_name" "$1"
+  chpl -o "$file_name" "$@"
   
   if [ -f "$file_name" ]; then
     ./"$file_name" "${@:2}"
@@ -340,7 +358,7 @@ export PATH=$PATH:/snap/bin
 
 export PATH=$PATH:/home/akshansh2000/.local/bin
 
-export BROWSER='/usr/bin/google-chrome-stable'
+export BROWSER='/usr/bin/firefox'
 
 export PKG_CONFIG_PATH='~/rtorrent-0.9.8'
 
@@ -349,7 +367,7 @@ export PATH='/home/akshansh2000/Downloads/autodock_vina_1_1_2_linux_x86/bin':'/h
 export PATH='/home/akshansh2000/flutter/bin':$PATH
 export PATH='/home/akshansh2000/flutter/bin/cache/dart-sdk/bin':$PATH
 
-export TERMINAL=terminator
+export TERMINAL=alacritty
 
 export LANGUAGE=en_IN.UTF-8
 export LANG=en_IN.UTF-8
@@ -379,5 +397,44 @@ function code() {
   command code $1
 }
 
+function md5() {
+  file_sum=`md5sum "$1"`
+  compressed_sum=`echo "${file_sum% *}"`
+
+  if [ $compressed_sum = "$2 " ]; then
+    echo true
+  else
+    echo false
+  fi
+}
+
+function sha1() {
+  file_sum=`sha1sum "$1"`
+  compressed_sum=`echo "${file_sum% *}"`
+
+  if [ $compressed_sum = "$2 " ]; then
+    echo true
+  else
+    echo false
+  fi
+}
+
+function sha256() {
+  file_sum=`sha256sum "$1"`
+  compressed_sum=`echo "${file_sum% *}"`
+
+  if [ $compressed_sum = "$2 " ]; then
+    echo true
+  else
+    echo false
+  fi
+}
+
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
+
+
+eval $(thefuck --alias)
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

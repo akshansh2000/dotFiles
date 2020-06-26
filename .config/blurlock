@@ -2,7 +2,7 @@
 
 # Enable compton's fade-in effect so that the lockscreen gets a nice fade-in effect.
 # dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:fading boolean:true
-pkill compton && compton -b --dbus -f
+# pkill compton && compton -b --dbus -f
 
 # If disable unredir_if_possible is enabled in compton's config, we may need to disable that to avoid flickering. YMMV. To try that, uncomment the following line and the last two lines in this script.
 # dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:unredir_if_possible boolean:false
@@ -17,7 +17,7 @@ i3lock -n -i ~/Pictures/wallpaper.png --insidecolor=37344500 --ringcolor=fffffff
 # Revert compton's config changes.
 # sleep 0.2
 # dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:fading boolean:false
-pkill compton && compton -b --dbus
+# pkill compton && compton -b --dbus
 
 # dbus-send --print-reply --dest=com.github.chjj.compton.${DISPLAY/:/_} / com.github.chjj.compton.opts_set string:unredir_if_possible boolean:true
 

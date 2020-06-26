@@ -247,7 +247,7 @@ function cwd() {
   fi
 }
 
-export PS1="${userC}┌─⭘ ${bold}\u ${normal}${otherC}in ${pathC}\$(cwd) ${otherC}at ${normalC}\$(date +'%T') ${gitC}\$(gitBranch)\n${pointerC}└─⭘ ${commandC}"
+export PS1="\n${userC}┌─⭘ ${bold}\u ${normal}${otherC}in ${pathC}\$(cwd) ${otherC}at ${normalC}\$(date +'%T') ${gitC}\$(gitBranch)\n${pointerC}└─⭘ ${commandC}"
 
 function build() {
   git clone "$1"
@@ -364,3 +364,4 @@ export TERMINAL=terminator
 export LANGUAGE=en_IN.UTF-8
 export LANG=en_IN.UTF-8
 export LC_ALL=en_IN.UTF-8
+
