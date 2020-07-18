@@ -247,7 +247,7 @@ function cwd() {
   fi
 }
 
-export PS1="\n${userC}┌─⭘ ${bold}\u ${normal}${otherC}in ${pathC}\$(cwd) ${otherC}at ${normalC}\$(date +'%T') ${gitC}\$(gitBranch)\n${pointerC}└─⭘ ${commandC}"
+export PS1="\n${userC}${bold}\u ${normal}${otherC}in ${pathC}\$(cwd) ${gitC}\$(gitBranch)\n${pointerC}> ${commandC}"
 
 function build() {
   git clone "$1"
@@ -351,7 +351,7 @@ export PATH=$PATH:/snap/bin
 
 export PATH=$PATH:/home/akshansh2000/.local/bin
 
-export BROWSER='/usr/bin/google-chrome-stable'
+# export BROWSER='/var/lib/snapd/snap/bin/brave'
 
 export PKG_CONFIG_PATH='~/rtorrent-0.9.8'
 

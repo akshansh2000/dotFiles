@@ -179,7 +179,7 @@ alias get='yes | sudo pacman -Sy'
 alias remove='yes | sudo pacman -R'
 alias hs='history | grep'
 alias aux='ps aux | grep'
-alias kx='kill -9'
+alias kx='sudo kill -9'
 alias fr='flutter run'
 alias fpg='flutter pub get'
 alias fu='flutter upgrade'
@@ -358,7 +358,7 @@ export PATH=$PATH:/snap/bin
 
 export PATH=$PATH:/home/akshansh2000/.local/bin
 
-export BROWSER='/usr/bin/firefox'
+# export BROWSER='/var/lib/snapd/snap/bin/brave'
 
 export PKG_CONFIG_PATH='~/rtorrent-0.9.8'
 
@@ -402,9 +402,9 @@ function md5() {
   compressed_sum=`echo "${file_sum% *}"`
 
   if [ $compressed_sum = "$2 " ]; then
-    echo true
+    echo "checksum valid"
   else
-    echo false
+    echo "couldn't verify checksum"
   fi
 }
 
@@ -413,9 +413,9 @@ function sha1() {
   compressed_sum=`echo "${file_sum% *}"`
 
   if [ $compressed_sum = "$2 " ]; then
-    echo true
+    echo "checksum valid"
   else
-    echo false
+    echo "couldn't verify checksum"
   fi
 }
 
@@ -424,9 +424,9 @@ function sha256() {
   compressed_sum=`echo "${file_sum% *}"`
 
   if [ $compressed_sum = "$2 " ]; then
-    echo true
+    echo "checksum valid"
   else
-    echo false
+    echo "couldn't verify checksum"
   fi
 }
 
