@@ -1,0 +1,2 @@
+xmobar &
+exec xmonad

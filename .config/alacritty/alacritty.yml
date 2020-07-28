@@ -2,3 +2,10 @@ window:
   padding:
     x: 20
     y: 20
+
+font:
+  size: 9.0
+
+colors:
+  primary:
+    background: '#000000'
