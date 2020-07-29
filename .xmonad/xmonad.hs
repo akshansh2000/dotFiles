@@ -10,6 +10,9 @@
 import XMonad
 import Data.Monoid
 import System.Exit
+import XMonad.Util.SpawnOnce
+import XMonad.Util.Run
+import XMonad.Hooks.ManageDocks
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -122,6 +125,15 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Deincrement the number of windows in the master area
     , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
 
+    -- Brightness controls
+    , ((0                 , 0x1008ff03), spawn "brightnessctl set 10%-")
+    , ((0                 , 0x1008ff02), spawn "brightnessctl set +10%")
+
+    -- Volume controls
+    , ((0                 , 0x1008ff11), spawn "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -5%")
+    , ((0                 , 0x1008ff13), spawn "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +5%")
+    , ((0                 , 0x1008ff12), spawn "pactl set-sink-mute 0 toggle")
+
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
     -- See also the statusBar function from Hooks.DynamicLog.
@@ -187,7 +199,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = tiled ||| Mirror tiled ||| Full
+myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -249,14 +261,18 @@ myLogHook = return ()
 -- per-workspace layout choices.
 --
 -- By default, do nothing.
-myStartupHook = return ()
+myStartupHook = do
+	spawnOnce "nitrogen --restore &"
+	spawnOnce "compton &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
-main = xmonad defaults
+main = do
+	xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/.xmobarrc"
+	xmonad $ docks defaults
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
