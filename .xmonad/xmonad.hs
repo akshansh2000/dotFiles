@@ -10,9 +10,11 @@
 import XMonad
 import Data.Monoid
 import System.Exit
-import XMonad.Util.SpawnOnce
-import XMonad.Util.Run
-import XMonad.Hooks.ManageDocks
+
+import XMonad.Util.SpawnOnce -- executing commands on startup
+import XMonad.Util.Run -- spawnPipe for xmobar
+import XMonad.Hooks.ManageDocks -- avoid overlapping of xmobar
+import XMonad.Layout.NoBorders -- disable borders when fullscreen
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -50,7 +52,7 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
+myWorkspaces    = ["1","2","3","4","5","6","7","8","9", "10"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -152,11 +154,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     ++
 
     --
-    -- mod-[1..9], Switch to workspace N
+    -- mod-[1..9, 0], Switch to workspace N
     -- mod-shift-[1..9], Move client to workspace N
     --
     [((m .|. modm, k), windows $ f i)
-        | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9]
+        | (i, k) <- zip (XMonad.workspaces conf) [xK_KP_End, xK_KP_Down, xK_KP_Page_Down, xK_KP_Left, xK_KP_Begin, xK_KP_Right, xK_KP_Home, xK_KP_Up, xK_KP_Page_Up, xK_KP_Insert]
         , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]]
     ++
 
@@ -199,7 +201,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
+myLayout = avoidStruts (smartBorders (tiled ||| Mirror tiled)) ||| noBorders Full
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
