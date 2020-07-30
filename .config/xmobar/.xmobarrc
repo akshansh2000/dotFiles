@@ -2,11 +2,12 @@ Config {
 
    -- appearance
      font =         "xft:Mononoki:size=10:bold:antialias=true"
-   , bgColor =      "#2a2a2a0f"
+   , bgColor =      "#000000"
+   , alpha =        100
    , fgColor =      "#646464"
    , position =     Top
-   , border =       BottomB
-   , borderColor =  "#646464"
+   , border =       NoBorder
+   , borderColor =  "#000000"
 
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
