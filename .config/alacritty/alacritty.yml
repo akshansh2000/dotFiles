@@ -9,3 +9,5 @@ font:
 colors:
   primary:
     background: '#000000'
+
+background_opacity: 0.7
