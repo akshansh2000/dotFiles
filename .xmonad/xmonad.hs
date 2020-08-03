@@ -132,9 +132,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0                 , 0x1008ff02), spawn "brightnessctl set +10%")
 
     -- Volume controls
-    , ((0                 , 0x1008ff11), spawn "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -5%")
-    , ((0                 , 0x1008ff13), spawn "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +5%")
-    , ((0                 , 0x1008ff12), spawn "pactl set-sink-mute 0 toggle")
+    , ((0                 , 0x1008ff11), spawn "pulseaudio-ctl down")
+    , ((0                 , 0x1008ff13), spawn "pulseaudio-ctl up")
+    , ((0                 , 0x1008ff12), spawn "pulseaudio-ctl mute")
 
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
