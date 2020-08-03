@@ -12,7 +12,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %RJTT% | %date% || %kbd% "
+   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %date% || %kbd% "
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -43,7 +43,7 @@ Config {
                              ] 36000
 
         -- network activity monitor (dynamic interface resolution)
-        , Run DynNetwork     [ "--template" , "<dev>: <tx>kB/s|<rx>kB/s"
+        , Run DynNetwork     [ "--template" , "<dev>: <rx>kB/s|<tx>kB/s"
                              , "--Low"      , "1000"       -- units: B/s
                              , "--High"     , "5000"       -- units: B/s
                              , "--low"      , "darkgreen"
@@ -52,18 +52,18 @@ Config {
                              ] 10
 
         -- cpu activity monitor
-        , Run MultiCpu       [ "--template" , "Cpu: <total0>%|<total1>%"
-                             , "--Low"      , "50"         -- units: %
-                             , "--High"     , "85"         -- units: %
+        , Run MultiCpu       [ "--template" , "Cpu: <total0>%|<total1>%|<total2>%|<total3>%"
+                             , "--Low"      , "30"         -- units: %
+                             , "--High"     , "70"         -- units: %
                              , "--low"      , "darkgreen"
                              , "--normal"   , "darkorange"
                              , "--high"     , "darkred"
                              ] 10
 
         -- cpu core temperature monitor
-        , Run CoreTemp       [ "--template" , "Temp: <core0>°C|<core1>°C"
-                             , "--Low"      , "70"        -- units: °C
-                             , "--High"     , "80"        -- units: °C
+        , Run CoreTemp       [ "--template" , "Temp: <core0>°C|<core1>°C|<core2>°C|<core3>°C"
+                             , "--Low"      , "50"        -- units: °C
+                             , "--High"     , "70"        -- units: °C
                              , "--low"      , "darkgreen"
                              , "--normal"   , "darkorange"
                              , "--high"     , "darkred"
@@ -71,26 +71,44 @@ Config {
                           
         -- memory usage monitor
         , Run Memory         [ "--template" ,"Mem: <usedratio>%"
-                             , "--Low"      , "20"        -- units: %
-                             , "--High"     , "90"        -- units: %
+                             , "--Low"      , "50"        -- units: %
+                             , "--High"     , "80"        -- units: %
                              , "--low"      , "darkgreen"
                              , "--normal"   , "darkorange"
                              , "--high"     , "darkred"
                              ] 10
 
+	-- memory used (MB)
+	-- , Run Memory         [ "--template" ,"Mem: <used>M"
+        --                      , "--Low"      , "7936"      -- units: M
+        --                      , "--High"     , "12700"     -- units: M
+        --                      , "--low"      , "darkgreen"
+        --                      , "--normal"   , "darkorange"
+        --                      , "--high"     , "darkred"
+        --                      ] 10
+
+	-- memory free (MB)
+        -- , Run Memory         [ "--template" ,"Mem: <free>M"
+        --                      , "--Low"      , "3172"      -- units: M
+        --                      , "--High"     , "7936"      -- units: M
+        --                      , "--low"      , "darkred"
+        --                      , "--normal"   , "darkorange"
+        --                      , "--high"     , "darkgreen"
+        --                      ] 10
+
         -- battery monitor
         , Run Battery        [ "--template" , "Batt: <acstatus>"
-                             , "--Low"      , "10"        -- units: %
+                             , "--Low"      , "20"        -- units: %
                              , "--High"     , "80"        -- units: %
                              , "--low"      , "darkred"
-                             , "--normal"   , "darkorane"
+                             , "--normal"   , "darkorange"
                              , "--high"     , "darkgreen"
 
                              , "--" -- battery specific options
                                        -- discharging status
                                        , "-o"	, "<left>% (<timeleft>)"
                                        -- AC "on" status
-                                       , "-O"	, "<fc=#dAA520>Charging</fc>"
+                                       , "-O"	, "<fc=#dAA520>Charging (<left>%)</fc>"
                                        -- charged status
                                        , "-i"	, "<fc=#006000>Charged</fc>"
                              ] 50
@@ -101,7 +119,7 @@ Config {
 
         -- keyboard layout indicator
         , Run Kbd            [ ("us(dvorak)" , "<fc=#00008B>DV</fc>")
-                             , ("us"         , "<fc=#8B0000>US</fc>")
+                             , ("us"         , "<fc=#01917b>US</fc>")
                              ]
         ]
    }
