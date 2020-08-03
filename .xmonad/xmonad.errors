@@ -1,7 +1,7 @@
 
-xmonad.hs:267:1: warning: [-Wtabs]
-    Tab character found here, and in three further locations.
+xmonad.hs:277:1: warning: [-Wtabs]
+    Tab character found here, and in one further location.
     Please use spaces instead.
     |
-267 |         spawnOnce "nitrogen --restore &"
+277 |         xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobar.hs"
     | ^^^^^^^^
