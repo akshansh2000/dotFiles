@@ -1,7 +1,7 @@
 
-xmonad.hs:277:1: warning: [-Wtabs]
-    Tab character found here, and in one further location.
+xmonad.hs:282:1: warning: [-Wtabs]
+    Tab character found here, and in 16 further locations.
     Please use spaces instead.
     |
-277 |         xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobar.hs"
+282 |         xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobar.hs"
     | ^^^^^^^^
