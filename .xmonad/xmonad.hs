@@ -15,6 +15,7 @@ import XMonad.Util.SpawnOnce -- executing commands on startup
 import XMonad.Util.Run -- spawnPipe for xmobar
 import XMonad.Hooks.ManageDocks -- avoid overlapping of xmobar
 import XMonad.Layout.NoBorders -- disable borders when fullscreen
+import XMonad.Hooks.DynamicLog -- workspace logging
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -34,7 +35,7 @@ myClickJustFocuses = False
 
 -- Width of the window border in pixels.
 --
-myBorderWidth   = 1
+myBorderWidth   = 3
 
 -- modMask lets you specify which modkey you want to use. The default
 -- is mod1Mask ("left alt").  You may also consider using mod3Mask
@@ -56,7 +57,7 @@ myWorkspaces    = ["1","2","3","4","5","6","7","8","9", "10"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
-myNormalBorderColor  = "#dddddd"
+myNormalBorderColor  = "#2a2a2a"
 myFocusedBorderColor = "#ff0000"
 
 ------------------------------------------------------------------------
@@ -146,7 +147,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
 
     -- Restart xmonad
-    , ((modm,               xK_q     ), spawn "xmonad --recompile; xmonad --restart")
+    , ((modm,               xK_q     ), spawn "killall xmobar; xmonad --recompile; xmonad --restart")
 
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
@@ -266,16 +267,28 @@ myLogHook = return ()
 myStartupHook = do
         spawnOnce "nitrogen --restore &"
         spawnOnce "compton &"
-        spawnOnce "pulseaudio --start --exit-idle-time=-1 --daemonize=no"
+        spawnOnce "pulseaudio --start --exit-idle-time=-1"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
+
+xmobarTitleColor = "#646464"
+xmobarCurrentWorkspaceColor = "#ffffff"
+
 main = do
 	xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobar.hs"
-	xmonad $ docks defaults
+	xmonad $ docks defaults {
+		logHook = dynamicLogWithPP $ xmobarPP {
+		        ppOutput = hPutStrLn xmproc
+		      , ppTitle = (\str -> "")
+		      , ppCurrent = xmobarColor xmobarCurrentWorkspaceColor ""
+		      , ppSep = " "
+		}
+		, manageHook = manageDocks <+> myManageHook
+	}
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
