@@ -106,7 +106,7 @@ Config {
 	, Run Volume "default" "Master" [] 1
 
 	-- brightness
-	, Run Brightness	[ "--template", "Bri: <percent>"
+	, Run Brightness	[ "--template", "Bri: <percent>%"
 				, "--"
 				, "-D"	      , "intel_backlight"
 				] 1
@@ -138,7 +138,7 @@ Config {
 
         -- time and date indicator 
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
-        , Run Date           "<fc=#ABABAB>%F (%a) %T</fc>" "date" 10
+        , Run Date           "<fc=#ABABAB>%a, %b %d</fc> | <fc=#ABABAB>%I:%M %p</fc>" "date" 10
 
         -- keyboard layout indicator
         , Run Kbd            [ ("us(dvorak)" , "<fc=#00008B>DV</fc>")
