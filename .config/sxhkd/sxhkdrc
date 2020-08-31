@@ -1,0 +1,47 @@
+# terminal
+mod4+Return
+  alacritty
+
+# vol up
+XF86AudioRaiseVolume
+  pulseaudio-ctl up
+
+# vol down
+XF86AudioLowerVolume
+  pulseaudio-ctl down
+
+# vol mute
+XF86AudioMute
+  pulseaudio-ctl mute
+
+# mic mute
+XF86AudioMicMute
+  pulseaudio-ctl mute-input
+
+# spawn
+mod4+d
+  rofi -show run -theme Arc-Dark
+
+# file manager
+mod4+shift+e
+  pcmanfm
+
+# exit script
+mod4+shift+q
+  ~/.custom_scripts/exit.sh
+
+# browser
+mod4+b
+  google-chrome-stable
+
+# config files
+mod4+c
+  ~/.custom_scripts/config.sh
+
+# brightness up
+XF86MonBrightnessUp
+  brightnessctl set +10%
+
+# brightness down
+XF86MonBrightnessDown
+  brightnessctl set 10%-

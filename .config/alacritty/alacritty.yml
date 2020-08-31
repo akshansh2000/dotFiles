@@ -1,0 +1,15 @@
+font:
+  size: 9.0
+  normal:
+    family: "MesloLGS NF"
+
+colors:
+  primary:
+    background: "#000000"
+
+window:
+  padding:
+    x: 20
+    y: 20
+
+background_opacity: 0.75
