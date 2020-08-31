@@ -1,2 +1,0 @@
-/*! (C) Copyright 2020 LanguageTooler GmbH. All rights reserved. */
-document.documentElement.setAttribute("data-lt-script-installed","true"),"undefined"!=typeof module&&module.exports&&(module.exports=LTAssistant);
