@@ -137,7 +137,7 @@ ex () {
   fi
 }
 
-export PATH='~/flutter/bin':$PATH
+# export PATH='~/flutter/bin':$PATH
 
 alias py='python3'
 alias python='python3'

@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "La description de l'application, comme indiqué sur la boutique en ligne.",
+      "message": "Réimplémente les boutons \"Voir l'image\" et \"Recherche par image\"."
+   },
+   "appName": {
+      "description": "Titre de l'application, affiché sur la boutique en ligne.",
+      "message": "Voir image"
+   },
+   "donatePayPal": {
+      "description": "Texte utilisé pour le bouton de donation.",
+      "message": " Faire un don à travers PayPal"
+   },
+   "optionsButton": {
+      "description": "Texte affiché sur le bouton lien vers les options.",
+      "message": "Options"
+   },
+   "resetButton": {
+      "description": "Texte affiché sur le bouton de réinitialisation.",
+      "message": "Réinitialiser"
+   },
+   "searchImage": {
+      "description": "Le bouton mène à google, recherche par page d'image.",
+      "message": "Recherche par image"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "Basculement des paramètres entraînant l'ouverture de la recherche par page d'image dans un nouvel onglet.",
+      "message": "Ouvre \"Recherche par image\" dans un nouvel onglet:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Basculement des paramètres qui provoque l'ouverture des images dans le nouvel onglet.",
+      "message": "Ouvrir les images dans un nouvel onglet:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "Le basculement des paramètres permet de définir manuellement le texte des boutons plutôt que les paramètres linguistiques.",
+      "message": "Réglage manuel du texte du bouton:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "Basculement des paramètres qui provoque l'affichage de l'icône du globe sur le bouton \"Voir image\".",
+      "message": "Afficher l'icône du globe dans le bouton \"Voir image\":"
+   },
+   "settingsToggle_noReferrer": {
+      "description": "Basculement des paramètres qui fait basculer rel='noreferrer' sur le bouton \"Voir image\".",
+      "message": "Masquer le référent du site Web en cliquant sur \"Voir image\":"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "L'option Paramètres permet de masquer le message de copyright sur la page de résultats de l'image.",
+      "message": "Masquer \"Les images peuvent être sujettes au copyright\"."
+   },
+   "viewImage": {
+      "description": "Bouton pour visualiser l'image.",
+      "message": "Voir l'image"
+   }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <rect id="a" width="60" height="60" rx="16"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="matrix(1 0 0 -1 0 60)">
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="59" height="59" x=".5" y=".5" stroke="#EBEBEB" rx="16"/>
+        </g>
+        <g transform="matrix(1 0 0 -1 12 49)">
+            <circle cx="6.124" cy="34.227" r="5" fill="#5E1E7B" fill-rule="nonzero" transform="rotate(-75 6.124 34.227)"/>
+            <path fill="#5E1E7B" fill-rule="nonzero" d="M26 30.35h10l-5 10z"/>
+            <path stroke="#5E1E7B" stroke-linejoin="round" stroke-width="4" d="M6.185 33.103l2-32.635 11.012 28.359L29.255.468l2 32.635"/>
+        </g>
+    </g>
+</svg>

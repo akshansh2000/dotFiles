@@ -1,0 +1,34 @@
+{
+   "appDesc": {
+      "description": "Beschrijving van de applicatie, zoals weergegeven in de web store.",
+      "message": "Herimplementeert de knoppen \"Afbeelding weergeven\" en \"Afbeelding zoeken\" in Google Afbeeldingen."
+   },
+   "appName": {
+      "description": "Titel van de applicatie, zoals weergegeven in de web store.",
+      "message": "Afbeelding weergeven"
+   },
+   "donatePayPal": {
+      "description": "Text used for the donation button.",
+      "message": " Doneer met PayPal"
+   },
+   "optionsButton": {
+      "description": "Text displayed on the link to options button.",
+      "message": "Opties"
+   },
+   "resetButton": {
+      "description": "Tekst die getoond wordt op de knop voor standaardvoorwaarden.",
+      "message": "Standaardwaarden"
+   },
+   "searchImage": {
+      "description": "Knop verwijst naar de pagina 'Afbeelding zoeken in Google'.",
+      "message": "Afbeelding zoeken"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Instelling die afbeeldingen in een nieuw tabblad laat openen.",
+      "message": "Afbeeldingen openen in een nieuw tabblad:"
+   },
+   "viewImage": {
+      "description": "Knop om afbeelding weer te geven.",
+      "message": "Afbeelding weergeven"
+   }
+}

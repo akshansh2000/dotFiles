@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "A G Suite-adminisztrátora bekapcsolta a Google Chat szolgáltatást. Ennek köszönhetően csapatszobákban működhet együtt a munkatársaival, és egyszerűbben oszthatja meg a fájlokat velük.\n\nAz optimális működés érdekében távolítsa el a bővítményt az új Google Chat alkalmazás telepítése után."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Az asztali alkalmazás letöltése"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Ugrás a chat.google.com oldalra"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Bemutatjuk a Google Chatet"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "A kezdéshez jelentkezzen be a Chrome-ba."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Újra"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Ellenőrizze az internetkapcsolatot, majd próbálja újra."
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Kapcsolódási hiba"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "A Chrome-alkalmazásokat idén megszüntetjük. Ha továbbra is külön ablakban szeretné használni a Hangouts szolgáltatást, telepítse a Hangouts Chrome-bővítményt."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "A Hangouts Chrome-alkalmazás már nem támogatott."
+   },
+   "chrome_app_description": {
+      "message": "A Hangouts Chrome-alkalmazás elavult. Váltson a Hangouts Chrome-bővítményre."
+   },
+   "chrome_app_download_button": {
+      "message": "A CHROME-BŐVÍTMÉNY LETÖLTÉSE"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "További tudnivalók"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Az alkalmazás elavult. Elérhető egy újabb verzió."
+   },
+   "chrome_app_outdated_title": {
+      "message": "A Hangouts Chrome-alkalmazás frissítése"
+   },
+   "chrome_app_signin_button": {
+      "message": "Bejelentkezés"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Privát és csoportos beszélgetéseket folytathat, melyekben a szöveges üzenetek mellett küldhet fotókat, GIF-eket, hang- és videoüzenetet és sok mást."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts – $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Nem lehet csatlakozni a Google rendszeréhez. Ellenőrizze az internetkapcsolatot."
+   },
+   "chrome_ext_description": {
+      "message": "Az ingyenes Hangouts szolgáltatás életre keltik a beszélgetéseket. Fotókat oszthat meg, emoji ikonokat küldhet, és csoportos vide..."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Állapot: Csatlakozva\nNem fogadott üzenetek"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Állapot: adminisztrátor által letiltva"
+   },
+   "quasar_tip_connected": {
+      "message": "Állapot: Csatlakozva"
+   },
+   "quasar_tip_connecting": {
+      "message": "Állapot: Csatlakozás"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Állapot: Leválasztva"
+   },
+   "quasar_tip_not_load": {
+      "message": "Állapot: Betöltési hiba"
+   },
+   "quasar_tip_not_login": {
+      "message": "Állapot: Nincs bejelentkezve"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Állapot: Újracsatlakozás"
+   }
+}

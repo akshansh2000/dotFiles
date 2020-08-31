@@ -1,0 +1,41 @@
+{
+   "description": "Black material dark theme. Dark Inactive/Incognito. No outlines around tab.",
+   "icons": {
+      "128": "images/icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAk4Lm0iMk7aP/FYL0iyRNUjsQFujSIPn5YfmXPiywWcXpOG2hVCjZC5AFxNWhEcVSWRvhL0lOyKI6G4s7o540wtd/hGvNgEbJJicSz7h+wiZ1qtKtIOCrohe0P0P39cn0/10h9oVmISZreTQnTDLYObR2h3b5ZnFImX56qwA53g10yx3PPaOeQSfBUOV1j4JaXwyn+NOPv55YkywUQSf1ImEsWqU1lqTBfYyAPi+UGEyO6G+3VesE1ubHAZZg+hmytDMc7vtXzewDcakXURk59oVtD4qFrhQbmNB029lKxZ1pi0YCqAsnte644/WzeObDnU+/LBpsJsyzSv3s/smANwIDAQAB",
+   "manifest_version": 2,
+   "name": "Black Material Dark Theme for Chrome",
+   "short_name": "Black Material Dark Theme",
+   "theme": {
+      "colors": {
+         "bookmark_text": [ 170, 170, 170 ],
+         "frame": [ 33, 33, 33 ],
+         "frame_inactive": [ 50, 50, 50 ],
+         "frame_incognito": [ 33, 33, 33 ],
+         "frame_incognito_inactive": [ 50, 50, 50 ],
+         "ntp_background": [ 0, 0, 0 ],
+         "ntp_text": [ 170, 170, 170 ],
+         "tab_background_text": [ 80, 80, 80 ],
+         "tab_background_text_inactive": [ 80, 80, 80 ],
+         "tab_background_text_incognito": [ 80, 80, 80 ],
+         "tab_background_text_incognito_inactive": [ 80, 80, 80 ],
+         "tab_text": [ 255, 255, 255 ],
+         "toolbar": [ 0, 0, 0 ]
+      },
+      "images": {
+         "theme_ntp_background": "images/black_material.png",
+         "theme_tab_background": "images/theme_tab_background.png",
+         "theme_toolbar": "images/black_material.png"
+      },
+      "properties": {
+         "ntp_background_repeat": "repeat",
+         "ntp_logo_alternate": 1
+      },
+      "tints": {
+
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4"
+}

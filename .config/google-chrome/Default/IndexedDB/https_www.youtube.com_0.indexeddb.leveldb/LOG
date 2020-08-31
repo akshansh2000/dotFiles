@@ -1,0 +1,15 @@
+2020/08/31-11:17:49.044 1eaf0 Reusing MANIFEST /home/akshansh2000/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/31-11:17:49.044 1eaf0 Recovering log #38
+2020/08/31-11:17:49.044 1eaf0 Reusing old log /home/akshansh2000/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000038.log 
+2020/08/31-11:19:25.863 1e605 Level-0 table #43: started
+2020/08/31-11:19:25.930 1e605 Level-0 table #43: 3377 bytes OK
+2020/08/31-11:19:25.960 1e605 Delete type=0 #38
+2020/08/31-11:19:25.961 1e605 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/31-11:19:25.961 1e605 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 2726 : 1
+2020/08/31-11:19:25.961 1e605 Compacting 1@1 + 1@2 files
+2020/08/31-11:19:26.000 1e605 Generated table #44@1: 48 keys, 2317 bytes
+2020/08/31-11:19:26.000 1e605 Compacted 1@1 + 1@2 files => 2317 bytes
+2020/08/31-11:19:26.027 1e605 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/08/31-11:19:26.027 1e605 Delete type=2 #40
+2020/08/31-11:19:26.027 1e605 Delete type=2 #43
+2020/08/31-11:19:26.028 1e605 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x16\x00a\x00p\x00p\x00l\x00i\x00c\x00a\x00t\x00i\x00o\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r\x00_\x00k\x00e\x00y' @ 2726 : 1 .. (end); will stop at (end)

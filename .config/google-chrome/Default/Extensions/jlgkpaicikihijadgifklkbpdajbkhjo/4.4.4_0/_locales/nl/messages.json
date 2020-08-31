@@ -1,0 +1,1468 @@
+{
+   "G_BmManager": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Bladwijzermanager openen"
+   },
+   "G_ZoomIn": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Inzoomen"
+   },
+   "G_ZoomOut": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Uitzoomen"
+   },
+   "G_back": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Terug"
+   },
+   "G_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Bladwijzer toevoegen"
+   },
+   "G_bookmarks": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Bladwijzermanager"
+   },
+   "G_bottom": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Scroll omlaag"
+   },
+   "G_capture": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Schermafbeelding"
+   },
+   "G_chromepage": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Intern adres Chrome openen"
+   },
+   "G_close": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tabblad sluiten"
+   },
+   "G_closelefttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Alle linker tabbladen sluiten"
+   },
+   "G_closeothers": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Andere tabbladen sluiten"
+   },
+   "G_closerighttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Alle rechter tabbladen sluiten"
+   },
+   "G_closewindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Venster sluiten"
+   },
+   "G_closewindows": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Alle vensters sluiten"
+   },
+   "G_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "De titel en URL kopiëren als link"
+   },
+   "G_copytab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Huidige tabblad kopiëren"
+   },
+   "G_copytitle": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Titel huidige tabblad kopiëren"
+   },
+   "G_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "URL huidige tabblad kopiëren"
+   },
+   "G_copyuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "de titel en URL kopiëren met aangepast formaat"
+   },
+   "G_crxsettings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Instellingen CrxMouse"
+   },
+   "G_down": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Scroll omlaag"
+   },
+   "G_downloads": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Downloads"
+   },
+   "G_firsttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Eerste tabblad"
+   },
+   "G_fullscreen": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Volledig scherm"
+   },
+   "G_go": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Vooruit"
+   },
+   "G_goparent": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ga naar bovenliggende URL"
+   },
+   "G_history": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Geschiedenis"
+   },
+   "G_incognito": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nieuw anoniem venster"
+   },
+   "G_lasttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Laatste tabblad"
+   },
+   "G_left": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Scroll naar links"
+   },
+   "G_lefttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Linker tabblad"
+   },
+   "G_mergeTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tabbladen samenvoegen"
+   },
+   "G_movetowindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tabblad losmaken"
+   },
+   "G_newtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nieuw tabblad"
+   },
+   "G_newusertab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Aangepast tabblad..."
+   },
+   "G_newwindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nieuw venster"
+   },
+   "G_none": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Geen"
+   },
+   "G_openclipurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Probeer de URL te openen vanuit het klembord"
+   },
+   "G_pin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tabblad vastmaken"
+   },
+   "G_reclosedtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Gesloten tabblad opnieuw openen"
+   },
+   "G_reload": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Opnieuw laden"
+   },
+   "G_reloadall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Alle tabbladen opnieuw laden"
+   },
+   "G_reloadclear": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Opnieuw laden zonder cache"
+   },
+   "G_reloadframe": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Frame opnieuw laden"
+   },
+   "G_right": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Scroll naar rechts"
+   },
+   "G_righttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rechter tabblad"
+   },
+   "G_settings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Chome-instellingen"
+   },
+   "G_splitTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tabbladen splitsen"
+   },
+   "G_stop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "stoppen"
+   },
+   "G_stopall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stop met laden van alle tabbladen"
+   },
+   "G_top": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Scroll omhoog"
+   },
+   "G_tostop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "De extensie in deze pagina tijdelijk uitschakelen"
+   },
+   "G_trynext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Probeer naar volgende hoofdstuk te gaan"
+   },
+   "G_tryprev": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Probeer naar vorige hoofdstuk te gaan"
+   },
+   "G_up": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Scroll omhoog"
+   },
+   "G_userscript": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Script uitvoeren..."
+   },
+   "G_viewsource": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Paginabron bekijken"
+   },
+   "G_windowmax": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Venster maximaliseren"
+   },
+   "G_windowmin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Venster minimaliseren"
+   },
+   "I_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "De URL van de afbeelding kopiëren"
+   },
+   "I_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Afbeelding openen in nieuw tabblad"
+   },
+   "I_save": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Afbeelding opslaan"
+   },
+   "I_saveback": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Afbeelding opslaan als (alleen dev)..."
+   },
+   "I_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Zoek de afbeelding"
+   },
+   "I_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Zoek de afbeelding met aangepaste zoekmachine"
+   },
+   "L_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Bladwijzer toevoegen"
+   },
+   "L_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "de tekst en URL kopiëren als een link"
+   },
+   "L_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Linktekst kopiëren"
+   },
+   "L_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Link URL kopiëren"
+   },
+   "L_copyuser": {
+      "description": "Advanced actions",
+      "message": "kopieer de titel en website met een aangepast formaat"
+   },
+   "L_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Link openen in nieuw tabblad"
+   },
+   "T_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tekst kopi´ëren"
+   },
+   "T_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Zoek de tekst"
+   },
+   "T_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Aangepast zoeken..."
+   },
+   "about": {
+      "description": "Title of About page in Settings area",
+      "message": "Over"
+   },
+   "addtipgesture": {
+      "description": "Instructions for how to add a new gesture thourh the Settings area - appears when clicking on the 'Add New' button in the 'New section on the 'Mouse Gestures' page.",
+      "message": "Houd de rechter muisknop ingedrukt, beweeg om het spoor te tekenen, laat de rechter knop los en selecteer de actie."
+   },
+   "addtipimage": {
+      "description": "Instructions for how to add a new Super Drag Gesture for an Image - appears when clicking on the 'Image' button in the 'New' section on the 'Super Drag' page.",
+      "message": "Gebruik de linker muisknop om de onderstaande afbeelding te slepen en het spoor te tekenen. Laat vervolgens de muis los om de actie te selecteren."
+   },
+   "addtiplink": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a link - appears when clicking on the 'Link' button in the 'New' section on the 'Super Drag' page.",
+      "message": "Selecteer de onderstaande link en teken het spoor terwijl je de linker muisknop ingedrukt houdt. Laat vervolgens de muis los en selecteer de actie."
+   },
+   "addtiptext": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a text - appears when clicking on the 'Text' button in the 'New' section on the 'Super Drag' page",
+      "message": "Selecteer de volgende tekst en teken het spoor terwijl je de linker muisknop inhoudt. Laat vervoglens de muis los en selecteer de actie."
+   },
+   "advanced": {
+      "description": "Side navigation and Title of page in 'Settings' area",
+      "message": "Geavanceerde instellingen"
+   },
+   "alertaction": {
+      "description": "Alert window - promopted of user tries to save new gesture before selecting an action.",
+      "message": "Selecteer een actie."
+   },
+   "alertconfigerror": {
+      "description": "Error message - prompted when there is an issue with an imported file.",
+      "message": "Fout met geïmporteerde configuratie."
+   },
+   "alertname": {
+      "description": "Error message when trying to edit gesture with text field empty.",
+      "message": "Kan niet opslaan. Controleer welk veld ontbreekt."
+   },
+   "alertrepeat": {
+      "description": "Error message when trying to create gesture with an already used gesture.",
+      "message": "Dit is een dubbel gebaar, probeer een ander."
+   },
+   "alerttooltip": {
+      "description": "Error message when creating new gesture of new action without giving it a name. ",
+      "message": "Voer een naam in voor de actie."
+   },
+   "alerturl": {
+      "description": "Error message when creating new gesture for opening a specific url without specifying the url.",
+      "message": "Geen URL of ongeldige URL."
+   },
+   "appName": {
+      "Description": "Name of extension. Do not translate name.",
+      "message": "CrxMouse Chrome™ Gestures"
+   },
+   "author": {
+      "description": "Author",
+      "message": "Auteur"
+   },
+   "blackList": {
+      "description": "List for sites that should exclude mouse gestures. Located on General Settings page.",
+      "message": "Zwarte lijst website"
+   },
+   "blacklistTip": {
+      "description": "Note listed below message box of site blacklist. Located on General Settings page.",
+      "message": "Opmerking:1: crxMouse draait niet op deze websites. 2:Eén domein per regel, gebruik Enter voor een nieuwe regel, voeg geen http:// of https:// toe"
+   },
+   "bookmarkfailnotifi": {
+      "description": "Error message when trying to create gesture for bookmark that already exists.",
+      "message": "De bladwijzer bestaat reeds!"
+   },
+   "bookmarknotifi": {
+      "description": "Notification for bookmark saved.",
+      "message": "Bladwijzers succesvol toegevoegd!"
+   },
+   "bug": {
+      "description": "Link to report a bug",
+      "message": "Meld een bug"
+   },
+   "cancel": {
+      "description": "Cancel adding new gesture.",
+      "message": "Annuleren"
+   },
+   "cancelcontextmenu": {
+      "description": "Text of Linux/Mac options check box located on General Settings page. Note! Do not translate html tags.",
+      "message": "Problemen met Linux/Mac contextmenu oplossen(\u003Cspan style='color:red'>dubbelklik op de rechter muisknop om het contextmenu te openen\u003C/span>)."
+   },
+   "cancelcontextmenudes": {
+      "description": "Tooltip about Linux/Mac options located on General Settings page",
+      "message": "De optie om problemen op te losse met andere platforms dan Windows, het rechter muisknopmenu beïnvloedt het reguliere gebruik van bepaalde functies, gebruikers van Linux / Mac worden ten zeerste aanbevolen dit te controleren."
+   },
+   "cancelgesture": {
+      "description": "Message that appears in trash bin area for dragging mouse gestures to cancel them",
+      "message": "Annuleren"
+   },
+   "cancelgesturehidetrash": {
+      "description": "An option to hide the icon of the trash bin that appears when performing a gesture. The trashbin enables canceling the performed gestute.",
+      "message": "Prullenbak verbergen"
+   },
+   "cancelgesturehidetrashinfo": {
+      "description": "Instructions that appear below the option of hiding the icon of the trash bin.",
+      "message": "Schakel deze optie in om de prullenbakfunctie te verbergen."
+   },
+   "changelog": {
+      "description": "Super Drag Action.",
+      "message": "Veranderingslogboek"
+   },
+   "chrome": {
+      "description": "Referrs to the default tab opening (left or right) settings in Chrome.",
+      "message": "Chrome standaard"
+   },
+   "clearsyncdata": {
+      "description": "For logged in users, they can clear any data that was synced between machines.",
+      "message": "Gesynchroniseerde gegevens wissen"
+   },
+   "close": {
+      "description": "Action list - close tab",
+      "message": "Sluiten"
+   },
+   "color": {
+      "description": "A design option for how mouse gestures appear, under the 'Appearance' section on the Settings area.",
+      "message": "Kleur:"
+   },
+   "crbookmarks": {
+      "description": "Action list - open bookmarks manager",
+      "message": "Bladwijzermanager"
+   },
+   "crdownloads": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Downloads"
+   },
+   "crextensions": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Extensies"
+   },
+   "crflags": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome Labs"
+   },
+   "crhistory": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Geschiedenis"
+   },
+   "crsettings": {
+      "description": "Actions list - referrs to ",
+      "message": "Chrome-instellingen"
+   },
+   "ctatoenableadvanced": {
+      "description": "CTA for enabling advanced features on sidebar inside Settings area. Make sure any translation is limited to 24 characters",
+      "message": "Geavanceerde functies ingeschakeld"
+   },
+   "curfront": {
+      "description": "Actions list - referrs to the current tab opened and visited.",
+      "message": "Huidige tabblad"
+   },
+   "dbclicktime": {
+      "description": "milliseconds between 2 clicks for accessing the right-click menu on Mac and Linux.",
+      "message": "Maximumduur dubbelklik (ms):"
+   },
+   "delete": {
+      "description": "Delete a gesture.",
+      "message": "Verwijderen"
+   },
+   "description": {
+      "description": "Long Store title",
+      "message": "Browserproductiviteit verhogen met je vingertoppen"
+   },
+   "descriptionjson": {
+      "description": "Short Store description",
+      "message": "Verbeter de browseproductiviteit met muissnelkoppelingen - eenvoudige muisgebaren, super slepen, wielgebaren, schudgebaren."
+   },
+   "dholdkey": {
+      "description": "Users can choose a keyboard key that will disable the super drag feature on specific ocassions.",
+      "message": "Wijs een toets toe om super slepen uit te schakelen:"
+   },
+   "direct": {
+      "description": "Appearance option that let's user choose whether or not to see the path of a mouse gesture, when performing it.",
+      "message": "Richting tonen"
+   },
+   "downimgtooltip": {
+      "description": "Tooltip for when saving image using super drag gesture.",
+      "message": "Afbeelding opslaan..."
+   },
+   "drag": {
+      "description": "Side navigation and title of page in Settings area.",
+      "message": "Super slepen"
+   },
+   "draginput": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Schakel tekst verslepen in voor tekstveld."
+   },
+   "dragui": {
+      "description": "Section name in the Settings area.",
+      "message": "Uiterlijk"
+   },
+   "editgesture": {
+      "description": "Section name",
+      "message": "Gebaren bewerken"
+   },
+   "editimage": {
+      "description": "Section name on Super Drag page",
+      "message": "Afbeelding slepen"
+   },
+   "editlink": {
+      "description": "Section name on Super Drag page",
+      "message": "Link slepen"
+   },
+   "editsgsleft": {
+      "description": "Section name on Wheel Gestures page. Note! do not translate html tags (the br and span open and close tags).",
+      "message": "Wiel gebaren LINKS\u003Cbr />\u003Cspan class='opttitledes'>(Houd linker knop ingedrukt en scroll)\u003C/span>"
+   },
+   "editsgsright": {
+      "description": "Section name on Super Drag page. Note! do not translate html tag (the span open and close tags).",
+      "message": "Wiel gebaren RECHTS\u003Cbr />\u003Cspan class='opttitledes'>(Houd rechter knop ingedrukt en scroll.)\u003C/span>"
+   },
+   "edittext": {
+      "description": "Section name on Super Drag page",
+      "message": "Tekst slepen"
+   },
+   "enabledragimage": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Afbeelding slepen inschakelen"
+   },
+   "enabledraglink": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Link slepen inschakelen"
+   },
+   "enabledragtext": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Tekst slepen inschakelen"
+   },
+   "enabletochange": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Inschakelen om veranderingen door te kunnen voeren"
+   },
+   "export": {
+      "description": "Buttom in Advanced Settings page",
+      "message": "Exporteren"
+   },
+   "extauthor": {
+      "description": "Author name inside options.html",
+      "message": "WeKnowNet"
+   },
+   "extnamejson": {
+      "description": "Extension name",
+      "message": "CrxMouse"
+   },
+   "extthanks": {
+      "description": "Thanks section in About page. Note! do not translate html tag.",
+      "message": "\r\n\t\t&gt; os0x\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; ArcCosine\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Jan Odvarko\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Met dank aan diegenen die deze extensie prettig vinden en/of me feedback sturen om deze extensie te verbeteren"
+   },
+   "fastSwitch": {
+      "description": "Switch tab to the left when Scrolling up, to the right when scrolling down",
+      "message": "Wissel naar het tabblad links bij omhoog scrollen, naar rechts bij omlaag scrollen"
+   },
+   "fastreset": {
+      "description": "Error message when extension is down",
+      "message": "Er ging iets mis, de extensie kan niet werken. Klik hier om de standaard configuratie terug te zetten. Als dit niet werkt, werk dan Chrome bij naar de nieuwste versie (V23+) en probeer het opnieuw."
+   },
+   "fndrag": {
+      "description": "Enable options on General Settings page",
+      "message": "Super slepen inschakelen"
+   },
+   "fngesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Muisgebaren inschakelen"
+   },
+   "fnscroll": {
+      "description": "Enable options on General Settings page",
+      "message": "Scrollen inschakelen "
+   },
+   "fnscrollgesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Wielgebaren inschakelen"
+   },
+   "fnsmooth": {
+      "description": "Enable options on General Settings page",
+      "message": "Vloeiend scrollen inschakelen"
+   },
+   "fnstrokegesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Schommelgebaren inschakelen"
+   },
+   "fnswitch": {
+      "description": "Enable options on General Settings page",
+      "message": "CrxMouse inschakelen"
+   },
+   "gesPos": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "Positie muisgebaar"
+   },
+   "gesPosBC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Midden onder"
+   },
+   "gesPosBL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Linksonder"
+   },
+   "gesPosBR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Rechtsonder"
+   },
+   "gesPosCC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "centreren"
+   },
+   "gesPosCL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Midden links"
+   },
+   "gesPosCR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Midden rechts"
+   },
+   "gesPosTC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Midden boven"
+   },
+   "gesPosTL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Linksboven"
+   },
+   "gesPosTR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Rechtsboven"
+   },
+   "geskey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "Welke toets voor muisgebaren:"
+   },
+   "geskeydes": {
+      "description": "Description text in More section on Mouse Gestures page",
+      "message": "Opmerking: 1, Het is slechts een alternatief voor Liux/Mac-gebruikers die de rechter knop niet kunnen gebruiken; het wordt Windows gebruikers niet aangeraden dit te wijzigen;\u003Cbr />2,Er traden veel problemen op; kan bijv. geen tekst selecteren of de tekst super slepen of muisgebaren gebruiken voor afbeeldingen en links. Gebruik eventueel de onderstaande instelling."
+   },
+   "geskeyleft": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Linker muisknop"
+   },
+   "geskeymiddle": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Middelste muisknop"
+   },
+   "geskeyright": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Rechter muisknop"
+   },
+   "gesture": {
+      "description": "Page name",
+      "message": "Muisgebaren"
+   },
+   "gesturedeleted": {
+      "description": "Appears in notification window when a gesture is deleted. Indicating that the gesture was deleted successfully.",
+      "message": "Gebaar verwijderd"
+   },
+   "gestureui": {
+      "description": "Section name",
+      "message": "Uiterlijk"
+   },
+   "gholdkey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "Wijs een toets toe om muisgebaren uit te schakelen:"
+   },
+   "head": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Kop"
+   },
+   "headlineforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "Eén URL ofonderdeel daarvan per regel"
+   },
+   "hidewhitelist": {
+      "description": "Hides a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "Witte lijst verbergen"
+   },
+   "howtablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Tabbladenlijst gebruiken:"
+   },
+   "image": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Afbeelding"
+   },
+   "imgfirst": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Wijs een toets toe om afbeelding super slepen te gebruiken in plaats van link slepen:"
+   },
+   "imgfirstcheck": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Als de link een afbeelding bevat, gebruik dan afbeelding super slepen in plaats van link slepen"
+   },
+   "import": {
+      "description": "Option on Advanced Setttings page",
+      "message": "Importeren"
+   },
+   "incog": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Anoniem venster"
+   },
+   "keytodisablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to disable gestures",
+      "message": "Wijs een toets toe om muisgebaren uit te schakelen:"
+   },
+   "keytoenablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to enable gestures",
+      "message": "Een toets toewijzen om muisgebaren te activeren:"
+   },
+   "last": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Laatste"
+   },
+   "left": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Links"
+   },
+   "link": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Link"
+   },
+   "linuxsettings": {
+      "description": "Section name on General Settings page",
+      "message": "Opties voor Linux/Mac"
+   },
+   "listaction": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "Actie:"
+   },
+   "listgesture": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "Gebaar:"
+   },
+   "local": {
+      "description": "en",
+      "message": "en"
+   },
+   "localtrans": {
+      "description": "FALSE",
+      "message": "FOUT"
+   },
+   "minilength": {
+      "description": "Option in Miscellaneous section on General Settings page",
+      "message": "Minimumlengte spoor (px):"
+   },
+   "missedgesture": {
+      "description": "Message for when gestures didn't work. Click on 'Report' sends to a form to fill. Should be maximun 30 charachters",
+      "message": "Werkte het gebaar niet? Melden"
+   },
+   "moreChromepagetitle": {
+      "description": "Placeholder in Actions",
+      "message": "Intern adres Chrome, zoals:\"chrome://...\""
+   },
+   "moreCloseoptstitle": {
+      "description": "Placeholder in Actions",
+      "message": "Het venster sluiten nadat het laatste tabblad is gesloten?"
+   },
+   "moreCloseseltitle": {
+      "description": "Placeholder in Actions",
+      "message": "welk tabblad wil je selecteren nadat je het huidige tabblad hebt gesloten?"
+   },
+   "moreCloseurltitle": {
+      "description": "Placeholder in Actions",
+      "message": "URL, als je het Chrome-venster niet sluit, open dan deze URL"
+   },
+   "moreCopystyletitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "aangepast formaat, gebruik \"%title\" in plaats van de titel/woorden, \"%url\" in plaats van de url van de website, nieuwe regel met \"\\n\""
+   },
+   "moreDes": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "Tekst functievraag, gebruik \"%naam\" in plaats van trefwoorden"
+   },
+   "moreDestitle": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Naam actie"
+   },
+   "moreIsearchtitle": {
+      "description": "Action",
+      "message": "Zoekmachines afbeelding"
+   },
+   "moreName": {
+      "description": "Name",
+      "message": "Naam"
+   },
+   "morePinnedtitle": {
+      "description": "Action",
+      "message": "Het tabblad vastmaken/losmaken"
+   },
+   "morePositiontitle": {
+      "description": "Action",
+      "message": "Nieuwe positie tabblad in verhouding tot het huidige tabblad"
+   },
+   "moreScript": {
+      "description": "Action",
+      "message": "Script"
+   },
+   "moreScripttitle": {
+      "description": "Placeholder in Run Script Action",
+      "message": "Inhoud script"
+   },
+   "moreTarget": {
+      "description": "Action",
+      "message": "Positie"
+   },
+   "moreTargettitle": {
+      "description": "Placeholder in Actions",
+      "message": "De manier om het nieuwe tabblad te openen: nieuw/huidig tabblad, voor-/achtergrond"
+   },
+   "moreTsearchtitle": {
+      "description": "Action",
+      "message": "Zoekmachines tekst"
+   },
+   "moreURL": {
+      "description": "Action",
+      "message": "URL"
+   },
+   "moreURLtitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "URL, gebruik \"%s\" in plaats van trefwoorden"
+   },
+   "moreaboutdrag": {
+      "description": "Section name",
+      "message": "Meer..."
+   },
+   "moreaffecteddomains": {
+      "description": "Shown on hover when gesture is associated to more than one domain on Edit Gesture screen.",
+      "message": "Meer domeinen beïnvloed. Domeinen bewerken."
+   },
+   "morecur": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Huidige tabblad"
+   },
+   "morenew": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Nieuw tabblad & voorgrond"
+   },
+   "morenewback": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Nieuw tabblad & achtergrond"
+   },
+   "moresettings": {
+      "description": "Section name",
+      "message": "Overige"
+   },
+   "morestrges": {
+      "description": "Section name on Rocker Gestures page",
+      "message": "gedetaileerde instellingen"
+   },
+   "mousecursor": {
+      "description": "Headline for the Mouse cursor customization section in the Settings page",
+      "message": "Cursor"
+   },
+   "mousecursorreturndefault": {
+      "description": "Link to switch back to default mouse cursor image",
+      "message": "Terug naar standaardcursor"
+   },
+   "mousecursorscale": {
+      "description": "Scale of mouse custom cursor image",
+      "message": "Schaal"
+   },
+   "mousecursorupload": {
+      "description": "Uploading an image to be used as a mouse cursor",
+      "message": "Uploaden van computer"
+   },
+   "mousecursoruploadinstructions": {
+      "description": "Instructions for the image file a user can upload for the mouse cursor",
+      "message": "Upload je eigen cursor. 48px × 48px PNG. Tot 20kb."
+   },
+   "msgbox": {
+      "description": "Message when making changes or clicking on save inside Settings ",
+      "message": "Configuratie opgeslagen! Er worden veranderingen doorgevoerd na het opnieuw laden."
+   },
+   "mygestures": {
+      "description": "Headline of default, edited or new gestures section on ext. popup",
+      "message": "Actieve Gebaren"
+   },
+   "newadd": {
+      "description": "Options in Actions",
+      "message": "Nieuw"
+   },
+   "newback": {
+      "description": "Options in Actions",
+      "message": "Nieuw tabblad & achtergrond"
+   },
+   "newfront": {
+      "description": "Options in Actions",
+      "message": "Nieuw tabblad & voorgrond"
+   },
+   "newgesture": {
+      "description": "Button on Mouse Gestures page",
+      "message": "Nieuwe toevoegen"
+   },
+   "newtabdes": {
+      "description": "Placeholder in Actions",
+      "message": "%naam openen"
+   },
+   "nopopulargestures": {
+      "description": "shown in popup when user visits a site with no popular gestures available for it",
+      "message": "Geen populaire gebaren voor deze pagina. Wees de eerste die gebaren gebruikt en bijdraagt aan onze hub."
+   },
+   "normal": {
+      "description": "Side navigation in Settings",
+      "message": "Algemene instellingen"
+   },
+   "noteforkeytodisable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to disable gestures",
+      "message": "Let op: Als je op de gekozen toets klikt, worden muisgebaren standaard geactiveerd en wordt de rechtermuisklikfunctie uitgeschakeld"
+   },
+   "noteforkeytoenable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to enable gestures",
+      "message": "Let op: Als je op de gekozen toets klikt, worden muisgebaren standaard gedeactiveerd en wordt de rechtermuisklikfunctie ingeschakeld"
+   },
+   "offmodepopup": {
+      "description": "Text on ext. popup when Crx Mouse is off",
+      "message": "Crx muis is uitgeschakeld"
+   },
+   "offmodesettings": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Crx Mouse staat uit"
+   },
+   "offmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Schakel CrX Mouse uit"
+   },
+   "onmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Zet Crx Mouse aan"
+   },
+   "opa": {
+      "description": "Option in Appearance section",
+      "message": "Transparantie:"
+   },
+   "optgrpapp": {
+      "description": "Action",
+      "message": "APP"
+   },
+   "optgrpcopy": {
+      "description": "Action",
+      "message": "Kopiëren"
+   },
+   "optgrpload": {
+      "description": "Action",
+      "message": "Laden"
+   },
+   "optgrpnav": {
+      "description": "Action",
+      "message": "Navigatie"
+   },
+   "optgrpnone": {
+      "description": "Action",
+      "message": "Geen"
+   },
+   "optgrpother": {
+      "description": "Action",
+      "message": "Anders"
+   },
+   "optgrpsave": {
+      "description": "Action",
+      "message": "Opslaan"
+   },
+   "optgrpscroll": {
+      "description": "Action",
+      "message": "Scrollen"
+   },
+   "optgrpsearch": {
+      "description": "Action",
+      "message": "Zoeken"
+   },
+   "optgrptab": {
+      "description": "Action",
+      "message": "Tabblad"
+   },
+   "optgrptabnav": {
+      "description": "Action",
+      "message": "Navigatie tabblad"
+   },
+   "optgrpwindow": {
+      "description": "Action",
+      "message": "Venster"
+   },
+   "optmode": {
+      "description": "Text of opt in/out checkbox",
+      "message": "Populaire gebaren inschakelen (verzendt anonieme gegevens)"
+   },
+   "optmodealert": {
+      "description": "text on opt in/out alert window",
+      "message": "We kunnen je geen populaire gebaren blijven tonen. Je kunt deze altijd opnieuw activeren door het selectievakje te selecteren."
+   },
+   "optoutmodemessage": {
+      "description": "Description of opt out mode on ext. popup",
+      "message": "Ga naar \u003Ca href=\"$link$\" target=\"_blank\">Instellingen\u003C/a> om populaire gebaren te activeren",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "optoutmodetitle": {
+      "description": "Title of opt out mode on ext. popup",
+      "message": "Populaire gebaren is inactief."
+   },
+   "pinned": {
+      "description": "Action",
+      "message": "Vastmaken"
+   },
+   "placeholderconfig": {
+      "description": "Text on Advanced Settings page",
+      "message": "Plak de configuratie hier en klik op Importeren om het importeren te voltooien. De configuratie wordt weergegeven nadat u op Exporteren hebt geklikt en zal beschikbaar zijn voor gebruik in de toekomst"
+   },
+   "placeholdername": {
+      "description": "Placeholder in Actions",
+      "message": "Naam"
+   },
+   "placeholderscript": {
+      "description": "Placeholder in Actions",
+      "message": "Script"
+   },
+   "placeholdersearchurl": {
+      "description": "Placeholder in Actions",
+      "message": "URL, gebruik %s in plaats van trefwoorden"
+   },
+   "placeholdertooltip": {
+      "description": "Placeholder in Actions",
+      "message": "Naam actie"
+   },
+   "placeholderurl": {
+      "description": "Placeholder in Actions",
+      "message": "URL"
+   },
+   "popupaddtooltip": {
+      "description": "Tooltip when hovering on plus icon in Active Gestures section",
+      "message": "Nieuwe toevoegen"
+   },
+   "popupeditgesture": {
+      "description": "Button to apply changes for existing gesture on ext. popup",
+      "message": "Wijzigingen toepassen"
+   },
+   "popupfooterhelptooltip": {
+      "description": "Tooltip when hovering on question mark icon in footer on ext. popup",
+      "message": "Help"
+   },
+   "popupgesturecancel": {
+      "description": "Button to cancel new/edit gesture on ext. popup",
+      "message": "Annuleren"
+   },
+   "popupnewaction": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Kies de actie"
+   },
+   "popupnewgesture": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Kies een gebaar"
+   },
+   "popupnewscope": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Kies de omvang"
+   },
+   "popupnewscopeglobal": {
+      "description": "Option in new gesture window on ext. popup",
+      "message": "Alle websites"
+   },
+   "popuponboarding": {
+      "description": "Text on onboarding window to close window",
+      "message": "Ik snap het, dankje."
+   },
+   "popuppopular": {
+      "description": "Headline of popular gestures section on ext. popup",
+      "message": "Populaire gebaren"
+   },
+   "popuprecordsave": {
+      "description": "Button to save new gesture in new gesture window on ext. popup",
+      "message": "Gebaar opslaan"
+   },
+   "popupsuccess": {
+      "description": "Text in notification for gesture saved/edited on ext. popup. Note! Do not translate text next to $",
+      "message": "Gebaar voor '$GestureName$' is opgeslagen",
+      "placeholders": {
+         "GestureName": {
+            "content": "$1"
+         }
+      }
+   },
+   "popuptooltipdelete": {
+      "description": "Tooltip when hovering on delete icon on ext. popup",
+      "message": "Verwijderen"
+   },
+   "popuptooltipedit": {
+      "description": "Tooltip when hovering on edit icon on ext. popup",
+      "message": "Bewerken"
+   },
+   "popupvideotool": {
+      "description": "Tooltip when hovering on video icon in footer on ext. popup",
+      "message": "Crx Mouse gebruiken"
+   },
+   "port": {
+      "description": "Section name on Advanced Settings page",
+      "message": "Configuratie importeren/exporteren"
+   },
+   "porttip": {
+      "description": "Text on Advanced Settings page. Note! Do not translate html tags",
+      "message": "Opmerking: 1. Het importeren van de configuratie leidt tot het opnieuw starten van deze extensie, het ongeopende tabblad moet opnieuw worden! \u003Cbr /> 2.Mogelijk kun je alleen de configuratie importeren die vanuit hier is geëxporteerd. Het wordt niet aanbevolen deze zelf te bewerken.\u003Cbr /> 3. Bij fouten zet je de standaard configuratie terug. "
+   },
+   "poschrome": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome standaard"
+   },
+   "poshead": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Kop"
+   },
+   "poslast": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Laatste"
+   },
+   "posleft": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Links"
+   },
+   "posright": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Rechts"
+   },
+   "rate_us_never_show_again": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "Niet meer tonen"
+   },
+   "rate_us_remind_me_later": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "Later herinneren"
+   },
+   "rate_us_title": {
+      "description": "Title crx mouse overlay for rate us",
+      "message": "Vind je CRX Mouse prettig?"
+   },
+   "rateus": {
+      "description": "located in Settings section inside sidebar. Asking the users to rate the extension. Translation should be max 21 characters",
+      "message": "VIND JE ONS LEUK? BEOORDEEL ONS!"
+   },
+   "reset": {
+      "description": "Section name on Advanced Settings page",
+      "message": "Resetten"
+   },
+   "resetall": {
+      "description": "Reset button on Advanced Settings page",
+      "message": "Alle resetten"
+   },
+   "resetpage": {
+      "description": "Reset button on Gestures pages",
+      "message": "Deze pagina resetten"
+   },
+   "resettip": {
+      "description": "Text on Advanced Settings page",
+      "message": "Opmerking: met deze handeling wordt de gehele configuratie gewist en wordt de standaard configuratie teruggezet. Deze handeling kan niet ongedaan worden gemaakt, dus pas op!"
+   },
+   "reverseFS": {
+      "description": "Action",
+      "message": "De richting omdraaien"
+   },
+   "right": {
+      "description": "Action",
+      "message": "Rechts"
+   },
+   "s360": {
+      "description": "Action - Website name",
+      "message": "360"
+   },
+   "samazon": {
+      "description": "Action - Website name",
+      "message": "Amazon"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Opslaan"
+   },
+   "savewhitelist": {
+      "description": "save whitelist changes. Appears on all gesture boxes",
+      "message": "Opslaan"
+   },
+   "sbaidu": {
+      "description": "Action - Website name",
+      "message": "Baidu"
+   },
+   "sbaiduimage": {
+      "description": "Action - Website name",
+      "message": "Baidu zoeken met een afbeelding"
+   },
+   "sbing": {
+      "description": "Action - Website name",
+      "message": "Bing"
+   },
+   "scractdown": {
+      "description": "Action",
+      "message": "Omlaag scrollen:"
+   },
+   "scractup": {
+      "description": "Action",
+      "message": "Omhoog scrollen:"
+   },
+   "scriptdes": {
+      "description": "Placeholder in Actions",
+      "message": "Script uitvoeren: %naam"
+   },
+   "scroll": {
+      "description": "Side navigation in Settings",
+      "message": "Scrollen"
+   },
+   "scrollaccele": {
+      "description": "Option on Scrolling page",
+      "message": "Scrollversnelling"
+   },
+   "scrolleffects": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Met effecten (voor pagina omhoog/omlaag/boven/beneden)."
+   },
+   "scrollgesture": {
+      "description": "Side navigation in Settings",
+      "message": "Wielgebaren"
+   },
+   "scrollspeed": {
+      "description": "Option on Scrolling page",
+      "message": "Scrollsnelheid"
+   },
+   "searchdes": {
+      "description": "Placeholder in Actions. Note! do not translate text next to %.",
+      "message": "Gebruik %name om te zoeken:\"%s\""
+   },
+   "set_your_mouse_gestures_off": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "Muisgebaren standaard UIT zetten"
+   },
+   "set_your_mouse_gestures_on": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "Muisgebaren standaard AAN zetten"
+   },
+   "setdragurl": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Schakel link slepen in als de zin als link wordt herkend (experimenteel)."
+   },
+   "settings": {
+      "description": "Settings",
+      "message": "Instellingen"
+   },
+   "sgoogle": {
+      "description": "Action - Website name",
+      "message": "Google"
+   },
+   "sgoogleimage": {
+      "description": "Action - Website name",
+      "message": "Google zoeken met een afbeelding"
+   },
+   "showwhitelist": {
+      "description": "Opens a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "Witte lijst tonen"
+   },
+   "site": {
+      "description": "Action",
+      "message": "Website"
+   },
+   "smooth": {
+      "description": "Action",
+      "message": "Vloeiend scrollen"
+   },
+   "ssogou": {
+      "description": "Action - Website name",
+      "message": "Sogou"
+   },
+   "staobao": {
+      "description": "Action - Website name",
+      "message": "Taobao"
+   },
+   "stenable": {
+      "description": "Enable select text while holding the left mouse(It makes Mouse Gestures invalid sometimes)",
+      "message": "Schakel tekst zoeken in terwijl je de linker muisknop ingedrukt houdt (hierdoor zijn muisgebaren soms ongeldig)"
+   },
+   "stineyeimage": {
+      "description": "TinEye",
+      "message": "TinEye"
+   },
+   "stractleft": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Linker knop klikken:"
+   },
+   "stractmiddle": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Klik op de middelste knop:"
+   },
+   "stractright": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Rechter knop klikken"
+   },
+   "strleft": {
+      "description": "Section on Rocker Gestures page",
+      "message": "Linker knop ingedrukt houden"
+   },
+   "strmiddle": {
+      "description": "Section on Rocker Gestures page",
+      "message": "Middelste knop ingedrukt houden"
+   },
+   "stroke": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "Muisspoor tonen"
+   },
+   "strokegesture": {
+      "description": "Side navigation in Settings",
+      "message": "Schommelgebaren"
+   },
+   "strpress": {
+      "description": "Text on Rocker Gestures page",
+      "message": "Wanneer kan de actie worden getriggerd:"
+   },
+   "strpressdown": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Muis omlaag"
+   },
+   "strpressup": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Muis omhoog"
+   },
+   "strright": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Rechter knop ingedrukt houden"
+   },
+   "swiki": {
+      "description": "Action - Website name",
+      "message": "Wikipedia"
+   },
+   "syahoo": {
+      "description": "Action - Website name",
+      "message": "Yahoo"
+   },
+   "syandex": {
+      "description": "Action - Website name",
+      "message": "Yandex"
+   },
+   "sync": {
+      "description": "Section on Advanced Settings page",
+      "message": "Configuratie synchroniseren"
+   },
+   "syncdes": {
+      "description": "Text on Advanced Settings page",
+      "message": "De configuratie wordt automatisch gesynchroniseerd met Chrome voor de \u003Ca href=\"https://accounts.google.com/ServiceLogin?service=chromiumsync\" target=\"_blank\">ingelogde\u003C/a> gebruiker, mits de gebruiker synchronisatie heeft ingeschakeld."
+   },
+   "tablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Tabbladenlijst"
+   },
+   "tablistVisual": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Visuele tabbladenlijst tonen tijdens scrollen"
+   },
+   "tablistkeyleft": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Houd de linker muisknop ingedrukt en scroll."
+   },
+   "tablistkeyright": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Houd de rechter muisknop ingedrukt en scroll."
+   },
+   "testlink": {
+      "description": "Text in new Link Super Drag Gesture window",
+      "message": "Link testen"
+   },
+   "testwords": {
+      "description": "Text in new Text Super Drag Gesture window",
+      "message": "Zinnen testen"
+   },
+   "text": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Tekst"
+   },
+   "thanks": {
+      "description": "Section on About page",
+      "message": "Bedankt"
+   },
+   "time": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Duur"
+   },
+   "timeout": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Time-out"
+   },
+   "tipforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "Tp: je kunt een volledige URL of slechts een deel daarvan gebruiken. \"cnn.com\" ondersteunt bijvoorbeeld elke URL waar cnn.com in voorkomt."
+   },
+   "titlechromepage": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tooltip naam actie, gebruik \"%name\" in plaats van intern adres chrome"
+   },
+   "titlecopyuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tooltip naam actie, gebruik \"%naam\" in plaats van de naam van het standaard formaat"
+   },
+   "titleisearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tooltip naam actie, gebruik \"%name\" in plaats van naam machine"
+   },
+   "titlenewusertab": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tooltip naam actie, gebruik \"%naam\" in plaats van naam website"
+   },
+   "titlenexpre": {
+      "description": "Placeholder in Actions",
+      "message": "Bijpassende woorden, scheid meerdere woorden met \"|\" en de extensie detecteert rel, tev, id, binnensteHTML, titel, klasse per beurt."
+   },
+   "titlesearchuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "URL, gebruik \"%s\" in plaats van vervolg trefwoorden"
+   },
+   "titletsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tooltip naam actie, gebruik \"%name\" in plaats van naam zoekmachine, \"%s\" in plaats van content"
+   },
+   "titleuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tooltip naam actie, gebruik \"%naam\" in plaats van naam script"
+   },
+   "tooltip": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Naam actie tonen"
+   },
+   "translate": {
+      "description": "Translate",
+      "message": "Vertalen"
+   },
+   "unclose": {
+      "description": "Do not close, and open the following URL",
+      "message": "Niet sluiten, open vervolgens de volgende URL"
+   },
+   "unpinned": {
+      "description": "Action",
+      "message": "Losmaken"
+   },
+   "valuechromepage": {
+      "description": "Placeholder in Actions",
+      "message": "%naam openen"
+   },
+   "valueisearch": {
+      "description": "Placeholder in Actions",
+      "message": "Gebruik %naam om de afbeelding te zoeken"
+   },
+   "valuenewusertab": {
+      "description": "Placeholder in Actions",
+      "message": "%naam openen"
+   },
+   "valuenone": {
+      "description": "Action",
+      "message": "Geen"
+   },
+   "valuetsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Gebruik %s name om \"%s\" te zoeken"
+   },
+   "valueuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Voer het script uit: \"%name\""
+   },
+   "version": {
+      "description": "Version",
+      "message": "Versie"
+   },
+   "wheelgesturealert": {
+      "description": "An alert that jumps up when users choose two options that overlap in the Wheel Gestures section",
+      "message": "Deze twee functies overlappen elkaar"
+   },
+   "width": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Breedte:"
+   }
+}

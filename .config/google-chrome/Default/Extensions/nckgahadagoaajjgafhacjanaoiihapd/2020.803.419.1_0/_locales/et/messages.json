@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "Teie G Suite'i administraator on Google Chati sisse lülitanud. Chati abil võite tiimi ruumides koostööd teha ja hõlpsalt faile jagada.\n\nParima kasutuskogemuse saamiseks desinstallige pärast Google Chati rakenduse uue versiooni installimist see laiendus."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Hangi töölauarakendus"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Edasi saidile chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Tere tulemast rakendusse Google Chat!"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "Alustamiseks logige Chrome'i sisse."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Proovi uuesti"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Veenduge, et teil oleks Interneti-ühendus, ja proovige uuesti"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Ühenduse viga"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome'i rakenduste kasutatavust piiratakse sel aastal. Hangoutsi endiselt kasutamiseks selle enda aknas installige Hangoutsi Chrome'i laiendus."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Hangoutsi Chrome'i rakendust enam ei toetata."
+   },
+   "chrome_app_description": {
+      "message": "Hangoutsi Chrome'i rakenduse tugi katkestatakse. Lülituge Hangoutsi Chrome'i laiendusele."
+   },
+   "chrome_app_download_button": {
+      "message": "CHROME'I LAIENDUSE HANKIMINE"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Lisateave"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "See rakendus on aegunud. Saadaval on uuem versioon."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Hangoutsi Chrome'i rakenduse värskendamine"
+   },
+   "chrome_app_signin_button": {
+      "message": "Logi sisse"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Saate vestelda privaatselt ja pidada rühmavestlusi, kasutades teksti, fotosid, GIF-faile, häält, videot ja muid võimalusi."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts – $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Google'iga ei õnnestu ühendust luua. Kontrollige Interneti-ühendust."
+   },
+   "chrome_ext_description": {
+      "message": "Äratage vestlused Hangoutsis tasuta fotode, emotikonide ja isegi grupivideokõnede abil ellu."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Olek: ühendatud\nSaamata jäänud sõnumid"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Olek: administraator on keelanud"
+   },
+   "quasar_tip_connected": {
+      "message": "Olek: ühendatud"
+   },
+   "quasar_tip_connecting": {
+      "message": "Olek: ühenduse loomine"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Olek: ühendus on katkenud"
+   },
+   "quasar_tip_not_load": {
+      "message": "Olek: laadimistõrge"
+   },
+   "quasar_tip_not_login": {
+      "message": "Olek: ei ole sisse logitud"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Olek: ühenduse taasloomine"
+   }
+}

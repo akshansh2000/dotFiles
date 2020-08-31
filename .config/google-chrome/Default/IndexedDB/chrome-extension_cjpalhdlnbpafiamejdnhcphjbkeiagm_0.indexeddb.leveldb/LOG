@@ -1,0 +1,8 @@
+2020/08/31-10:54:02.578 1e4a3 Reusing MANIFEST /home/akshansh2000/.config/google-chrome/Default/IndexedDB/chrome-extension_cjpalhdlnbpafiamejdnhcphjbkeiagm_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/31-10:54:02.578 1e4a3 Recovering log #25
+2020/08/31-10:54:02.578 1e4a3 Reusing old log /home/akshansh2000/.config/google-chrome/Default/IndexedDB/chrome-extension_cjpalhdlnbpafiamejdnhcphjbkeiagm_0.indexeddb.leveldb/000025.log 
+2020/08/31-10:54:04.664 1e605 Level-0 table #29: started
+2020/08/31-10:54:04.664 1e605 Level-0 table #29: 0 bytes OK
+2020/08/31-10:54:04.966 1e605 Delete type=0 #25
+2020/08/31-10:54:04.967 1e605 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/31-10:54:04.967 1e605 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

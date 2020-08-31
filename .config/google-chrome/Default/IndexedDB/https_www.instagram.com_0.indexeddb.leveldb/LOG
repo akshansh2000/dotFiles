@@ -1,0 +1,15 @@
+2020/08/30-22:10:08.777 447e Reusing MANIFEST /home/akshansh2000/.config/google-chrome/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/30-22:10:08.777 447e Recovering log #4
+2020/08/30-22:10:08.777 447e Reusing old log /home/akshansh2000/.config/google-chrome/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/000004.log 
+2020/08/30-22:10:57.382 149b Level-0 table #8: started
+2020/08/30-22:10:57.446 149b Level-0 table #8: 563688 bytes OK
+2020/08/30-22:10:57.479 149b Delete type=0 #4
+2020/08/30-22:10:57.479 149b Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/30-22:10:57.480 149b Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x03\x01\x0a\x00p\x00o\x00s\x00t\x00s\x00.\x00b\x00y\x00I\x00d' @ 324 : 1
+2020/08/30-22:10:57.480 149b Compacting 1@1 + 1@2 files
+2020/08/30-22:10:57.514 149b Generated table #9@1: 41 keys, 38202 bytes
+2020/08/30-22:10:57.514 149b Compacted 1@1 + 1@2 files => 38202 bytes
+2020/08/30-22:10:57.553 149b compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/08/30-22:10:57.554 149b Delete type=2 #8
+2020/08/30-22:10:57.554 149b Delete type=2 #5
+2020/08/30-22:10:57.554 149b Manual compaction at level-1 from '\x00\x01\x01\x03\x01\x0a\x00p\x00o\x00s\x00t\x00s\x00.\x00b\x00y\x00I\x00d' @ 324 : 1 .. (end); will stop at (end)

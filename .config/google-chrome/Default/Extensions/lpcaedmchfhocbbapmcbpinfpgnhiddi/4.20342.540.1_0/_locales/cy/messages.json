@@ -1,0 +1,176 @@
+{
+  "11138431688427255": {
+    "message": "Ychwanegu label"
+  },
+  "1122146167985532789": {
+    "message": "ddoe"
+  },
+  "125608713654167241": {
+    "message": "Glaswyrdd"
+  },
+  "1333255388111908292": {
+    "message": "Bwydydd"
+  },
+  "1478393252643397554": {
+    "message": "Oren"
+  },
+  "1857224091554117760": {
+    "message": "Coch"
+  },
+  "1986228872461282439": {
+    "message": "Diofyn"
+  },
+  "1988879857371940328": {
+    "message": "Tynnu'r label $1​"
+  },
+  "2269286357657606271": {
+    "message": "Mae cyfeiriad y dudalen wedi'i ddileu"
+  },
+  "2633701539319779732": {
+    "message": "Anfon adborth (dogfood yn unig)"
+  },
+  "2803553109654833664": {
+    "message": "Pinc"
+  },
+  "2973306402585941108": {
+    "message": "Bore"
+  },
+  "3121560585545725724": {
+    "message": "$1​, $2​"
+  },
+  "3190546672187601036": {
+    "message": "Nos"
+  },
+  "3249966726137025950": {
+    "message": "Grŵp Teulu'r Cydweithiwr"
+  },
+  "3385831848537487538": {
+    "message": "Teithio"
+  },
+  "3551522853788442530": {
+    "message": "Mynd nôl"
+  },
+  "3555297636767750285": {
+    "message": "Gwyrdd"
+  },
+  "4047470251075013857": {
+    "message": "Tynnu dolen y dudalen"
+  },
+  "4153306913989815073": {
+    "message": "Ni ellir cadw delwedd breifat."
+  },
+  "4343848624651344174": {
+    "message": "Prynhawn"
+  },
+  "4409688924773693376": {
+    "message": "Wrthi'n cadw"
+  },
+  "4439831283519683004": {
+    "message": "Llwyd"
+  },
+  "4533605085334699862": {
+    "message": "Dyfyniadau"
+  },
+  "456512308416555173": {
+    "message": "Llyfrau"
+  },
+  "4586373282767984140": {
+    "message": "Melyn"
+  },
+  "4840513623749850224": {
+    "message": "Ffilmiau"
+  },
+  "5061847320181369179": {
+    "message": "Gwnewch nodyn..."
+  },
+  "5403636185480096151": {
+    "message": "Teledu"
+  },
+  "5446819851466650207": {
+    "message": "Teitl"
+  },
+  "5478662967017843220": {
+    "message": "Glas tywyll"
+  },
+  "577539731512680648": {
+    "message": "Agor yn Keep"
+  },
+  "5782779707150593352": {
+    "message": "All-lein"
+  },
+  "6175061706159277390": {
+    "message": "Cyfeiriad tudalen wedi'i gadw"
+  },
+  "6252259197986158120": {
+    "message": "Ddoe"
+  },
+  "6324768448533022780": {
+    "message": "$1​ $2​"
+  },
+  "6366376928558090914": {
+    "message": "Bwyd"
+  },
+  "6428000916830484004": {
+    "message": "Brown"
+  },
+  "6497197865876438261": {
+    "message": "Cerddoriaeth"
+  },
+  "6510131849363684615": {
+    "message": "Yfory"
+  },
+  "6579707685908557993": {
+    "message": "Nos"
+  },
+  "689017442055275529": {
+    "message": "Grŵp Teulu $1​"
+  },
+  "6932835915069019531": {
+    "message": "Tynnu'r ddelwedd"
+  },
+  "7653702763016575386": {
+    "message": "Glas"
+  },
+  "7669846901402551021": {
+    "message": "Heddiw"
+  },
+  "7728066040934031356": {
+    "message": "Porffor"
+  },
+  "7733569569331009603": {
+    "message": "Ychwanegwyd y label $1​."
+  },
+  "8133866583554546341": {
+    "message": "$1​, $2​"
+  },
+  "8149439558305434788": {
+    "message": "$1​, $2​"
+  },
+  "8169232898590866289": {
+    "message": "+ Creu \"$1​\""
+  },
+  "8602525917014156029": {
+    "message": "Llefydd"
+  },
+  "9116610943383363940": {
+    "message": "Wedi'i gadw"
+  },
+  "911698676339750373": {
+    "message": "Grŵp Teulu"
+  },
+  "9218540601355708194": {
+    "message": "Dileu nodyn"
+  },
+  "appDesc": {
+    "description": "App description",
+    "message": "Cadwch i Google Keep mewn un clic!"
+  },
+  "appName": {
+    "description": "App name",
+    "message": "Estyniad Chrome Google Keep"
+  },
+  "shortName": {
+    "description": "App short name",
+    "message": "Cadw i Keep"
+  }
+}

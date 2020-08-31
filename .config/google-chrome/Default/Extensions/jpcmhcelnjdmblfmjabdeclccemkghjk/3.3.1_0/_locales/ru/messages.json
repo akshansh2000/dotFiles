@@ -1,0 +1,50 @@
+{
+   "appDesc": {
+      "description": "The description of the application, as shown on the web store.",
+      "message": "Возвращает в Google картинки кнопки' \"Открыть в полном размере\" и \"Поиск по картинке\"."
+   },
+   "appName": {
+      "description": "Title of the application, as displayed on the web store.",
+      "message": "View Image"
+   },
+   "donatePayPal": {
+      "description": "Text used for the donation button.",
+      "message": " Пожертвовать через PayPal"
+   },
+   "optionsButton": {
+      "description": "Text displayed on the link to options button.",
+      "message": "Настройки"
+   },
+   "resetButton": {
+      "description": "Text displayed on reset button.",
+      "message": "Восстановить по умолчанию"
+   },
+   "searchImage": {
+      "description": "Button leads to Google's Search by Image page.",
+      "message": "Поиск по картинке"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "Settings toggle which causes the search by image page to open in new tab.",
+      "message": "Открывать \"Поиск по картинке\" в новой вкладке:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Settings toggle which causes images to open in new tab.",
+      "message": "Открывать \"Открыть в полном размере\" в новой вкладке:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "Settings toggle enables manually set text for buttons rather than locale.",
+      "message": "Вручную назначить названия кнопок:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "Settings toggle which causes the globe icon to display on the \"View Image\" button.",
+      "message": "Показывать иконку глобуса на кнопке \"Открыть в полном размере\":"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "Settings toggle hides copyright message on image results page.",
+      "message": "Скрыть предупреждение \"Изображения могут быть защищены авторским правом\":"
+   },
+   "viewImage": {
+      "description": "Button for viewing image.",
+      "message": "Открыть в полном размере"
+   }
+}

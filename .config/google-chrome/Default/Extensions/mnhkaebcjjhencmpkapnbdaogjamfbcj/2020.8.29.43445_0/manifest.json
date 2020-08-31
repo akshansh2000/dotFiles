@@ -1,0 +1,37 @@
+{
+   "app": {
+      "display_mode": "standalone",
+      "icon_color": "#80AF34",
+      "launch": {
+         "web_url": "https://www.google.com/maps?force=tt&source=ttpwa"
+      },
+      "linked_icons": [ {
+         "size": 192,
+         "url": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_192x192.png"
+      }, {
+         "size": 512,
+         "url": "https://maps.gstatic.com/mapfiles/maps_lite/pwa/icons/maps15_bnuw3a_round_512x512.png"
+      } ],
+      "theme_color": "rgba(26,115,232,1)"
+   },
+   "description": "",
+   "icons": {
+      "128": "icons/128.png",
+      "192": "icons/192.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "5tCAKHKfVJgH8kK0tzDIh58VYdVRaN7K6sfyxIXLiqE=",
+   "name": "Google Maps",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://www.google.com/maps*" ],
+         "title": "Google Maps"
+      }
+   },
+   "version": "2020.8.29.43445"
+}

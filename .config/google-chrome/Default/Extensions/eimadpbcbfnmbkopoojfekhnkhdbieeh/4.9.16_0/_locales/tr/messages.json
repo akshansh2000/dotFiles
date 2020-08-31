@@ -1,0 +1,155 @@
+{
+   "add_site_to_list": {
+      "message": "Siteyi listeye ekle"
+   },
+   "automation": {
+      "message": "Otomasyon"
+   },
+   "brightness": {
+      "message": "Parlaklık"
+   },
+   "change_browser_theme": {
+      "message": "Tarayıcı temasını değiştir"
+   },
+   "contrast": {
+      "message": "Kontrast"
+   },
+   "custom_browser_theme_off": {
+      "message": "Varsayılan"
+   },
+   "custom_browser_theme_on": {
+      "message": "Özel"
+   },
+   "dark": {
+      "message": "Koyu"
+   },
+   "donate": {
+      "message": "Bağış yap"
+   },
+   "engine_dynamic": {
+      "message": "Dinamik"
+   },
+   "engine_filter": {
+      "message": "Filtre"
+   },
+   "engine_filter_plus": {
+      "message": "Filtre+"
+   },
+   "engine_static": {
+      "message": "Statik"
+   },
+   "extension_description": {
+      "message": "Her web sitesi için koyu mod. Gözlerinize iyi bakın, gece ve günlük gezinti için koyu renk tema kullanın."
+   },
+   "filter": {
+      "message": "Filtre"
+   },
+   "grayscale": {
+      "message": "Gri ton"
+   },
+   "help": {
+      "message": "Yardım"
+   },
+   "invert_listed_only": {
+      "message": "Sadece listedekiler"
+   },
+   "latitude": {
+      "message": "Enlem"
+   },
+   "light": {
+      "message": "Açık"
+   },
+   "loading_please_wait": {
+      "message": "Yükleniyor, lütfen bekleyin"
+   },
+   "longitude": {
+      "message": "Boylam"
+   },
+   "mode": {
+      "message": "Mod"
+   },
+   "more": {
+      "message": "Daha fazla"
+   },
+   "news": {
+      "message": "Haberler"
+   },
+   "not_invert_listed": {
+      "message": "Hariç tutulanlar"
+   },
+   "off": {
+      "message": "Kapalı"
+   },
+   "on": {
+      "message": "Açık"
+   },
+   "only_for": {
+      "message": "Sadece:"
+   },
+   "only_for_description": {
+      "message": "Ayarları sadece şu anki site için uygula"
+   },
+   "open_dev_tools": {
+      "message": "Geliş. araçları"
+   },
+   "page_in_dark_list": {
+      "message": "Bu site genel\nKoyu Listesinde"
+   },
+   "page_protected": {
+      "message": "Bu sayfa tarayıcı\ntarafından korunuyor"
+   },
+   "privacy": {
+      "message": "Gizlilik"
+   },
+   "read_more": {
+      "message": "Daha fazla oku"
+   },
+   "select_font": {
+      "message": "Yazı tipi seç"
+   },
+   "sepia": {
+      "message": "Sepya"
+   },
+   "set_active_hours": {
+      "message": "Etkin saatleri ayarla"
+   },
+   "set_location": {
+      "message": "Güneş battıktan sonra etkinleştir"
+   },
+   "setup_add_site_hotkey": {
+      "message": "Site eklemek için bir kısayol tuşu ayarla"
+   },
+   "setup_hotkey_toggle_extension": {
+      "message": "Eklenti aç-kapat\nkısayol tuşu ayarla"
+   },
+   "setup_hotkey_toggle_site": {
+      "message": "Şu anki site için\naç-kapat kısayol tuşu ayarla"
+   },
+   "site_list": {
+      "message": "Site listesi"
+   },
+   "store_listing": {
+      "message": "Bu göz bakım eklentisi web siteleri için anında koyu temalar oluşturarak gece modunu etkinleştirir. Dark Reader parlak renkleri ters çevirerek yüksek kontrast oluşturur ve geceleri okumayı kolaylaştırır.\n\nParlaklığı, kontrastı, sepya filtresini, koyu modu, yazı tipi ayarlarını ve yoksayma listesini ayarlayabilirsiniz.\n\nDark Reader, reklam göstermez ve kullanıcının verilerini hiçbir yere göndermez. Tamamen açık kaynak kodludur. https://github.com/darkreader/darkreader\n\nYüklemeden önce benzer uzantıları devre dışı bırakın. Gezintinin tadını çıkarın!"
+   },
+   "system_dark_mode": {
+      "message": "Sistem renk düzenini kullan"
+   },
+   "system_dark_mode_description": {
+      "message": "Sistem koyu modu açıkken etkinleştir"
+   },
+   "text_stroke": {
+      "message": "Yazı çizgisi"
+   },
+   "theme_generation_mode": {
+      "message": "Tema oluşturma modu"
+   },
+   "toggle_current_site": {
+      "message": "Şu anki siteyi aç-kapat"
+   },
+   "toggle_extension": {
+      "message": "Eklentiyi aç-kapat"
+   },
+   "try_experimental_theme_engines": {
+      "message": "**Deneysel** tema motorlarını deneyin:\n**Filtre+** renk doygunluğunu korur, GPU kullanır\n**Statik tema** basit, hızlı bir tema oluşturur\n**Dinamik tema** renkleri ve görüntüleri analiz eder"
+   }
+}

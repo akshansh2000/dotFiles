@@ -1,0 +1,890 @@
+{
+  "appDesc": {
+    "message": "完整且可靠地擷取目前頁面的螢幕擷取畫面，而不需要任何額外的權限！",
+    "description": "[aws:2019-09-23 03:03:54] Capture a screenshot of your current page in entirety and reliably—without requesting any extra permissions!"
+  },
+  "_1filecouldnotberemoved": {
+    "message": "無法移除 1 個檔案。",
+    "description": "[aws:2019-09-23 03:03:54] 1 file could not be removed."
+  },
+  "_1filewassuccessfullyremoved": {
+    "message": "已成功移除 1 個檔案。",
+    "description": "[aws:2019-09-23 03:03:55] 1 file was successfully removed."
+  },
+  "_Adjustrepeatingelements": {
+    "message": "調整重複元素",
+    "description": "[aws:2019-09-23 03:03:56] Adjust repeating elements"
+  },
+  "_Advancedscrolling": {
+    "message": "進階捲動",
+    "description": "[aws:2019-09-23 03:03:56] Advanced scrolling"
+  },
+  "_Align": {
+    "message": "對齊",
+    "description": "[aws:2019-09-23 03:03:57] Align"
+  },
+  "_Anyissues": {
+    "message": "有什麼問題嗎？",
+    "description": "[aws:2019-09-23 03:03:58] Any issues?"
+  },
+  "_AnyoptionalpermissionsthatwerepreviouslygrantedwillappearcheckedhereYoucanrevokethematanytimeIftheyareneededagaininthefuturetheywillbererequested": {
+    "message": "任何先前授與的選擇性權限都會在此處顯示核取狀態。 您可以隨時撤銷它們。 如果他們在未來再次需要，他們將被重新請求。",
+    "description": "[aws:2019-09-23 03:03:59] Any optional permissions that were previously granted will appear checked here. You can revoke them at any time. If they are needed again in the future, they will be re-requested."
+  },
+  "_Areyouenjoyingthisextension": {
+    "message": "你喜歡這個擴展嗎？",
+    "description": "[aws:2019-09-23 03:03:59] Are you enjoying this extension?"
+  },
+  "_Areyousureyouwanttodelete1screencaptureThisactioncannotbeundone": {
+    "message": "您確定要刪除 1 個封裝嗎？\n (此動作無法復原)。",
+    "description": "[aws:2019-09-23 03:04:00] Are you sure you want to delete 1 screencapture?\n (This action cannot be undone.)"
+  },
+  "_AreyousureyouwanttodeletethisscreenshotThisactioncannotbeundone": {
+    "message": "您確定要刪除此螢幕擷取畫面嗎？\n(此動作無法復原)。",
+    "description": "[aws:2019-09-23 03:04:02] Are you sure you want to delete this screenshot?\n(This action cannot be undone.)"
+  },
+  "_Areyousureyouwanttoresettotheextensionsoriginalthemedefaults": {
+    "message": "您確定要重設為擴充套件的原始主題預設值嗎？",
+    "description": "[aws:2019-09-23 03:04:02] Are you sure you want to reset to the extension’s original theme defaults?"
+  },
+  "_Arrow": {
+    "message": "箭頭",
+    "description": "[aws:2019-09-23 03:04:03] Arrow"
+  },
+  "_Autodownloadfiles": {
+    "message": "自動下載檔案",
+    "description": "[aws:2019-09-23 03:04:04] Auto-download files"
+  },
+  "_AutomaticallydownloadyourscreenshotinsteadofopeningitinanewwindowThismeanstheextensioncapturetabwillnotopenYoucanreturnbackherebyrightclickingontheextensionandselectingOptions": {
+    "message": "自動下載您的螢幕擷取畫面，而不是在新視窗中開啟。這意味著擴充功能擷取標籤將不會開啟。 您可以通過右鍵單擊擴展並選擇 “選項” 返回此處。",
+    "description": "[aws:2019-09-23 03:04:05] Automatically download your screenshot instead of opening it in a new window.This means the extension capture tab will not open. You can return back here by right-clicking on the extension and selecting \"Options\"."
+  },
+  "_AutomaticallyshowasaveasdialogwhendownloadingyourscreenshotsIftheAskwheretosaveeachfilebeforedownloadingoptionisenabledinyourChromesettingsthenthattakespriority": {
+    "message": "下載螢幕擷取畫面時自動顯示 “另存新檔” 對話方塊。 如果 Chrome 設定中啟用了 “下載前詢問每個檔案儲存位置” 選項，則優先考慮。",
+    "description": "[aws:2019-09-23 03:04:06] Automatically show a \"save as\" dialog when downloading your screenshots. If the “Ask where to save each file before downloading” option is enabled in your Chrome settings, then that takes priority."
+  },
+  "_Backtocapturechangesareautosaved": {
+    "message": "返回擷取 (變更會自動儲存)",
+    "description": "[aws:2019-09-23 03:04:06] Back to capture (changes are auto-saved)"
+  },
+  "_billedannually": {
+    "message": "每年計費",
+    "description": "[aws:2019-09-23 03:04:07] billed annually"
+  },
+  "_Blur": {
+    "message": "模糊",
+    "description": "[aws:2019-09-23 03:04:08] Blur"
+  },
+  "_Bold": {
+    "message": "大膽",
+    "description": "[aws:2019-09-23 03:04:08] Bold"
+  },
+  "_cancelanytime": {
+    "message": "隨時取消",
+    "description": "[aws:2019-09-23 03:04:09] cancel anytime"
+  },
+  "_Cannotdownloadfiles": {
+    "message": "無法下載檔案",
+    "description": "[aws:2019-09-23 03:04:10] Cannot download files"
+  },
+  "_Capture": {
+    "message": "抓住",
+    "description": "[aws:2019-09-23 03:04:10] Capture"
+  },
+  "_ChromepreventsextensionsfromsavingfilesoutsideofthedefaultdownloadsdirectoryThepathyouenteredhasbeenupdatedaccordinglySorry": {
+    "message": "Chrome 防止擴充功能將檔案儲存在預設下載目錄之外。 您輸入的路徑已相應地更新。 對不起！",
+    "description": "[aws:2019-09-23 03:04:11] Chrome prevents extensions from saving files outside of the default downloads directory. The path you entered has been updated accordingly. Sorry!"
+  },
+  "_Clickdraginlayerspane": {
+    "message": "在圖層窗格中按一下 + 拖曳",
+    "description": "[aws:2019-09-23 03:04:12] Click + drag in layers pane"
+  },
+  "_Color": {
+    "message": "顏色",
+    "description": "[aws:2019-09-23 03:04:13] Color"
+  },
+  "_ConfigureyoursettingsfortheFullPageScreenCaptureextensionStaytunedforfurtherupdatesBetasettingsmaychangeinthefuture": {
+    "message": "設定 “全頁螢幕擷取” 延伸模組的設定。 請密切留意進一步的最新消息。 測試版設定將來可能會變更。",
+    "description": "[aws:2019-09-23 03:04:14] Configure your settings for the Full Page Screen Capture extension. Stay tuned for further updates. Beta settings may change in the future."
+  },
+  "_Continueediting": {
+    "message": "繼續編輯",
+    "description": "[aws:2019-09-23 03:04:14] Continue editing"
+  },
+  "_Cropeditannotateandexport": {
+    "message": "裁切、編輯、註解和匯出",
+    "description": "[aws:2019-09-23 03:04:15] Crop, edit, annotate, and export"
+  },
+  "_CropImage": {
+    "message": "裁切影像",
+    "description": "[aws:2019-09-23 03:04:16] Crop Image"
+  },
+  "_Delete": {
+    "message": "刪除",
+    "description": "[aws:2019-09-23 03:04:16] Delete"
+  },
+  "_Deletecurrentselection": {
+    "message": "刪除目前的選取範圍",
+    "description": "[aws:2019-09-23 03:04:17] Delete current selection"
+  },
+  "_Directory": {
+    "message": "目錄：",
+    "description": "[aws:2019-09-23 03:04:18] Directory:"
+  },
+  "_Document": {
+    "message": "文件",
+    "description": "[aws:2019-09-23 03:04:18] Document"
+  },
+  "_Documentedits": {
+    "message": "文件編輯",
+    "description": "[aws:2019-09-23 03:04:19] Document edits"
+  },
+  "_DoneCropping": {
+    "message": "完成裁切",
+    "description": "[aws:2019-09-23 03:04:20] Done Cropping"
+  },
+  "_Download": {
+    "message": "下載",
+    "description": "[aws:2019-09-23 03:04:20] Download"
+  },
+  "_DownloadExport": {
+    "message": "下載與匯出",
+    "description": "[aws:2019-09-23 03:04:21] Download & Export"
+  },
+  "_Downloadpermissionisrequired": {
+    "message": "需要下載權限",
+    "description": "[aws:2019-09-23 03:04:22] Download permission is required"
+  },
+  "_Downloadpermissionnotgranted": {
+    "message": "未授予下載權限",
+    "description": "[aws:2019-09-23 03:04:22] Download permission not granted"
+  },
+  "_Downloadspermission": {
+    "message": "下載權限",
+    "description": "[aws:2019-09-23 03:04:23] Downloads permission"
+  },
+  "_Draglayercontrolpoints": {
+    "message": "拖曳圖層控制點",
+    "description": "[aws:2019-09-23 03:04:24] Drag layer control points"
+  },
+  "_Duplicateselection": {
+    "message": "複製選取範圍",
+    "description": "[aws:2019-09-23 03:04:24] Duplicate selection"
+  },
+  "_Edited": {
+    "message": "編輯",
+    "description": "[aws:2019-09-23 03:04:25] Edited"
+  },
+  "_Elements": {
+    "message": "元素",
+    "description": "[aws:2019-09-23 03:04:26] Elements"
+  },
+  "_Emoji": {
+    "message": "表情符號",
+    "description": "[aws:2019-09-23 03:04:26] Emoji"
+  },
+  "_Enabled": {
+    "message": "啟用",
+    "description": "[aws:2019-09-23 03:04:27] Enabled"
+  },
+  "_Entertexthere": {
+    "message": "在此輸入文字",
+    "description": "[aws:2019-09-23 03:04:28] Enter text here"
+  },
+  "_Error": {
+    "message": "錯誤",
+    "description": "[aws:2019-09-23 03:04:28] Error"
+  },
+  "_Errordownloadingfile": {
+    "message": "下載檔案時發生錯誤",
+    "description": "[aws:2019-09-23 03:04:29] Error downloading file"
+  },
+  "_Errordownloadingfiles": {
+    "message": "下載檔案時發生錯誤",
+    "description": "[aws:2019-09-23 03:04:29] Error downloading files"
+  },
+  "_ErrorhandlingfilesPleasereportthisviatheflagreportingbuttonabove": {
+    "message": "處理檔案時發生錯誤。 請透過上面的旗幟報告按鈕報告。",
+    "description": "[aws:2019-09-23 03:04:30] Error handling files. Please report this via the flag reporting button above."
+  },
+  "_Errorloadinghistory": {
+    "message": "載入歷程記錄時發生錯誤",
+    "description": "[aws:2019-09-23 03:04:31] Error loading history"
+  },
+  "_Errorloadingimage": {
+    "message": "載入影像時發生錯誤",
+    "description": "[aws:2019-09-23 03:04:32] Error loading image"
+  },
+  "_Erroropeningscreenshot": {
+    "message": "開啟螢幕擷取畫面時發生錯誤",
+    "description": "[aws:2019-09-23 03:04:32] Error opening screenshot"
+  },
+  "_Errorremovingscreenshot": {
+    "message": "移除螢幕擷取畫面時發生錯誤",
+    "description": "[aws:2019-09-23 03:04:33] Error removing screenshot"
+  },
+  "_Exitzoom": {
+    "message": "結束縮放",
+    "description": "[aws:2019-09-23 03:04:34] Exit zoom"
+  },
+  "_Export": {
+    "message": "出口",
+    "description": "[aws:2019-09-23 03:04:34] Export"
+  },
+  "_Filenolongerexistsperhapsithasbeenclearedfromyourbrowser": {
+    "message": "檔案已不存在，可能已從瀏覽器中清除",
+    "description": "[aws:2019-09-23 03:04:35] File no longer exists—perhaps it has been cleared from your browser"
+  },
+  "_Fill": {
+    "message": "填滿",
+    "description": "[aws:2019-09-23 03:04:36] Fill"
+  },
+  "_Font": {
+    "message": "字型",
+    "description": "[aws:2019-09-23 03:04:36] Font"
+  },
+  "_fullimage": {
+    "message": "完整影像",
+    "description": "[aws:2019-09-23 03:04:37] full image"
+  },
+  "_Getstarted": {
+    "message": "開始使用",
+    "description": "[aws:2019-09-23 03:04:38] Get started"
+  },
+  "_Gotit": {
+    "message": "明白了！",
+    "description": "[aws:2019-09-23 03:04:38] Got it!"
+  },
+  "_Gotoyouraccount": {
+    "message": "前往您的帳戶",
+    "description": "[aws:2019-09-23 03:04:39] Go to your account"
+  },
+  "_Help": {
+    "message": "救命啊",
+    "description": "[aws:2019-09-23 03:04:40] Help"
+  },
+  "_HelpShortcuts": {
+    "message": "說明/捷徑",
+    "description": "[aws:2019-09-23 03:04:40] Help / Shortcuts"
+  },
+  "_History": {
+    "message": "歷史",
+    "description": "[aws:2019-09-23 03:04:41] History"
+  },
+  "_Hooray": {
+    "message": "好萊",
+    "description": "[aws:2019-09-23 03:04:42] Hooray"
+  },
+  "_Icon": {
+    "message": "圖示",
+    "description": "[aws:2019-09-23 03:04:42] Icon"
+  },
+  "_iFramepermission": {
+    "message": "iFrame 權限",
+    "description": "[aws:2019-09-23 03:04:43] iFrame permission"
+  },
+  "_Ifthispersistspleasereportitviatheflagreportingbuttonabove": {
+    "message": "如果仍然存在，請透過上面的旗幟報告按鈕來報告。",
+    "description": "[aws:2019-09-23 03:04:44] If this persists, please report it via the flag reporting button above."
+  },
+  "_IfyoudliketotrythisfeatureinthefutureclickontheEditbuttonuptop": {
+    "message": "如果您想在未來嘗試此功能，請點擊頂部的 “編輯” 按鈕。",
+    "description": "[aws:2019-09-23 03:04:45] If you’d like to try this feature in the future, click on the “Edit” button up top."
+  },
+  "_Imagedeleted": {
+    "message": "影像已刪除",
+    "description": "[aws:2019-09-23 03:04:45] Image deleted"
+  },
+  "_Imageformat": {
+    "message": "影像格式：",
+    "description": "[aws:2019-09-23 03:04:46] Image format:"
+  },
+  "_Insertshapes": {
+    "message": "插入形狀",
+    "description": "[aws:2019-09-23 03:04:47] Insert shapes"
+  },
+  "_Italic": {
+    "message": "斜體",
+    "description": "[aws:2019-09-23 03:04:47] Italic"
+  },
+  "_Layers": {
+    "message": "圖層",
+    "description": "[aws:2019-09-23 03:04:48] Layers"
+  },
+  "_Learnmore": {
+    "message": "進一步瞭解",
+    "description": "[aws:2019-09-23 03:04:49] Learn more"
+  },
+  "_Line": {
+    "message": "線",
+    "description": "[aws:2019-09-23 03:04:49] Line"
+  },
+  "_loading": {
+    "message": "載入...",
+    "description": "[aws:2019-09-23 03:04:50] loading…"
+  },
+  "_LogintoExport": {
+    "message": "登入以匯出",
+    "description": "[aws:2019-09-23 03:04:51] Login to Export"
+  },
+  "_Lookforanelementwithinthepagewithitsownscrollbarsandscrollthatitemduringthecapture": {
+    "message": "尋找具有自己捲軸的頁面內的元素，並在擷取期間捲動該項目。",
+    "description": "[aws:2019-09-23 03:04:51] Look for an element within the page with its own scroll bars and scroll that item during the capture."
+  },
+  "_MightyouconsidertakingaminutetorateitintheWebstore": {
+    "message": "你能考慮花一分鐘在網上商店評分嗎？",
+    "description": "[aws:2019-09-23 03:04:52] Might you consider taking a minute to rate it in the Webstore?"
+  },
+  "_More": {
+    "message": "更多",
+    "description": "[aws:2019-09-23 03:04:53] More"
+  },
+  "_Mouseorarrowkeys": {
+    "message": "滑鼠或方向鍵",
+    "description": "[aws:2019-09-23 03:04:54] Mouse or arrow keys"
+  },
+  "_Mouseorlayerspane": {
+    "message": "滑鼠或圖層窗格",
+    "description": "[aws:2019-09-23 03:04:55] Mouse or layers pane"
+  },
+  "_Movelayer": {
+    "message": "移動圖層",
+    "description": "[aws:2019-09-23 03:04:55] Move layer"
+  },
+  "_None": {
+    "message": "沒有",
+    "description": "[aws:2019-09-23 03:04:56] None"
+  },
+  "_NoscreencapturesfoundGomakesome": {
+    "message": "找不到螢幕擷取畫面。 去做一些！",
+    "description": "[aws:2019-09-23 03:04:57] No screen captures found. Go make some!"
+  },
+  "_Nothanks": {
+    "message": "不用了謝謝",
+    "description": "[aws:2019-09-23 03:04:57] No, thanks."
+  },
+  "_Nothankscontinueediting": {
+    "message": "不，謝謝繼續編輯",
+    "description": "[aws:2019-09-23 03:04:58] No thanks continue editing"
+  },
+  "_Notreally": {
+    "message": "不太清楚",
+    "description": "[aws:2019-09-23 03:04:59] Not really"
+  },
+  "_numfilescouldnotberemoved": {
+    "message": "無法移除 $num$ 檔案。",
+    "description": "[aws:2019-09-23 03:05:00] $num$ files could not be removed.",
+    "placeholders": {
+      "num": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "_numfilesweresuccessfullyremoved": {
+    "message": "$num$ 檔案已成功移除。",
+    "description": "[aws:2019-09-23 03:05:00] $num$ files were successfully removed.",
+    "placeholders": {
+      "num": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "_On": {
+    "message": "上",
+    "description": "[aws:2019-09-23 03:05:01] On"
+  },
+  "_OnMacChromethereareissueswithsaveasforautodownloadandwhendownloadingmultiplefilessoitisdisabledinthosescenarios": {
+    "message": "在 Mac Chrome 上，自動下載和下載多個文件時出現 “另存為” 問題，因此在這些情況下它被禁用。",
+    "description": "[aws:2019-09-23 03:05:02] On Mac Chrome there are issues with \"save as\" for auto-download and when downloading multiple files, so it is disabled in those scenarios."
+  },
+  "_Options": {
+    "message": "選項",
+    "description": "[aws:2019-09-23 03:05:03] Options"
+  },
+  "_or": {
+    "message": "或者",
+    "description": "[aws:2019-09-23 03:05:03] or"
+  },
+  "_Orderlayer": {
+    "message": "訂購層",
+    "description": "[aws:2019-09-23 03:05:04] Order layer"
+  },
+  "_Outline": {
+    "message": "輪廓",
+    "description": "[aws:2019-09-23 03:05:05] Outline"
+  },
+  "_Oval": {
+    "message": "橢圓形",
+    "description": "[aws:2019-09-23 03:05:05] Oval"
+  },
+  "_Pad": {
+    "message": "墊子",
+    "description": "[aws:2019-09-23 03:05:06] Pad"
+  },
+  "_Padding": {
+    "message": "填充",
+    "description": "[aws:2019-09-23 03:05:07] Padding"
+  },
+  "_PaddingBorder": {
+    "message": "填充/邊界",
+    "description": "[aws:2019-09-23 03:05:07] Padding / Border"
+  },
+  "_PDFsize": {
+    "message": "PDF 大小：",
+    "description": "[aws:2019-09-23 03:05:08] PDF size:"
+  },
+  "_Permissionneededtodownloadfiles": {
+    "message": "下載檔案所需的權限",
+    "description": "[aws:2019-09-23 03:05:09] Permission needed to download files"
+  },
+  "_Permissions": {
+    "message": "權限",
+    "description": "[aws:2019-09-23 03:05:09] Permissions"
+  },
+  "_PNGislosslessandshouldmatchexactlywhatisseenonthescreenbutwillusuallyhavelargerfilesizesthanJPGwhichusescompression": {
+    "message": "PNG 是無損的，應與螢幕上看到的完全相符，但檔案大小通常會比使用壓縮的 JPG 大。",
+    "description": "[aws:2019-09-23 03:05:10] PNG is lossless and should match exactly what is seen on the screen, but will usually have larger file sizes than JPG, which uses compression."
+  },
+  "_Position": {
+    "message": "位置",
+    "description": "[aws:2019-09-23 03:05:11] Position"
+  },
+  "_Radius": {
+    "message": "半徑",
+    "description": "[aws:2019-09-23 03:05:12] Radius"
+  },
+  "_Rectangle": {
+    "message": "矩形",
+    "description": "[aws:2019-09-23 03:05:12] Rectangle"
+  },
+  "_Redo": {
+    "message": "重做",
+    "description": "[aws:2019-09-23 03:05:13] Redo"
+  },
+  "_Removefiles": {
+    "message": "移除檔案",
+    "description": "[aws:2019-09-23 03:05:14] Remove files"
+  },
+  "_Reportissue": {
+    "message": "報告問題。",
+    "description": "[aws:2019-09-23 03:05:14] Report issue."
+  },
+  "_Resizelayer": {
+    "message": "重新調整圖層大小",
+    "description": "[aws:2019-09-23 03:05:15] Resize layer"
+  },
+  "_restorefactorydefaults": {
+    "message": "還原出廠預設值",
+    "description": "[aws:2019-09-23 03:05:16] restore factory defaults"
+  },
+  "_Roundedcorners": {
+    "message": "圓角",
+    "description": "[aws:2019-09-23 03:05:16] Rounded corners"
+  },
+  "_Saveas": {
+    "message": "另存為",
+    "description": "[aws:2019-09-23 03:05:17] Save as"
+  },
+  "_Saved": {
+    "message": "救了",
+    "description": "[aws:2019-09-23 03:05:18] Saved"
+  },
+  "_SavethispermissionifacceptedforfuturecapturesItcanstillberevokedlaterfromtheoptionspage": {
+    "message": "儲存此權限 (如果接受) 以供日後擷取。 它仍然可以在稍後從選項頁面撤銷。",
+    "description": "[aws:2019-09-23 03:05:19] Save this permission (if accepted) for future captures. It can still be revoked later from the options page."
+  },
+  "_search": {
+    "message": "搜尋...",
+    "description": "[aws:2019-09-23 03:05:19] search…"
+  },
+  "_Select1ormorescreenshotstousethisaction": {
+    "message": "選取一個或多個螢幕擷取畫面以使用此動作。",
+    "description": "[aws:2019-09-23 03:05:20] Select 1 or more screenshots to use this action."
+  },
+  "_Selected": {
+    "message": "已選取",
+    "description": "[aws:2019-09-23 03:05:21] Selected"
+  },
+  "_Selectlayer": {
+    "message": "選取圖層",
+    "description": "[aws:2019-09-23 03:05:22] Select layer"
+  },
+  "_Setthemedefaults": {
+    "message": "設定主題預設值",
+    "description": "[aws:2019-09-23 03:05:23] Set theme defaults"
+  },
+  "_Shapes": {
+    "message": "形狀",
+    "description": "[aws:2019-09-23 03:05:23] Shapes"
+  },
+  "_Signupforafree7daytrialtounlocktheeditoranddownloadyourmasterpiece": {
+    "message": "註冊一個免費的 7 天試用解鎖編輯器並下載你的傑作。",
+    "description": "[aws:2019-09-23 03:05:24] Sign up for a free 7-day trial to unlock the editor and download your masterpiece."
+  },
+  "_SignuptoExport": {
+    "message": "註冊以匯出",
+    "description": "[aws:2019-09-23 03:05:25] Sign up to Export"
+  },
+  "_Size": {
+    "message": "尺寸",
+    "description": "[aws:2019-09-23 03:05:26] Size"
+  },
+  "_Somethingwentwrongdeletingyourscreenshot": {
+    "message": "刪除螢幕擷取畫面時發生錯誤。",
+    "description": "[aws:2019-09-23 03:05:26] Something went wrong deleting your screenshot."
+  },
+  "_Somethingwentwrongopeningthisscreenshotintoanew": {
+    "message": "將這個截圖打開成一個新的截圖出現了問題。",
+    "description": "[aws:2019-09-23 03:05:27] Something went wrong opening this screenshot into a new."
+  },
+  "_SometimeselementslikeabacktotopbuttonorastickyfooterwillrepeatonthepageThistriestopositionthemabsolutelytostopthemfromrepeatinginascreeshot": {
+    "message": "有時元素，例如 “返回頂部” 按鈕或粘性頁腳會在頁面上重複。 這試圖絕對定位他們，以阻止他們在尖叫的中重複。",
+    "description": "[aws:2019-09-23 03:05:28] Sometimes elements, like a “back to top” button or a sticky footer will repeat on the page. This tries to position them absolutely to stop them from repeating in a screeshot."
+  },
+  "_Sorry": {
+    "message": "對不起，對不起",
+    "description": "[aws:2019-09-23 03:05:29] Sorry"
+  },
+  "_SpecifyadirectoryunderneathyourdownloadsdirectorytosaveyourscreenshotssuchasscreencapturesDefaultstothedownloadsdirectoryifblankPleaselimitittolettersnumbersdashesunderscoresandslashesinvalidcharacterswillautomaticallyberemoved": {
+    "message": "在下載目錄下指定一個目錄以儲存螢幕擷取畫面，例如 “封裝”。 如果空白，則預設為下載目錄。 (請限制為字母、數字、破折號、底線和斜線，無效的字元會自動移除)。",
+    "description": "[aws:2019-09-23 03:05:30] Specify a directory underneath your downloads directory to save your screenshots, such as “screencaptures”. Defaults to the downloads directory if blank. (Please limit it to letters, numbers, dashes, underscores, and slashes—invalid characters will automatically be removed)."
+  },
+  "_SpecifytheformatsizeofPDFsforwhenexportingtoPDF": {
+    "message": "指定轉存為 PDF 時 PDF 的格式大小。",
+    "description": "[aws:2019-09-23 03:05:30] Specify the format size of PDFs for when exporting to PDF."
+  },
+  "_Startyourfreetrial": {
+    "message": "開始免費試用",
+    "description": "[aws:2019-09-23 03:05:31] Start your free trial"
+  },
+  "_Stickers": {
+    "message": "貼紙",
+    "description": "[aws:2019-09-23 03:05:32] Stickers"
+  },
+  "_Stillloading": {
+    "message": "仍在載入",
+    "description": "[aws:2019-09-23 03:05:32] Still loading"
+  },
+  "_TakemetotheWebstore": {
+    "message": "帶我去網上商店！",
+    "description": "[aws:2019-09-23 03:05:33] Take me to the Webstore!"
+  },
+  "_Text": {
+    "message": "文本",
+    "description": "[aws:2019-09-23 03:05:34] Text"
+  },
+  "_ThankyouforsupportingFullPageScreenCapture": {
+    "message": "感謝您支持全頁螢幕擷取",
+    "description": "[aws:2019-09-23 03:05:34] Thank you for supporting Full Page Screen Capture"
+  },
+  "_Thebestandsafestwaytocaptureascreenshotofanentirewebpage": {
+    "message": "擷取整個網頁螢幕擷取畫面的最佳和最安全的方式。",
+    "description": "[aws:2019-09-23 03:05:35] The best and safest way to capture a screenshot of an entire web page."
+  },
+  "_ThedownloadpermissionisrequiredtoenablethedownloadasPDFfeature": {
+    "message": "需要下載權限才能啟用下載為 PDF 功能。",
+    "description": "[aws:2019-09-23 03:05:36] The download permission is required to enable the download as PDF feature."
+  },
+  "_Thefollowingfilescouldnotbedownloaded": {
+    "message": "下列檔案無法下載：",
+    "description": "[aws:2019-09-23 03:05:36] The following files could not be downloaded:"
+  },
+  "_ThemeDefaults": {
+    "message": "主題圖預設值",
+    "description": "[aws:2019-09-23 03:05:37] Theme Defaults"
+  },
+  "_Therewasanerrordownloadingfilespleasereportitviatheflagbuttonabove": {
+    "message": "下載檔案時發生錯誤，請透過上方的旗標按鈕回報。",
+    "description": "[aws:2019-09-23 03:05:38] There was an error downloading files, please report it via the flag button above."
+  },
+  "_ThesesettingswillapplytoallfutureeditsofscreenshotsChangesareautosaved": {
+    "message": "這些設定將套用至未來對螢幕擷取畫面的所有編輯。 變更會自動儲存。",
+    "description": "[aws:2019-09-23 03:05:39] These settings will apply to all future edits of screenshots. Changes are autosaved."
+  },
+  "_Thespecifiedimagecouldnotbefound": {
+    "message": "找不到指定的影像。",
+    "description": "[aws:2019-09-23 03:05:39] The specified image could not be found."
+  },
+  "_ThisextensiontakesalotofworktomaintainItsreallymeaningfultohearthatyoufindituseful": {
+    "message": "這個擴展需要大量的工作來維護。 聽到你覺得它有用真的很有意義！",
+    "description": "[aws:2019-09-23 03:05:40] This extension takes a lot of work to maintain. It’s really meaningful to hear that you find it useful!"
+  },
+  "_ThisistakinglongertoloadthanexpectedHangtightIfnothingupdatesafterawhilepleasereportthisviathereportingflagbuttonabove": {
+    "message": "這需要比預期更長的時間來載入。 掛緊！ 如果一段時間後沒有更新，請透過上方的報告旗標按鈕回報。",
+    "description": "[aws:2019-09-23 03:05:41] This is taking longer to load than expected. Hang tight! If nothing updates after a while, please report this via the reporting flag button above."
+  },
+  "_ThispermissionallowsgreatercontroloverhowdownloadsworkwithintheextensionYourpreferencehasbeensavedandthisdownloadbuttonwillnowfallbacktodefaultbrowseronclickdownloadsHoweveryoustillbepromptedforitinordertouseanyoftheadvancedfeaturesontheHistoryorOptionspagessincetheyneedthispermissionstowork": {
+    "message": "此權限允許更好地控制下載在擴充功能內的運作方式。 您的偏好設定已儲存，而且此下載按鈕現在會回復到預設瀏覽器上按一下下載。 不過，系統仍會提示您使用 “歷史記錄” 或 “選項” 頁面上的任何進階功能，因為他們需要此權限才能運作。",
+    "description": "[aws:2019-09-23 03:05:42] This permission allows greater control over how downloads work within the extension. Your preference has been saved, and this download button will now fallback to default browser on-click downloads. However, you still be prompted for it in order to use any of the advanced features on the History or Options pages, since they need this permissions to work."
+  },
+  "_Thispermissionisrequiredforthedownloadbuttonsandtheautodownloadfeature": {
+    "message": "下載按鈕和自動下載功能需要此權限。",
+    "description": "[aws:2019-09-23 03:05:43] This permission is required for the download buttons and the auto-download feature."
+  },
+  "_Thisscreenshotbeensuccessfullyremoved": {
+    "message": "此螢幕擷取畫面已成功移除。",
+    "description": "[aws:2019-09-23 03:05:44] This screenshot been successfully removed."
+  },
+  "_Togglecrop": {
+    "message": "切換裁切",
+    "description": "[aws:2019-09-23 03:05:45] Toggle crop"
+  },
+  "_Togglepaddingborder": {
+    "message": "切換填充/邊框",
+    "description": "[aws:2019-09-23 03:05:46] Toggle padding / border"
+  },
+  "_ToggleURLbrowser": {
+    "message": "切換網址/瀏覽器",
+    "description": "[aws:2019-09-23 03:05:46] Toggle URL / browser"
+  },
+  "_Type": {
+    "message": "類型",
+    "description": "[aws:2019-09-23 03:05:47] Type"
+  },
+  "_Unabletofindimage": {
+    "message": "找不到影像",
+    "description": "[aws:2019-09-23 03:05:48] Unable to find image"
+  },
+  "_Unabletoloadimage": {
+    "message": "無法載入影像",
+    "description": "[aws:2019-09-23 03:05:49] Unable to load image"
+  },
+  "_Undo": {
+    "message": "復原",
+    "description": "[aws:2019-09-23 03:05:49] Undo"
+  },
+  "_upontrialcompletion": {
+    "message": "試用完成後",
+    "description": "[aws:2019-09-23 03:05:50] upon trial completion"
+  },
+  "_URLBrowser": {
+    "message": "網址/瀏覽器",
+    "description": "[aws:2019-09-23 03:05:51] URL / Browser"
+  },
+  "_URLonbottom": {
+    "message": "底部的網址",
+    "description": "[aws:2019-09-23 03:05:51] URL on bottom"
+  },
+  "_URLontop": {
+    "message": "頂端的網址",
+    "description": "[aws:2019-09-23 03:05:52] URL on top"
+  },
+  "_version": {
+    "message": "版本",
+    "description": "[aws:2019-09-23 03:05:53] version"
+  },
+  "_watchademovideo": {
+    "message": "觀看示範影片",
+    "description": "[aws:2019-09-23 03:05:54] watch a demo video"
+  },
+  "_WatchDemo": {
+    "message": "觀看展示",
+    "description": "[aws:2019-09-23 03:05:55] Watch Demo"
+  },
+  "_WelcometotheFullPageEditor": {
+    "message": "歡迎使用全頁編輯器！",
+    "description": "[aws:2019-09-23 03:05:55] Welcome to the Full Page Editor!"
+  },
+  "_WelcometotheofficialFullPageEditor": {
+    "message": "歡迎來到官方全頁編輯器！",
+    "description": "[aws:2019-09-23 03:05:56] Welcome to the official Full Page Editor!"
+  },
+  "_Wereexcitedtohaveyouaboard": {
+    "message": "我們很高興你能登機",
+    "description": "[aws:2019-09-23 03:05:57] We’re excited to have you aboard."
+  },
+  "_Width": {
+    "message": "寬度",
+    "description": "[aws:2019-09-23 03:05:57] Width"
+  },
+  "_Wouldyouliketoreportanyissuesyoureexperiencingsowecanimprovethisextensiontogether": {
+    "message": "您想要回報您遇到的任何問題，以便我們一起改善這個擴充套件嗎？",
+    "description": "[aws:2019-09-23 03:05:58] Would you like to report any issues you’re experiencing, so we can improve this extension together?"
+  },
+  "_Yes": {
+    "message": "是啊！",
+    "description": "[aws:2019-09-23 03:05:59] Yes!"
+  },
+  "_Youneedtograntthedownloadprivilegeinordertodownloadfiles": {
+    "message": "您需要授與下載權限才能下載檔案",
+    "description": "[aws:2019-09-23 03:06:00] You need to grant the download privilege in order to download files"
+  },
+  "_Zoom": {
+    "message": "縮放",
+    "description": "[aws:2019-09-23 03:06:00] Zoom"
+  },
+  "_Zoomin": {
+    "message": "放大",
+    "description": "[aws:2019-09-23 03:06:01] Zoom in"
+  },
+  "_Zoomout": {
+    "message": "縮小",
+    "description": "[aws:2019-09-23 03:06:02] Zoom out"
+  },
+  "actionClose": {
+    "message": "關",
+    "description": "[aws:2019-09-23 03:06:02] Close"
+  },
+  "actionDeleteImage": {
+    "message": "刪除影像",
+    "description": "[aws:2019-09-23 03:06:03] Delete image"
+  },
+  "actionDownloadImage": {
+    "message": "下載影像",
+    "description": "[aws:2019-09-23 03:06:04] Download image"
+  },
+  "actionDownloadPDF": {
+    "message": "下載 PDF",
+    "description": "[aws:2019-09-23 03:06:05] Download PDF"
+  },
+  "actionEdit": {
+    "message": "編輯",
+    "description": "[aws:2019-09-23 03:06:05] Edit"
+  },
+  "actionOK": {
+    "message": "好",
+    "description": "[aws:2019-09-23 03:06:06] OK"
+  },
+  "actionReport": {
+    "message": "報告問題",
+    "description": "[aws:2019-09-23 03:06:07] Report issue"
+  },
+  "goPremiumHeader": {
+    "message": "使用全頁高級功能將您的螢幕擷取畫面提升到一個新的境界",
+    "description": "[aws:2019-09-23 03:06:08] Take your screenshots to the next level with Full Page Premium"
+  },
+  "goPremiumLink": {
+    "message": "進一步瞭解",
+    "description": "[aws:2019-09-23 03:06:08] Learn more"
+  },
+  "goPremiumSignInLink": {
+    "message": "登入",
+    "description": "[aws:2019-09-23 03:06:09] Sign in"
+  },
+  "goPremiumSignInMessage": {
+    "message": "已經有帳戶？",
+    "description": "[aws:2019-09-23 03:06:10] Already have an account?"
+  },
+  "goPremiumSubHeader": {
+    "message": "直接在擴充套件中使用先進的編輯和註釋功能，加快您的工作流程！",
+    "description": "[aws:2019-09-23 03:06:11] Speed up your workflow with advanced editing and annotation features directly in the extension!"
+  },
+  "navHistory": {
+    "message": "歷史",
+    "description": "[aws:2019-09-23 03:06:11] History"
+  },
+  "navOptions": {
+    "message": "選項",
+    "description": "[aws:2019-09-23 03:06:12] Options"
+  },
+  "tryEditingNo": {
+    "message": "不用了，謝謝",
+    "description": "[aws:2019-09-23 03:06:13] No thanks"
+  },
+  "tryEditingRequest": {
+    "message": "嘗試編輯和註釋您的螢幕擷取畫面",
+    "description": "[aws:2019-09-23 03:06:13] Try editing and annotating your screenshot"
+  },
+  "tryEditingYes": {
+    "message": "好吧！",
+    "description": "[aws:2019-09-23 03:06:14] Ok!"
+  },
+  "_AutodownloadisenabledYoucanchangethisinahrefdatahrefoptionshtmltargetblankrelnoopenernoreferreroptionsa": {
+    "message": "已啟用自動下載。 您可以在 <a href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">選項中更改此選項</a>。",
+    "description": "[aws:2019-09-23 19:22:59] Auto-download is enabled. You can change this in <a href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">options</a>."
+  },
+  "_Cancel": {
+    "message": "取消",
+    "description": "[aws:2019-09-23 19:23:00] Cancel"
+  },
+  "_CannotautodownloadyouneedtoreapprovetheDownloadspermissioninahrefdatahrefoptionshtmltargetblankrelnoopenernoreferreroptionsa": {
+    "message": "無法自動下載，您需要在 <a href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">選</a>項中重新核准 [下載] 權限。",
+    "description": "[aws:2019-09-23 19:23:01] Cannot auto-download, you need to reapprove the Downloads permission in <a href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">options</a>."
+  },
+  "_ChromedoesnotallowaccesstosomeURLsforsecurityreasonsThisincludesthewebstoregalleryotherchromeextensionsandchromeURLsThecurrentpageappearstobearestrictedURL": {
+    "message": "基於安全考量，Chrome 不允許訪問某些 URL。 這包括網路商店庫、其他 Chrome 擴充功能和 chrome: // URL。 目前頁面似乎是受限制的 URL。",
+    "description": "[aws:2019-09-23 19:23:02] Chrome does not allow access to some URLs for security reasons. This includes the webstore gallery, other chrome extensions, and chrome:// URLs. The current page appears to be a restricted URL."
+  },
+  "_close": {
+    "message": "接近",
+    "description": "[aws:2019-09-23 19:23:02] close"
+  },
+  "_details": {
+    "message": "詳細資料...",
+    "description": "[aws:2019-09-23 19:23:04] details…"
+  },
+  "_Extensionsettings": {
+    "message": "延伸設定",
+    "description": "[aws:2019-09-23 19:23:04] Extension settings"
+  },
+  "_Extrapermissionsarerequiredtoaccesstheunderlyingpage": {
+    "message": "需要額外的權限才能訪問基礎頁面。",
+    "description": "[aws:2019-09-23 19:23:05] Extra permissions are required to access the underlying page."
+  },
+  "_Extrapermissionsrequired": {
+    "message": "需要額外權限",
+    "description": "[aws:2019-09-23 19:23:06] Extra permissions required"
+  },
+  "_Fileaccessneeded": {
+    "message": "需要存取檔案",
+    "description": "[aws:2019-09-23 19:23:06] File access needed"
+  },
+  "_Foradditionalquestionsaidinvalidlinkdatahrefhttpsscreencapturemrcolescomhrefhttpsscreencapturemrcolescomtargetblankrelnoopenernoreferrercontactusa": {
+    "message": "如有其他問題， <a id=\"invalid-link\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">請與我們聯絡</a>。",
+    "description": "[aws:2019-09-23 19:23:07] For additional questions, <a id=\"invalid-link\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">contact us</a>."
+  },
+  "_Loadpermissionsdialog": {
+    "message": "載入權限對話框？",
+    "description": "[aws:2019-09-23 19:23:08] Load permissions dialog?"
+  },
+  "_NotethispageistoolargefortheChromebrowsertocaptureasoneimageItwillbesplitintospanidscreenshotcountmultiplespanimages": {
+    "message": "注意：此頁面太大，Chrome 瀏覽器無法擷取為單一影像。 它將被分成 <span id=\"screenshot-count\">多個</span> 圖像。",
+    "description": "[aws:2019-09-23 19:23:09] Note: this page is too large for the Chrome browser to capture as one image. It will be split into <span id=\"screenshot-count\">multiple</span> images."
+  },
+  "_OK": {
+    "message": "好",
+    "description": "[aws:2019-09-23 19:23:09] OK"
+  },
+  "_PleasegotoyourChromeextensionsettingsandenablestrongx201CAllowaccesstofileURLsx201Dstrongsotheextensioncanaccessthispagebrbr": {
+    "message": "請前往您的 Chrome 擴充功能設定並啟用 <strong>“允許存取檔案 URL”</strong>，以便擴充功能可以存取此頁面。 <br><br>",
+    "description": "[aws:2019-09-23 19:23:10] Please go to your Chrome extension settings and enable <strong>&#x201C;Allow access to file URLs&#x201D;</strong>, so the extension can access this page. <br><br>"
+  },
+  "_Screencaptureinprogress": {
+    "message": "螢幕擷取正在進行中...",
+    "description": "[aws:2019-09-23 19:23:11] Screen capture in progress…"
+  },
+  "_SomethingwentwrongTryrefreshingthepageandrunningthisagainbrbrIfthispersistspleaseaidreportlinkclassnowrapdatahrefhttpsscreencapturemrcolescomhrefhttpsscreencapturemrcolescomtargetblankrelnoopenernoreferrercontactusa": {
+    "message": "出了什麼問題。 嘗試刷新頁面並再次運行。 <br><br>如果仍然存在，請 <a id=\"report-link\" class=\"nowrap\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">與我們聯繫</a>。",
+    "description": "[aws:2019-09-23 19:23:12] Something went wrong. Try refreshing the page and running this again. <br><br> If this persists, please <a id=\"report-link\" class=\"nowrap\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">contact us</a>."
+  },
+  "_ThissiteappearstohaveembeddedcontentwithinanaatargetblankrelnoopenernoreferrerhrefhttpsdevelopermozillaorgenUSdocsWebHTMLElementframesetframeseta": {
+    "message": "這個網站似乎有內嵌的內容在 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset\">框架組</a>中。",
+    "description": "[aws:2019-09-23 19:23:13] This site appears to have embedded content within an a <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset\">frameset</a>."
+  },
+  "_ThissiteappearstohaveembeddedcontentwithinanatargetblankrelnoopenernoreferrerhrefhttpsdevelopermozillaorgenUSdocsWebHTMLElementiframeiframea": {
+    "message": "這個網站似乎嵌入了 <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe\">iframe</a>中的內容。",
+    "description": "[aws:2019-09-23 19:23:13] This site appears to have embedded content within an <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe\">iframe</a>."
+  },
+  "_ThistestversionhasexpiredPleasereachouttogetanupdateorswitchovertotheproperextensionintheahrefhttpschromegooglecomwebstoredetailfullpagescreencapturefdpohaocaechififmbbbbbknoalclaclhlenUStargetblankrelnoopenernoreferrerChromeWebStorea": {
+    "message": "此測試版本已過期。 請聯絡以取得更新，或在 <a href=\"https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en-US\" target=\"_blank\" rel=\"noopener noreferrer\"> Chrome 網路商店</a>中切換至適當的擴充套件。",
+    "description": "[aws:2019-09-23 19:23:14] This test version has expired. Please reach out to get an update or switch over to the proper extension in the <a href=\"https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en-US\" target=\"_blank\" rel=\"noopener noreferrer\"> Chrome Web Store</a>."
+  },
+  "_WarningtheextensionisnotdesignedtohandleextremelylargecapturesItmightfailtocompleteacaptureofthispage": {
+    "message": "警告：擴展不是為了處理極大的捕獲而設計的。 它可能無法完成此頁面的擷取。",
+    "description": "[aws:2019-09-23 19:23:16] Warning: the extension is not designed to handle extremely large captures. It might fail to complete a capture of this page."
+  },
+  "_WelcometotheFullPageScreenCaptureextension": {
+    "message": "歡迎使用全頁螢幕擷取延伸功能。",
+    "description": "[aws:2019-09-23 19:23:16] Welcome to the Full Page Screen Capture extension."
+  },
+  "_YoucanrunthisonanywebpageexceptforoneswherethebrowserrestrictsextensionsfromrunningscriptsThisincludestheChromewebstorebrowsersettingspagesandotherextensions": {
+    "message": "您可以在任何網頁上運行此操作，但瀏覽器限制擴展無法運行腳本的網頁除外。 這包括 Chrome 網路商店、瀏覽器設定頁面和其他擴充功能。",
+    "description": "[aws:2019-09-23 19:23:17] You can run this on any webpage, except for ones where the browser restricts extensions from running scripts. This includes the Chrome web store, browser settings pages, and other extensions."
+  },
+  "_YoumayneedtoreruntheextensionafterinteractingwiththedialogIfyoucancelitwillcapturejustthevisiblescreen": {
+    "message": "您可能需要在與對話框交互後重新運行擴展。 如果您取消，它將只捕獲可見屏幕。",
+    "description": "[aws:2019-09-23 19:23:18] You may need to re-run the extension after interacting with the dialog. If you cancel, it will capture just the visible screen."
+  }
+}

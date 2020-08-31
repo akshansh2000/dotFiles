@@ -1,0 +1,656 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Settings</title>
+    <link href="css/chrome.css" type="text/css" rel="stylesheet"/>
+    <link href="css/options.css" type="text/css" rel="stylesheet"/>
+    <link href="css/event.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="model/colorpicker/css/colorpicker.css" type="text/css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="model/colorpicker/js/colorpicker.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,800" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div id="fastreset"></div>
+    <div id="msgbox" data-i18ninner="msgbox"></div>
+    <div id="addbox">
+        <div id="addtip"></div>
+        <div id="addcontent">
+            <div id="addcontenttext" data-i18ninner="testwords"></div>
+            <div id="addcontentlink"><a href="###" data-i18ninner="testlink"></a></div>
+            <div id="addcontentimg"><img src="icon.png"/></div>
+        </div>
+        <div id="adddirect"></div>
+        <div id="addwrap"></div>
+        <div id="addbutton">
+            <form>
+                <input class="addok i18nvalue" type="button" value="save"/>
+                <input id="addcancel" class="i18nvalue" type="button" value="cancel"/>
+            </form>
+        </div>
+    </div>
+
+    <div id="logo">
+        <img src="icon.png" style="position:fixed"/><span
+            style="width: 120px;text-align: right;overflow: hidden;  float:right;	font-size:26px;color:#53637D; padding-right:30px;"
+            data-i18ninner="settings"></span>
+    </div>
+
+
+    <div id="optname" data-i18ninner="normal"><a href="###"></a></div>
+
+    <div id="optnameclear"></div>
+
+    <ul id="menu">
+        <li id="linormal" data-i18ninner="normal"></li>
+        <li id="ligesture" data-i18ninner="gesture"></li>
+        <li id="lidrag" data-i18ninner="drag"></li>
+        <li id="liscroll" data-i18ninner="scroll"></li>
+        <li id="liscrollgesture" data-i18ninner="scrollgesture"></li>
+        <li id="listrokegesture" data-i18ninner="strokegesture"></li>
+        <li id="liadvanced" data-i18ninner="advanced"></li>
+        <li id="lihelp" data-i18ninner="help" style="display:none"></li>
+        <li id="liabout" data-i18ninner="about"></li>
+        <li id="libug" data-i18ninner="bug"></li>
+        <li id="lirateus"></li>
+        <div class="optout_container"></div>
+        <div id="onboarding-banner"></div>
+    </ul>
+    <div class="tab" id="tabnormal">
+        <div class="opts flex">
+            <div class="opttitleflex">
+                <div data-i18ninner="fnswitch"></div>
+                <div class="checkboxflex">
+                    <input type="checkbox" id="checkboxshutdown" class="cbx hidden"/>
+                    <label for="checkboxshutdown" class="lbl"></label>
+                </div>
+                <div id="shutdown_text_first"></div>
+                <div id="shutdown_text_second"></div>
+            </div>
+            <div class="optcontentflex">
+                <form>
+                    <input id="gesture" class="norcheck" type="checkbox"/><label for="gesture"
+                                                                                 data-i18ninner="fngesture"></label><br/>
+                    <input id="drag" class="norcheck" type="checkbox"/><label for="drag"
+                                                                              data-i18ninner="fndrag"></label><br/>
+                    <input id="scroll" class="norcheck" type="checkbox"/><label for="scroll"
+                                                                                data-i18ninner="fnscroll"></label><br/>
+                    <input id="scrollgesture" class="norcheck" type="checkbox"/><label for="scrollgesture"
+                                                                                       data-i18ninner="fnscrollgesture"></label><br/>
+                    <input id="strokegesture" class="norcheck" type="checkbox"/><label for="strokegesture"
+                                                                                       data-i18ninner="fnstrokegesture"></label>
+                </form>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="moresettings"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="hidetrash" class="norcheck" type="checkbox"/>
+                    <label for="hidetrash" data-i18ninner="cancelgesturehidetrash"></label><br>
+                    <span class="optionsdes" data-i18ninner="cancelgesturehidetrashinfo"></span><br>
+                    <input id="autocancel" class="norcheck" type="checkbox"/><label for="autocancel"
+                                                                                    data-i18ninner="timeout"></label><br/><label
+                        for="autocancelvalue" class="padding12" data-i18ninner="time"></label><input
+                        id="autocancelvalue" class="norrange" type="range" min="1" max="5" step="1"/><span
+                        id="autocancelvaluehold" class="norrangehold"></span><br/>
+                    <input class="norcheck" id="scrolleffects" type="checkbox"/><label for="scrolleffects"
+                                                                                       data-i18ninner="scrolleffects"></label><br/>
+                    <label for="minilength" data-i18ninner="minilength"></label><input id="minilength" class="norrange"
+                                                                                       type="range" min="5" max="50"
+                                                                                       step="1"/><span
+                        id="minilengthhold" class="norrangehold"></span><br/>
+                </form>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="linuxsettings"></div>
+            <div class="optcontent">
+                <form>
+                    <input class="norcheck" id="cancelcontextmenu" type="checkbox"/><label for="cancelcontextmenu"
+                                                                                           data-i18ninner="cancelcontextmenu"></label><br/>
+                    <label for="dbclicktime" class="padding12" data-i18ninner="dbclicktime"></label><input
+                        id="dbclicktime" class="norrange" type="range" min="500" max="2000" step="100"/><span
+                        id="dbclicktimehold" class="norrangehold"></span><br/>
+                    <span class="optionsdes" data-i18ninner="cancelcontextmenudes"></span>
+                </form>
+                <br/>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="mousecursor"></div>
+            <div class="optcontent">
+                <div class="mousecursors padding12">
+                    <div class="mousecursorsrow">
+                            <img src="image/cursors/001@3.png" />
+                            <img src="image/cursors/002@3.png" />
+                            <img src="image/cursors/003@3.png" />
+                            <img src="image/cursors/004@3.png" />
+                            <img src="image/cursors/005@3.png" />
+                    </div>
+                    <div class="mousecursorsrow">
+                            <img src="image/cursors/006@3.png" />
+                            <img src="image/cursors/007@3.png" />
+                            <img src="image/cursors/008@3.png" />
+                            <img src="image/cursors/009@3.png" />
+                            <img src="image/cursors/010@3.png" />
+                    </div>
+                    <div class="mousecursorsrow">
+                            <img src="image/cursors/011@3.png" />
+                            <img src="image/cursors/012@3.png" />
+                            <img src="image/cursors/013@3.png" />
+                            <img src="image/cursors/014@3.png" />
+                            <img src="image/cursors/015@3.png" />
+                    </div>
+                </div>
+                <label for="cursorimgscale" class="padding12" data-i18ninner="mousecursorscale"></label><input
+                id="cursorimgscale" class="norrange" type="range" min="1" max="3" step="1"/>
+                <span id="cursorimgscalehold" class="norrangehold">2</span>
+                <div class="uploadcursortext padding12" data-i18ninner="mousecursoruploadinstructions"></div>
+                <div class="uploadarea padding12">
+                    <div id="imageupload" class="imageupload">
+                        <label for="uploadimageinput" class="imageuploadlabel"><img src="image/transparent.svg" /></label>
+                        <input type="file" id="uploadimageinput" accept="image/x-png,image/jpeg">
+                    </div>
+                    <div class="uploadimagetext" data-i18ninner="mousecursorupload"></div>
+                </div>
+                <div class="defaultcursor" data-i18ninner="mousecursorreturndefault"></div>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="blackList">Site Blacklist</div>
+            <div class="optcontent">
+                <form>
+                    <textarea id="blackList" wrap="virtual" placeholder="example.com"></textarea><br><br>
+                    <input id="saveBL" type="button" value="Save">
+                </form>
+                <span data-i18ninner="blacklistTip" style="color:#F60; font-size:12px; line-height:14px;">Note: 1: crxMouse won't run on these sites.<br/>2:One domain per line, user Enter to new line;</span>
+            </div>
+        </div>
+    </div>
+    <div class="tab" id="tabgesture">
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="gestureui"></div>
+            <div class="optcontent" style="width:400px; float:left; margin-left:0;">
+                <form>
+                    <input id="gestureui" class="gescheck" type="checkbox"/><label for="gestureui"
+                                                                                   data-i18ninner="enableui"></label><br/>
+
+                    <input id="stroke" class="gescheck" type="checkbox" gesappearnce="true"/><label for="stroke"
+                                                                                data-i18ninner="stroke"></label><br/>
+                    <label for="strokecolor" class="padding12" data-i18ninner="color"></span></label>
+                    <input id="strokecolor" class="gestext fncolor jscolor" type="text" gesappearnce="true"/><br/>
+                    <label for="strokeopa" class="padding12" data-i18ninner="opa"></label>
+                    <input id="strokeopa" class="gesrange" type="range" min="0.1" max="1" step="0.1" gesappearnce="true"/><span
+                        id="strokeopahold" class="gesrangehold"></span><br/>
+                    <label for="strokewidth" class="padding12" data-i18ninner="width"></label>
+                    <input id="strokewidth" class="gesrange" type="range" min="1" max="20" step="1" gesappearnce="true"/><span
+                        id="strokewidthhold" class="gesrangehold"></span><br/>
+
+                    <input id="direct" class="gescheck" type="checkbox" gesappearnce="true"/>
+                    <label for="direct" data-i18ninner="direct"></label><br/>
+                    <label for="directcolor" class="padding12" data-i18ninner="color"></label>
+                    <input id="directcolor" class="gestext fncolor" type="text" gesappearnce="true"/><br/>
+                    <label for="directopa" class="padding12" data-i18ninner="opa"></label>
+                    <input id="directopa" class="gesrange" type="range" min="0.1" max="1" step="0.1" gesappearnce="true"/>
+                    <span id="directopahold" class="gesrangehold"></span><br/>
+
+                    <input id="tooltip" class="gescheck" type="checkbox" gesappearnce="true"/><label for="tooltip"
+                                                                                 data-i18ninner="tooltip"></label><br/>
+                    <label for="tooltipcolor" class="padding12" data-i18ninner="color"></label>
+                    <input id="tooltipcolor"
+                           class="gestext fncolor"
+                           type="text" gesappearnce="true"/><br/>
+                    <label for="tooltipopa" class="padding12" data-i18ninner="opa"></label><input id="tooltipopa"
+                                                                                                  class="gesrange"
+                                                                                                  type="range" min="0.1"
+                                                                                                  max="1"
+                                                                                                  step="0.1" gesappearnce="true"/><span
+                        id="tooltipopahold" class="gesrangehold"></span><br/>
+                    <label for="tooltipwidth" class="padding12" data-i18ninner="width"></label><input id="tooltipwidth"
+                                                                                                      class="gesrange"
+                                                                                                      type="range"
+                                                                                                      min="12" max="48"
+                                                                                                      step="1" gesappearnce="true"/><span
+                        id="tooltipwidthhold" class="gesrangehold"></span>
+                    <label for="gesPos" data-i18ninner="gesPos"></label>
+                    <select id="gesPos" class="gesselect" style="margin-left:12px; width:140px;" gesappearnce="true">
+                        <option value="tl" data-i18ninner="gesPosTL"></option>
+                        <option value="tc" data-i18ninner="gesPosTC"></option>
+                        <option value="tr" data-i18ninner="gesPosTR"></option>
+                        <option value="cl" data-i18ninner="gesPosCL"></option>
+                        <option value="cc" data-i18ninner="gesPosCC"></option>
+                        <option value="cr" data-i18ninner="gesPosCR"></option>
+                        <option value="bl" data-i18ninner="gesPosBL"></option>
+                        <option value="bc" data-i18ninner="gesPosBC"></option>
+                        <option value="br" data-i18ninner="gesPosBR"></option>
+                    </select><br/>
+                </form>
+            </div>
+            <div class="linehold" id="gesturelinehold">Its just for a test.these are test words.Its just for a
+                test.these are test words.Its just for a test.these are test words.Its just for a test.these are test
+                words.Its just for a test.these are test words.Its just for a test.these are test words.Its just for a
+                test.these are test words.Its just for a test.these are test words.Its just for a test.these are test
+                words.Its just for a test.these are test words.Its just for a test.these are test words.Its just for a
+                test.these are test words.Its just for a test.these are test words.
+                <div class="line" id="gestureline"></div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="moreaboutdrag"></div>
+            <div class="optcontent">
+                <form>
+                    <label for="geskey" data-i18ninner="geskey"></label>
+                    <select id="geskey" class="gesselect" style="margin-left:12px; width:140px;" gesmore="true">
+                        <option value="right" data-i18ninner="geskeyright"></option>
+                        <option value="middle" data-i18ninner="geskeymiddle"></option>
+                        <option value="left" data-i18ninner="geskeyleft"></option>
+                    </select><br/>
+                    <input id="stenable" class="gescheck" type="checkbox" style="margin-left:12px;" gesmore="true"><label
+                        for="stenable" data-i18ninner="stenable"></label><br/>
+                    <span id="geskeydes" class="padding12" style="font-size:12px; color:#999; display:block;"
+                          data-i18ninner="geskeydes"></span>
+                    <div class="activation_preferences">
+                        <div class="activation_preferences_option">
+                            <div class="activation_preferences_option_radio">
+                                <input type="radio" class="gesradioholdkeytypeenable" value="enable" name="gholdkeytype"/>
+                                <div data-i18ninner="set_your_mouse_gestures_on"></div>
+                            </div>
+                            <div class="activation_preferences_option_assign_key">
+                                <div class="activation_preferences_option_assign_key_text">
+                                    <label for="gholdkey" data-i18ninner="keytodisablemousegestures"></label>
+                                    <div class="activation_preferences_option_assign_key_text_note" data-i18ninner="noteforkeytoenable"></div>
+                                </div>
+                                <select id="gholdkey" class="gesselect" gesmore="true">
+                                    <option value="none" data-i18ninner="valuenone">none</option>
+                                    <option value="alt">Alt</option>
+                                    <option value="ctrl">Ctrl</option>
+                                    <option value="shift" disabled>shift</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="activation_preferences_option">
+                            <div class="activation_preferences_option_radio">
+                                <input type="radio" class="gesradioholdkeytypedisable" value="disable" name="gholdkeytype"/>
+                                <div data-i18ninner="set_your_mouse_gestures_off"></div>
+                            </div>
+                            <div class="activation_preferences_option_assign_key">
+                                <div class="activation_preferences_option_assign_key_text">
+                                    <label for="gholdkeydisable" data-i18ninner="keytoenablemousegestures"></label>
+                                    <div class="activation_preferences_option_assign_key_text_note" data-i18ninner="noteforkeytodisable"></div>
+                                </div>
+                                <select id="gholdkeydisable" class="gesselect" gesmore="true">
+                                    <option value="alt">Alt</option>
+                                    <option value="ctrl">Ctrl</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="newadd"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="addgesture" class="newadd" type="button" value="newgesture"/>
+                </form>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="editgesture"></div>
+            <div class="optcontent" id="editgesture"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="tab" id="tabdrag">
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="dragui"></div>
+            <div class="optcontent" style="width:400px; float:left; margin-left:0;">
+                <form>
+                    <input id="dragui" class="drgcheck" type="checkbox"/><label for="dragui"
+                                                                                data-i18ninner="enableui"></label><br/>
+
+                    <input id="dstroke" class="drgcheck" type="checkbox" drgappearance="true"/><label for="dstroke"
+                                                                                 data-i18ninner="stroke"></label><br/>
+                    <label for="dstrokecolor" class="padding12" data-i18ninner="color"></label><input id="dstrokecolor"
+                                                                                                      class="drgtext fncolor"
+                                                                                                      type="text" drgappearance="true"/><br/>
+                    <label for="dstrokeopa" class="padding12" data-i18ninner="opa"></label><input id="dstrokeopa"
+                                                                                                  class="drgrange"
+                                                                                                  type="range" min="0.1"
+                                                                                                  max="1"
+                                                                                                  step="0.1" drgappearance="true"/><span
+                        id="dstrokeopahold" class="drgrangehold"></span><br/>
+                    <label for="dstrokewidth" class="padding12" data-i18ninner="width"></label><input id="dstrokewidth"
+                                                                                                      class="drgrange"
+                                                                                                      type="range"
+                                                                                                      min="1" max="20"
+                                                                                                      step="1" drgappearance="true"/><span
+                        id="dstrokewidthhold" class="drgrangehold"></span><br/>
+
+                    <input id="ddirect" class="drgcheck" type="checkbox" drgappearance="true"/><label for="ddirect"
+                                                                                 data-i18ninner="direct"></label><br/>
+                    <label for="ddirectcolor" class="padding12" data-i18ninner="color"></label>
+                    <input id="ddirectcolor" class="drgtext fncolor jscolor" type="text" drgappearance="true"/><br/>
+                    <label for="ddirectopa" class="padding12" data-i18ninner="opa"></label>
+                    <input id="ddirectopa" class="drgrange" type="range" min="0.1" max="1" step="0.1" drgappearance="true"/>
+                    <span id="ddirectopahold" class="drgrangehold"></span><br/>
+
+                    <input id="dtooltip" class="drgcheck" type="checkbox" drgappearance="true"/><label for="dtooltip"
+                                                                                  data-i18ninner="tooltip"></label><br/>
+                    <label for="dtooltipcolor" class="padding12" data-i18ninner="color"></label><input
+                        id="dtooltipcolor" class="drgtext fncolor jscolor" type="text" drgappearance="true"/><br/>
+                    <label for="dtooltipopa" class="padding12" data-i18ninner="opa"></label><input id="dtooltipopa"
+                                                                                                   class="drgrange"
+                                                                                                   type="range"
+                                                                                                   min="0.1" max="1"
+                                                                                                   step="0.1" drgappearance="true"/><span
+                        id="dtooltipopahold" class="drgrangehold"></span><br/>
+                    <label for="tooltipwidth" class="padding12" data-i18ninner="width"></label><input id="dtooltipwidth"
+                                                                                                      class="drgrange"
+                                                                                                      type="range"
+                                                                                                      min="12" max="48"
+                                                                                                      step="1" drgappearance="true"/><span
+                        id="dtooltipwidthhold" class="drgrangehold"></span>
+                </form>
+            </div>
+            <div class="linehold" id="draglinehold">Its just for a test.these are test words.Its just for a test.these
+                are test words.Its just for a test.these are test words.Its just for a test.these are test words.Its
+                just for a test.these are test words.Its just for a test.these are test words.Its just for a test.these
+                are test words.Its just for a test.these are test words.Its just for a test.these are test words.Its
+                just for a test.these are test words.Its just for a test.these are test words.Its just for a test.these
+                are test words.Its just for a test.these are test words.
+                <div class="line" id="dragline"></div>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="moreaboutdrag"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="dragtext" class="drgcheck" type="checkbox" drgmore="true"/><label for="dragtext"
+                                                                                  data-i18ninner="enabledragtext"></label><br/>
+                    <input id="draglink" class="drgcheck" type="checkbox" drgmore="true"/><label for="draglink"
+                                                                                  data-i18ninner="enabledraglink"></label><br/>
+                    <input id="dragimage" class="drgcheck" type="checkbox" drgmore="true"/><label for="dragimage"
+                                                                                   data-i18ninner="enabledragimage"></label><br/>
+                    <input id="draginput" class="drgcheck" type="checkbox" drgmore="true"/><label for="draginput"
+                                                                                   data-i18ninner="draginput"></label><br/>
+                    <input id="setdragurl" class="drgcheck" type="checkbox" drgmore="true"/><label for="setdragurl"
+                                                                                    data-i18ninner="setdragurl"></label><br/>
+                    <input id="imgfirstcheck" class="drgcheck" type="checkbox" drgmore="true"/><label for="imgfirstcheck"
+                                                                                       data-i18ninner="imgfirstcheck"></label><br/>
+                    <label for="imgfirst" data-i18ninner="imgfirst"></label>
+                    <select id="imgfirst" class="drgselect" style="margin-left:12px; width:70px;">
+                        <option value="none" data-i18ninner="valuenone"></option>
+                        <option value="alt" disabled>Alt</option>
+                        <option value="ctrl">Ctrl</option>
+                        <option value="shift">Shift</option>
+                    </select><br/>
+                    <label for="dholdkey" data-i18ninner="dholdkey"></label>
+                    <select id="dholdkey" class="drgselect" style="margin-left:12px; width:70px;">
+                        <option value="none" data-i18ninner="valuenone">none</option>
+                        <option value="alt">Alt</option>
+                        <option value="ctrl">Ctrl</option>
+                        <option value="shift">Shift</option>
+                    </select><br/>
+                </form>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="newadd"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="addtext" class="newadd" type="button" value="text"/>
+                    <input id="addlink" class="newadd" type="button" value="link"/>
+                    <input id="addimage" class="newadd" type="button" value="image"/>
+                </form>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="edittext"></div>
+            <div class="optcontent" id="edittext"></div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="editlink"></div>
+            <div class="optcontent" id="editlink"></div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="editimage"></div>
+            <div class="optcontent" id="editimage"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="tab" id="tabscroll">
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="smooth"></div>
+            <div class="optcontent">
+                <form>
+                    <input class="scrcheck" id="smooth" type="checkbox"/><label for="smooth"
+                                                                                data-i18ninner="fnsmooth"></label><br/>
+                    <label for="scrollspeed" class="padding12" data-i18ninner="scrollspeed"></label><input
+                        id="scrollspeed" class="scrrange" type="range" min="1" max="10" step="1"/><span
+                        id="scrollspeedhold" class="scrrangehold"></span><br/>
+                    <label for="scrollaccele" class="padding12" data-i18ninner="scrollaccele"></label><input
+                        id="scrollaccele" class="scrrange" type="range" min="0" max="10" step="1"/><span
+                        id="scrollaccelehold" class="scrrangehold"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tab" id="tabscrollgesture">
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="tablist"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="tablist" class="sgscheck" type="checkbox" scrollgesture="true"/>
+                    <label for="tablist" data-i18ninner="enableui">Enable</label>
+                    <br/>
+                    <label for="tablist" data-i18ninner="howtablist"></label><br/>
+                    <input id="tablistkeyleft" class="sgsradio" type="radio" name="tablistkey" value="left" scrollgesture="true"/><label
+                        for="tablistkeyleft" data-i18ninner="tablistkeyleft"></label><br/>
+                    <input id="tablistkeyright" class="sgsradio" type="radio" name="tablistkey" value="right" scrollgesture="true"/><label
+                        for="tablistkeyright" data-i18ninner="tablistkeyright"></label>
+                    <br/>
+                    <input id="tablistVisual" class="sgscheck" type="checkbox" name="tablistVisual" scrollgesture="true"/>
+                    <label for="tablistVisual" data-i18ninner="tablistVisual"></label>
+                </form>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="editsgsleft"></div>
+            <div class="optcontent" id="editsgsleft">
+                <form>
+                    <input id="sgsleftenable" class="sgscheck" type="checkbox" scrollgesture="true"/><label for="sgsleftenable"
+                                                                                       data-i18ninner="enableui"></label>
+                </form>
+                <div id="scrollsgsholdl"></div>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="editsgsright"></div>
+            <div class="optcontent" id="editsgsright">
+                <form>
+                    <input id="sgsrightenable" class="sgscheck" type="checkbox" scrollgesture="true"/><label for="sgsrightenable"
+                                                                                        data-i18ninner="enableui"></label>
+                </form>
+                <div id="scrollsgsholdr"></div>
+            </div>
+        </div>
+        <div class="opts" style="display: none">
+            <div class="opttitle" data-i18ninner="fastSwitchLabel"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="fastSwitch" class="sgscheck" type="checkbox"/>
+                    <label for="fastSwitch" data-i18ninner="fastSwitch"></label><br/>
+                    <input id="reverseFS" class="sgscheck" type="checkbox" name="reverseFS"/>
+                    <label for="reverseFS" data-i18ninner="reverseFS"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tab" id="tabstrokegesture">
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="morestrges"></div>
+            <div class="optcontent" id="editstrgesture">
+                <form>
+                    <label for="strenable" data-i18ninner="strpress"></label>
+                    <select id="strpress" class="strselect" style="margin-left:12px; width:120px;" strokegesture="true">
+                        <option value="up" data-i18ninner="strpressup"></option>
+                        <option value="down" data-i18ninner="strpressdown"></option>
+                    </select>
+                </form>
+                <div id="strokegesturehold"></div>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="strleft"></div>
+            <div class="optcontent" id="editstrleft">
+                <form>
+                    <input id="strleftenable" class="strcheck" type="checkbox" strokegesture="true"/><label for="strleftenable"
+                                                                                       data-i18ninner="enableui"></label><br/>
+                </form>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="strmiddle"></div>
+            <div class="optcontent" id="editstrmiddle">
+                <form>
+                    <input id="strmiddleenable" class="strcheck" type="checkbox" strokegesture="true"/><label for="strmiddleenable"
+                                                                                         data-i18ninner="enableui"></label><br/>
+                </form>
+            </div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="strright"></div>
+            <div class="optcontent" id="editstrright">
+                <form>
+                    <input id="strrightenable" class="strcheck" type="checkbox" strokegesture="true"/><label for="strrightenable"
+                                                                                        data-i18ninner="enableui"></label><br/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tab" id="tabadvanced">
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="port"></div>
+            <div class="optcontent">
+                <form>
+                    <textarea id="portconfig" wrap="virtual"></textarea><br/><br/>
+                    <input id="import" type="button" value="import"/>
+                    <input id="export" type="button" value="export"/>
+                </form>
+                <span data-i18ninner="porttip" style="color:#F60; font-size:12px; line-height:14px;"></span>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="reset"></div>
+            <div class="optcontent">
+                <form>
+                    <input id="resetconfig" type="button" value="resetall"/>
+                </form>
+                <span data-i18ninner="resettip" style="color:#F60; font-size:12px; line-height:14px;"></span>
+            </div>
+        </div>
+
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="sync"></div>
+            <div class="optcontent">
+                <div data-i18ninner="syncdes"></div>
+                <form>
+                    <input id="clearsyncdata" type="button" value="clearsyncdata"/>
+                </form>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div class="tab" id="tabhelp">
+        <div class="opts">
+            <div class="opttitle"></div>
+            <div class="optcontent"></div>
+        </div>
+    </div>
+    <div class="tab" id="tababout">
+        <div class="opts">
+            <div class="opttitle"></div>
+            <div class="optcontent">
+                <div>
+                    <div style="float:left;width:60px;"><img src="icon.png" style="width:32px; height:32px"></div>
+                    <div style="float:left;text-align:left;">
+                        <span style="font-size:20px; color:#4E1485;">CrxMouse</span><br/>
+                        <span style="font-size:12px" data-i18ninner="description"></span>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <!--<br />-->
+                <!-- <div><span data-i18ninner="author"></span> : <span data-i18ninner="extauthor"></span></div> -->
+                <div><span data-i18ninner="version"></span> : <span class="versioNum" id="version"></span></div>
+                <div id="privacyWrapper"><a href="https://crxmouse.com/privacy/" target="_blank" id="privacy">Privacy
+                    Policy</a></div>     <div id="privacyWrapper"><a href="https://crxmouse.com/terms/" target="_blank" id="terms">Terms of Use</a></div>
+                <a href="mailto:support@crxmouse.com" id="contact">Contact</a>
+                <!-- <div><span data-i18ninner="site"></span> : <span><a href="http://www.crxmouse.com" target="_blank">www.crxmouse.com</a></span></div> -->
+
+                <div style="font-size:12px; color:#666; display:none">Error when checking update, cannot connect to the
+                    server
+                </div>
+            </div>
+        </div>
+        <div class="opts" style=" display:none">
+            <div class="opttitle" data-i18ninner="name"></div>
+            <div class="optcontent" data-i18ninner="extname"></div>
+        </div>
+        <div class="opts" style="display:none">
+            <div class="opttitle" data-i18ninner="version"></div>
+            <div class="optcontent versioNum"></div>
+        </div>
+        <div class="opts" style="display:none">
+            <div class="opttitle" data-i18ninner="author"></div>
+            <div class="optcontent" data-i18ninner="extauthor"></div>
+        </div>
+        <div class="opts">
+            <div class="opttitle" data-i18ninner="thanks"></div>
+            <div class="optcontent" data-i18ninner="extthanks"></div>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+    <div style="clear:both"></div>
+    <div class="newMessage">
+        <div class="closeNewMessage"></div>
+        <div style="text-align: center">
+            <h2>crxMouse<span class="newMessageVersionNumber"></span>!</h2>
+        </div>
+        <div class="newFeatureTitle newMessageTitle"></div>
+        <div class="newFeatureBody newMessageBody"></div>
+        <div class="bugFixesTitle newMessageTitle"></div>
+        <div class="bugFixesBody newMessageBody"></div>
+        <div class="otherTitle newMessageTitle"></div>
+        <div class="otherBody newMessageBody"></div>
+    </div>
+</div>
+
+<script src="js/analyticsEventMap.js"></script>
+<script src="js/xx.js"></script>
+<script src="js/options.js"></script>
+<script src="js/event.js"></script>
+<script src="js/optline.js"></script>
+<script src="js/optionPlus.js"></script>
+<script src="js/update.js"></script>
+</body>
+</html>

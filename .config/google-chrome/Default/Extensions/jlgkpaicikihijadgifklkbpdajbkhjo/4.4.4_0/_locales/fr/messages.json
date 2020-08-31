@@ -1,0 +1,1468 @@
+{
+   "G_BmManager": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ouvrir le gestionnaire des marque-pages"
+   },
+   "G_ZoomIn": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Zoomer"
+   },
+   "G_ZoomOut": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Dézoomer"
+   },
+   "G_back": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Précédent"
+   },
+   "G_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ajouter un favori"
+   },
+   "G_bookmarks": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Gestionnaire de favoris"
+   },
+   "G_bottom": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Défiler jusqu'en bas"
+   },
+   "G_capture": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Impression écran"
+   },
+   "G_chromepage": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ouvrir une adresse interne à Chrome"
+   },
+   "G_close": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fermer l'onglet"
+   },
+   "G_closelefttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fermer tous les onglets à gauche"
+   },
+   "G_closeothers": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fermer les autres onglets"
+   },
+   "G_closerighttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fermer tous les onglets à droite"
+   },
+   "G_closewindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fermer la fenêtre"
+   },
+   "G_closewindows": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fermer toutes les fenêtres"
+   },
+   "G_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier le titre et l'adresse comme lien"
+   },
+   "G_copytab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier l'onglet actuel"
+   },
+   "G_copytitle": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier le titre de l'onglet actuel"
+   },
+   "G_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier l'adresse de l'onglet actuel"
+   },
+   "G_copyuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier le titre et l'adresse dans un format personnalisé"
+   },
+   "G_crxsettings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Paramêtres de CrxMouse"
+   },
+   "G_down": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Défiler vers le bas"
+   },
+   "G_downloads": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Téléchargements"
+   },
+   "G_firsttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Premier onglet"
+   },
+   "G_fullscreen": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Plein écran"
+   },
+   "G_go": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Suivant"
+   },
+   "G_goparent": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Aller au niveau supérieur"
+   },
+   "G_history": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Historique"
+   },
+   "G_incognito": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nouvelle fenêtre de navigation privée"
+   },
+   "G_lasttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Dernier onglet"
+   },
+   "G_left": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Faire défiler à gauche"
+   },
+   "G_lefttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Onglet de gauche"
+   },
+   "G_mergeTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Regrouper les onglets"
+   },
+   "G_movetowindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Détacher l'onglet"
+   },
+   "G_newtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nouvel onglet"
+   },
+   "G_newusertab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Onglet personnalisé..."
+   },
+   "G_newwindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nouvelle fenêtre"
+   },
+   "G_none": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Aucune"
+   },
+   "G_openclipurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Essayer d'ouvrir l'adresse présente dans le presse-papier"
+   },
+   "G_pin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Épingler l'onglet"
+   },
+   "G_reclosedtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rouvrir l'onglet fermé"
+   },
+   "G_reload": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Actualiser"
+   },
+   "G_reloadall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Actualiser tous les onglets"
+   },
+   "G_reloadclear": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Actualiser sans le cache"
+   },
+   "G_reloadframe": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Actualiser le cadre"
+   },
+   "G_right": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Faire défiler à droite"
+   },
+   "G_righttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Onglet de droite"
+   },
+   "G_settings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Paramêtres de Chrome"
+   },
+   "G_splitTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Séparer les onglets"
+   },
+   "G_stop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Arrêter"
+   },
+   "G_stopall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Arrêter le chargement de tous les onglets"
+   },
+   "G_top": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Défiler jusqu'en haut"
+   },
+   "G_tostop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Désactiver temporairement l'extension sur cette page"
+   },
+   "G_trynext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Essayer d'aller au chapitre suivant"
+   },
+   "G_tryprev": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Essayer d'aller au chapitre précédent"
+   },
+   "G_up": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Défiler vers le haut"
+   },
+   "G_userscript": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Exécuter le script..."
+   },
+   "G_viewsource": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Afficher la source"
+   },
+   "G_windowmax": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Agrandir la fenêtre"
+   },
+   "G_windowmin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Réduire la fenêtre"
+   },
+   "I_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier l'adresse de l'image"
+   },
+   "I_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ouvrir l'image dans un nouvel onglet"
+   },
+   "I_save": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Enregistrer l'image (dev)"
+   },
+   "I_saveback": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Enregistrer l'image sous... (dev)"
+   },
+   "I_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rechercher cette image"
+   },
+   "I_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rechercher cette image avec un moteur de recherche personnalisé"
+   },
+   "L_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ajouter un favori"
+   },
+   "L_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier le texte et l'adresse comme lien"
+   },
+   "L_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier le texte du lien"
+   },
+   "L_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier l'adresse du lien"
+   },
+   "L_copyuser": {
+      "description": "Advanced actions",
+      "message": "Copier le titre et le site dans un format personnalisé"
+   },
+   "L_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ouvrir le lien dans un nouvel onglet"
+   },
+   "T_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Copier le texte"
+   },
+   "T_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rechercher le texte"
+   },
+   "T_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Recherche personnalisée..."
+   },
+   "about": {
+      "description": "Title of About page in Settings area",
+      "message": "À propos"
+   },
+   "addtipgesture": {
+      "description": "Instructions for how to add a new gesture thourh the Settings area - appears when clicking on the 'Add New' button in the 'New section on the 'Mouse Gestures' page.",
+      "message": "Cliquez et laissez appuyé le bouton droit de la souris, dessinez la trace, relâchez le bouton droit et sélectionnez l'action."
+   },
+   "addtipimage": {
+      "description": "Instructions for how to add a new Super Drag Gesture for an Image - appears when clicking on the 'Image' button in the 'New' section on the 'Super Drag' page.",
+      "message": "Utilisez le bouton gauche de la souris pour faire glisser l'image et dessiner la trace, relâchez ensuite le bouton pour sélectionner l'action."
+   },
+   "addtiplink": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a link - appears when clicking on the 'Link' button in the 'New' section on the 'Super Drag' page.",
+      "message": "Sélectionnez le lien et dessinez la trace tout en maintenant le bouton gauche de la souris appuyé, relâchez ensuite le bouton pour sélectionner l'action."
+   },
+   "addtiptext": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a text - appears when clicking on the 'Text' button in the 'New' section on the 'Super Drag' page",
+      "message": "Sélectionnez du texte et dessinez la trace tout en maintenant le bouton gauche de la souris appuyé, puis relâchez ensuite le bouton pour sélectionner l'action."
+   },
+   "advanced": {
+      "description": "Side navigation and Title of page in 'Settings' area",
+      "message": "Paramêtres avancés"
+   },
+   "alertaction": {
+      "description": "Alert window - promopted of user tries to save new gesture before selecting an action.",
+      "message": "Sélectionnez une action."
+   },
+   "alertconfigerror": {
+      "description": "Error message - prompted when there is an issue with an imported file.",
+      "message": "Erreur dans la configuration importée."
+   },
+   "alertname": {
+      "description": "Error message when trying to edit gesture with text field empty.",
+      "message": "Enregistrement impossible. Veuillez remplir tous les champs."
+   },
+   "alertrepeat": {
+      "description": "Error message when trying to create gesture with an already used gesture.",
+      "message": "Le geste existe déjà, veuillez en essayer un autre."
+   },
+   "alerttooltip": {
+      "description": "Error message when creating new gesture of new action without giving it a name. ",
+      "message": "Veuillez entrer un nom pour cette action."
+   },
+   "alerturl": {
+      "description": "Error message when creating new gesture for opening a specific url without specifying the url.",
+      "message": "Pas d'adresse ou adresse invalide."
+   },
+   "appName": {
+      "Description": "Name of extension. Do not translate name.",
+      "message": "CrxMouse Chrome™ Gestures"
+   },
+   "author": {
+      "description": "Author",
+      "message": "Auteur"
+   },
+   "blackList": {
+      "description": "List for sites that should exclude mouse gestures. Located on General Settings page.",
+      "message": "Liste noire de sites"
+   },
+   "blacklistTip": {
+      "description": "Note listed below message box of site blacklist. Located on General Settings page.",
+      "message": "Remarque : crxMouse ne fonctionnera pas sur ces sites. Un domaine par ligne, appuyez sur « Entrée » pour des entrées multiples, n'ajoutez pas http:// ou https://"
+   },
+   "bookmarkfailnotifi": {
+      "description": "Error message when trying to create gesture for bookmark that already exists.",
+      "message": "Le favori existe déjà !"
+   },
+   "bookmarknotifi": {
+      "description": "Notification for bookmark saved.",
+      "message": "Ajout de favori réussi !"
+   },
+   "bug": {
+      "description": "Link to report a bug",
+      "message": "Rapportez un bug"
+   },
+   "cancel": {
+      "description": "Cancel adding new gesture.",
+      "message": "Annuler"
+   },
+   "cancelcontextmenu": {
+      "description": "Text of Linux/Mac options check box located on General Settings page. Note! Do not translate html tags.",
+      "message": "Pour régler le problème de menu contextuel sous Linux/Mac (\u003Cspan style='color:red'>double cliquez du bouton droit pour faire apparaître le menu contextuel\u003C/span>)."
+   },
+   "cancelcontextmenudes": {
+      "description": "Tooltip about Linux/Mac options located on General Settings page",
+      "message": "L'option qui règle le problème du clic droit sur les plateforme non Windows peut affecter l'utilisation normale de certaines fonction. Il est recommandé aux utilisateurs de Linux/Mac de cocher cette option."
+   },
+   "cancelgesture": {
+      "description": "Message that appears in trash bin area for dragging mouse gestures to cancel them",
+      "message": "Annuler"
+   },
+   "cancelgesturehidetrash": {
+      "description": "An option to hide the icon of the trash bin that appears when performing a gesture. The trashbin enables canceling the performed gestute.",
+      "message": "Masquer la corbeille"
+   },
+   "cancelgesturehidetrashinfo": {
+      "description": "Instructions that appear below the option of hiding the icon of the trash bin.",
+      "message": "Activez cette option pour masquer l'icône représentant la corbeille."
+   },
+   "changelog": {
+      "description": "Super Drag Action.",
+      "message": "Journal"
+   },
+   "chrome": {
+      "description": "Referrs to the default tab opening (left or right) settings in Chrome.",
+      "message": "Défaut de Chrome"
+   },
+   "clearsyncdata": {
+      "description": "For logged in users, they can clear any data that was synced between machines.",
+      "message": "Effacer les données synchronisées"
+   },
+   "close": {
+      "description": "Action list - close tab",
+      "message": "Fermer"
+   },
+   "color": {
+      "description": "A design option for how mouse gestures appear, under the 'Appearance' section on the Settings area.",
+      "message": "Couleur :"
+   },
+   "crbookmarks": {
+      "description": "Action list - open bookmarks manager",
+      "message": "Gestionnaire de favoris"
+   },
+   "crdownloads": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Téléchargements"
+   },
+   "crextensions": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Extensions"
+   },
+   "crflags": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome Labs"
+   },
+   "crhistory": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Historique"
+   },
+   "crsettings": {
+      "description": "Actions list - referrs to ",
+      "message": "Paramêtres de Chrome"
+   },
+   "ctatoenableadvanced": {
+      "description": "CTA for enabling advanced features on sidebar inside Settings area. Make sure any translation is limited to 24 characters",
+      "message": "Activer le mode avancé"
+   },
+   "curfront": {
+      "description": "Actions list - referrs to the current tab opened and visited.",
+      "message": "Onglet courant"
+   },
+   "dbclicktime": {
+      "description": "milliseconds between 2 clicks for accessing the right-click menu on Mac and Linux.",
+      "message": "Temps maximum du double clic (ms) :"
+   },
+   "delete": {
+      "description": "Delete a gesture.",
+      "message": "Supprimer"
+   },
+   "description": {
+      "description": "Long Store title",
+      "message": "Augmentez votre productivité sur le web en un clic"
+   },
+   "descriptionjson": {
+      "description": "Short Store description",
+      "message": "Augmentez votre productivité sur le web en un clic - Raccourcis souris, Glissé Spécial, Raccourcis roulette, Raccourcis de bascule."
+   },
+   "dholdkey": {
+      "description": "Users can choose a keyboard key that will disable the super drag feature on specific ocassions.",
+      "message": "Définissez une touche pour désactiver le Glissé Spécial :"
+   },
+   "direct": {
+      "description": "Appearance option that let's user choose whether or not to see the path of a mouse gesture, when performing it.",
+      "message": "Montrer les directions"
+   },
+   "downimgtooltip": {
+      "description": "Tooltip for when saving image using super drag gesture.",
+      "message": "Enregistrement de l'image..."
+   },
+   "drag": {
+      "description": "Side navigation and title of page in Settings area.",
+      "message": "Glissé Spécial"
+   },
+   "draginput": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Activer le Glissé de texte pour les TextBox."
+   },
+   "dragui": {
+      "description": "Section name in the Settings area.",
+      "message": "Apparence"
+   },
+   "editgesture": {
+      "description": "Section name",
+      "message": "Éditer les raccourcis"
+   },
+   "editimage": {
+      "description": "Section name on Super Drag page",
+      "message": "Glissé d'image"
+   },
+   "editlink": {
+      "description": "Section name on Super Drag page",
+      "message": "Glissé de lien"
+   },
+   "editsgsleft": {
+      "description": "Section name on Wheel Gestures page. Note! do not translate html tags (the br and span open and close tags).",
+      "message": "Raccourcis molette GAUCHE\u003Cbr />\u003Cspan class='opttitledes'>(Maintenez le bouton gauche appuyé et scrollez)\u003C/span>"
+   },
+   "editsgsright": {
+      "description": "Section name on Super Drag page. Note! do not translate html tag (the span open and close tags).",
+      "message": "Raccourcis molette DROITE\u003Cbr />\u003Cspan class='opttitledes'>(Maintenez le bouton droit appuyé et scrollez)\u003C/span>"
+   },
+   "edittext": {
+      "description": "Section name on Super Drag page",
+      "message": "Glissé de texte"
+   },
+   "enabledragimage": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Activer le Glissé d'image"
+   },
+   "enabledraglink": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Activer le Glissé de lien"
+   },
+   "enabledragtext": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Activer le Glissé de texte"
+   },
+   "enabletochange": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Activer pour effectuer des modifications"
+   },
+   "export": {
+      "description": "Buttom in Advanced Settings page",
+      "message": "Exporter"
+   },
+   "extauthor": {
+      "description": "Author name inside options.html",
+      "message": "WeKnowNet"
+   },
+   "extnamejson": {
+      "description": "Extension name",
+      "message": "CrxMouse"
+   },
+   "extthanks": {
+      "description": "Thanks section in About page. Note! do not translate html tag.",
+      "message": "\r\n\t\t&gt; os0x\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; ArcCosine\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Jan Odvarko\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Merci à tous ceux qui utilisent cette extension et m'envoient leur avis pour que je puisse l'améliorer."
+   },
+   "fastSwitch": {
+      "description": "Switch tab to the left when Scrolling up, to the right when scrolling down",
+      "message": "Passez à l'onglet de gauche en faisant défiler votre souris vers le haut et à celui de droite en la faisant défiler vers le bas"
+   },
+   "fastreset": {
+      "description": "Error message when extension is down",
+      "message": "Une erreur est survenue : l'extension ne fonctionne pas. Veuillez cliquer ici pour réinitialiser la configuration par défaut. Si le problème persiste, mettez à jour votre navigateur (versions V23 et supérieures) et réessayez."
+   },
+   "fndrag": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer le Glissé Spécial"
+   },
+   "fngesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer les raccourcis souris"
+   },
+   "fnscroll": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer le défilement "
+   },
+   "fnscrollgesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer les raccourcis molette"
+   },
+   "fnsmooth": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer le défilement doux"
+   },
+   "fnstrokegesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer les raccourcis de bascule"
+   },
+   "fnswitch": {
+      "description": "Enable options on General Settings page",
+      "message": "Activer CrxMouse"
+   },
+   "gesPos": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "Position des flèches de déplacement"
+   },
+   "gesPosBC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "En bas au centre"
+   },
+   "gesPosBL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "En bas à gauche"
+   },
+   "gesPosBR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "En bas à droite"
+   },
+   "gesPosCC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Au centre"
+   },
+   "gesPosCL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Au centre à gauche"
+   },
+   "gesPosCR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Au centre à droite"
+   },
+   "gesPosTC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "En haut au centre"
+   },
+   "gesPosTL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "En haut à gauche"
+   },
+   "gesPosTR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "En haut à droite"
+   },
+   "geskey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "Quel bouton pour les raccourcis souris ?"
+   },
+   "geskeydes": {
+      "description": "Description text in More section on Mouse Gestures page",
+      "message": "Note : 1) Il s'agit d'une alternative pour les utilisateurs Linux/Mac qui ne peuvent utiliser le bouton droit ; les utilisateurs de Windows ne devraient pas changer ça.\u003Cbr />2) Beaucoup de problèmes peuvent arriver : impossibilité de sélectionner du texte, d'utiliser le Glissé de texte, ou d'effectuer des raccourcis souris sur des images ou des liens. Dans ce cas-là, vous pourriez avoir besoin du réglage ci-dessous."
+   },
+   "geskeyleft": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Bouton gauche de la souris"
+   },
+   "geskeymiddle": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Bouton du milieu de la souris"
+   },
+   "geskeyright": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Bouton droit de la souris"
+   },
+   "gesture": {
+      "description": "Page name",
+      "message": "Raccourcis souris"
+   },
+   "gesturedeleted": {
+      "description": "Appears in notification window when a gesture is deleted. Indicating that the gesture was deleted successfully.",
+      "message": "Raccourci supprimé"
+   },
+   "gestureui": {
+      "description": "Section name",
+      "message": "Apparence"
+   },
+   "gholdkey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "Choisissez une touche pour désactiver les raccourcis souris :"
+   },
+   "head": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Premier"
+   },
+   "headlineforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "Partie d'une URL ou une URL entière par ligne"
+   },
+   "hidewhitelist": {
+      "description": "Hides a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "Masquer la liste blanche"
+   },
+   "howtablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Comment utiliser la liste des onglets :"
+   },
+   "image": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Image"
+   },
+   "imgfirst": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Choisissez une touche pour activer le Glissé Spécial sur l'image plutôt que sur le lien :"
+   },
+   "imgfirstcheck": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Si le lien contient une image, utiliser le Glissé Spécial sur l'image plutôt que sur le lien"
+   },
+   "import": {
+      "description": "Option on Advanced Setttings page",
+      "message": "Importer"
+   },
+   "incog": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Fenêtre de navigation privée"
+   },
+   "keytodisablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to disable gestures",
+      "message": "Choisissez une touche pour désactiver les raccourcis souris :"
+   },
+   "keytoenablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to enable gestures",
+      "message": "Définir la touche qui activera les raccourcis souris :"
+   },
+   "last": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Dernier"
+   },
+   "left": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Gauche"
+   },
+   "link": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Lien"
+   },
+   "linuxsettings": {
+      "description": "Section name on General Settings page",
+      "message": "Options pour Linux/Mac"
+   },
+   "listaction": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "Action :"
+   },
+   "listgesture": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "Raccourcis souris :"
+   },
+   "local": {
+      "description": "en",
+      "message": "fr"
+   },
+   "localtrans": {
+      "description": "FALSE",
+      "message": "false"
+   },
+   "minilength": {
+      "description": "Option in Miscellaneous section on General Settings page",
+      "message": "Longueur minimum de la trace (px) :"
+   },
+   "missedgesture": {
+      "description": "Message for when gestures didn't work. Click on 'Report' sends to a form to fill. Should be maximun 30 charachters",
+      "message": "Échec du raccourci ? Signaler"
+   },
+   "moreChromepagetitle": {
+      "description": "Placeholder in Actions",
+      "message": "Adresse interne de Chrome, du type : \"chrome://...\""
+   },
+   "moreCloseoptstitle": {
+      "description": "Placeholder in Actions",
+      "message": "Fermer la fenêtre lors de la fermeture du dernier onglet ?"
+   },
+   "moreCloseseltitle": {
+      "description": "Placeholder in Actions",
+      "message": "Quel onglet sélectionner après la fermeture de l'onglet courant ?"
+   },
+   "moreCloseurltitle": {
+      "description": "Placeholder in Actions",
+      "message": "Adresse, si vous ne fermer pas la fenêtre de Chrome, ouvrir cette adresse"
+   },
+   "moreCopystyletitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "format personnalisé, utilisez « %title » au lieu du titre ou des mots, « %url » au lieu de l'URL du site, et une nouvelle ligne avec « \\n »"
+   },
+   "moreDes": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "La fonction demande du texte, utilisez \"%name\" à la place de mots clés"
+   },
+   "moreDestitle": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Nom de l'action"
+   },
+   "moreIsearchtitle": {
+      "description": "Action",
+      "message": "Moteurs de recherche d'image"
+   },
+   "moreName": {
+      "description": "Name",
+      "message": "Nom"
+   },
+   "morePinnedtitle": {
+      "description": "Action",
+      "message": "Épingler/Retirer l'onglet"
+   },
+   "morePositiontitle": {
+      "description": "Action",
+      "message": "Position du nouvel onglet par rapport à l'onglet courant"
+   },
+   "moreScript": {
+      "description": "Action",
+      "message": "Script"
+   },
+   "moreScripttitle": {
+      "description": "Placeholder in Run Script Action",
+      "message": "Contenu du script"
+   },
+   "moreTarget": {
+      "description": "Action",
+      "message": "Position"
+   },
+   "moreTargettitle": {
+      "description": "Placeholder in Actions",
+      "message": "Comment ouvrir un nouvel onglet : Onglet courant/nouvel onglet, premier/arrière plan"
+   },
+   "moreTsearchtitle": {
+      "description": "Action",
+      "message": "Moteurs de recherche de texte"
+   },
+   "moreURL": {
+      "description": "Action",
+      "message": "Adresse"
+   },
+   "moreURLtitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "Adresse, utilisez \"%s\" à la place de mots clés"
+   },
+   "moreaboutdrag": {
+      "description": "Section name",
+      "message": "Plus.."
+   },
+   "moreaffecteddomains": {
+      "description": "Shown on hover when gesture is associated to more than one domain on Edit Gesture screen.",
+      "message": "Plusieurs domaines affectés. Modifier les domaines."
+   },
+   "morecur": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Onglet courant"
+   },
+   "morenew": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Nouvel onglet & Premier plan"
+   },
+   "morenewback": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Nouvel onglet & Arrière plan"
+   },
+   "moresettings": {
+      "description": "Section name",
+      "message": "Divers"
+   },
+   "morestrges": {
+      "description": "Section name on Rocker Gestures page",
+      "message": "Paramêtres détaillés"
+   },
+   "mousecursor": {
+      "description": "Headline for the Mouse cursor customization section in the Settings page",
+      "message": "Pointeur de souris"
+   },
+   "mousecursorreturndefault": {
+      "description": "Link to switch back to default mouse cursor image",
+      "message": "Revenir au pointeur par défaut"
+   },
+   "mousecursorscale": {
+      "description": "Scale of mouse custom cursor image",
+      "message": "Échelle"
+   },
+   "mousecursorupload": {
+      "description": "Uploading an image to be used as a mouse cursor",
+      "message": "Importer depuis l’ordinateur"
+   },
+   "mousecursoruploadinstructions": {
+      "description": "Instructions for the image file a user can upload for the mouse cursor",
+      "message": "Importez votre propre pointeur de souris. PNG, 48px × 48px. Jusqu'à 20kb."
+   },
+   "msgbox": {
+      "description": "Message when making changes or clicking on save inside Settings ",
+      "message": "Paramêtres enregistrés ! Certains changements seront appliqués après rechargement"
+   },
+   "mygestures": {
+      "description": "Headline of default, edited or new gestures section on ext. popup",
+      "message": "Raccourcis actifs"
+   },
+   "newadd": {
+      "description": "Options in Actions",
+      "message": "Nouveau"
+   },
+   "newback": {
+      "description": "Options in Actions",
+      "message": "Nouvel onglet & Arrière plan"
+   },
+   "newfront": {
+      "description": "Options in Actions",
+      "message": "Nouvel onglet & Premier plan"
+   },
+   "newgesture": {
+      "description": "Button on Mouse Gestures page",
+      "message": "Ajouter un nouveau"
+   },
+   "newtabdes": {
+      "description": "Placeholder in Actions",
+      "message": "Ouvrir %name"
+   },
+   "nopopulargestures": {
+      "description": "shown in popup when user visits a site with no popular gestures available for it",
+      "message": "Aucun raccourci populaire pour cette page. Contribuez à notre plateforme en utilisant un raccourci."
+   },
+   "normal": {
+      "description": "Side navigation in Settings",
+      "message": "Paramêtres Généraux"
+   },
+   "noteforkeytodisable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to disable gestures",
+      "message": "Remarque : appuyer sur la touche choisie activera les raccourcis souris par défaut et désactivera les fonctionnalités du clic droit"
+   },
+   "noteforkeytoenable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to enable gestures",
+      "message": "Remarque : appuyer sur la touche choisie désactivera les raccourcis souris par défaut et activera les fonctionnalités du clic droit"
+   },
+   "offmodepopup": {
+      "description": "Text on ext. popup when Crx Mouse is off",
+      "message": "Crx Mouse est désactivé"
+   },
+   "offmodesettings": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Crx Mouse est désactivé"
+   },
+   "offmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Désactiver Crx Mouse"
+   },
+   "onmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Activer Crx Mouse"
+   },
+   "opa": {
+      "description": "Option in Appearance section",
+      "message": "Transparence :"
+   },
+   "optgrpapp": {
+      "description": "Action",
+      "message": "APP"
+   },
+   "optgrpcopy": {
+      "description": "Action",
+      "message": "Copier"
+   },
+   "optgrpload": {
+      "description": "Action",
+      "message": "Charger"
+   },
+   "optgrpnav": {
+      "description": "Action",
+      "message": "Navigation"
+   },
+   "optgrpnone": {
+      "description": "Action",
+      "message": "Aucune"
+   },
+   "optgrpother": {
+      "description": "Action",
+      "message": "Autre"
+   },
+   "optgrpsave": {
+      "description": "Action",
+      "message": "Sauvegarder"
+   },
+   "optgrpscroll": {
+      "description": "Action",
+      "message": "Défiler"
+   },
+   "optgrpsearch": {
+      "description": "Action",
+      "message": "Recherche"
+   },
+   "optgrptab": {
+      "description": "Action",
+      "message": "Onglet"
+   },
+   "optgrptabnav": {
+      "description": "Action",
+      "message": "Navigation entre onglets"
+   },
+   "optgrpwindow": {
+      "description": "Action",
+      "message": "Fenêtre"
+   },
+   "optmode": {
+      "description": "Text of opt in/out checkbox",
+      "message": "Activer l'option Raccourcis populaires (envoie des données anonymes)"
+   },
+   "optmodealert": {
+      "description": "text on opt in/out alert window",
+      "message": "Vous ne verrez plus les raccourcis populaires. Vous pouvez les réactiver à tout moment en cochant la case correspondante."
+   },
+   "optoutmodemessage": {
+      "description": "Description of opt out mode on ext. popup",
+      "message": "Pour activer l'option Raccourcis populaires, rendez-vous dans \u003Ca href=\"$link$\" target=\"_blank\">Paramètres\u003C/a>",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "optoutmodetitle": {
+      "description": "Title of opt out mode on ext. popup",
+      "message": "L'option Raccourcis populaires est inactive."
+   },
+   "pinned": {
+      "description": "Action",
+      "message": "Épingler"
+   },
+   "placeholderconfig": {
+      "description": "Text on Advanced Settings page",
+      "message": "Collez ici la configuration puis cliquez sur Importer pour effectuer l'import. La configuration sera visible ici après appui sur le bouton Exporter et disponible pour un usage futur"
+   },
+   "placeholdername": {
+      "description": "Placeholder in Actions",
+      "message": "Nom"
+   },
+   "placeholderscript": {
+      "description": "Placeholder in Actions",
+      "message": "Script"
+   },
+   "placeholdersearchurl": {
+      "description": "Placeholder in Actions",
+      "message": "Adresse, utilisez %s à la place de mots clés"
+   },
+   "placeholdertooltip": {
+      "description": "Placeholder in Actions",
+      "message": "Nom de l'action"
+   },
+   "placeholderurl": {
+      "description": "Placeholder in Actions",
+      "message": "Adresse"
+   },
+   "popupaddtooltip": {
+      "description": "Tooltip when hovering on plus icon in Active Gestures section",
+      "message": "Ajouter un nouveau"
+   },
+   "popupeditgesture": {
+      "description": "Button to apply changes for existing gesture on ext. popup",
+      "message": "Appliquer les modifications"
+   },
+   "popupfooterhelptooltip": {
+      "description": "Tooltip when hovering on question mark icon in footer on ext. popup",
+      "message": "Aide"
+   },
+   "popupgesturecancel": {
+      "description": "Button to cancel new/edit gesture on ext. popup",
+      "message": "Annuler"
+   },
+   "popupnewaction": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Choisir l'action"
+   },
+   "popupnewgesture": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Choisir un raccourci"
+   },
+   "popupnewscope": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Choisir l'étendue"
+   },
+   "popupnewscopeglobal": {
+      "description": "Option in new gesture window on ext. popup",
+      "message": "Tous les sites"
+   },
+   "popuponboarding": {
+      "description": "Text on onboarding window to close window",
+      "message": "Compris, merci."
+   },
+   "popuppopular": {
+      "description": "Headline of popular gestures section on ext. popup",
+      "message": "Raccourcis populaires"
+   },
+   "popuprecordsave": {
+      "description": "Button to save new gesture in new gesture window on ext. popup",
+      "message": "Enregistrer le raccourci"
+   },
+   "popupsuccess": {
+      "description": "Text in notification for gesture saved/edited on ext. popup. Note! Do not translate text next to $",
+      "message": "Le raccourci pour « $GestureName$ » a bien été enregistré",
+      "placeholders": {
+         "GestureName": {
+            "content": "$1"
+         }
+      }
+   },
+   "popuptooltipdelete": {
+      "description": "Tooltip when hovering on delete icon on ext. popup",
+      "message": "Supprimer"
+   },
+   "popuptooltipedit": {
+      "description": "Tooltip when hovering on edit icon on ext. popup",
+      "message": "Modifier"
+   },
+   "popupvideotool": {
+      "description": "Tooltip when hovering on video icon in footer on ext. popup",
+      "message": "Comment utiliser Crx Mouse"
+   },
+   "port": {
+      "description": "Section name on Advanced Settings page",
+      "message": "Importer/Exporter la configuration"
+   },
+   "porttip": {
+      "description": "Text on Advanced Settings page. Note! Do not translate html tags",
+      "message": "Note : 1) L'importation d'une configuration implique un redémarrage de l'extension. Les onglets ouverts devront donc être rechargés pour utiliser l'extension. \u003Cbr /> 2) Vous ne devriez importer une configuration qui a été exportée d'ici. Il n'est pas recommandé de la modifier manuellement. \u003Cbr /> 3) En cas d'erreur, veuillez remettre à zéro la configuration. "
+   },
+   "poschrome": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Défaut de Chrome"
+   },
+   "poshead": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Premier"
+   },
+   "poslast": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Dernier"
+   },
+   "posleft": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Gauche"
+   },
+   "posright": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Droite"
+   },
+   "rate_us_never_show_again": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "Ne plus montrer"
+   },
+   "rate_us_remind_me_later": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "Me le rappeler plus tard"
+   },
+   "rate_us_title": {
+      "description": "Title crx mouse overlay for rate us",
+      "message": "Satisfait de CRX Mouse ?"
+   },
+   "rateus": {
+      "description": "located in Settings section inside sidebar. Asking the users to rate the extension. Translation should be max 21 characters",
+      "message": "LIKE US? RATE US!"
+   },
+   "reset": {
+      "description": "Section name on Advanced Settings page",
+      "message": "Remise à zéro"
+   },
+   "resetall": {
+      "description": "Reset button on Advanced Settings page",
+      "message": "Tout remettre à zéro"
+   },
+   "resetpage": {
+      "description": "Reset button on Gestures pages",
+      "message": "Remettre à zéro cette page"
+   },
+   "resettip": {
+      "description": "Text on Advanced Settings page",
+      "message": "Note: Cette action supprimera toutes les configurations, et remettra la configuration par défaut. Cette action ne peut pas être annulée, alors soyez prudent !"
+   },
+   "reverseFS": {
+      "description": "Action",
+      "message": "Inverser la direction"
+   },
+   "right": {
+      "description": "Action",
+      "message": "Droite"
+   },
+   "s360": {
+      "description": "Action - Website name",
+      "message": "360"
+   },
+   "samazon": {
+      "description": "Action - Website name",
+      "message": "Amazon"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Sauvegarder"
+   },
+   "savewhitelist": {
+      "description": "save whitelist changes. Appears on all gesture boxes",
+      "message": "Sauvegarder"
+   },
+   "sbaidu": {
+      "description": "Action - Website name",
+      "message": "Baidu"
+   },
+   "sbaiduimage": {
+      "description": "Action - Website name",
+      "message": "Rechercher une image avec Baidu"
+   },
+   "sbing": {
+      "description": "Action - Website name",
+      "message": "Bing"
+   },
+   "scractdown": {
+      "description": "Action",
+      "message": "Défiler vers le bas :"
+   },
+   "scractup": {
+      "description": "Action",
+      "message": "Défiler vers le haut :"
+   },
+   "scriptdes": {
+      "description": "Placeholder in Actions",
+      "message": "Lancer le script : %name"
+   },
+   "scroll": {
+      "description": "Side navigation in Settings",
+      "message": "Défiler"
+   },
+   "scrollaccele": {
+      "description": "Option on Scrolling page",
+      "message": "Accélération du défilement"
+   },
+   "scrolleffects": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Avec effet (pour monter ou descendre d'une page, et aller en haut ou en bas)."
+   },
+   "scrollgesture": {
+      "description": "Side navigation in Settings",
+      "message": "Raccourcis molette"
+   },
+   "scrollspeed": {
+      "description": "Option on Scrolling page",
+      "message": "Vitesse du défilement"
+   },
+   "searchdes": {
+      "description": "Placeholder in Actions. Note! do not translate text next to %.",
+      "message": "Utilisez « %name » pour rechercher : « %s »"
+   },
+   "set_your_mouse_gestures_off": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "Désactiver les raccourcis souris par défaut"
+   },
+   "set_your_mouse_gestures_on": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "Activer les raccourcis souris par défaut"
+   },
+   "setdragurl": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Activer le Glissé de liens si le texte est reconnu comme une adresse web (experimental)."
+   },
+   "settings": {
+      "description": "Settings",
+      "message": "Paramêtres"
+   },
+   "sgoogle": {
+      "description": "Action - Website name",
+      "message": "Google"
+   },
+   "sgoogleimage": {
+      "description": "Action - Website name",
+      "message": "Rechercher une image avec Google"
+   },
+   "showwhitelist": {
+      "description": "Opens a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "Afficher la liste blanche"
+   },
+   "site": {
+      "description": "Action",
+      "message": "Site web"
+   },
+   "smooth": {
+      "description": "Action",
+      "message": "Défilement doux"
+   },
+   "ssogou": {
+      "description": "Action - Website name",
+      "message": "Sogou"
+   },
+   "staobao": {
+      "description": "Action - Website name",
+      "message": "Taobao"
+   },
+   "stenable": {
+      "description": "Enable select text while holding the left mouse(It makes Mouse Gestures invalid sometimes)",
+      "message": "Activer la sélection de texte lorsque le bouton gauche de la souris est enfoncé (rend parfois certains raccourcis souris invalides)"
+   },
+   "stineyeimage": {
+      "description": "TinEye",
+      "message": "TinEye"
+   },
+   "stractleft": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Cliquez le bouton gauche :"
+   },
+   "stractmiddle": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Cliquez le bouton du milieu :"
+   },
+   "stractright": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Cliquez le bouton droit :"
+   },
+   "strleft": {
+      "description": "Section on Rocker Gestures page",
+      "message": "Maintenez le bouton gauche cliqué"
+   },
+   "strmiddle": {
+      "description": "Section on Rocker Gestures page",
+      "message": "Maintenez le bouton du milieu cliqué"
+   },
+   "stroke": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "Afficher la trace de la souris"
+   },
+   "strokegesture": {
+      "description": "Side navigation in Settings",
+      "message": "Raccourcis de bascule"
+   },
+   "strpress": {
+      "description": "Text on Rocker Gestures page",
+      "message": "Quand l'action doit-elle être déclenchée :"
+   },
+   "strpressdown": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Au clic"
+   },
+   "strpressup": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Au relachement du clic"
+   },
+   "strright": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Maintenir cliqué le bouton droit"
+   },
+   "swiki": {
+      "description": "Action - Website name",
+      "message": "Wikipedia"
+   },
+   "syahoo": {
+      "description": "Action - Website name",
+      "message": "Yahoo"
+   },
+   "syandex": {
+      "description": "Action - Website name",
+      "message": "Yandex"
+   },
+   "sync": {
+      "description": "Section on Advanced Settings page",
+      "message": "Synchroniser la configuration"
+   },
+   "syncdes": {
+      "description": "Text on Advanced Settings page",
+      "message": "La configuration sera automatiquement synchronisée avec Chrome pour les utilisateurs \u003Ca href=\"https://accounts.google.com/ServiceLogin?service=chromiumsync\" target=\"_blank\">connectés\u003C/a>, si bien sur la synchronisation est activée."
+   },
+   "tablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Liste des onglets"
+   },
+   "tablistVisual": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Afficher la liste visuelle des onglets lors du changement"
+   },
+   "tablistkeyleft": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Maintenez le bouton gauche appuyé, et défilez."
+   },
+   "tablistkeyright": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Maintenez le bouton droit appuyé, et défilez."
+   },
+   "testlink": {
+      "description": "Text in new Link Super Drag Gesture window",
+      "message": "Lien de test"
+   },
+   "testwords": {
+      "description": "Text in new Text Super Drag Gesture window",
+      "message": "Texte de test"
+   },
+   "text": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Texte"
+   },
+   "thanks": {
+      "description": "Section on About page",
+      "message": "Remerciements"
+   },
+   "time": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Durée"
+   },
+   "timeout": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Délai"
+   },
+   "tipforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "Astuce : Vous pouvez utiliser une URL entière ou bien une partie d'une URL. Par exemple, « cnn.com » acceptera toutes les URL comprenant « cnn.com »."
+   },
+   "titlechromepage": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Infobulle du nom de l'action, utilisez \"%name\" au lieu de l'adresse interne de Chrome"
+   },
+   "titlecopyuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Infobulle du nom de l'action, utilisez \"%name\" au lieu du nom du format personnalisé"
+   },
+   "titleisearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Infobulle du nom de l'action, utilisez \"%name\" au lieu du nom du moteur de recherche"
+   },
+   "titlenewusertab": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Infobulle du nom de l'action, utilisez \"%name\" au lieu du nom du site"
+   },
+   "titlenexpre": {
+      "description": "Placeholder in Actions",
+      "message": "Mots correspondants, séparez plusieurs mots avec \"|\", et l'extension détectera les rel, rev, id, innerHTML, title, class dans l'ordre."
+   },
+   "titlesearchuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Adresse, utilisez \"%s\" au lieu des mots clés"
+   },
+   "titletsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Infobulle pour le nom de l'action, utilisez « %name » au lieu du moteur de recherche et « %s » au lieu du contenu"
+   },
+   "titleuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Infobulle du nom de l'action, utilisez \"%name\" au lieu du nom de script"
+   },
+   "tooltip": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Affiche le nom de l'action"
+   },
+   "translate": {
+      "description": "Translate",
+      "message": "Traduire"
+   },
+   "unclose": {
+      "description": "Do not close, and open the following URL",
+      "message": "Ne pas fermer, et ouvre l'adresse suivante"
+   },
+   "unpinned": {
+      "description": "Action",
+      "message": "Libérer"
+   },
+   "valuechromepage": {
+      "description": "Placeholder in Actions",
+      "message": "ouvrir %name"
+   },
+   "valueisearch": {
+      "description": "Placeholder in Actions",
+      "message": "Utiliser %name pour rechercher une image"
+   },
+   "valuenewusertab": {
+      "description": "Placeholder in Actions",
+      "message": "ouvrir %name"
+   },
+   "valuenone": {
+      "description": "Action",
+      "message": "Aucune"
+   },
+   "valuetsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Utilisez « %s » pour rechercher « %s »"
+   },
+   "valueuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Exécute le script :\"%name\""
+   },
+   "version": {
+      "description": "Version",
+      "message": "Version"
+   },
+   "wheelgesturealert": {
+      "description": "An alert that jumps up when users choose two options that overlap in the Wheel Gestures section",
+      "message": "Notez que ces deux options remplissent des fonctions similaires"
+   },
+   "width": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Largeur :"
+   }
+}

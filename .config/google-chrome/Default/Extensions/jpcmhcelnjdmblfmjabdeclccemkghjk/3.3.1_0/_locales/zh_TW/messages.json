@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "The description of the application, as shown on the web store.",
+      "message": "重新實現 Google 圖片的「檢視圖片」和「以圖搜圖」按鈕。"
+   },
+   "appName": {
+      "description": "Title of the application, as displayed on the web store.",
+      "message": "View Image"
+   },
+   "donatePayPal": {
+      "description": "Text used for the donation button.",
+      "message": "透過 PayPal 捐贈"
+   },
+   "optionsButton": {
+      "description": "Text displayed on the link to options button.",
+      "message": "選項"
+   },
+   "resetButton": {
+      "description": "Text displayed on reset button.",
+      "message": "重設"
+   },
+   "searchImage": {
+      "description": "Button leads to Google's Search by Image page.",
+      "message": "以圖搜圖"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "Settings toggle which causes the search by image page to open in new tab.",
+      "message": "在新分頁開啟「以圖搜圖」:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Settings toggle which causes images to open in new tab.",
+      "message": "在新分頁開啟「檢視圖片」:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "Settings toggle enables manually set text for buttons rather than locale.",
+      "message": "自訂文字按鈕:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "Settings toggle which causes the globe icon to display on the \"View Image\" button.",
+      "message": "在「檢視圖片」按鈕上顯示地球圖示:"
+   },
+   "settingsToggle_noReferrer": {
+      "description": "Settings toggle which toggles rel='noreferrer' on the \"View Image\" button.",
+      "message": "點擊「檢視圖片」時不攜帶 referrer"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "Settings toggle hides copyright message on image results page.",
+      "message": "隱藏「圖片可能受版權保護」警告:"
+   },
+   "viewImage": {
+      "description": "Button for viewing image.",
+      "message": "檢視圖片"
+   }
+}

@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "Ο διαχειριστής σας στο G Suite έχει ενεργοποιήσει το Google Chat. Συνεργαστείτε σε αίθουσες στο πλαίσιο ομάδων και μοιραστείτε εύκολα αρχεία με το Chat.\n\nΓια τη βέλτιστη δυνατή εμπειρία, φροντίστε να απεγκαταστήσετε αυτήν την επέκταση μετά την εγκατάσταση της νέας εφαρμογής Google Chat."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Αποκτήστε την εφαρμογή για υπολογιστές"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Συνεχίστε στο chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Υποδεχθείτε το Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "Συνδεθείτε στο Chrome για να ξεκινήσετε."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Δοκιμάστε ξανά"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Βεβαιωθείτε ότι είστε συνδεδεμένοι στο Διαδίκτυο και δοκιμάστε ξανά"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Σφάλμα σύνδεσης"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Οι εφαρμογές Chrome καταργούνται φέτος. Για να συνεχίσετε να χρησιμοποιείτε την εφαρμογή Hangouts στο δικό της παράθυρο, εγκαταστήστε την επέκταση Hangouts του Chrome."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Η εφαρμογή Hangouts του Chrome δεν υποστηρίζεται πλέον."
+   },
+   "chrome_app_description": {
+      "message": "Η εφαρμογή Chrome \"Hangouts\" έχει καταργηθεί. Ξεκινήστε να χρησιμοποιείτε την επέκταση Chrome \"Hangouts\"."
+   },
+   "chrome_app_download_button": {
+      "message": "ΛΗΨΗ ΕΠΕΚΤΑΣΗΣ CHROME"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Μάθετε περισσότερα"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Η εφαρμογή αυτή δεν είναι ενημερωμένη. Υπάρχει διαθέσιμη νεότερη έκδοση."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Ενημερώστε την εφαρμογή Hangouts του Chrome"
+   },
+   "chrome_app_signin_button": {
+      "message": "Σύνδεση"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Απολαύστε ιδιωτικές και ομαδικές συνομιλίες με κείμενο, φωτογραφίες, αρχεία gif, φωνής, βίντεο και πολλά άλλα."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Δεν ήταν δυνατή η σύνδεση στο Google. Ελέγξτε τη σύνδεσή σας στο δίκτυο."
+   },
+   "chrome_ext_description": {
+      "message": "Τα Hangouts ζωντανεύουν τις συνομιλίες με φωτογραφίες, emoji, ακόμα και ομαδικές κλήσεις βίντεο, δωρεάν."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Κατάσταση: Συνδεδεμένη\nΧάθηκαν μηνύματα"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Κατάσταση: Απενεργοποιήθηκε από τον διαχειριστή"
+   },
+   "quasar_tip_connected": {
+      "message": "Κατάσταση: Συνδεδεμένη"
+   },
+   "quasar_tip_connecting": {
+      "message": "Κατάσταση: Σύνδεση"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Κατάσταση: Αποσυνδέθηκε"
+   },
+   "quasar_tip_not_load": {
+      "message": "Κατάσταση: Σφάλμα φόρτωσης"
+   },
+   "quasar_tip_not_login": {
+      "message": "Κατάσταση: Δεν έχει συνδεθεί"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Κατάσταση: Επανασύνδεση"
+   }
+}

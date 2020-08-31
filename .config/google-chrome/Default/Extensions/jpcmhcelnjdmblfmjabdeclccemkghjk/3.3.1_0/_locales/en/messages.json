@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "The description of the application, as shown on the web store.",
+      "message": "Re-implements the Google Images' \"View Image\" and \"Search by Image\" buttons."
+   },
+   "appName": {
+      "description": "Title of the application, as displayed on the web store.",
+      "message": "View Image"
+   },
+   "donatePayPal": {
+      "description": "Text used for the donation button.",
+      "message": " Donate via PayPal"
+   },
+   "optionsButton": {
+      "description": "Text displayed on the link to options button.",
+      "message": "Options"
+   },
+   "resetButton": {
+      "description": "Text displayed on reset button.",
+      "message": "Reset"
+   },
+   "searchImage": {
+      "description": "Button leads to Google's Search by Image page.",
+      "message": "Search by image"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "Settings toggle which causes the search by image page to open in new tab.",
+      "message": "Open \"Search by image\" in a new tab:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Settings toggle which causes images to open in new tab.",
+      "message": "Open \"View image\" in a new tab:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "Settings toggle enables manually set text for buttons rather than locale.",
+      "message": "Manually set button text:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "Settings toggle which causes the globe icon to display on the \"View Image\" button.",
+      "message": "Show Globe icon in \"View Image\" button:"
+   },
+   "settingsToggle_noReferrer": {
+      "description": "Settings toggle which toggles rel='noreferrer' on the \"View Image\" button.",
+      "message": "Hide referrer from website when clicking \"View Image\":"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "Settings toggle hides copyright message on image results page.",
+      "message": "Hide \"Images may be subject to Copyright\" warning:"
+   },
+   "viewImage": {
+      "description": "Button for viewing image.",
+      "message": "View image"
+   }
+}

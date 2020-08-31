@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Opt out of Google's interest-based ads as you browse the web with Chrome.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZ3XqcX5N31BFfz9tfLgxulAZEaXKRfkFOgDFuxI1YJIzUtljK2F3XoNJ7SJyqW6EfEwA2/uejcsdH333bd/r3hg8jwqJ7/ci8w9Hu+SKhRlw1ZAo1J4ymBdgOaJrXTLGy9z4C2p31Cc4OVkNrAA4gIiDIoziqcZm+KZhD5pFhxQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "12.0.707.0",
+   "name": "IBA Opt-out (by Google)",
+   "permissions": [ "http://doubleclick.net/", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5"
+}

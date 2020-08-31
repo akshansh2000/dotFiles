@@ -1,0 +1,155 @@
+{
+   "add_site_to_list": {
+      "message": "Thêm trang web vào danh sách"
+   },
+   "automation": {
+      "message": "Tự động hóa"
+   },
+   "brightness": {
+      "message": "Độ sáng"
+   },
+   "change_browser_theme": {
+      "message": "Thay đổi chủ đề trình duyệt"
+   },
+   "contrast": {
+      "message": "Tương phản"
+   },
+   "custom_browser_theme_off": {
+      "message": "Mặc định"
+   },
+   "custom_browser_theme_on": {
+      "message": "Custom"
+   },
+   "dark": {
+      "message": "Tối"
+   },
+   "donate": {
+      "message": "Donate"
+   },
+   "engine_dynamic": {
+      "message": "Động"
+   },
+   "engine_filter": {
+      "message": "Bộ lọc"
+   },
+   "engine_filter_plus": {
+      "message": "Bộ lọc+"
+   },
+   "engine_static": {
+      "message": "Tĩnh"
+   },
+   "extension_description": {
+      "message": "Chế độ tối cho mọi trang web. Chăm sóc đôi mắt của bạn, sử dụng chủ đề tối cho trình duyệt ban đêm và hàng ngày."
+   },
+   "filter": {
+      "message": "Bộ lọc"
+   },
+   "grayscale": {
+      "message": "Thang độ xám"
+   },
+   "help": {
+      "message": "Trợ giúp"
+   },
+   "invert_listed_only": {
+      "message": "Đảo ngược chỉ được liệt kê"
+   },
+   "latitude": {
+      "message": "Vĩ độ"
+   },
+   "light": {
+      "message": "Sáng"
+   },
+   "loading_please_wait": {
+      "message": "Đang tải vui lòng đợi..."
+   },
+   "longitude": {
+      "message": "Kinh độ"
+   },
+   "mode": {
+      "message": "Chế độ"
+   },
+   "more": {
+      "message": "Thêm"
+   },
+   "news": {
+      "message": "Tin tức"
+   },
+   "not_invert_listed": {
+      "message": "Không đảo ngược được liệt kê"
+   },
+   "off": {
+      "message": "Tắt"
+   },
+   "on": {
+      "message": "Bật"
+   },
+   "only_for": {
+      "message": "Chỉ dành cho"
+   },
+   "only_for_description": {
+      "message": "Chỉ áp dụng cài đặt cho trang web hiện tại"
+   },
+   "open_dev_tools": {
+      "message": "Dev tools"
+   },
+   "page_in_dark_list": {
+      "message": "Trang web này là trên toàn cầu\n\"Dark List\""
+   },
+   "page_protected": {
+      "message": "Trang này được bảo vệ\nbằng trình duyệt"
+   },
+   "privacy": {
+      "message": "Riêng tư"
+   },
+   "read_more": {
+      "message": "Đoc thêm..."
+   },
+   "select_font": {
+      "message": "Chọn một phông chữ"
+   },
+   "sepia": {
+      "message": "Nâu đỏ"
+   },
+   "set_active_hours": {
+      "message": "Đặt giờ hoạt động"
+   },
+   "set_location": {
+      "message": "Kích hoạt sau khi mặt trời lặn tại vị trí"
+   },
+   "setup_add_site_hotkey": {
+      "message": "Thiết lập một phím nóng để thêm trang web"
+   },
+   "setup_hotkey_toggle_extension": {
+      "message": "Mở rộng cài đặt\nChuyển đổi phím nóng"
+   },
+   "setup_hotkey_toggle_site": {
+      "message": "Thiết lập trang web hiện tại\nChuyển đổi phím nóng"
+   },
+   "site_list": {
+      "message": "Danh sách trang web"
+   },
+   "store_listing": {
+      "message": "Tiện ích chăm sóc mắt này cho phép chế độ ban đêm tạo chủ đề tối cho các trang web đang hoạt động. Dark Reader đảo ngược màu sắc tươi sáng làm cho chúng có độ tương phản cao và dễ đọc vào ban đêm.\n\nBạn có thể điều chỉnh độ sáng, độ tương phản, bộ lọc màu nâu đỏ, chế độ tối, cài đặt phông chữ và danh sách bỏ qua.\n\nDark Reader không hiển thị quảng cáo và không gửi dữ liệu của người dùng ở bất cứ đâu. Nó hoàn toàn là mã nguồn mở https://github.com/darkreader/darkreader\n\nTrước khi bạn cài đặt vô hiệu hóa các phần mở rộng tương tự. Thích xem!"
+   },
+   "system_dark_mode": {
+      "message": "Sử dụng bảng màu hệ thống"
+   },
+   "system_dark_mode_description": {
+      "message": "Kích hoạt khi chế độ tối của hệ thống được bật"
+   },
+   "text_stroke": {
+      "message": "Viền chữ"
+   },
+   "theme_generation_mode": {
+      "message": "Chế độ tạo chủ đề"
+   },
+   "toggle_current_site": {
+      "message": "Chuyển đổi trang web này"
+   },
+   "toggle_extension": {
+      "message": "Chuyển đổi tiện ích mở rộng"
+   },
+   "try_experimental_theme_engines": {
+      "message": "Hãy thử **thử nghiệm** công cụ chủ đề:\n** Bộ lọc+** giữ màu bão hòa màu, sử dụng GPU:\n** Chủ đề tĩnh ** tạo ra một chủ đề nhanh đơn giản\n** Chủ đề động ** phân tích màu sắc và hình ảnh"
+   }
+}

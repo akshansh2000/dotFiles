@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "Din G Suite-administrator har aktiveret Google Chat. Med Chat kan du samarbejde i rum til teams og dele filer på en nem måde.\n\nFor at få den bedst mulige oplevelse bør du afinstallere denne udvidelse, efter du har installeret den nye Google Chat-app."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Hent computerappen"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Gå videre til chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Velkommen til Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "Log ind i Chrome for at komme i gang."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Prøv igen"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Sørg for, at du har forbindelse til internettet, og prøv igen"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Forbindelsesfejl"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome-apps udfases i år. Hvis du fortsat vil bruge Hangouts i sit eget vindue, skal du installere Hangouts-udvidelsen til Chrome."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Chrome-appen Hangouts understøttes ikke længere."
+   },
+   "chrome_app_description": {
+      "message": "Chrome-appen til Hangouts er udfaset. Skift til Chrome-udvidelsen til Hangouts."
+   },
+   "chrome_app_download_button": {
+      "message": "HENT CHROME-UDVIDELSEN"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Få flere oplysninger"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Denne app er forældet. En nyere version er tilgængelig."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Opdater din Chrome-app til Hangouts"
+   },
+   "chrome_app_signin_button": {
+      "message": "Log ind"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Få glæde af private samtaler og gruppesamtaler med tekst, billeder, GIF-animationer, tale, video og meget mere."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts – $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Kunne ikke oprette forbindelse til Google. Kontrollér din internetforbindelse."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts puster liv i samtaler med billeder, emoji og gratis gruppevideoopkald."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Status: Tilsluttet\nMistede beskeder"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (udvidelse, alfaversion)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Status: Deaktiveret af administrator"
+   },
+   "quasar_tip_connected": {
+      "message": "Status: Tilsluttet"
+   },
+   "quasar_tip_connecting": {
+      "message": "Status: Tilslutter"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Status: Afbrudt"
+   },
+   "quasar_tip_not_load": {
+      "message": "Status: Indlæsningsfejl"
+   },
+   "quasar_tip_not_login": {
+      "message": "Status: Ikke logget ind"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Status: Genopretter forbindelsen"
+   }
+}

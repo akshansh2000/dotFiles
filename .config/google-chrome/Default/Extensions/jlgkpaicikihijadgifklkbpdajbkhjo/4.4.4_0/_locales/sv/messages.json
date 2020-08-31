@@ -1,0 +1,1468 @@
+{
+   "G_BmManager": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Öppna bokmärkeshanteraren"
+   },
+   "G_ZoomIn": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Zooma in"
+   },
+   "G_ZoomOut": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Zooma ut"
+   },
+   "G_back": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Tillbaka"
+   },
+   "G_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Lägg till bokmärke"
+   },
+   "G_bookmarks": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Bokmärkeshanterare"
+   },
+   "G_bottom": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rulla till botten"
+   },
+   "G_capture": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Skärmdump"
+   },
+   "G_chromepage": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Öppna intern adress i Chrome"
+   },
+   "G_close": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stäng flik"
+   },
+   "G_closelefttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stäng alla flikar till vänster"
+   },
+   "G_closeothers": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stäng övriga flikar"
+   },
+   "G_closerighttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stäng alla flikar till höger"
+   },
+   "G_closewindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stäng fönster"
+   },
+   "G_closewindows": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Stäng alla fönster"
+   },
+   "G_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera titel och URL som en länk"
+   },
+   "G_copytab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera den aktuella fliken"
+   },
+   "G_copytitle": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera namnet på den aktuella fliken"
+   },
+   "G_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera adressen på den aktuella fliken"
+   },
+   "G_copyuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "kopiera titeln och adressen i anpassat format"
+   },
+   "G_crxsettings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Inställningar för CrxMouse"
+   },
+   "G_down": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rulla ner"
+   },
+   "G_downloads": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nedladdningar"
+   },
+   "G_firsttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Första fliken"
+   },
+   "G_fullscreen": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fullskärm"
+   },
+   "G_go": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Framåt"
+   },
+   "G_goparent": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Till till överordnad adress"
+   },
+   "G_history": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Historik"
+   },
+   "G_incognito": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nytt inkognitofönster"
+   },
+   "G_lasttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Sista fliken"
+   },
+   "G_left": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rulla åt vänster"
+   },
+   "G_lefttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Vänster flik"
+   },
+   "G_mergeTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Sammanfoga flikar"
+   },
+   "G_movetowindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Lossa flik"
+   },
+   "G_newtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ny flik"
+   },
+   "G_newusertab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Anpassad flik..."
+   },
+   "G_newwindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Nytt fönster"
+   },
+   "G_none": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Inget"
+   },
+   "G_openclipurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Försök öppna adressen från urklipp"
+   },
+   "G_pin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Fäst flik"
+   },
+   "G_reclosedtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Öppna den stängda fliken på nytt"
+   },
+   "G_reload": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ladda om"
+   },
+   "G_reloadall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ladda om alla flikar"
+   },
+   "G_reloadclear": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ladda om utan cacheminne"
+   },
+   "G_reloadframe": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Ladda om ram"
+   },
+   "G_right": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rulla åt höger"
+   },
+   "G_righttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Höger flik"
+   },
+   "G_settings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Chromeinställningar"
+   },
+   "G_splitTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Dela flikar"
+   },
+   "G_stop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Avsluta"
+   },
+   "G_stopall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Sluta ladda alla flikar"
+   },
+   "G_top": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rulla till toppen"
+   },
+   "G_tostop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Inaktivera tillägget tillfälligt på denna sida"
+   },
+   "G_trynext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Försök att gå till nästa kapitel"
+   },
+   "G_tryprev": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Försök att gå till föregående kapitel"
+   },
+   "G_up": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Rulla upp"
+   },
+   "G_userscript": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kör skript..."
+   },
+   "G_viewsource": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Visa sidkod"
+   },
+   "G_windowmax": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Maximera fönstret"
+   },
+   "G_windowmin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Minimera fönster"
+   },
+   "I_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera bildadressen"
+   },
+   "I_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Öppna bild i ny flik"
+   },
+   "I_save": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Spara bild"
+   },
+   "I_saveback": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Spara bild som (endast utv.)..."
+   },
+   "I_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Sök efter bilden"
+   },
+   "I_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Sök efter bilden med anpassad sökmotor"
+   },
+   "L_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Lägg till bokmärke"
+   },
+   "L_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "kopiera text och adress som en länk"
+   },
+   "L_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera länktext"
+   },
+   "L_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera länkadress"
+   },
+   "L_copyuser": {
+      "description": "Advanced actions",
+      "message": "kopiera titel och webbsida i ett anpassat format"
+   },
+   "L_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Öppna länk i ny flik"
+   },
+   "T_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Kopiera text"
+   },
+   "T_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Sök i texten"
+   },
+   "T_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Anpassad sökning..."
+   },
+   "about": {
+      "description": "Title of About page in Settings area",
+      "message": "Om"
+   },
+   "addtipgesture": {
+      "description": "Instructions for how to add a new gesture thourh the Settings area - appears when clicking on the 'Add New' button in the 'New section on the 'Mouse Gestures' page.",
+      "message": "Håll nere höger musknapp, flytta markören för att rita spåret och släpp sedan knappen och välj åtgärd."
+   },
+   "addtipimage": {
+      "description": "Instructions for how to add a new Super Drag Gesture for an Image - appears when clicking on the 'Image' button in the 'New' section on the 'Super Drag' page.",
+      "message": "Använd vänster musknapp för att dra ner bilden och rita spåret, släpp sedan musknappen för att välja åtgärd."
+   },
+   "addtiplink": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a link - appears when clicking on the 'Link' button in the 'New' section on the 'Super Drag' page.",
+      "message": "Välj länken nedan och rita spåret med vänster musknapp nedtryckt, släpp sedan musknappen och välj åtgärd."
+   },
+   "addtiptext": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a text - appears when clicking on the 'Text' button in the 'New' section on the 'Super Drag' page",
+      "message": "Välj följande text och rita spåret med vänster musknapp nedtryckt, släpp sedan musknappen och välj åtgärd."
+   },
+   "advanced": {
+      "description": "Side navigation and Title of page in 'Settings' area",
+      "message": "Avancerade inställningar"
+   },
+   "alertaction": {
+      "description": "Alert window - promopted of user tries to save new gesture before selecting an action.",
+      "message": "Välj en åtgärd."
+   },
+   "alertconfigerror": {
+      "description": "Error message - prompted when there is an issue with an imported file.",
+      "message": "Ett fel uppstod vid importkonfiguration."
+   },
+   "alertname": {
+      "description": "Error message when trying to edit gesture with text field empty.",
+      "message": "Det gick inte att spara. Kontrollera vilket fält som inte är ifyllt."
+   },
+   "alertrepeat": {
+      "description": "Error message when trying to create gesture with an already used gesture.",
+      "message": "Gesten duplicerades, prova en annan."
+   },
+   "alerttooltip": {
+      "description": "Error message when creating new gesture of new action without giving it a name. ",
+      "message": "Ange ett namn på åtgärden."
+   },
+   "alerturl": {
+      "description": "Error message when creating new gesture for opening a specific url without specifying the url.",
+      "message": "Ingen eller ogiltig adress."
+   },
+   "appName": {
+      "Description": "Name of extension. Do not translate name.",
+      "message": "CrxMouse Chrome™ Musgester"
+   },
+   "author": {
+      "description": "Author",
+      "message": "Författare"
+   },
+   "blackList": {
+      "description": "List for sites that should exclude mouse gestures. Located on General Settings page.",
+      "message": "Svartlistade webbplatser"
+   },
+   "blacklistTip": {
+      "description": "Note listed below message box of site blacklist. Located on General Settings page.",
+      "message": "Anmärkning: 1: crxMouse kan inte köras på dessa sidor. 2: En domän per rad, tryck Enter för att skapa ny rad, ange inte http:// eller https://"
+   },
+   "bookmarkfailnotifi": {
+      "description": "Error message when trying to create gesture for bookmark that already exists.",
+      "message": "Bokmärket finns redan!"
+   },
+   "bookmarknotifi": {
+      "description": "Notification for bookmark saved.",
+      "message": "Bokmärket har lagts till!"
+   },
+   "bug": {
+      "description": "Link to report a bug",
+      "message": "Rapportera en bug"
+   },
+   "cancel": {
+      "description": "Cancel adding new gesture.",
+      "message": "Avbryt"
+   },
+   "cancelcontextmenu": {
+      "description": "Text of Linux/Mac options check box located on General Settings page. Note! Do not translate html tags.",
+      "message": "Fixa problem med kontextmenyer i Linux/Mac(\u003Cspan style='color:red'>dubbelklicka på höger musknapp för att få upp kontextmeny\u003C/span>)."
+   },
+   "cancelcontextmenudes": {
+      "description": "Tooltip about Linux/Mac options located on General Settings page",
+      "message": "Möjlighet att fixa på icke-Windowsplattformar, högerklickmenyn påverkar normalt bruk av vissa funktioner, rekommenderar starkt att Linux-/Max-användare kollar på detta."
+   },
+   "cancelgesture": {
+      "description": "Message that appears in trash bin area for dragging mouse gestures to cancel them",
+      "message": "Avbryt"
+   },
+   "cancelgesturehidetrash": {
+      "description": "An option to hide the icon of the trash bin that appears when performing a gesture. The trashbin enables canceling the performed gestute.",
+      "message": "Dölj papperskorgen"
+   },
+   "cancelgesturehidetrashinfo": {
+      "description": "Instructions that appear below the option of hiding the icon of the trash bin.",
+      "message": "Aktivera detta alternativ för att dölja papperskorgen."
+   },
+   "changelog": {
+      "description": "Super Drag Action.",
+      "message": "Ändringslogg"
+   },
+   "chrome": {
+      "description": "Referrs to the default tab opening (left or right) settings in Chrome.",
+      "message": "Chrome, standard"
+   },
+   "clearsyncdata": {
+      "description": "For logged in users, they can clear any data that was synced between machines.",
+      "message": "Rensa synkroniserade data"
+   },
+   "close": {
+      "description": "Action list - close tab",
+      "message": "Stäng av"
+   },
+   "color": {
+      "description": "A design option for how mouse gestures appear, under the 'Appearance' section on the Settings area.",
+      "message": "Färg:"
+   },
+   "crbookmarks": {
+      "description": "Action list - open bookmarks manager",
+      "message": "Bokmärkeshanterare"
+   },
+   "crdownloads": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Nedladdningar"
+   },
+   "crextensions": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Tillägg"
+   },
+   "crflags": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome, standard"
+   },
+   "crhistory": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Historik"
+   },
+   "crsettings": {
+      "description": "Actions list - referrs to ",
+      "message": "Chrome-inställningar"
+   },
+   "ctatoenableadvanced": {
+      "description": "CTA for enabling advanced features on sidebar inside Settings area. Make sure any translation is limited to 24 characters",
+      "message": "Aktivera avancerade funktioner"
+   },
+   "curfront": {
+      "description": "Actions list - referrs to the current tab opened and visited.",
+      "message": "Aktuell flik"
+   },
+   "dbclicktime": {
+      "description": "milliseconds between 2 clicks for accessing the right-click menu on Mac and Linux.",
+      "message": "Maximal varaktighet av dubbelklick (ms):"
+   },
+   "delete": {
+      "description": "Delete a gesture.",
+      "message": "Radera"
+   },
+   "description": {
+      "description": "Long Store title",
+      "message": "Öka produktiviteten med hjälp av fingertopparna"
+   },
+   "descriptionjson": {
+      "description": "Short Store description",
+      "message": "Boosta datoranvändandet med makron för musgester - enkla musrörelser, superdrag, hjulgester, knappgester."
+   },
+   "dholdkey": {
+      "description": "Users can choose a keyboard key that will disable the super drag feature on specific ocassions.",
+      "message": "Tilldela en tangent för att inaktivera Superdrag:"
+   },
+   "direct": {
+      "description": "Appearance option that let's user choose whether or not to see the path of a mouse gesture, when performing it.",
+      "message": "Visa riktning"
+   },
+   "downimgtooltip": {
+      "description": "Tooltip for when saving image using super drag gesture.",
+      "message": "Sparar bild..."
+   },
+   "drag": {
+      "description": "Side navigation and title of page in Settings area.",
+      "message": "Superdrag"
+   },
+   "draginput": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Aktivera dragtext för textruta."
+   },
+   "dragui": {
+      "description": "Section name in the Settings area.",
+      "message": "Utseende"
+   },
+   "editgesture": {
+      "description": "Section name",
+      "message": "Redigera gester"
+   },
+   "editimage": {
+      "description": "Section name on Super Drag page",
+      "message": "Dragbild"
+   },
+   "editlink": {
+      "description": "Section name on Super Drag page",
+      "message": "Draglänk"
+   },
+   "editsgsleft": {
+      "description": "Section name on Wheel Gestures page. Note! do not translate html tags (the br and span open and close tags).",
+      "message": "Hjulgester VÄNSTER\u003Cbr />\u003Cspan class='opttitledes'>(Håll nere vänster knapp och rulla)\u003C/span>"
+   },
+   "editsgsright": {
+      "description": "Section name on Super Drag page. Note! do not translate html tag (the span open and close tags).",
+      "message": "Hjulgester HÖGER\u003Cbr />\u003Cspan class='opttitledes'>(Håll nere höger knapp och rulla.)\u003C/span>"
+   },
+   "edittext": {
+      "description": "Section name on Super Drag page",
+      "message": "Dragtext"
+   },
+   "enabledragimage": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Aktivera dragbild"
+   },
+   "enabledraglink": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Aktivera draglänk"
+   },
+   "enabledragtext": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Aktivera dragtext"
+   },
+   "enabletochange": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Aktivera för att göra ändringar"
+   },
+   "export": {
+      "description": "Buttom in Advanced Settings page",
+      "message": "Exportera"
+   },
+   "extauthor": {
+      "description": "Author name inside options.html",
+      "message": "WeKnowNet"
+   },
+   "extnamejson": {
+      "description": "Extension name",
+      "message": "CrxMouse"
+   },
+   "extthanks": {
+      "description": "Thanks section in About page. Note! do not translate html tag.",
+      "message": "\r\n\t\t&gt; os0x\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; ArcCosine\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Jan Odvarko\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Tack till alla som gillar vårt tillägg och/eller skickar feedback som gör att tillägget kan förbättras"
+   },
+   "fastSwitch": {
+      "description": "Switch tab to the left when Scrolling up, to the right when scrolling down",
+      "message": "Byt flik åt vänster när du rullar upp, och till höger när du rullar ner"
+   },
+   "fastreset": {
+      "description": "Error message when extension is down",
+      "message": "Något gick fel, tillägget har slutat fungera, klicka här för att återställa inställningarna. Om det inte hjälper, uppdatera Chrome till den senaste versionen (V23+) och försök igen."
+   },
+   "fndrag": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera superdrag"
+   },
+   "fngesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera musgester"
+   },
+   "fnscroll": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera rullning "
+   },
+   "fnscrollgesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera hjulgester"
+   },
+   "fnsmooth": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera smidig rullning"
+   },
+   "fnstrokegesture": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera knappgester"
+   },
+   "fnswitch": {
+      "description": "Enable options on General Settings page",
+      "message": "Aktivera CrxMouse"
+   },
+   "gesPos": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "Position för musgest"
+   },
+   "gesPosBC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Längst ner i mitten"
+   },
+   "gesPosBL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Längst ner till vänster"
+   },
+   "gesPosBR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Längst ner till höger"
+   },
+   "gesPosCC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Mitten"
+   },
+   "gesPosCL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Till vänster i mitten"
+   },
+   "gesPosCR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Till höger i mitten"
+   },
+   "gesPosTC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Längst upp i mitten"
+   },
+   "gesPosTL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Till vänster längst upp"
+   },
+   "gesPosTR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "Till höger längst upp"
+   },
+   "geskey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "Tangent för musgester:"
+   },
+   "geskeydes": {
+      "description": "Description text in More section on Mouse Gestures page",
+      "message": "Anmärkning;1 endast ett alternativ för Linux-/Mac-användare som inte kan använda höger musknapp, Windows- användare rekommenderas inte att ändra detta;\u003Cbr />2 Många problem uppstod; t.ex. kan inte välja text för superdrag el. musgester på bilder och länkar. Man kan behöva inställningen nedan."
+   },
+   "geskeyleft": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Vänster musknapp"
+   },
+   "geskeymiddle": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Mittenknapp"
+   },
+   "geskeyright": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "Höger musknapp"
+   },
+   "gesture": {
+      "description": "Page name",
+      "message": "Musgester"
+   },
+   "gesturedeleted": {
+      "description": "Appears in notification window when a gesture is deleted. Indicating that the gesture was deleted successfully.",
+      "message": "Gesten raderad"
+   },
+   "gestureui": {
+      "description": "Section name",
+      "message": "Utseende"
+   },
+   "gholdkey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "Ange en tangent för att inaktivera musgester:"
+   },
+   "head": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Huvudsaklig"
+   },
+   "headlineforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "En adress eller del av den per rad"
+   },
+   "hidewhitelist": {
+      "description": "Hides a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "Dölj whitelist"
+   },
+   "howtablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Hur man använder fliklistan:"
+   },
+   "image": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Bild"
+   },
+   "imgfirst": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Ange en tangent för att använda superdrag-bild istället för draglänk:"
+   },
+   "imgfirstcheck": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Om länken innehåller en bild, använd superdrag-bild istället för draglänk"
+   },
+   "import": {
+      "description": "Option on Advanced Setttings page",
+      "message": "Importera"
+   },
+   "incog": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Inkognitofönster"
+   },
+   "keytodisablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to disable gestures",
+      "message": "Ange en tangent för att inaktivera musgester:"
+   },
+   "keytoenablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to enable gestures",
+      "message": "Ange en tangent för att aktivera musgester:"
+   },
+   "last": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Sista"
+   },
+   "left": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Kvar"
+   },
+   "link": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Länk"
+   },
+   "linuxsettings": {
+      "description": "Section name on General Settings page",
+      "message": "Alternativ för Linux/Mac"
+   },
+   "listaction": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "Åtgärd:"
+   },
+   "listgesture": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "Gest:"
+   },
+   "local": {
+      "description": "en",
+      "message": "se"
+   },
+   "localtrans": {
+      "description": "FALSE",
+      "message": "FALSKT"
+   },
+   "minilength": {
+      "description": "Option in Miscellaneous section on General Settings page",
+      "message": "Minsta längd på spåret (px):"
+   },
+   "missedgesture": {
+      "description": "Message for when gestures didn't work. Click on 'Report' sends to a form to fill. Should be maximun 30 charachters",
+      "message": "Fungerade inte gesten? Rapportera"
+   },
+   "moreChromepagetitle": {
+      "description": "Placeholder in Actions",
+      "message": "Intern Chromeadress, t.ex. \"chrome://...\""
+   },
+   "moreCloseoptstitle": {
+      "description": "Placeholder in Actions",
+      "message": "Stäng fönstret när den sista fliken stängs?"
+   },
+   "moreCloseseltitle": {
+      "description": "Placeholder in Actions",
+      "message": "vilken flik ska väljas när den aktuella stängs?"
+   },
+   "moreCloseurltitle": {
+      "description": "Placeholder in Actions",
+      "message": "Adress som ska öppnas om du inte stänger Chrome"
+   },
+   "moreCopystyletitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "anpassat format, använd \"%title\" i stället för titel/ord, \"%url\" istället för adressen. Skapa ny rad med \"\\n\""
+   },
+   "moreDes": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "Prompttext för funktion, använd \"%name\" istället för nyckelord"
+   },
+   "moreDestitle": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Åtgärdsnamn"
+   },
+   "moreIsearchtitle": {
+      "description": "Action",
+      "message": "Bildsökmotorer"
+   },
+   "moreName": {
+      "description": "Name",
+      "message": "Namn"
+   },
+   "morePinnedtitle": {
+      "description": "Action",
+      "message": "Fäst/lossa fliken"
+   },
+   "morePositiontitle": {
+      "description": "Action",
+      "message": "Ny fliks position i förhållande till den aktuella fliken"
+   },
+   "moreScript": {
+      "description": "Action",
+      "message": "Skript"
+   },
+   "moreScripttitle": {
+      "description": "Placeholder in Run Script Action",
+      "message": "Skriptinnehåll"
+   },
+   "moreTarget": {
+      "description": "Action",
+      "message": "Position"
+   },
+   "moreTargettitle": {
+      "description": "Placeholder in Actions",
+      "message": "Hur man öppnar ny flik: ny/aktuell flik,Front/Bakgrund"
+   },
+   "moreTsearchtitle": {
+      "description": "Action",
+      "message": "Textsökmotorer"
+   },
+   "moreURL": {
+      "description": "Action",
+      "message": "adress"
+   },
+   "moreURLtitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "adress, använd \"%s\" i stället för nyckelord"
+   },
+   "moreaboutdrag": {
+      "description": "Section name",
+      "message": "Mer..."
+   },
+   "moreaffecteddomains": {
+      "description": "Shown on hover when gesture is associated to more than one domain on Edit Gesture screen.",
+      "message": "Fler domäner påverkas. Redigera domäner."
+   },
+   "morecur": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Aktuell flik"
+   },
+   "morenew": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Ny flik & Front"
+   },
+   "morenewback": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Ny flik & Bakgrund"
+   },
+   "moresettings": {
+      "description": "Section name",
+      "message": "Blandat"
+   },
+   "morestrges": {
+      "description": "Section name on Rocker Gestures page",
+      "message": "avancerade inställningar"
+   },
+   "mousecursor": {
+      "description": "Headline for the Mouse cursor customization section in the Settings page",
+      "message": "Muspekare"
+   },
+   "mousecursorreturndefault": {
+      "description": "Link to switch back to default mouse cursor image",
+      "message": "Återgå till standardpekaren"
+   },
+   "mousecursorscale": {
+      "description": "Scale of mouse custom cursor image",
+      "message": "Skala"
+   },
+   "mousecursorupload": {
+      "description": "Uploading an image to be used as a mouse cursor",
+      "message": "Ladda upp från dator"
+   },
+   "mousecursoruploadinstructions": {
+      "description": "Instructions for the image file a user can upload for the mouse cursor",
+      "message": "Ladda upp din egna muspekare 48 px × 48 px PNG. Upp till 20 kb."
+   },
+   "msgbox": {
+      "description": "Message when making changes or clicking on save inside Settings ",
+      "message": "Inställningarna har sparats! En del ändringar tillämpas efter omstart."
+   },
+   "mygestures": {
+      "description": "Headline of default, edited or new gestures section on ext. popup",
+      "message": "Aktiva gester"
+   },
+   "newadd": {
+      "description": "Options in Actions",
+      "message": "Ny"
+   },
+   "newback": {
+      "description": "Options in Actions",
+      "message": "Ny flik & Bakgrund"
+   },
+   "newfront": {
+      "description": "Options in Actions",
+      "message": "Ny flik & Front"
+   },
+   "newgesture": {
+      "description": "Button on Mouse Gestures page",
+      "message": "Lägg till ny"
+   },
+   "newtabdes": {
+      "description": "Placeholder in Actions",
+      "message": "Öppna %name"
+   },
+   "nopopulargestures": {
+      "description": "shown in popup when user visits a site with no popular gestures available for it",
+      "message": "Det finns inga populära gester för den här sidan. Bli först med att använda gester och bidra till vår hubb."
+   },
+   "normal": {
+      "description": "Side navigation in Settings",
+      "message": "Allmänna inställningar"
+   },
+   "noteforkeytodisable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to disable gestures",
+      "message": "OBS! När du klickar på den valda tangenten kommer musgester att aktiveras som standard och högerklicksfunktionen kommer att avaktiveras."
+   },
+   "noteforkeytoenable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to enable gestures",
+      "message": "OBS! När du klickar på den valda tangenten kommer musgester att avaktiveras som standard och högerklicksfunktionen kommer igång igen."
+   },
+   "offmodepopup": {
+      "description": "Text on ext. popup when Crx Mouse is off",
+      "message": "Crx Mouse är avstängd"
+   },
+   "offmodesettings": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Crx Mouse är inaktiverad"
+   },
+   "offmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Stäng av Crx Mouse"
+   },
+   "onmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Starta Crx Mouse"
+   },
+   "opa": {
+      "description": "Option in Appearance section",
+      "message": "Transparens:"
+   },
+   "optgrpapp": {
+      "description": "Action",
+      "message": "APP"
+   },
+   "optgrpcopy": {
+      "description": "Action",
+      "message": "Kopiera"
+   },
+   "optgrpload": {
+      "description": "Action",
+      "message": "Ladda"
+   },
+   "optgrpnav": {
+      "description": "Action",
+      "message": "Navigering"
+   },
+   "optgrpnone": {
+      "description": "Action",
+      "message": "Inget"
+   },
+   "optgrpother": {
+      "description": "Action",
+      "message": "Annan"
+   },
+   "optgrpsave": {
+      "description": "Action",
+      "message": "Spara"
+   },
+   "optgrpscroll": {
+      "description": "Action",
+      "message": "Rulla"
+   },
+   "optgrpsearch": {
+      "description": "Action",
+      "message": "Sök"
+   },
+   "optgrptab": {
+      "description": "Action",
+      "message": "Flik"
+   },
+   "optgrptabnav": {
+      "description": "Action",
+      "message": "Fliknavigering"
+   },
+   "optgrpwindow": {
+      "description": "Action",
+      "message": "Fönster"
+   },
+   "optmode": {
+      "description": "Text of opt in/out checkbox",
+      "message": "Starta Populära gester (skickar anonyma data)"
+   },
+   "optmodealert": {
+      "description": "text on opt in/out alert window",
+      "message": "Vi kan inte fortsätta visa dina populära gester. Du kan aktivera dem igen när som helst genom att markera funktionens kryssruta."
+   },
+   "optoutmodemessage": {
+      "description": "Description of opt out mode on ext. popup",
+      "message": "För att aktivera populära gester går du till \u003Ca href=\"$link$\" target=\"_blank\">Inställningar\u003C/a>",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "optoutmodetitle": {
+      "description": "Title of opt out mode on ext. popup",
+      "message": "Populära gester är inaktiverat."
+   },
+   "pinned": {
+      "description": "Action",
+      "message": "Fäst"
+   },
+   "placeholderconfig": {
+      "description": "Text on Advanced Settings page",
+      "message": "Klistra in inställningen här och klicka på Importer för att slutföra importen. Inställningen visas när Export har valts, och är sedan tillgänglig för vidare användning"
+   },
+   "placeholdername": {
+      "description": "Placeholder in Actions",
+      "message": "Namn"
+   },
+   "placeholderscript": {
+      "description": "Placeholder in Actions",
+      "message": "Skript"
+   },
+   "placeholdersearchurl": {
+      "description": "Placeholder in Actions",
+      "message": "adress använd %s i stället för nyckelord"
+   },
+   "placeholdertooltip": {
+      "description": "Placeholder in Actions",
+      "message": "Åtgärdsnamn"
+   },
+   "placeholderurl": {
+      "description": "Placeholder in Actions",
+      "message": "adress"
+   },
+   "popupaddtooltip": {
+      "description": "Tooltip when hovering on plus icon in Active Gestures section",
+      "message": "Lägg till ny"
+   },
+   "popupeditgesture": {
+      "description": "Button to apply changes for existing gesture on ext. popup",
+      "message": "Tillämpa ändringarna"
+   },
+   "popupfooterhelptooltip": {
+      "description": "Tooltip when hovering on question mark icon in footer on ext. popup",
+      "message": "Hjälp"
+   },
+   "popupgesturecancel": {
+      "description": "Button to cancel new/edit gesture on ext. popup",
+      "message": "Avbryt"
+   },
+   "popupnewaction": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Välj åtgärd"
+   },
+   "popupnewgesture": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Välj en gest"
+   },
+   "popupnewscope": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "Välj tillämpningsområde"
+   },
+   "popupnewscopeglobal": {
+      "description": "Option in new gesture window on ext. popup",
+      "message": "Alla sidor"
+   },
+   "popuponboarding": {
+      "description": "Text on onboarding window to close window",
+      "message": "Jag fattar, tack."
+   },
+   "popuppopular": {
+      "description": "Headline of popular gestures section on ext. popup",
+      "message": "Populära gester"
+   },
+   "popuprecordsave": {
+      "description": "Button to save new gesture in new gesture window on ext. popup",
+      "message": "Spara gest"
+   },
+   "popupsuccess": {
+      "description": "Text in notification for gesture saved/edited on ext. popup. Note! Do not translate text next to $",
+      "message": "Gest för \"$GestureName$\" har sparats",
+      "placeholders": {
+         "GestureName": {
+            "content": "$1"
+         }
+      }
+   },
+   "popuptooltipdelete": {
+      "description": "Tooltip when hovering on delete icon on ext. popup",
+      "message": "Radera"
+   },
+   "popuptooltipedit": {
+      "description": "Tooltip when hovering on edit icon on ext. popup",
+      "message": "Redigera"
+   },
+   "popupvideotool": {
+      "description": "Tooltip when hovering on video icon in footer on ext. popup",
+      "message": "Hur man använder Crx Mouse"
+   },
+   "port": {
+      "description": "Section name on Advanced Settings page",
+      "message": "Importera/exportera inställning"
+   },
+   "porttip": {
+      "description": "Text on Advanced Settings page. Note! Do not translate html tags",
+      "message": "Anmärkning: 1. Importera inställningsresultat innebär en omstart av detta tillägg, öppna flikar måste laddas om för att tillägget ska aktiveras! \u003Cbr /> 2. Du kan endast importera inställningar som exporterats härifrån, du rekommenderas inte att redigera dem själv.&lt;br/&gt; 3. Vid fel, återställ till standardinställningarna. "
+   },
+   "poschrome": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome, standard"
+   },
+   "poshead": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Huvudsaklig"
+   },
+   "poslast": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Sista"
+   },
+   "posleft": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Kvar"
+   },
+   "posright": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Höger"
+   },
+   "rate_us_never_show_again": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "Visa inte igen"
+   },
+   "rate_us_remind_me_later": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "PÅMINN MIG SENARE"
+   },
+   "rate_us_title": {
+      "description": "Title crx mouse overlay for rate us",
+      "message": "Gillar du CRX Mouse?"
+   },
+   "rateus": {
+      "description": "located in Settings section inside sidebar. Asking the users to rate the extension. Translation should be max 21 characters",
+      "message": "GILLAR DU OSS? GE OSS ETT OMDÖME!"
+   },
+   "reset": {
+      "description": "Section name on Advanced Settings page",
+      "message": "Återställ"
+   },
+   "resetall": {
+      "description": "Reset button on Advanced Settings page",
+      "message": "Återställ allt"
+   },
+   "resetpage": {
+      "description": "Reset button on Gestures pages",
+      "message": "Återställ den här sidan"
+   },
+   "resettip": {
+      "description": "Text on Advanced Settings page",
+      "message": "OBS: Den här åtgärden raderar alla inställningar och återställer appen till standardutförande. Åtgärden kan inte ångras, så var försiktig!"
+   },
+   "reverseFS": {
+      "description": "Action",
+      "message": "Vänd riktning"
+   },
+   "right": {
+      "description": "Action",
+      "message": "Höger"
+   },
+   "s360": {
+      "description": "Action - Website name",
+      "message": "360"
+   },
+   "samazon": {
+      "description": "Action - Website name",
+      "message": "Amazon"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "Spara"
+   },
+   "savewhitelist": {
+      "description": "save whitelist changes. Appears on all gesture boxes",
+      "message": "Spara"
+   },
+   "sbaidu": {
+      "description": "Action - Website name",
+      "message": "Baidu"
+   },
+   "sbaiduimage": {
+      "description": "Action - Website name",
+      "message": "Baidu-sökning med bild"
+   },
+   "sbing": {
+      "description": "Action - Website name",
+      "message": "Bing"
+   },
+   "scractdown": {
+      "description": "Action",
+      "message": "Rulla ner:"
+   },
+   "scractup": {
+      "description": "Action",
+      "message": "Rulla upp:"
+   },
+   "scriptdes": {
+      "description": "Placeholder in Actions",
+      "message": "Kör skript: %name"
+   },
+   "scroll": {
+      "description": "Side navigation in Settings",
+      "message": "Rullar"
+   },
+   "scrollaccele": {
+      "description": "Option on Scrolling page",
+      "message": "Acceleration för rullning"
+   },
+   "scrolleffects": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Med effekter (för sida upp/ner/längst upp/längst ner)."
+   },
+   "scrollgesture": {
+      "description": "Side navigation in Settings",
+      "message": "Hjulgester"
+   },
+   "scrollspeed": {
+      "description": "Option on Scrolling page",
+      "message": "Rullningshastighet"
+   },
+   "searchdes": {
+      "description": "Placeholder in Actions. Note! do not translate text next to %.",
+      "message": "Använd %name för att söka efter:\"%s\""
+   },
+   "set_your_mouse_gestures_off": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "Stäng av musgester som standard"
+   },
+   "set_your_mouse_gestures_on": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "Sätt på musgester som standard"
+   },
+   "setdragurl": {
+      "description": "Option in More section on Super Drag page",
+      "message": "Aktivera draglänk om strängen känns igen som en länk (under testning)"
+   },
+   "settings": {
+      "description": "Settings",
+      "message": "Inställningar"
+   },
+   "sgoogle": {
+      "description": "Action - Website name",
+      "message": "Google"
+   },
+   "sgoogleimage": {
+      "description": "Action - Website name",
+      "message": "Google-sökning med bild"
+   },
+   "showwhitelist": {
+      "description": "Opens a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "Visa whitelist"
+   },
+   "site": {
+      "description": "Action",
+      "message": "Webbplats"
+   },
+   "smooth": {
+      "description": "Action",
+      "message": "Smidig rullning"
+   },
+   "ssogou": {
+      "description": "Action - Website name",
+      "message": "Sogou"
+   },
+   "staobao": {
+      "description": "Action - Website name",
+      "message": "Taobao"
+   },
+   "stenable": {
+      "description": "Enable select text while holding the left mouse(It makes Mouse Gestures invalid sometimes)",
+      "message": "Aktivera välj text med vänster musknapp intryckt (gör musgester ogiltiga ibland)"
+   },
+   "stineyeimage": {
+      "description": "TinEye",
+      "message": "TinEye"
+   },
+   "stractleft": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Klicka på vänster knapp:"
+   },
+   "stractmiddle": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Klicka på mittenknappen:"
+   },
+   "stractright": {
+      "description": "Options on Rocker Gestures page",
+      "message": "Klicka på höger knapp:"
+   },
+   "strleft": {
+      "description": "Section on Rocker Gestures page",
+      "message": "Håll nere vänster knapp"
+   },
+   "strmiddle": {
+      "description": "Section on Rocker Gestures page",
+      "message": "Håll nere mittenknappen"
+   },
+   "stroke": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "Visa musspår"
+   },
+   "strokegesture": {
+      "description": "Side navigation in Settings",
+      "message": "Knappgester"
+   },
+   "strpress": {
+      "description": "Text on Rocker Gestures page",
+      "message": "När ska åtgärden utlösas:"
+   },
+   "strpressdown": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Mus ner"
+   },
+   "strpressup": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Mus upp"
+   },
+   "strright": {
+      "description": "Option on Rocker Gestures page",
+      "message": "Håll nere högerknappen"
+   },
+   "swiki": {
+      "description": "Action - Website name",
+      "message": "Wikipedia"
+   },
+   "syahoo": {
+      "description": "Action - Website name",
+      "message": "Yahoo"
+   },
+   "syandex": {
+      "description": "Action - Website name",
+      "message": "Yandex"
+   },
+   "sync": {
+      "description": "Section on Advanced Settings page",
+      "message": "Synkronisera inställning"
+   },
+   "syncdes": {
+      "description": "Text on Advanced Settings page",
+      "message": "Inställningar ska synkroniseras automatiskt med Chrome för användare som är \u003Ca href=\"https://accounts.google.com/ServiceLogin?service=chromiumsync\" target=\"_blank\">inloggad på\u003C/a>, om användaren har synkronisering aktiverat."
+   },
+   "tablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Fliklista"
+   },
+   "tablistVisual": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Visa visuell fliklista under rullning"
+   },
+   "tablistkeyleft": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Håll nere vänster knapp och rulla."
+   },
+   "tablistkeyright": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "Håll nere höger knapp och rulla."
+   },
+   "testlink": {
+      "description": "Text in new Link Super Drag Gesture window",
+      "message": "Testar länk"
+   },
+   "testwords": {
+      "description": "Text in new Text Super Drag Gesture window",
+      "message": "Testar strängar"
+   },
+   "text": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "Text"
+   },
+   "thanks": {
+      "description": "Section on About page",
+      "message": "Tack"
+   },
+   "time": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Varaktighet"
+   },
+   "timeout": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "Timeout"
+   },
+   "tipforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "Tips: Du kan ange både hela och delar av adresser. Till exempel \"cnn.com\" stödjer alla adresser som innehåller cnn.com."
+   },
+   "titlechromepage": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tips för åtgärdsnamn: använd \"%name\" i stället för Chromes interna adress"
+   },
+   "titlecopyuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tips för åtgärdsnamn: använd \"%name\" i stället för det anpassade formatnamnet"
+   },
+   "titleisearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tips för åtgärdsnamn: använd \"%name\" i stället för sökmotornamnet"
+   },
+   "titlenewusertab": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tips för åtgärdsnamn: använd \"%name\" i stället för webbplatsnamnet"
+   },
+   "titlenexpre": {
+      "description": "Placeholder in Actions",
+      "message": "Matchande ord, separera flera ord med ”|”, så kommer tillägget att upptäcka rel, rev, id, innerHTML, titel och klass."
+   },
+   "titlesearchuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "adress använd \"%s\" i stället för nyckelord"
+   },
+   "titletsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tips för åtgärdsnamn: använd \"%name\" i stället för sökmotornamnet, \"%s\" istället för innehåll"
+   },
+   "titleuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Tips för åtgärdsnamn: använd \"%name\" i stället för skriptnamnet"
+   },
+   "tooltip": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Visa åtgärdsnamn"
+   },
+   "translate": {
+      "description": "Translate",
+      "message": "Översätt"
+   },
+   "unclose": {
+      "description": "Do not close, and open the following URL",
+      "message": "Stäng inte, och öppna följande adress"
+   },
+   "unpinned": {
+      "description": "Action",
+      "message": "Släpp loss"
+   },
+   "valuechromepage": {
+      "description": "Placeholder in Actions",
+      "message": "öppna %name"
+   },
+   "valueisearch": {
+      "description": "Placeholder in Actions",
+      "message": "Använd %name för att söka efter bilden"
+   },
+   "valuenewusertab": {
+      "description": "Placeholder in Actions",
+      "message": "öppna %name"
+   },
+   "valuenone": {
+      "description": "Action",
+      "message": "Inget"
+   },
+   "valuetsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Använd %name för att söka efter \"%s\""
+   },
+   "valueuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "Kör skriptet:\"%name\""
+   },
+   "version": {
+      "description": "Version",
+      "message": "Version"
+   },
+   "wheelgesturealert": {
+      "description": "An alert that jumps up when users choose two options that overlap in the Wheel Gestures section",
+      "message": "Observera att dessa två funktioner överlappar"
+   },
+   "width": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "Bredd:"
+   }
+}

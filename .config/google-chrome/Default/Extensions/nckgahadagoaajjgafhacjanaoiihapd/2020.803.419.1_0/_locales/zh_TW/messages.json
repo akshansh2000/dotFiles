@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "你的 G Suite 管理員已啟用 Google Chat，因此你可以在團隊聊天室中協同合作，並透過 Google Chat 快速分享檔案。\n\n為獲得最佳體驗，請務必在安裝新版 Google Chat 應用程式後，解除安裝這項擴充功能。"
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "取得電腦版應用程式"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "繼續前往 chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "歡迎使用 Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "登入 Chrome 即可開始使用。"
+   },
+   "chrome_app_connection_error_button": {
+      "message": "再試一次"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "請確認你已連上網際網路，然後再試一次。"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "連線錯誤"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome 應用程式自今年起已不適用。如要繼續透過 Chrome 視窗使用 Hangouts，請安裝 Hangouts Chrome 擴充功能。"
+   },
+   "chrome_app_deprecated_title": {
+      "message": "我們已不再支援 Hangouts Chrome 應用程式。"
+   },
+   "chrome_app_description": {
+      "message": "Hangouts Chrome 應用程式已淘汰，請改用 Hangouts Chrome 擴充功能。"
+   },
+   "chrome_app_download_button": {
+      "message": "取得 Chrome 擴充功能"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "瞭解詳情"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "這個應用程式的版本過舊，目前已有更新的版本可供下載。"
+   },
+   "chrome_app_outdated_title": {
+      "message": "請更新你的 Hangouts Chrome 應用程式"
+   },
+   "chrome_app_signin_button": {
+      "message": "登入"
+   },
+   "chrome_app_welcome_message": {
+      "message": "透過文字、相片、GIF、語音通話和視訊通話等多種功能，在私人和群組對話中盡情暢談。"
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "無法連線至 Google，請檢查你的網際網路連線。"
+   },
+   "chrome_ext_description": {
+      "message": "你可透過 Hangouts 在對話中傳送相片和表情符號，讓聊天內容更加生動活潑，而且還能免費進行群組視訊通話。"
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "狀態：已連線\n有未讀的訊息"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "狀態：已由管理員停用"
+   },
+   "quasar_tip_connected": {
+      "message": "狀態：已連線"
+   },
+   "quasar_tip_connecting": {
+      "message": "狀態：連線中"
+   },
+   "quasar_tip_disconnected": {
+      "message": "狀態：連線中斷"
+   },
+   "quasar_tip_not_load": {
+      "message": "狀態：載入錯誤"
+   },
+   "quasar_tip_not_login": {
+      "message": "狀態：尚未登入"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "狀態：重新連線中"
+   }
+}

@@ -1,0 +1,1172 @@
+{
+   "_1filecouldnotberemoved": {
+      "description": "via js/capture/history.js",
+      "message": "1 file could not be removed."
+   },
+   "_1filewassuccessfullyremoved": {
+      "description": "via js/capture/history.js",
+      "message": "1 file was successfully removed."
+   },
+   "_Adjustrepeatingelements": {
+      "description": "via js/stores/options-store.js",
+      "message": "Adjust repeating elements"
+   },
+   "_Advancedscrolling": {
+      "description": "via js/stores/options-store.js",
+      "message": "Advanced scrolling"
+   },
+   "_Align": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Align"
+   },
+   "_Alleditsareautosaved": {
+      "description": "via editor/components/Editor.js",
+      "message": "All edits are auto-saved"
+   },
+   "_Anyissues": {
+      "description": "via editor/components/ReportIssue.js",
+      "message": "Any issues?"
+   },
+   "_AnyoptionalpermissionsthatwerepreviouslygrantedwillappearcheckedhereYoucanrevokethematanytimeIftheyareneededagaininthefuturetheywillbererequested": {
+      "description": "via options.html",
+      "message": "Any optional permissions that were previously granted will appear checked here. You can revoke them at any time. If they are needed again in the future, they will be re-requested."
+   },
+   "_Areyouenjoyingthisextension": {
+      "description": "via capture.html",
+      "message": "Are you enjoying this extension?"
+   },
+   "_Areyousureyouwanttodelete1screencaptureThisactioncannotbeundone": {
+      "description": "via js/capture/history.js",
+      "message": "Are you sure you want to delete 1 screencapture?\n (This action cannot be undone.)"
+   },
+   "_AreyousureyouwanttodeletecountscreencapturesThisactioncannotbeundone": {
+      "description": "via js/capture/history.js",
+      "message": "Are you sure you want to delete $count$ screen captures?\n (This action cannot be undone.)",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "_AreyousureyouwanttodeletethisscreenshotThisactioncannotbeundone": {
+      "description": "via js/capture/image.js",
+      "message": "Are you sure you want to delete this screenshot?\n(This action cannot be undone.)"
+   },
+   "_Areyousureyouwanttoresettotheextensionsoriginalthemedefaults": {
+      "description": "via editor/components/ThemeDefaultsModal.js",
+      "message": "Are you sure you want to reset to the extension’s original theme defaults?"
+   },
+   "_Arrow": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Shape.js",
+      "message": "Arrow"
+   },
+   "_Autodownloadfiles": {
+      "description": "via js/stores/options-store.js",
+      "message": "Auto-download files"
+   },
+   "_AutodownloadisenabledYoucanchangethisinahrefdatahrefoptionshtmltargetblankrelnoopenernoreferreroptionsa": {
+      "description": "via popup.html",
+      "message": "Auto-download is enabled. You can change this in \u003Ca href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">options\u003C/a>."
+   },
+   "_AutomaticallydownloadyourscreenshotinsteadofopeningitinanewwindowThismeanstheextensioncapturetabwillnotopenYoucanreturnbackherebyrightclickingontheextensionandselectingOptions": {
+      "description": "via js/stores/options-store.js",
+      "message": "Automatically download your screenshot instead of opening it in a new window.This means the extension capture tab will not open. You can return back here by right-clicking on the extension and selecting \"Options\"."
+   },
+   "_AutomaticallyshowasaveasdialogwhendownloadingyourscreenshotsIftheAskwheretosaveeachfilebeforedownloadingoptionisenabledinyourChromesettingsthenthattakespriority": {
+      "description": "via js/stores/options-store.js",
+      "message": "Automatically show a \"save as\" dialog when downloading your screenshots. If the “Ask where to save each file before downloading” option is enabled in your Chrome settings, then that takes priority."
+   },
+   "_Backtocapturechangesareautosaved": {
+      "description": "via editor/components/Header.js",
+      "message": "Back to capture (changes are auto-saved)",
+      "not_found": true
+   },
+   "_Backtocapturechangesareautosavedintheeditor": {
+      "description": "via editor/components/Header.js",
+      "message": "Back to capture (changes are auto-saved in the editor)"
+   },
+   "_Blur": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Shape.js, editor/utils/shape-properties.ts",
+      "message": "Blur"
+   },
+   "_Bold": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Bold"
+   },
+   "_Cancel": {
+      "description": "via popup.html",
+      "message": "Cancel"
+   },
+   "_CannotautodownloadyouneedtoreapprovetheDownloadspermissioninahrefdatahrefoptionshtmltargetblankrelnoopenernoreferreroptionsa": {
+      "description": "via popup.html",
+      "message": "Cannot auto-download, you need to reapprove the Downloads permission in \u003Ca href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">options\u003C/a>."
+   },
+   "_Cannotdownloadfiles": {
+      "description": "via js/capture/history.js",
+      "message": "Cannot download files"
+   },
+   "_Capture": {
+      "description": "via js/stores/options-store.js",
+      "message": "Capture"
+   },
+   "_ChromedoesnotallowaccesstosomeURLsforsecurityreasonsThisincludesthewebstoregalleryotherchromeextensionsandchromeURLsThecurrentpageappearstobearestrictedURL": {
+      "description": "via popup.html",
+      "message": "Chrome does not allow access to some URLs for security reasons. This includes the webstore gallery, other chrome extensions, and chrome:// URLs. The current page appears to be a restricted URL."
+   },
+   "_ChromepreventsextensionsfromsavingfilesoutsideofthedefaultdownloadsdirectoryThepathyouenteredhasbeenupdatedaccordinglySorry": {
+      "description": "via js/stores/options-store.js",
+      "message": "Chrome prevents extensions from saving files outside of the default downloads directory. The path you entered has been updated accordingly. Sorry!"
+   },
+   "_Clickdraginlayerspane": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Click + drag in layers pane"
+   },
+   "_Color": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Color"
+   },
+   "_ConfigureyoursettingsfortheFullPageScreenCaptureextensionStaytunedforfurtherupdatesBetasettingsmaychangeinthefuture": {
+      "description": "via options.html",
+      "message": "Configure your settings for the Full Page Screen Capture extension. Stay tuned for further updates. Beta settings may change in the future.",
+      "not_found": true
+   },
+   "_ConfigureyoursettingsfortheGoFullPageextensionStaytunedforfurtherupdatesBetasettingsmaychangeinthefuture": {
+      "description": "via options.html",
+      "message": "Configure your settings for the GoFullPage extension. Stay tuned for further updates. Beta settings may change in the future."
+   },
+   "_Continueediting": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "Continue editing"
+   },
+   "_CopyImage": {
+      "description": "via editor/components/Editor.js",
+      "message": "Copy Image"
+   },
+   "_Copyingimagepleasewait": {
+      "description": "via editor/components/NotifySnackbar.js",
+      "message": "Copying image, please wait…"
+   },
+   "_CopyoriginalURL": {
+      "description": "via editor/components/AppCaptureImage.js",
+      "message": "Copy original URL"
+   },
+   "_Copytoclipboard": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Copy to clipboard"
+   },
+   "_CreatedPDF": {
+      "description": "via editor/components/NotifySnackbar.js",
+      "message": "Created PDF!"
+   },
+   "_CreatingPDF": {
+      "description": "via editor/components/NotifySnackbar.js",
+      "message": "Creating PDF:"
+   },
+   "_CropImage": {
+      "description": "via editor/components/Crop.js",
+      "message": "Crop Image"
+   },
+   "_Cropeditannotateandexport": {
+      "description": "via capture.html",
+      "message": "Crop, edit, annotate, and export",
+      "not_found": true
+   },
+   "_Cropeditannotateandexportpremium": {
+      "description": "via capture.html",
+      "message": "Crop, edit, annotate, and export (premium)"
+   },
+   "_Delete": {
+      "description": "via editor/components/HelpModalData.ts, js/capture/history.js",
+      "message": "Delete"
+   },
+   "_Deletecurrentselection": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Delete current selection"
+   },
+   "_Demovideos": {
+      "description": "via js/welcome/WelcomePage.js",
+      "message": "Demo videos"
+   },
+   "_Directory": {
+      "description": "via js/stores/options-store.js",
+      "message": "Directory:"
+   },
+   "_Document": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Document"
+   },
+   "_Documentedits": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Document edits"
+   },
+   "_DoneCropping": {
+      "description": "via editor/components/Crop.js",
+      "message": "Done Cropping"
+   },
+   "_Download": {
+      "description": "via js/capture/history.js, js/stores/options-store.js",
+      "message": "Download"
+   },
+   "_DownloadExport": {
+      "description": "via editor/components/Export.js",
+      "message": "Download & Export"
+   },
+   "_Downloadpermissionisrequired": {
+      "description": "via js/capture/image.js",
+      "message": "Download permission is required"
+   },
+   "_Downloadpermissionnotgranted": {
+      "description": "via js/capture/image.js",
+      "message": "Download permission not granted"
+   },
+   "_Downloadspermission": {
+      "description": "via js/options/permissions.js",
+      "message": "Downloads permission"
+   },
+   "_Draglayercontrolpoints": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Drag layer control points"
+   },
+   "_Duplicateselection": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Duplicate selection"
+   },
+   "_EditImage": {
+      "description": "via editor/components/AppCaptureImage.js",
+      "message": "Edit Image"
+   },
+   "_Edited": {
+      "description": "via js/capture/history.js",
+      "message": "Edited"
+   },
+   "_Elements": {
+      "description": "via editor/utils/insert-cfgs.js",
+      "message": "Elements"
+   },
+   "_Emoji": {
+      "description": "via editor/components/Shape.js",
+      "message": "Emoji"
+   },
+   "_Enabled": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Enabled"
+   },
+   "_Entertexthere": {
+      "description": "via editor/components/Shape.js",
+      "message": "Enter text here"
+   },
+   "_Error": {
+      "description": "via options.html",
+      "message": "Error"
+   },
+   "_ErrorcopyingURL": {
+      "description": "via js/capture/image.js",
+      "message": "Error copying URL"
+   },
+   "_Errorcopyingscreenshot": {
+      "description": "via js/capture/image.js",
+      "message": "Error copying screenshot",
+      "not_found": true
+   },
+   "_Errordownloadingfile": {
+      "description": "via js/capture/image.js, js/capture/image.js",
+      "message": "Error downloading file"
+   },
+   "_Errordownloadingfiles": {
+      "description": "via js/capture/history.js",
+      "message": "Error downloading files"
+   },
+   "_ErrorhandlingfilesPleasereportthisviatheflagreportingbuttonabove": {
+      "description": "via js/capture/history.js",
+      "message": "Error handling files. Please report this via the flag reporting button above."
+   },
+   "_Errorloadinghistory": {
+      "description": "via js/capture/history.js",
+      "message": "Error loading history"
+   },
+   "_Errorloadingimage": {
+      "description": "via js/capture/image.js",
+      "message": "Error loading image"
+   },
+   "_Erroropeningscreenshot": {
+      "description": "via js/capture/image.js",
+      "message": "Error opening screenshot"
+   },
+   "_Errorremovingscreenshot": {
+      "description": "via js/capture/image.js",
+      "message": "Error removing screenshot"
+   },
+   "_Exitzoom": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Exit zoom"
+   },
+   "_Export": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Export"
+   },
+   "_ExportImageAs": {
+      "description": "via editor/components/Editor.js",
+      "message": "Export Image As…"
+   },
+   "_ExportPDFAs": {
+      "description": "via editor/components/Editor.js",
+      "message": "Export PDF As…"
+   },
+   "_Exportsaveas": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Export save as"
+   },
+   "_Extensionsettings": {
+      "description": "via popup.html",
+      "message": "Extension settings"
+   },
+   "_Extrapermissionsarerequiredtoaccesstheunderlyingpage": {
+      "description": "via popup.html",
+      "message": "Extra permissions are required to access the underlying page."
+   },
+   "_Extrapermissionsrequired": {
+      "description": "via popup.html",
+      "message": "Extra permissions required"
+   },
+   "_Fileaccessneeded": {
+      "description": "via popup.html",
+      "message": "File access needed"
+   },
+   "_Filenolongerexistsperhapsithasbeenclearedfromyourbrowser": {
+      "description": "via js/capture/image.js",
+      "message": "File no longer exists—perhaps it has been cleared from your browser"
+   },
+   "_Files": {
+      "description": "via js/capture/history.js",
+      "message": "Files"
+   },
+   "_Fill": {
+      "description": "via editor/utils/shape-properties.ts, editor/utils/shape-properties.ts",
+      "message": "Fill"
+   },
+   "_FitcopiestoGoogleDocslimits": {
+      "description": "via js/stores/options-store.js",
+      "message": "Fit copies to Google Docs limits"
+   },
+   "_Font": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Font"
+   },
+   "_Foradditionalinformationyoucancheckout": {
+      "description": "via js/welcome/WelcomePage.js",
+      "message": "For additional information, you can check out:"
+   },
+   "_Foradditionalquestionsaidinvalidlinkdatahrefhttpsscreencapturemrcolescomhrefhttpsscreencapturemrcolescomtargetblankrelnoopenernoreferrercontactusa": {
+      "description": "via popup.html",
+      "message": "For additional questions, \u003Ca id=\"invalid-link\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">contact us\u003C/a>."
+   },
+   "_Frequentlyaskedquestions": {
+      "description": "via js/welcome/WelcomePage.js",
+      "message": "Frequently asked questions"
+   },
+   "_Getstarted": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "Get started"
+   },
+   "_Goback": {
+      "description": "via editor/components/Editor.js",
+      "message": "Go back"
+   },
+   "_Gotit": {
+      "description": "via capture.html",
+      "message": "Got it!"
+   },
+   "_GotoAccount": {
+      "description": "via editor/components/MoreNavLinks.js",
+      "message": "Go to Account"
+   },
+   "_GotoFiles": {
+      "description": "via editor/components/MoreNavLinks.js",
+      "message": "Go to Files"
+   },
+   "_GotoHistory": {
+      "description": "via editor/components/MoreNavLinks.js",
+      "message": "Go to History",
+      "not_found": true
+   },
+   "_GotoOptions": {
+      "description": "via editor/components/MoreNavLinks.js",
+      "message": "Go to Options"
+   },
+   "_Gotoyouraccount": {
+      "description": "via options.html",
+      "message": "Go to your account"
+   },
+   "_Help": {
+      "description": "via editor/components/HelpModal.js, editor/components/HelpModalData.ts",
+      "message": "Help"
+   },
+   "_HelpShortcuts": {
+      "description": "via editor/components/TriggerHelp.js",
+      "message": "Help / Shortcuts"
+   },
+   "_History": {
+      "description": "via js/capture/history.js",
+      "message": "History",
+      "not_found": true
+   },
+   "_Hooray": {
+      "description": "via capture.html",
+      "message": "Hooray"
+   },
+   "_Icon": {
+      "description": "via editor/components/Shape.js",
+      "message": "Icon"
+   },
+   "_Ifthispersistspleasereportitviatheflagreportingbuttonabove": {
+      "description": "via js/messages.ts",
+      "message": "If this persists, please report it via the flag reporting button above."
+   },
+   "_IfyoudliketotrythisfeatureinthefutureclickontheEditbuttonuptop": {
+      "description": "via capture.html",
+      "message": "If you’d like to try this feature in the future, click on the “Edit” button up top."
+   },
+   "_Imagecopiedtoclipboard": {
+      "description": "via editor/components/NotifySnackbar.js",
+      "message": "Image copied to clipboard"
+   },
+   "_Imagedeleted": {
+      "description": "via js/capture/image.js",
+      "message": "Image deleted"
+   },
+   "_Imageformat": {
+      "description": "via js/stores/options-store.js",
+      "message": "Image format:"
+   },
+   "_Insertshapes": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Insert shapes"
+   },
+   "_Italic": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Italic"
+   },
+   "_Layers": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/LayersBar.js",
+      "message": "Layers"
+   },
+   "_Learnmore": {
+      "description": "via editor/components/Export.js",
+      "message": "Learn more"
+   },
+   "_Line": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Shape.js",
+      "message": "Line"
+   },
+   "_Loadpermissionsdialog": {
+      "description": "via popup.html",
+      "message": "Load permissions dialog?"
+   },
+   "_LogintoExport": {
+      "description": "via editor/components/Export.js",
+      "message": "Login to Export"
+   },
+   "_Lookforanelementwithinthepagewithitsownscrollbarsandscrollthatitemduringthecapture": {
+      "description": "via js/stores/options-store.js",
+      "message": "Look for an element within the page with its own scroll bars and scroll that item during the capture."
+   },
+   "_MightyouconsidertakingaminutetorateitintheWebstore": {
+      "description": "via capture.html",
+      "message": "Might you consider taking a minute to rate it in the Webstore?"
+   },
+   "_More": {
+      "description": "via editor/components/HeaderMore.js",
+      "message": "More"
+   },
+   "_Mouseorarrowkeys": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Mouse or arrow keys"
+   },
+   "_Mouseorlayerspane": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Mouse or layers pane"
+   },
+   "_Movelayer": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Move layer"
+   },
+   "_None": {
+      "description": "via editor/utils/browser-templates.ts",
+      "message": "None"
+   },
+   "_NoscreencapturesfoundGomakesome": {
+      "description": "via js/capture/history.js",
+      "message": "No screen captures found. Go make some!"
+   },
+   "_NotethispageistoolargefortheChromebrowsertocaptureasoneimageItwillbesplitintospanidscreenshotcountmultiplespanimages": {
+      "description": "via popup.html",
+      "message": "Note: this page is too large for the Chrome browser to capture as one image. It will be split into \u003Cspan id=\"screenshot-count\">multiple\u003C/span> images."
+   },
+   "_Nothanks": {
+      "description": "via capture.html, capture.html",
+      "message": "No, thanks."
+   },
+   "_Nothankscontinueediting": {
+      "description": "via editor/components/Export.js",
+      "message": "No thanks continue editing"
+   },
+   "_Notreally": {
+      "description": "via capture.html",
+      "message": "Not really"
+   },
+   "_OK": {
+      "description": "via popup.html",
+      "message": "OK"
+   },
+   "_On": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "On"
+   },
+   "_OnMacChromethereareissueswithsaveasforautodownloadandwhendownloadingmultiplefilessoitisdisabledinthosescenarios": {
+      "description": "via js/stores/options-store.js",
+      "message": "On Mac Chrome there are issues with \"save as\" for auto-download and when downloading multiple files, so it is disabled in those scenarios."
+   },
+   "_OpenoriginalURL": {
+      "description": "via editor/components/AppCaptureImage.js",
+      "message": "Open original URL"
+   },
+   "_Options": {
+      "description": "via options.html",
+      "message": "Options"
+   },
+   "_Orderlayer": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Order layer"
+   },
+   "_Outline": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Outline"
+   },
+   "_Oval": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Shape.js",
+      "message": "Oval"
+   },
+   "_PDF": {
+      "description": "via js/stores/options-store.js",
+      "message": "PDF"
+   },
+   "_PDFsize": {
+      "description": "via js/stores/options-store.js",
+      "message": "PDF size:",
+      "not_found": true
+   },
+   "_PNGislosslessandshouldmatchexactlywhatisseenonthescreenbutwillusuallyhavelargerfilesizesthanJPGwhichusescompression": {
+      "description": "via js/stores/options-store.js",
+      "message": "PNG is lossless and should match exactly what is seen on the screen, but will usually have larger file sizes than JPG, which uses compression."
+   },
+   "_Pad": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Pad"
+   },
+   "_Padding": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Padding"
+   },
+   "_PaddingBorder": {
+      "description": "via editor/components/Shape.js",
+      "message": "Padding / Border"
+   },
+   "_Papersize": {
+      "description": "via js/stores/options-store.js",
+      "message": "Paper size:"
+   },
+   "_PerformextracheckswhensplittingaPDFacrossmultiplepagestotrytopreventitfromcuttinglinesoftextinhalfOtherwisethescreenshotissplitatthepapersizeheightregardlessofitscontent": {
+      "description": "via js/stores/options-store.js",
+      "message": "Perform extra checks when splitting a PDF across multiple pages to try to prevent it from cutting lines of text in half. Otherwise, the screenshot is split at the paper size height regardless of its content."
+   },
+   "_Permissionneededtodownloadfiles": {
+      "description": "via js/capture/history.js",
+      "message": "Permission needed to download files"
+   },
+   "_Permissions": {
+      "description": "via options.html",
+      "message": "Permissions"
+   },
+   "_Persistiframepermissions": {
+      "description": "via js/stores/options-store.js",
+      "message": "Persist iframe permissions"
+   },
+   "_PleasegotoyourChromeextensionsettingsandenablestrongx201CAllowaccesstofileURLsx201Dstrongsotheextensioncanaccessthispagebrbr": {
+      "description": "via popup.html",
+      "message": "Please go to your Chrome extension settings and enable \u003Cstrong>&#x201C;Allow access to file URLs&#x201D;\u003C/strong>, so the extension can access this page. \u003Cbr>\u003Cbr>"
+   },
+   "_PleasetryagainandwaittoseetheImagecopiedtoclipboardmessagebeforeswitchingtoanotherwindow": {
+      "description": "via js/capture/image.js",
+      "message": "Please try again and wait to see the “Image copied to clipboard” message before switching to another window."
+   },
+   "_PleasewaittoseetheImagecopiedtoclipboardmessagebeforeswitchingtoanotherwindow": {
+      "description": "via js/capture/image.js",
+      "message": "Please wait to see the “Image copied to clipboard” message before switching to another window.",
+      "not_found": true
+   },
+   "_Position": {
+      "description": "via editor/utils/shape-properties.ts, editor/utils/shape-properties.ts",
+      "message": "Position"
+   },
+   "_Premium": {
+      "description": "via editor/components/AppCaptureImage.js",
+      "message": "(Premium)"
+   },
+   "_Radius": {
+      "description": "via editor/utils/shape-properties.ts, editor/utils/shape-properties.ts",
+      "message": "Radius"
+   },
+   "_Rectangle": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Shape.js",
+      "message": "Rectangle"
+   },
+   "_Redo": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Undo.js",
+      "message": "Redo"
+   },
+   "_Removefiles": {
+      "description": "via js/capture/history.js",
+      "message": "Remove files"
+   },
+   "_Reportissue": {
+      "description": "via capture.html",
+      "message": "Report issue."
+   },
+   "_Resizelayer": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Resize layer"
+   },
+   "_Roundedcorners": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Rounded corners"
+   },
+   "_SaveImageAs": {
+      "description": "via editor/components/AppCaptureImage.js",
+      "message": "Save Image As…"
+   },
+   "_SavePDFAs": {
+      "description": "via editor/components/AppCaptureImage.js",
+      "message": "Save PDF As…"
+   },
+   "_Saveas": {
+      "description": "via js/stores/options-store.js",
+      "message": "Save as"
+   },
+   "_Saved": {
+      "description": "via options.html",
+      "message": "Saved"
+   },
+   "_SavethispermissionifacceptedforfuturecapturesItcanstillberevokedlaterfromtheoptionspage": {
+      "description": "via js/stores/options-store.js",
+      "message": "Save this permission (if accepted) for future captures. It can still be revoked later from the options page."
+   },
+   "_Screencaptureinprogress": {
+      "description": "via popup.html",
+      "message": "Screen capture in progress…"
+   },
+   "_Select1ormorescreenshotstousethisaction": {
+      "description": "via js/capture/history.js",
+      "message": "Select 1 or more screenshots to use this action."
+   },
+   "_Selected": {
+      "description": "via js/capture/history.js",
+      "message": "Selected"
+   },
+   "_Selectlayer": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Select layer"
+   },
+   "_Setthemedefaults": {
+      "description": "via editor/components/TriggerUpdateTheme.js",
+      "message": "Set theme defaults"
+   },
+   "_Shapes": {
+      "description": "via editor/utils/insert-cfgs.js",
+      "message": "Shapes"
+   },
+   "_SignIn": {
+      "description": "via editor/components/Editor.js",
+      "message": "Sign In"
+   },
+   "_SignUp": {
+      "description": "via editor/components/Editor.js",
+      "message": "Sign Up"
+   },
+   "_Signinwithexistingaccount": {
+      "description": "via editor/components/Export.js",
+      "message": "Sign in with existing account"
+   },
+   "_SignupforPremiuminordertoexportyouredits": {
+      "description": "via editor/components/Editor.js",
+      "message": "Sign up for Premium in order to export your edits."
+   },
+   "_Signupforafree7daytrialtounlocktheeditoranddownloadyourmasterpiece": {
+      "description": "via editor/components/Export.js",
+      "message": "Sign up for a free 7-day trial to unlock the editor and download your masterpiece."
+   },
+   "_SignuptoExport": {
+      "description": "via editor/components/Export.js",
+      "message": "Sign up to Export"
+   },
+   "_Size": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Size"
+   },
+   "_Smartpagesplitting": {
+      "description": "via js/stores/options-store.js",
+      "message": "Smart page splitting",
+      "not_found": true
+   },
+   "_SmartpagesplittingPremium": {
+      "description": "via js/stores/options-store.js",
+      "message": "Smart page splitting (Premium)"
+   },
+   "_SomethingwentwrongTryrefreshingthepageandrunningthisagainbrbrIfthispersistspleaseaidreportlinkclassnowrapdatahrefhttpsscreencapturemrcolescomhrefhttpsscreencapturemrcolescomtargetblankrelnoopenernoreferrercontactusa": {
+      "description": "via popup.html",
+      "message": "Something went wrong. Try refreshing the page and running this again. \u003Cbr>\u003Cbr> If this persists, please \u003Ca id=\"report-link\" class=\"nowrap\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">contact us\u003C/a>."
+   },
+   "_Somethingwentwrongcopingthisscreenshottoyourclipboard": {
+      "description": "via js/capture/image.js",
+      "message": "Something went wrong coping this screenshot to your clipboard.",
+      "not_found": true
+   },
+   "_Somethingwentwrongdeletingyourscreenshot": {
+      "description": "via js/capture/image.js",
+      "message": "Something went wrong deleting your screenshot."
+   },
+   "_Somethingwentwrongopeningthisscreenshotintoanew": {
+      "description": "via js/capture/image.js",
+      "message": "Something went wrong opening this screenshot into a new."
+   },
+   "_SometimeselementslikeabacktotopbuttonorastickyfooterwillrepeatonthepageThistriestopositionthemabsolutelytostopthemfromrepeatinginascreeshot": {
+      "description": "via js/stores/options-store.js",
+      "message": "Sometimes elements, like a “back to top” button or a sticky footer will repeat on the page. This tries to position them absolutely to stop them from repeating in a screeshot."
+   },
+   "_Sorry": {
+      "description": "via capture.html",
+      "message": "Sorry"
+   },
+   "_SpecifyadirectoryunderneathyourdownloadsdirectorytosaveyourscreenshotssuchasscreencapturesDefaultstothedownloadsdirectoryifblankPleaselimitittolettersnumbersdashesunderscoresandslashesinvalidcharacterswillautomaticallyberemoved": {
+      "description": "via js/stores/options-store.js",
+      "message": "Specify a directory underneath your downloads directory to save your screenshots, such as “screencaptures”. Defaults to the downloads directory if blank. (Please limit it to letters, numbers, dashes, underscores, and slashes—invalid characters will automatically be removed)."
+   },
+   "_SpecifytheformatsizeofPDFsforwhenexportingtoPDF": {
+      "description": "via js/stores/options-store.js",
+      "message": "Specify the format size of PDFs for when exporting to PDF."
+   },
+   "_Startyourfreetrial": {
+      "description": "via editor/components/Export.js",
+      "message": "Start your free trial"
+   },
+   "_Stickers": {
+      "description": "via editor/utils/insert-cfgs.js",
+      "message": "Stickers"
+   },
+   "_Stillloading": {
+      "description": "via js/capture/image.js",
+      "message": "Still loading"
+   },
+   "_TakeascreenshotofanentirewebpageinjustoneclickoftheextensionsiconinthetoprightofChrome": {
+      "description": "via js/welcome/WelcomePage.js",
+      "message": "Take a screenshot of an entire web page in just one click of the extension’s icon in the top right of Chrome"
+   },
+   "_TakemetotheWebstore": {
+      "description": "via capture.html",
+      "message": "Take me to the Webstore!"
+   },
+   "_Text": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Shape.js",
+      "message": "Text"
+   },
+   "_ThankyouforsupportingFullPageScreenCapture": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "Thank you for supporting Full Page Screen Capture",
+      "not_found": true
+   },
+   "_ThankyouforsupportingGoFullPage": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "Thank you for supporting GoFullPage"
+   },
+   "_Thebestandsafestwaytocaptureascreenshotofanentirewebpage": {
+      "description": "via capture.html",
+      "message": "The best and safest way to capture a screenshot of an entire web page."
+   },
+   "_ThedownloadpermissionisrequiredtoenablethedownloadasPDFfeature": {
+      "description": "via js/capture/image.js",
+      "message": "The download permission is required to enable the download as PDF feature."
+   },
+   "_Thefollowingfilescouldnotbedownloaded": {
+      "description": "via js/capture/history.js",
+      "message": "The following files could not be downloaded:"
+   },
+   "_ThemeDefaults": {
+      "description": "via editor/components/ThemeDefaultsModal.js",
+      "message": "Theme Defaults"
+   },
+   "_Therewasanerrordownloadingfilespleasereportitviatheflagbuttonabove": {
+      "description": "via js/capture/history.js",
+      "message": "There was an error downloading files, please report it via the flag button above."
+   },
+   "_ThesesettingswillapplytoallfutureeditsofscreenshotsChangesareautosaved": {
+      "description": "via editor/components/ThemeDefaultsModal.js",
+      "message": "These settings will apply to all future edits of screenshots. Changes are autosaved."
+   },
+   "_Thespecifiedimagecouldnotbefound": {
+      "description": "via js/capture/image.js",
+      "message": "The specified image could not be found."
+   },
+   "_ThisextensiontakesalotofworktomaintainItsreallymeaningfultohearthatyoufindituseful": {
+      "description": "via capture.html",
+      "message": "This extension takes a lot of work to maintain. It’s really meaningful to hear that you find it useful!"
+   },
+   "_ThisistakinglongertoloadthanexpectedHangtightIfnothingupdatesafterawhilepleasereportthisviathereportingflagbuttonabove": {
+      "description": "via js/capture/image.js",
+      "message": "This is taking longer to load than expected. Hang tight! If nothing updates after a while, please report this via the reporting flag button above."
+   },
+   "_ThispermissionallowsgreatercontroloverhowdownloadsworkwithintheextensionYourpreferencehasbeensavedandthisdownloadbuttonwillnowfallbacktodefaultbrowseronclickdownloadsHoweveryoustillbepromptedforitinordertouseanyoftheadvancedfeaturesontheHistoryorEditpagessincetheyneedthispermissionstowork": {
+      "description": "via js/capture/image.js",
+      "message": "This permission allows greater control over how downloads work within the extension. Your preference has been saved, and this download button will now fallback to default browser on-click downloads. However, you still be prompted for it in order to use any of the advanced features on the History or Edit pages, since they need this permissions to work.",
+      "not_found": true
+   },
+   "_ThispermissionallowsgreatercontroloverhowdownloadsworkwithintheextensionYourpreferencehasbeensavedandthisdownloadbuttonwillnowfallbacktodefaultbrowseronclickdownloadsHoweveryoustillbepromptedforitinordertouseanyoftheadvancedfeaturesontheHistoryorOptionspagessincetheyneedthispermissionstowork": {
+      "description": "via js/capture/image.js",
+      "message": "This permission allows greater control over how downloads work within the extension. Your preference has been saved, and this download button will now fallback to default browser on-click downloads. However, you still be prompted for it in order to use any of the advanced features on the History or Options pages, since they need this permissions to work.",
+      "not_found": true
+   },
+   "_ThispermissionallowsgreatercontroloverhowdownloadsworkwithintheextensionYourpreferencehasbeensavedandthisdownloadbuttonwillnowfallbacktodefaultbrowseronclickdownloadsHoweveryouwillstillbepromptedforitinordertouseanyoftheadvancedfeaturesontheFilesorEditpagessincetheyneedthispermissionstowork": {
+      "description": "via js/capture/image.js",
+      "message": "This permission allows greater control over how downloads work within the extension. Your preference has been saved, and this download button will now fall back to default browser on-click downloads. However, you will still be prompted for it in order to use any of the advanced features on the Files or Edit pages, since they need this permissions to work."
+   },
+   "_Thispermissionisrequiredforthedownloadbuttonsandtheautodownloadfeature": {
+      "description": "via js/options/permissions.js",
+      "message": "This permission is required for the download buttons and the auto-download feature."
+   },
+   "_Thispermissionisrequiredinordertoscrolltheinnercontentsofiframesorframesets": {
+      "description": "via js/options/permissions.js",
+      "message": "This permission is required in order to scroll the inner contents of $iframes$ or $framesets$.",
+      "placeholders": {
+         "framesets": {
+            "content": "\u003Ca class=\"dim\" target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset\">framesets\u003C/a>",
+            "example": "framesets"
+         },
+         "iframes": {
+            "content": "\u003Ca class=\"dim\" target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe\">iframes\u003C/a>",
+            "example": "iframes"
+         }
+      }
+   },
+   "_Thisscreenshotbeensuccessfullyremoved": {
+      "description": "via js/capture/image.js",
+      "message": "This screenshot been successfully removed."
+   },
+   "_ThissiteappearstohaveembeddedcontentwithinanaatargetblankrelnoopenernoreferrerhrefhttpsdevelopermozillaorgenUSdocsWebHTMLElementframesetframeseta": {
+      "description": "via popup.html",
+      "message": "This site appears to have embedded content within an a \u003Ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset\">frameset\u003C/a>."
+   },
+   "_ThissiteappearstohaveembeddedcontentwithinanatargetblankrelnoopenernoreferrerhrefhttpsdevelopermozillaorgenUSdocsWebHTMLElementiframeiframea": {
+      "description": "via popup.html",
+      "message": "This site appears to have embedded content within an \u003Ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe\">iframe\u003C/a>."
+   },
+   "_ThistestversionhasexpiredPleasereachouttogetanupdateorswitchovertotheproperextensionintheahrefhttpschromegooglecomwebstoredetailfullpagescreencapturefdpohaocaechififmbbbbbknoalclaclhlenUStargetblankrelnoopenernoreferrerChromeWebStorea": {
+      "description": "via popup.html",
+      "message": "This test version has expired. Please reach out to get an update or switch over to the proper extension in the \u003Ca href=\"https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en-US\" target=\"_blank\" rel=\"noopener noreferrer\"> Chrome Web Store\u003C/a>."
+   },
+   "_ToggleURLbrowser": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Toggle URL / browser"
+   },
+   "_Togglecrop": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Toggle crop"
+   },
+   "_Togglepaddingborder": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Toggle padding / border"
+   },
+   "_TryoutanotherpageonthewebsuchasahrefhttpswwwgooglecomsearchqcutepuppiestargetblankrelnoopenernoreferrerthisoneaHavefun": {
+      "description": "via popup.html",
+      "message": "Try out another page on the web, such as \u003Ca href=\"https://www.google.com/search?q=cute+puppies\" target=\"_blank\" rel=\"noopener noreferrer\">this one\u003C/a>. Have fun!"
+   },
+   "_Type": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Type"
+   },
+   "_URLBrowser": {
+      "description": "via editor/constants.ts",
+      "message": "URL / Browser"
+   },
+   "_URLcopiedtoclipboard": {
+      "description": "via js/capture/image.js",
+      "message": "URL copied to clipboard"
+   },
+   "_URLonbottom": {
+      "description": "via editor/utils/browser-templates.ts",
+      "message": "URL on bottom"
+   },
+   "_URLontop": {
+      "description": "via editor/utils/browser-templates.ts",
+      "message": "URL on top"
+   },
+   "_Unabletocopyimage": {
+      "description": "via js/messages.ts",
+      "message": "Unable to copy image"
+   },
+   "_Unabletocopyscreenshot": {
+      "description": "via js/capture/image.js",
+      "message": "Unable to copy screenshot",
+      "not_found": true
+   },
+   "_Unabletofindimage": {
+      "description": "via js/capture/image.js",
+      "message": "Unable to find image"
+   },
+   "_Unabletoloadimage": {
+      "description": "via js/capture/image.js, js/capture/image.js",
+      "message": "Unable to load image"
+   },
+   "_Undo": {
+      "description": "via editor/components/HelpModalData.ts, editor/components/Undo.js",
+      "message": "Undo"
+   },
+   "_WarningtheextensionisnotdesignedtohandleextremelylargecapturesItmightfailtocompleteacaptureofthispage": {
+      "description": "via popup.html",
+      "message": "Warning: the extension is not designed to handle extremely large captures. It might fail to complete a capture of this page."
+   },
+   "_WatchDemo": {
+      "description": "via editor/components/Tour.js",
+      "message": "Watch Demo"
+   },
+   "_WelcometoFullPageScreenCapture": {
+      "description": "via js/welcome/WelcomePage.js",
+      "message": "Welcome to Full Page Screen Capture",
+      "not_found": true
+   },
+   "_WelcometoGoFullPage": {
+      "description": "via js/welcome/WelcomePage.js",
+      "message": "Welcome to GoFullPage"
+   },
+   "_WelcometotheFullPageEditor": {
+      "description": "via editor/components/Tour.js",
+      "message": "Welcome to the Full Page Editor!",
+      "not_found": true
+   },
+   "_WelcometotheFullPageScreenCaptureextension": {
+      "description": "via popup.html",
+      "message": "Welcome to the Full Page Screen Capture extension.",
+      "not_found": true
+   },
+   "_WelcometotheGoFullPageEditor": {
+      "description": "via editor/components/Tour.js",
+      "message": "Welcome to the GoFullPage Editor!"
+   },
+   "_WelcometotheGoFullPageextension": {
+      "description": "via popup.html",
+      "message": "Welcome to the GoFullPage extension."
+   },
+   "_WelcometotheofficialFullPageEditor": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "Welcome to the official Full Page Editor!",
+      "not_found": true
+   },
+   "_WelcometotheofficialGoFullPageEditor": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "Welcome to the official GoFullPage Editor!"
+   },
+   "_Wereexcitedtohaveyouaboard": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "We’re excited to have you aboard."
+   },
+   "_WhencopyingascreenshottoyourclipboardautoresizeitifitexceedstheGoogleDocscopypastelimit25000000pixelsYoumaystillexperienceissuespastingverylargeimagesintootherapplicationsforexampleGoogleDocssometimestruncatestheimageunlessyouresizeitmuchsmaller": {
+      "description": "via js/stores/options-store.js",
+      "message": "When copying a screenshot to your clipboard, auto-resize it if it exceeds the Google Docs copy-paste limit (25,000,000 pixels). You may still experience issues pasting very large images into other applications, for example Google Docs sometimes truncates the image unless you resize it much smaller."
+   },
+   "_Width": {
+      "description": "via editor/utils/shape-properties.ts",
+      "message": "Width"
+   },
+   "_Wouldyouliketoreportanyissuesyoureexperiencingsowecanimprovethisextensiontogether": {
+      "description": "via capture.html",
+      "message": "Would you like to report any issues you’re experiencing, so we can improve this extension together?"
+   },
+   "_Yes": {
+      "description": "via capture.html",
+      "message": "Yes!"
+   },
+   "_YoucanrunthisonanywebpageexceptforoneswherethebrowserrestrictsextensionsfromrunningscriptsThisincludestheChromewebstorebrowsersettingspagesandotherextensions": {
+      "description": "via popup.html",
+      "message": "You can run this on any webpage, except for ones where the browser restricts extensions from running scripts. This includes the Chrome web store, browser settings pages, and other extensions."
+   },
+   "_YoumayneedtoreruntheextensionafterinteractingwiththedialogIfyoucancelitwillcapturejustthevisiblescreen": {
+      "description": "via popup.html",
+      "message": "You may need to re-run the extension after interacting with the dialog. If you cancel, it will capture just the visible screen."
+   },
+   "_Youneedtograntthedownloadprivilegeinordertodownloadfiles": {
+      "description": "via js/capture/history.js, js/capture/history.js",
+      "message": "You need to grant the download privilege in order to download files"
+   },
+   "_Youneedtosignupinordertoexportyoureditedimage": {
+      "description": "via editor/components/Export.js",
+      "message": "You need to sign up in order to export your edited image."
+   },
+   "_Zoom": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Zoom"
+   },
+   "_Zoomin": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Zoom in"
+   },
+   "_Zoomout": {
+      "description": "via editor/components/HelpModalData.ts",
+      "message": "Zoom out"
+   },
+   "_billedannually": {
+      "description": "via editor/components/Export.js",
+      "message": "billed annually"
+   },
+   "_cancelanytime": {
+      "description": "via editor/components/Export.js",
+      "message": "cancel anytime"
+   },
+   "_close": {
+      "description": "via popup.html",
+      "message": "close"
+   },
+   "_details": {
+      "description": "via popup.html",
+      "message": "details…"
+   },
+   "_fullimage": {
+      "description": "via js/stores/options-store.js",
+      "message": "full image"
+   },
+   "_iFramepermission": {
+      "description": "via js/options/permissions.js",
+      "message": "iFrame permission"
+   },
+   "_loading": {
+      "description": "via options.html",
+      "message": "loading…"
+   },
+   "_numfilescouldnotberemoved": {
+      "description": "via js/capture/history.js",
+      "message": "$num$ files could not be removed.",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "_numfilesweresuccessfullyremoved": {
+      "description": "via js/capture/history.js",
+      "message": "$num$ files were successfully removed.",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "_or": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "or"
+   },
+   "_restorefactorydefaults": {
+      "description": "via editor/components/ThemeDefaultsModal.js",
+      "message": "restore factory defaults"
+   },
+   "_search": {
+      "description": "via editor/components/Dropdown.js",
+      "message": "search…"
+   },
+   "_upontrialcompletion": {
+      "description": "via editor/components/Export.js",
+      "message": "upon trial completion"
+   },
+   "_version": {
+      "description": "via options.html",
+      "message": "version"
+   },
+   "_watchademovideo": {
+      "description": "via editor/components/WelcomeModal.js",
+      "message": "watch a demo video"
+   },
+   "actionClose": {
+      "description": "via capture.html, capture.html, capture.html",
+      "message": "Close"
+   },
+   "actionDeleteImage": {
+      "description": "via capture.html",
+      "message": "Delete image"
+   },
+   "actionDownloadImage": {
+      "description": "via capture.html, editor/components/Export.js",
+      "message": "Download image"
+   },
+   "actionDownloadPDF": {
+      "description": "via capture.html, editor/components/Export.js",
+      "message": "Download PDF"
+   },
+   "actionEdit": {
+      "description": "via capture.html",
+      "message": "Edit"
+   },
+   "actionOK": {
+      "description": "via capture.html",
+      "message": "OK"
+   },
+   "actionReport": {
+      "description": "via capture.html, options.html",
+      "message": "Report issue"
+   },
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "Capture a screenshot of your current page in entirety and reliably—without requesting any extra permissions!"
+   },
+   "goPremiumHeader": {
+      "description": "via editor/components/LoginModal.js",
+      "message": "Take your screenshots to the next level with Full Page Premium"
+   },
+   "goPremiumLink": {
+      "description": "via editor/components/LoginModal.js",
+      "message": "Learn more"
+   },
+   "goPremiumSignInLink": {
+      "description": "via editor/components/LoginModal.js",
+      "message": "Sign in"
+   },
+   "goPremiumSignInMessage": {
+      "description": "via editor/components/LoginModal.js",
+      "message": "Already have an account?"
+   },
+   "goPremiumSubHeader": {
+      "description": "via editor/components/LoginModal.js",
+      "message": "Speed up your workflow with advanced editing and annotation features directly in the extension!"
+   },
+   "navFiles": {
+      "description": "via capture.html, options.html",
+      "message": "Files"
+   },
+   "navHistory": {
+      "description": "via capture.html, options.html",
+      "message": "History"
+   },
+   "navOptions": {
+      "description": "via capture.html, options.html",
+      "message": "Options"
+   },
+   "tryEditingNo": {
+      "description": "via capture.html",
+      "message": "No thanks"
+   },
+   "tryEditingRequest": {
+      "description": "via capture.html",
+      "message": "Try editing and annotating your screenshot"
+   },
+   "tryEditingYes": {
+      "description": "via capture.html",
+      "message": "Ok!"
+   }
+}

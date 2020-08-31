@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "ผู้ดูแลระบบ G Suite เปิดให้ใช้ Google Chat แล้ว Chat ช่วยให้คุณทำงานร่วมกันในห้องแชทของทีมและแชร์ไฟล์กันได้อย่างง่ายดาย\n\nอย่าลืมถอนการติดตั้งส่วนขยายนี้หลังจากที่ติดตั้งแอป Google Chat ใหม่เพื่อประสบการณ์การใช้งานที่ดีที่สุด"
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "ดาวน์โหลดแอปในเดสก์ท็อป"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "ไปที่ chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "เริ่มใช้ Google Chat ได้เลย"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "ลงชื่อเข้าใช้ Chrome เพื่อเริ่มต้นใช้งาน"
+   },
+   "chrome_app_connection_error_button": {
+      "message": "ลองอีกครั้ง"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "ตรวจสอบว่าคุณเชื่อมต่อกับอินเทอร์เน็ตแล้วลองอีกครั้ง"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "การเชื่อมต่อผิดพลาด"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome Apps จะหยุดให้บริการในปีนี้ หากต้องการใช้ Hangouts ในหน้าต่างของตัวแอปเองต่อ ให้ติดตั้งส่วนขยาย Hangouts Chrome"
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Hangouts Chrome App ไม่ได้รับการสนับสนุนอีกต่อไป"
+   },
+   "chrome_app_description": {
+      "message": "แอป Hangouts ใน Chrome เลิกใช้งานแล้ว โปรดเปลี่ยนไปใช้ส่วนขยาย Hangouts ใน Chrome แทน"
+   },
+   "chrome_app_download_button": {
+      "message": "ดาวน์โหลดส่วนขยาย Chrome"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "ดูข้อมูลเพิ่มเติม"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "แอปนี้เก่าเกินไปแล้ว มีเวอร์ชันใหม่กว่าพร้อมใช้งาน"
+   },
+   "chrome_app_outdated_title": {
+      "message": "อัปเดตแอป Hangouts ใน Chrome"
+   },
+   "chrome_app_signin_button": {
+      "message": "ลงชื่อเข้าใช้"
+   },
+   "chrome_app_welcome_message": {
+      "message": "เพลิดเพลินกับการสนทนาส่วนตัวและการสนทนาเป็นกลุ่มที่มีข้อความ, รูปภาพ, ภาพ GIF, เสียง, วิดีโอ และอื่นๆ อีกมากมาย"
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "ไม่สามารถเชื่อมต่อกับ Google โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต"
+   },
+   "chrome_ext_description": {
+      "message": " Hangouts ทำให้การสนทนามีชีวิตชีวามากขึ้นด้วยรูปภาพ อีโมจิ พร้อมทั้งยังมี Hangouts วิดีโอกับกลุ่มเพื่อนได้ฟรี"
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "สถานะ: เชื่อมต่อ\nมีข้อความที่ไม่ได้รับ"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "สถานะ: ปิดใช้โดยผู้ดูแลระบบ"
+   },
+   "quasar_tip_connected": {
+      "message": "สถานะ: เชื่อมต่อ"
+   },
+   "quasar_tip_connecting": {
+      "message": "สถานะ: กำลังเชื่อมต่อ"
+   },
+   "quasar_tip_disconnected": {
+      "message": "สถานะ: ตัดการเชื่อมต่อแล้ว"
+   },
+   "quasar_tip_not_load": {
+      "message": "สถานะ: เกิดข้อผิดพลาดในการโหลด"
+   },
+   "quasar_tip_not_login": {
+      "message": "สถานะ: ไม่ได้เข้าสู่ระบบ"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "สถานะ: เชื่อมต่อใหม่"
+   }
+}

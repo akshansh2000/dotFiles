@@ -1,0 +1,31 @@
+{
+   "author": "Buu Nguyen",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "browser_style": true,
+      "default_icon": "icons/icon128.png"
+   },
+   "content_scripts": [ {
+      "css": [ "content.css", "themes-0.css", "themes-1.css", "themes-2.css", "themes-3.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://github.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "GitHub on steroids",
+   "homepage_url": "https://www.octotree.io",
+   "icons": {
+      "128": "icons/icon128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoczTsa39NDMLCaIZcDnmBVpGuLuhf+dPBag1ruDi3IJm5CVONDq/ShuTIPJUA3VuBQVyakDzW05aZaYCbLP1bRoCGwQorVBf8IVFOAHQ7NSrBS30Xms+1yUF0x4izNsnqBAZAU7GEP2iTdKuSFX8FitQQqs/HRMIvfultzcxBTKV/NgLdFbEPT9iyisG4AlrKDsWDKb5J6taxsOEgXGfneLhGQmgm45dwio4rHe1Nx7pNkW5bjyAI1Jhqe7NoJVW35iUz8CQFcvo9zPSaMONTHvxKOJ+wEz7uoBglleyY3lqZUvU4Xw0lf+oDeC5yjIx5iQqD2eJ4W+04W1RsR/uiQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "60",
+   "name": "Octotree",
+   "optional_permissions": [ "http://*/*", "https://*/*", "webNavigation", "tabs" ],
+   "permissions": [ "https://api.github.com/*", "https://www.octotree.io/*", "storage", "contextMenus", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.4.1",
+   "web_accessible_resources": [ "*.woff2", "*.png", "*.gif", "*.svg" ]
+}

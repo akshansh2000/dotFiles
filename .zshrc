@@ -143,7 +143,7 @@ alias update="source ~/.zshrc"
 alias upgrade="yes | sudo pacman -Syu"
 alias open="xdg-open"
 alias pls="sudo"
-alias get="yes | sudo pacman -Sy"
+alias get="yes | sudo pacman -S"
 alias remove="yes | sudo pacman -R"
 alias hs="history | grep"
 alias aux="ps aux | grep"
@@ -159,7 +159,7 @@ alias rns='npx react-native start'
 alias rnr='npx react-native run-android'
 alias cp='cpv'
 
-alias repo='cd ~/Desktop/Repositories'
+alias repo='cd ~/Repositories'
 alias top='cd `git rev-parse --show-toplevel`'
 alias prac='cd ~/Documents/practice'
 
@@ -326,6 +326,7 @@ export PATH=$PATH:/snap/bin
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
+source $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

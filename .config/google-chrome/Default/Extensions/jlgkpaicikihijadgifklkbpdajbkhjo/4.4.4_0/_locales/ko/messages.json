@@ -1,0 +1,1480 @@
+{
+   "G_BmManager": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "책갈피 관리자 열기"
+   },
+   "G_ZoomIn": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "확대"
+   },
+   "G_ZoomOut": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "축소"
+   },
+   "G_back": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "뒤로"
+   },
+   "G_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "책갈피 추가"
+   },
+   "G_bookmarks": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "책갈피 관리자"
+   },
+   "G_bottom": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "아래로 스크롤"
+   },
+   "G_capture": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "스크린샷"
+   },
+   "G_chromepage": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Chrome 내부 주소 열기"
+   },
+   "G_close": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "탭 닫기"
+   },
+   "G_closelefttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "왼쪽의 모든 탭 닫기"
+   },
+   "G_closeothers": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "다른 탭 닫기"
+   },
+   "G_closerighttabs": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "오른쪽의 모든 탭 닫기"
+   },
+   "G_closewindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "창 닫기"
+   },
+   "G_closewindows": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "모든 창 닫기"
+   },
+   "G_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "제목 및 URL을 링크로 복사"
+   },
+   "G_copytab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "현재 탭 복사"
+   },
+   "G_copytitle": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "현재 탭 주소 복사"
+   },
+   "G_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "현재 탭 URL 복사"
+   },
+   "G_copyuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "제목 및 URL을 사용자 지정 형식으로 복사"
+   },
+   "G_crxsettings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "CrxMouse 설정"
+   },
+   "G_down": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "아래로 스크롤"
+   },
+   "G_downloads": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "다운로드"
+   },
+   "G_firsttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "첫 번째 탭"
+   },
+   "G_fullscreen": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "전체 화면"
+   },
+   "G_go": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "앞으로"
+   },
+   "G_goparent": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "상위 URL 이동"
+   },
+   "G_history": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "기록"
+   },
+   "G_incognito": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "새 시크릿 창"
+   },
+   "G_lasttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "마지막 탭"
+   },
+   "G_left": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "왼쪽으로 스크롤"
+   },
+   "G_lefttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "왼쪽 탭"
+   },
+   "G_mergeTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "탭 병합"
+   },
+   "G_movetowindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "탭 분리"
+   },
+   "G_newtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "새 탭"
+   },
+   "G_newusertab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "탭 사용자 지정..."
+   },
+   "G_newwindow": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "새 창"
+   },
+   "G_none": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "없음"
+   },
+   "G_openclipurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "클립보드에서 URL 열기 시도"
+   },
+   "G_pin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "탭 고정"
+   },
+   "G_reclosedtab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "닫힌 탭 다시 열기"
+   },
+   "G_reload": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "다시 로드"
+   },
+   "G_reloadall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "모든 탭 다시 로드"
+   },
+   "G_reloadclear": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "캐시 없이 다시 로드"
+   },
+   "G_reloadframe": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "프레임 다시 로드"
+   },
+   "G_right": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "오른쪽으로 스크롤"
+   },
+   "G_righttab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "오른쪽 탭"
+   },
+   "G_settings": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "Chrome 설정"
+   },
+   "G_splitTab": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "탭 분할"
+   },
+   "G_stop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "멈춤"
+   },
+   "G_stopall": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "모든 탭 로드 중지"
+   },
+   "G_top": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "맨 위로 스크롤"
+   },
+   "G_tostop": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "이 페이지에서 일시적으로 확장을 사용하지 않도록 설정"
+   },
+   "G_trynext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "다음 챕터로 이동 시도"
+   },
+   "G_tryprev": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "이전 챕터로 이동 시도"
+   },
+   "G_up": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "위로 스크롤"
+   },
+   "G_userscript": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "스크립트 실행..."
+   },
+   "G_viewsource": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "페이지 소스 보기"
+   },
+   "G_windowmax": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "창 최대화"
+   },
+   "G_windowmin": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "창 최소화"
+   },
+   "I_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "이미지 URL 복사"
+   },
+   "I_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "새 탭에서 이미지 열기"
+   },
+   "I_save": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "이미지 저장"
+   },
+   "I_saveback": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "다음 이름으로 이미지 저장(개발 전용)..."
+   },
+   "I_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "이미지 검색"
+   },
+   "I_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "사용자 지정 검색 엔진으로 이미지 검색"
+   },
+   "L_bookmark": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "책갈피 추가"
+   },
+   "L_copyaslink": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "텍스트 및 URL을 링크로 복사"
+   },
+   "L_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "링크 텍스트 복사"
+   },
+   "L_copyurl": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "링크 URL 복사"
+   },
+   "L_copyuser": {
+      "description": "Advanced actions",
+      "message": "제목 및 웹 사이트를 사용자 지정 형식으로 복사"
+   },
+   "L_open": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "새 탭에서 링크 열기"
+   },
+   "T_copytext": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "텍스트 복사"
+   },
+   "T_search": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "텍스트 검색"
+   },
+   "T_searchuser": {
+      "description": "Tooltip that shows when user is performing this gesture",
+      "message": "사용자 지정 검색..."
+   },
+   "about": {
+      "description": "Title of About page in Settings area",
+      "message": "소개"
+   },
+   "addtipgesture": {
+      "description": "Instructions for how to add a new gesture thourh the Settings area - appears when clicking on the 'Add New' button in the 'New section on the 'Mouse Gestures' page.",
+      "message": "마우스 오른쪽 버튼을 누르고 트랙을 끌어당긴 후 오른쪽 버튼을 놓고 동작을 선택합니다."
+   },
+   "addtipimage": {
+      "description": "Instructions for how to add a new Super Drag Gesture for an Image - appears when clicking on the 'Image' button in the 'New' section on the 'Super Drag' page.",
+      "message": "왼쪽 마우스 버튼으로 사용하여 아래 이미지를 드래그하고 트랙을 끌어당긴 후 마우스 버튼을 놓고 동작을 선택합니다."
+   },
+   "addtiplink": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a link - appears when clicking on the 'Link' button in the 'New' section on the 'Super Drag' page.",
+      "message": "아래 링크를 선택하고 왼쪽 마우스 버튼을 누른 채 트랙을 끌어당긴 후 마우스 버튼을 놓고 동작을 선택합니다."
+   },
+   "addtiptext": {
+      "description": "Instructions for how to add a new Super Drag Gesture for a text - appears when clicking on the 'Text' button in the 'New' section on the 'Super Drag' page",
+      "message": "다음 텍스트를 선택하고 왼쪽 마우스 버튼을 누른 채 트랙을 끌어당긴 후 마우스 버튼을 놓고 동작을 선택합니다."
+   },
+   "advanced": {
+      "description": "Side navigation and Title of page in 'Settings' area",
+      "message": "고급 설정"
+   },
+   "alertaction": {
+      "description": "Alert window - promopted of user tries to save new gesture before selecting an action.",
+      "message": "동작을 선택하십시오."
+   },
+   "alertconfigerror": {
+      "description": "Error message - prompted when there is an issue with an imported file.",
+      "message": "가져온 구성 오류."
+   },
+   "alertname": {
+      "description": "Error message when trying to edit gesture with text field empty.",
+      "message": "저장할 수 없습니다. 누락된 필드가 있는지 확인하십시오."
+   },
+   "alertrepeat": {
+      "description": "Error message when trying to create gesture with an already used gesture.",
+      "message": "중복된 제스처입니다, 다른 항목을 선택하십시오."
+   },
+   "alerttooltip": {
+      "description": "Error message when creating new gesture of new action without giving it a name. ",
+      "message": "동작 이름을 입력하십시오."
+   },
+   "alerturl": {
+      "description": "Error message when creating new gesture for opening a specific url without specifying the url.",
+      "message": "URL이 없거나 유효하지 않습니다."
+   },
+   "appName": {
+      "Description": "Name of extension. Do not translate name.",
+      "message": "crxMouse Chrome™ 제스처"
+   },
+   "author": {
+      "description": "Author",
+      "message": "작성자"
+   },
+   "blackList": {
+      "description": "List for sites that should exclude mouse gestures. Located on General Settings page.",
+      "message": "사이트 블랙리스트"
+   },
+   "blacklistTip": {
+      "description": "Note listed below message box of site blacklist. Located on General Settings page.",
+      "message": "참고: 1: crxMouse가 이 사이트에서 실행되지 않습니다. 2:라인 1개당 1개의 도메인, 사용자 새 라인을 입력하십시오 http:// 또는 https://를 추가하지 마십시오"
+   },
+   "bookmarkfailnotifi": {
+      "description": "Error message when trying to create gesture for bookmark that already exists.",
+      "message": "이미 존재하는 북마크입니다."
+   },
+   "bookmarknotifi": {
+      "description": "Notification for bookmark saved.",
+      "message": "북마크가 추가되었습니다."
+   },
+   "bug": {
+      "description": "Link to report a bug",
+      "message": "버그 신고"
+   },
+   "cancel": {
+      "description": "Cancel adding new gesture.",
+      "message": "취소"
+   },
+   "cancelcontextmenu": {
+      "description": "Text of Linux/Mac options check box located on General Settings page. Note! Do not translate html tags.",
+      "message": "Linux/Mac 컨텍스트 메뉴 문제를 수정하십시오(\u003Cspan style='color:red'>팝업 컨텍스트 메뉴를 마우스 오른쪽 버튼으로 두 번 클릭\u003C/span>)."
+   },
+   "cancelcontextmenudes": {
+      "description": "Tooltip about Linux/Mac options located on General Settings page",
+      "message": "Windows가 아닌 플랫폼의 수정 옵션, 메뉴를 오른쪽 버튼으로 클릭하면 특정 기능의 정상적인 사용에 영향을 줍니다. Linux/Mac 사용자는 이 점을 확인하는 것이 바람직합니다."
+   },
+   "cancelgesture": {
+      "description": "Message that appears in trash bin area for dragging mouse gestures to cancel them",
+      "message": "취소"
+   },
+   "cancelgesturehidetrash": {
+      "description": "An option to hide the icon of the trash bin that appears when performing a gesture. The trashbin enables canceling the performed gestute.",
+      "message": "휴지통 숨기기"
+   },
+   "cancelgesturehidetrashinfo": {
+      "description": "Instructions that appear below the option of hiding the icon of the trash bin.",
+      "message": "이 옵션을 켜서 휴지통 기능을 숨깁니다."
+   },
+   "changelog": {
+      "description": "Super Drag Action.",
+      "message": "로그 변경"
+   },
+   "chrome": {
+      "description": "Referrs to the default tab opening (left or right) settings in Chrome.",
+      "message": "Chrome 기본값"
+   },
+   "clearsyncdata": {
+      "description": "For logged in users, they can clear any data that was synced between machines.",
+      "message": "동기화된 데이터 지우기"
+   },
+   "close": {
+      "description": "Action list - close tab",
+      "message": "닫기"
+   },
+   "color": {
+      "description": "A design option for how mouse gestures appear, under the 'Appearance' section on the Settings area.",
+      "message": "색상:"
+   },
+   "crbookmarks": {
+      "description": "Action list - open bookmarks manager",
+      "message": "북마크 관리자"
+   },
+   "crdownloads": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "다운로드"
+   },
+   "crextensions": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "확장"
+   },
+   "crflags": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome 랩"
+   },
+   "crhistory": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "기록"
+   },
+   "crsettings": {
+      "description": "Actions list - referrs to ",
+      "message": "Chrome 설정"
+   },
+   "ctatoenableadvanced": {
+      "description": "CTA for enabling advanced features on sidebar inside Settings area. Make sure any translation is limited to 24 characters",
+      "message": "고급 기능 활성화"
+   },
+   "curfront": {
+      "description": "Actions list - referrs to the current tab opened and visited.",
+      "message": "현재 탭"
+   },
+   "dbclicktime": {
+      "description": "milliseconds between 2 clicks for accessing the right-click menu on Mac and Linux.",
+      "message": "두 번 클릭 최대 시간(ms):"
+   },
+   "delete": {
+      "description": "Delete a gesture.",
+      "message": "삭제"
+   },
+   "description": {
+      "description": "Long Store title",
+      "message": "간편하게 검색 생산성 향상"
+   },
+   "descriptionjson": {
+      "description": "Short Store description",
+      "message": "간단한 마우스 제스처, 슈퍼 드래그, 휠 제스처, 로커 제스처 같은 마우스 탐색 바로 가기로 브라우징 생산성을 대폭 향상합니다."
+   },
+   "dholdkey": {
+      "description": "Users can choose a keyboard key that will disable the super drag feature on specific ocassions.",
+      "message": "슈퍼 드래그 비활성화를  키 할당:"
+   },
+   "direct": {
+      "description": "Appearance option that let's user choose whether or not to see the path of a mouse gesture, when performing it.",
+      "message": "방향 보기"
+   },
+   "downimgtooltip": {
+      "description": "Tooltip for when saving image using super drag gesture.",
+      "message": "이미지 저장 중..."
+   },
+   "drag": {
+      "description": "Side navigation and title of page in Settings area.",
+      "message": "슈퍼 드래그"
+   },
+   "draginput": {
+      "description": "Option in More section on Super Drag page",
+      "message": "텍스트 상자에 대한 드래그-텍스트를 활성화합니다."
+   },
+   "dragui": {
+      "description": "Section name in the Settings area.",
+      "message": "모양"
+   },
+   "editgesture": {
+      "description": "Section name",
+      "message": "제스처 편집"
+   },
+   "editimage": {
+      "description": "Section name on Super Drag page",
+      "message": "드래그-이미지"
+   },
+   "editlink": {
+      "description": "Section name on Super Drag page",
+      "message": "드래그-링크"
+   },
+   "editsgsleft": {
+      "description": "Section name on Wheel Gestures page. Note! do not translate html tags (the br and span open and close tags).",
+      "message": "제스처 왼쪽으로 휠\u003Cbr />\u003Cspan class='opttitledes'>(왼쪽 버튼을 누른 채로 스크롤)\u003C/span>"
+   },
+   "editsgsright": {
+      "description": "Section name on Super Drag page. Note! do not translate html tag (the span open and close tags).",
+      "message": "제스처 오른쪽으로 휠\u003Cbr />\u003Cspan class='opttitledes'>(오른쪽 버튼을 누른 채로 스크롤)\u003C/span>"
+   },
+   "edittext": {
+      "description": "Section name on Super Drag page",
+      "message": "드래그-텍스트"
+   },
+   "enabledragimage": {
+      "description": "Option in More section on Super Drag page",
+      "message": "드래그-이미지 활성화"
+   },
+   "enabledraglink": {
+      "description": "Option in More section on Super Drag page",
+      "message": "드래그-링크 활성화"
+   },
+   "enabledragtext": {
+      "description": "Option in More section on Super Drag page",
+      "message": "드래그-텍스트 활성화"
+   },
+   "enabletochange": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "변경하려면 활성화합니다"
+   },
+   "export": {
+      "description": "Buttom in Advanced Settings page",
+      "message": "내보내기"
+   },
+   "extauthor": {
+      "description": "Author name inside options.html",
+      "message": "WeKnowNet"
+   },
+   "extnamejson": {
+      "description": "Extension name",
+      "message": "CrxMouse"
+   },
+   "extthanks": {
+      "description": "Thanks section in About page. Note! do not translate html tag.",
+      "message": "\r\n\t\t&gt; os0x\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; ArcCosine\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; Jan Odvarko\u003C/a>\u003C/a>\u003Cbr />\r\n\t\t&gt; 이 확장판을 즐기시거나 피드백을 보내 확장판 개선에 기여해주신 분들께 감사드립니다."
+   },
+   "fastSwitch": {
+      "description": "Switch tab to the left when Scrolling up, to the right when scrolling down",
+      "message": "위로 스크롤 시 탭을 왼쪽으로 전환, 아래로 스크롤 시 오른쪽으로 전환"
+   },
+   "fastreset": {
+      "description": "Error message when extension is down",
+      "message": "문제가 발생했습니다, 확장이 작동하지 않습니다, 기본 구성을 초기화하려면 여기를 클릭하십시오. 그래도 작동하지 않으면 Chrome을 최신 버전(V23+)으로 업데이트한 후 다시 시도하십시오."
+   },
+   "fndrag": {
+      "description": "Enable options on General Settings page",
+      "message": "슈퍼 드래그 활성화"
+   },
+   "fngesture": {
+      "description": "Enable options on General Settings page",
+      "message": "마우스 제스처 활성화"
+   },
+   "fnscroll": {
+      "description": "Enable options on General Settings page",
+      "message": "스크롤 활성화 "
+   },
+   "fnscrollgesture": {
+      "description": "Enable options on General Settings page",
+      "message": "휠 제스처 활성화"
+   },
+   "fnsmooth": {
+      "description": "Enable options on General Settings page",
+      "message": "부드러운 스크롤 사용"
+   },
+   "fnstrokegesture": {
+      "description": "Enable options on General Settings page",
+      "message": "로커 제스처 활성화"
+   },
+   "fnswitch": {
+      "description": "Enable options on General Settings page",
+      "message": "CrxMouse 활성화"
+   },
+   "gesPos": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "마우스 제스처 위치"
+   },
+   "gesPosBC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "맨 아래 가운데"
+   },
+   "gesPosBL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "맨 아래 왼쪽"
+   },
+   "gesPosBR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "맨 아래 오른쪽"
+   },
+   "gesPosCC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "중앙"
+   },
+   "gesPosCL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "왼쪽 가운데"
+   },
+   "gesPosCR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "오른쪽 가운데"
+   },
+   "gesPosTC": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "맨 위 가운데"
+   },
+   "gesPosTL": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "맨 위 왼쪽"
+   },
+   "gesPosTR": {
+      "description": "Position of mouse gestures on Mouse Gestures page",
+      "message": "맨 위 오른쪽"
+   },
+   "geskey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "마우스 제스처 키:"
+   },
+   "geskeydes": {
+      "description": "Description text in More section on Mouse Gestures page",
+      "message": "참고:1,마우스 오른쪽 버튼을 사용할 수 없는 Linux/Mac 사용자를 위한 대안입니다; Windows 사용자는 이 설정을 변경하지 않는 것이 좋습니다;\u003Cbr />2,여러 문제가 발생했습니다,예:텍스트를 선택할 수 없거나, 이미지 및 링크에서 슈퍼 드래그 텍스트 또는 마우스 제스처를 사용할 수 없습니다.아래 설정이 필요할 수 있습니다."
+   },
+   "geskeyleft": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "마우스 왼쪽 버튼"
+   },
+   "geskeymiddle": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "마우스 가운데 버튼"
+   },
+   "geskeyright": {
+      "description": "Key associated to mouse gesture on Mouse Gestures page",
+      "message": "마우스 오른쪽 버튼"
+   },
+   "gesture": {
+      "description": "Page name",
+      "message": "마우스 제스처"
+   },
+   "gesturedeleted": {
+      "description": "Appears in notification window when a gesture is deleted. Indicating that the gesture was deleted successfully.",
+      "message": "제스처 삭제됨"
+   },
+   "gestureui": {
+      "description": "Section name",
+      "message": "모양"
+   },
+   "gholdkey": {
+      "description": "Option in More section on Mouse Gestures page",
+      "message": "마우스 제스처 비활성화 키 할당:"
+   },
+   "head": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "헤드"
+   },
+   "headlineforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "한 줄당 1개의 URL 또는 그중 일부"
+   },
+   "hidewhitelist": {
+      "description": "Hides a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "화이트리스트 숨기기"
+   },
+   "howtablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "탭 목록 사용 방법:"
+   },
+   "image": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "이미지"
+   },
+   "imgfirst": {
+      "description": "Option in More section on Super Drag page",
+      "message": "드래그-링크 대신 슈퍼 드래그-이미지 사용을 위한 키 할당:"
+   },
+   "imgfirstcheck": {
+      "description": "Option in More section on Super Drag page",
+      "message": "링크에 이미지가 포함되어 있는 경우, 드래그-링크 대신 슈퍼 드래그-이미지를 사용하십시오."
+   },
+   "import": {
+      "description": "Option on Advanced Setttings page",
+      "message": "가져오기"
+   },
+   "incog": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "시크릿 창"
+   },
+   "keytodisablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to disable gestures",
+      "message": "마우스 제스처 비활성화 키 할당:"
+   },
+   "keytoenablemousegestures": {
+      "description": "Option in More section on Mouse Gestures page to choose key to enable gestures",
+      "message": "마우스 제스처를 활성화하려면 키를 할당하십시오."
+   },
+   "last": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "마지막"
+   },
+   "left": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "남음"
+   },
+   "link": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "링크"
+   },
+   "linuxsettings": {
+      "description": "Section name on General Settings page",
+      "message": "Linux/Mac 옵션"
+   },
+   "listaction": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "동작:"
+   },
+   "listgesture": {
+      "description": "Section in Edit Gesture section on Mouse Gestures page",
+      "message": "제스처:"
+   },
+   "local": {
+      "description": "en",
+      "message": "ko"
+   },
+   "localtrans": {
+      "description": "FALSE",
+      "message": "거짓"
+   },
+   "minilength": {
+      "description": "Option in Miscellaneous section on General Settings page",
+      "message": "트랙 최소 길이(px):"
+   },
+   "missedgesture": {
+      "description": "Message for when gestures didn't work. Click on 'Report' sends to a form to fill. Should be maximun 30 charachters",
+      "message": "제스처가 작동하지 않습니까? 신고"
+   },
+   "moreChromepagetitle": {
+      "description": "Placeholder in Actions",
+      "message": "Chrome 내부 주소(예:\"chrome://...\")"
+   },
+   "moreCloseoptstitle": {
+      "description": "Placeholder in Actions",
+      "message": "마지막 탭을 닫은 후 창을 닫으시겠습니까?"
+   },
+   "moreCloseseltitle": {
+      "description": "Placeholder in Actions",
+      "message": "현재 탭을 닫은 후 선택할 탭은 무엇입니까?"
+   },
+   "moreCloseurltitle": {
+      "description": "Placeholder in Actions",
+      "message": "URL, Chrome 창을 닫지 않는 경우, 이 URL이 열립니다"
+   },
+   "moreCopystyletitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "사용자 지정 형식, 제목/단어 대신 \"%title\" 사용, 사이트 url 대신 \"%url\" 사용, \"\\n\"으로 새 줄 표시"
+   },
+   "moreDes": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "기능 프롬프트 텍스트, 키워드 대신 \"%name\" 사용"
+   },
+   "moreDestitle": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "작업 이름"
+   },
+   "moreIsearchtitle": {
+      "description": "Action",
+      "message": "이미지 검색 엔진"
+   },
+   "moreName": {
+      "description": "Name",
+      "message": "이름"
+   },
+   "morePinnedtitle": {
+      "description": "Action",
+      "message": "탭 고정/고정 해제"
+   },
+   "morePositiontitle": {
+      "description": "Action",
+      "message": "현재 탭에 대한 새 탭 위치"
+   },
+   "moreScript": {
+      "description": "Action",
+      "message": "스크립트"
+   },
+   "moreScripttitle": {
+      "description": "Placeholder in Run Script Action",
+      "message": "스크립트 내용"
+   },
+   "moreTarget": {
+      "description": "Action",
+      "message": "위치"
+   },
+   "moreTargettitle": {
+      "description": "Placeholder in Actions",
+      "message": "새 탭을 여는 방법:새/현재 탭,맨 위/배경"
+   },
+   "moreTsearchtitle": {
+      "description": "Action",
+      "message": "텍스트 검색 엔진"
+   },
+   "moreURL": {
+      "description": "Action",
+      "message": "URL"
+   },
+   "moreURLtitle": {
+      "description": "Placeholder in Actions. Note! do not translate text inside \"%.",
+      "message": "URL,키워드 대신 \"%s\" 사용"
+   },
+   "moreaboutdrag": {
+      "description": "Section name",
+      "message": "더 보기..."
+   },
+   "moreaffecteddomains": {
+      "description": "Shown on hover when gesture is associated to more than one domain on Edit Gesture screen.",
+      "message": "영향받는 더 많은 도메인. 도메인을 편집합니다."
+   },
+   "morecur": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "현재 탭"
+   },
+   "morenew": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "새 탭 및 맨 위"
+   },
+   "morenewback": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "새 탭 및 배경"
+   },
+   "moresettings": {
+      "description": "Section name",
+      "message": "기타"
+   },
+   "morestrges": {
+      "description": "Section name on Rocker Gestures page",
+      "message": "세부 설정"
+   },
+   "mousecursor": {
+      "description": "Headline for the Mouse cursor customization section in the Settings page",
+      "message": "마우스 커서"
+   },
+   "mousecursorreturndefault": {
+      "description": "Link to switch back to default mouse cursor image",
+      "message": "기본 커서로 돌아가기"
+   },
+   "mousecursorscale": {
+      "description": "Scale of mouse custom cursor image",
+      "message": "비율"
+   },
+   "mousecursorupload": {
+      "description": "Uploading an image to be used as a mouse cursor",
+      "message": "컴퓨터에서 업로드"
+   },
+   "mousecursoruploadinstructions": {
+      "description": "Instructions for the image file a user can upload for the mouse cursor",
+      "message": "나만의 마우스 커서를 업로드하세요. 48px × 48px PNG. 최대 20kb."
+   },
+   "msgbox": {
+      "description": "Message when making changes or clicking on save inside Settings ",
+      "message": "구성이 저장되었습니다. 일부 변경 내용은 다시 로드 후 적용됩니다."
+   },
+   "mygestures": {
+      "description": "Headline of default, edited or new gestures section on ext. popup",
+      "message": "활성 제스처"
+   },
+   "newadd": {
+      "description": "Options in Actions",
+      "message": "새 탭"
+   },
+   "newback": {
+      "description": "Options in Actions",
+      "message": "새 탭 및 배경"
+   },
+   "newfront": {
+      "description": "Options in Actions",
+      "message": "새 탭 및 맨 위"
+   },
+   "newgesture": {
+      "description": "Button on Mouse Gestures page",
+      "message": "새 탭 추가"
+   },
+   "newtabdes": {
+      "description": "Placeholder in Actions",
+      "message": "%name 열기"
+   },
+   "nopopulargestures": {
+      "description": "shown in popup when user visits a site with no popular gestures available for it",
+      "message": "이 페이지에는 인기 제스처가 없습니다. 처음으로 제스처를 사용하시고 당사 허브에 기여해 주십시오."
+   },
+   "normal": {
+      "description": "Side navigation in Settings",
+      "message": "일반 설정"
+   },
+   "noteforkeytodisable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to disable gestures",
+      "message": "참고: 선택한 키를 클릭하면 마우스 제스처가 기본적으로 활성화되고 오른쪽 클릭 기능이 비활성화됩니다"
+   },
+   "noteforkeytoenable": {
+      "description": "Note on Options in More section on Mouse Gestures page for key to enable gestures",
+      "message": "참고: 선택한 키를 클릭하면 마우스 제스처가 기본적으로 비활성화되고 오른쪽 클릭 기능이 활성화됩니다"
+   },
+   "offmodepopup": {
+      "description": "Text on ext. popup when Crx Mouse is off",
+      "message": "Crx Mouse가 꺼졌습니다"
+   },
+   "offmodesettings": {
+      "description": "Text in Settings on General Settings page when Crx Mouse is off",
+      "message": "Crx Mouse가 비활성화됩니다"
+   },
+   "offmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Crx Mouse 끄기"
+   },
+   "onmodetooltip": {
+      "description": "Tooltip next to on/off toggle of Crx Mouse on ext. popup",
+      "message": "Crx Mouse 켜기"
+   },
+   "opa": {
+      "description": "Option in Appearance section",
+      "message": "투명도:"
+   },
+   "optgrpapp": {
+      "description": "Action",
+      "message": "앱"
+   },
+   "optgrpcopy": {
+      "description": "Action",
+      "message": "복사"
+   },
+   "optgrpload": {
+      "description": "Action",
+      "message": "로드"
+   },
+   "optgrpnav": {
+      "description": "Action",
+      "message": "탐색"
+   },
+   "optgrpnone": {
+      "description": "Action",
+      "message": "없음"
+   },
+   "optgrpother": {
+      "description": "Action",
+      "message": "기타"
+   },
+   "optgrpsave": {
+      "description": "Action",
+      "message": "저장"
+   },
+   "optgrpscroll": {
+      "description": "Action",
+      "message": "스크롤"
+   },
+   "optgrpsearch": {
+      "description": "Action",
+      "message": "검색"
+   },
+   "optgrptab": {
+      "description": "Action",
+      "message": "탭"
+   },
+   "optgrptabnav": {
+      "description": "Action",
+      "message": "탭 탐색"
+   },
+   "optgrpwindow": {
+      "description": "Action",
+      "message": "창"
+   },
+   "optmode": {
+      "description": "Text of opt in/out checkbox",
+      "message": "인기 제스처 켜기(익명 데이터 전송)"
+   },
+   "optmodealert": {
+      "description": "text on opt in/out alert window",
+      "message": "인기 있는 제스처가 더 이상 표시되지 않습니다. 언제든지 선택 기능의 확인란을 선택하여 다시 활성화할 수 있습니다."
+   },
+   "optoutmodemessage": {
+      "description": "Description of opt out mode on ext. popup",
+      "message": "인기 제스처를 활성화하려면 \u003Ca href=\"$link$\" target=\"_blank\">설정\u003C/a>으로 이동합니다",
+      "placeholders": {
+         "link": {
+            "content": "$1"
+         }
+      }
+   },
+   "optoutmodetitle": {
+      "description": "Title of opt out mode on ext. popup",
+      "message": "인기 제스처가 비활성 상태입니다."
+   },
+   "pinned": {
+      "description": "Action",
+      "message": "고정"
+   },
+   "placeholderconfig": {
+      "description": "Text on Advanced Settings page",
+      "message": "여기에 구성을 붙여넣은 다음, 가져오기를 클릭해 가져오기를 완료합니다; 가져오기를 클릭하면 구성이 표시되고 나중에 사용할 수 있습니다"
+   },
+   "placeholdername": {
+      "description": "Placeholder in Actions",
+      "message": "이름"
+   },
+   "placeholderscript": {
+      "description": "Placeholder in Actions",
+      "message": "스크립트"
+   },
+   "placeholdersearchurl": {
+      "description": "Placeholder in Actions",
+      "message": "URL,키워드 대신 %s 사용"
+   },
+   "placeholdertooltip": {
+      "description": "Placeholder in Actions",
+      "message": "작업 이름"
+   },
+   "placeholderurl": {
+      "description": "Placeholder in Actions",
+      "message": "URL"
+   },
+   "playLater": {
+      "description": "Game reminder popup - play later",
+      "message": "나중에 플레이"
+   },
+   "popupaddtooltip": {
+      "description": "Tooltip when hovering on plus icon in Active Gestures section",
+      "message": "새 탭 추가"
+   },
+   "popupeditgesture": {
+      "description": "Button to apply changes for existing gesture on ext. popup",
+      "message": "변경 내용 적용"
+   },
+   "popupfooterhelptooltip": {
+      "description": "Tooltip when hovering on question mark icon in footer on ext. popup",
+      "message": "도움말"
+   },
+   "popupgesturecancel": {
+      "description": "Button to cancel new/edit gesture on ext. popup",
+      "message": "취소"
+   },
+   "popupnewaction": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "동작을 "
+   },
+   "popupnewgesture": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "제스처를 "
+   },
+   "popupnewscope": {
+      "description": "Section name in new gesture window on ext. popup",
+      "message": "범위를 선"
+   },
+   "popupnewscopeglobal": {
+      "description": "Option in new gesture window on ext. popup",
+      "message": "모든 사이트"
+   },
+   "popuponboarding": {
+      "description": "Text on onboarding window to close window",
+      "message": "알겠습니다, 감사합니다."
+   },
+   "popuppopular": {
+      "description": "Headline of popular gestures section on ext. popup",
+      "message": "인기 제스처"
+   },
+   "popuprecordsave": {
+      "description": "Button to save new gesture in new gesture window on ext. popup",
+      "message": "제스처를 저장합니다"
+   },
+   "popupsuccess": {
+      "description": "Text in notification for gesture saved/edited on ext. popup. Note! Do not translate text next to $",
+      "message": "'$GestureName$'에 대한 제스처가 저장되었습니다",
+      "placeholders": {
+         "GestureName": {
+            "content": "$1"
+         }
+      }
+   },
+   "popuptooltipdelete": {
+      "description": "Tooltip when hovering on delete icon on ext. popup",
+      "message": "삭제"
+   },
+   "popuptooltipedit": {
+      "description": "Tooltip when hovering on edit icon on ext. popup",
+      "message": "편집"
+   },
+   "popupvideotool": {
+      "description": "Tooltip when hovering on video icon in footer on ext. popup",
+      "message": "Crx Mouse 사용 방법"
+   },
+   "port": {
+      "description": "Section name on Advanced Settings page",
+      "message": "가져오기/내보내기 구성"
+   },
+   "porttip": {
+      "description": "Text on Advanced Settings page. Note! Do not translate html tags",
+      "message": "참고: 1. 구성을 가져오면 이 확장이 재시작됩니다, 이 확장을 적용하려면 연 탭을 다시 로드해야 합니다.  \u003Cbr /> 2.여기에서 내보낸 구성만 가져올 수 있습니다, 직접 편집하는 것은 권장하지 않습니다. \u003Cbr /> 3.오류가 발생하는 경우, 기본 구성으로 초기화하십시오. "
+   },
+   "poschrome": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "Chrome 기본값"
+   },
+   "poshead": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "헤드"
+   },
+   "poslast": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "마지막"
+   },
+   "posleft": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "남음"
+   },
+   "posright": {
+      "description": "Options under Open Chrome internal address Action",
+      "message": "오른쪽"
+   },
+   "rate_us_never_show_again": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "다시 표시하지 않음"
+   },
+   "rate_us_remind_me_later": {
+      "description": "button in crx mouse rate us overlay",
+      "message": "나중에 다시 알리기"
+   },
+   "rate_us_title": {
+      "description": "Title crx mouse overlay for rate us",
+      "message": "CRX 마우스를 즐기고 계시나요?"
+   },
+   "rateus": {
+      "description": "located in Settings section inside sidebar. Asking the users to rate the extension. Translation should be max 21 characters",
+      "message": "마음에 드셨습니까? 평가해 주세요!"
+   },
+   "reset": {
+      "description": "Section name on Advanced Settings page",
+      "message": "초기화"
+   },
+   "resetall": {
+      "description": "Reset button on Advanced Settings page",
+      "message": "모두 초기화"
+   },
+   "resetpage": {
+      "description": "Reset button on Gestures pages",
+      "message": "이 페이지 초기화"
+   },
+   "resettip": {
+      "description": "Text on Advanced Settings page",
+      "message": "참고: 이 작업을 실행하면 모든 구성이 삭제되고 기본값으로 초기화되며 작업을 취소할 수 없으므로, 신중하게 실행하십시오."
+   },
+   "reverseFS": {
+      "description": "Action",
+      "message": "방향 반전"
+   },
+   "right": {
+      "description": "Action",
+      "message": "오른쪽"
+   },
+   "s360": {
+      "description": "Action - Website name",
+      "message": "360"
+   },
+   "samazon": {
+      "description": "Action - Website name",
+      "message": "Amazon"
+   },
+   "save": {
+      "description": "Save button",
+      "message": "저장"
+   },
+   "savewhitelist": {
+      "description": "save whitelist changes. Appears on all gesture boxes",
+      "message": "저장"
+   },
+   "sbaidu": {
+      "description": "Action - Website name",
+      "message": "Baidu"
+   },
+   "sbaiduimage": {
+      "description": "Action - Website name",
+      "message": "Baidu 이미지 검색"
+   },
+   "sbing": {
+      "description": "Action - Website name",
+      "message": "Bing"
+   },
+   "scractdown": {
+      "description": "Action",
+      "message": "아래로 스크롤:"
+   },
+   "scractup": {
+      "description": "Action",
+      "message": "위로 스크롤:"
+   },
+   "scriptdes": {
+      "description": "Placeholder in Actions",
+      "message": "스크립트 실행: %name"
+   },
+   "scroll": {
+      "description": "Side navigation in Settings",
+      "message": "스크롤"
+   },
+   "scrollaccele": {
+      "description": "Option on Scrolling page",
+      "message": "스크롤 가속"
+   },
+   "scrolleffects": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "이펙트 적용(페이지 위로/아래로/맨 위로/아래로)"
+   },
+   "scrollgesture": {
+      "description": "Side navigation in Settings",
+      "message": "휠 제스처"
+   },
+   "scrollspeed": {
+      "description": "Option on Scrolling page",
+      "message": "스크롤 속도"
+   },
+   "searchdes": {
+      "description": "Placeholder in Actions. Note! do not translate text next to %.",
+      "message": "%name을 사용하여 검색할 대상:\"%s\""
+   },
+   "set_your_mouse_gestures_off": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "마우스 제스처가 기본적으로 꺼져 있도록 설정"
+   },
+   "set_your_mouse_gestures_on": {
+      "description": "Option in More section on Mouse Gestures page to have mouse gestures enabled by default",
+      "message": "마우스 제스처가 기본적으로 켜져 있도록 설정"
+   },
+   "setdragurl": {
+      "description": "Option in More section on Super Drag page",
+      "message": "문자열이 링크로 인식되는 경우 드래그-링크 활성화(실험 중)"
+   },
+   "settings": {
+      "description": "Settings",
+      "message": "설정"
+   },
+   "sgoogle": {
+      "description": "Action - Website name",
+      "message": "Google"
+   },
+   "sgoogleimage": {
+      "description": "Action - Website name",
+      "message": "Google 이미지 검색"
+   },
+   "showwhitelist": {
+      "description": "Opens a section that sets the scope of the gesture. Appears on all gesture boxes",
+      "message": "화이트리스트 표시"
+   },
+   "site": {
+      "description": "Action",
+      "message": "웹사이트"
+   },
+   "smooth": {
+      "description": "Action",
+      "message": "부드러운 스크롤"
+   },
+   "ssogou": {
+      "description": "Action - Website name",
+      "message": "Sogou"
+   },
+   "staobao": {
+      "description": "Action - Website name",
+      "message": "Taobao"
+   },
+   "startGame": {
+      "description": "Game reminder popup - start game",
+      "message": "게임 시작"
+   },
+   "stenable": {
+      "description": "Enable select text while holding the left mouse(It makes Mouse Gestures invalid sometimes)",
+      "message": "마우스 왼쪽 버튼을 누른 채로 텍스트 선택 활성화(마우스 제스처가 가끔 무효화됩니다)"
+   },
+   "stineyeimage": {
+      "description": "TinEye",
+      "message": "TinEye"
+   },
+   "stractleft": {
+      "description": "Options on Rocker Gestures page",
+      "message": "왼쪽 버튼 클릭:"
+   },
+   "stractmiddle": {
+      "description": "Options on Rocker Gestures page",
+      "message": "가운데 버튼 클릭:"
+   },
+   "stractright": {
+      "description": "Options on Rocker Gestures page",
+      "message": "오른쪽 버튼 클릭:"
+   },
+   "strleft": {
+      "description": "Section on Rocker Gestures page",
+      "message": "왼쪽 버튼 누르기"
+   },
+   "strmiddle": {
+      "description": "Section on Rocker Gestures page",
+      "message": "가운데 버튼 누르기"
+   },
+   "stroke": {
+      "description": "Option in Appearance section on Mouse Gestures page",
+      "message": "마우스 트랙 표시"
+   },
+   "strokegesture": {
+      "description": "Side navigation in Settings",
+      "message": "로커 제스처"
+   },
+   "strpress": {
+      "description": "Text on Rocker Gestures page",
+      "message": "동작을 트리거하는 경우:"
+   },
+   "strpressdown": {
+      "description": "Option on Rocker Gestures page",
+      "message": "마우스 위로"
+   },
+   "strpressup": {
+      "description": "Option on Rocker Gestures page",
+      "message": "마우스 아래로"
+   },
+   "strright": {
+      "description": "Option on Rocker Gestures page",
+      "message": "오른쪽 버튼 누르기"
+   },
+   "swiki": {
+      "description": "Action - Website name",
+      "message": "Wikipedia"
+   },
+   "syahoo": {
+      "description": "Action - Website name",
+      "message": "Yahoo"
+   },
+   "syandex": {
+      "description": "Action - Website name",
+      "message": "Yandex"
+   },
+   "sync": {
+      "description": "Section on Advanced Settings page",
+      "message": "동기화 구성"
+   },
+   "syncdes": {
+      "description": "Text on Advanced Settings page",
+      "message": "사용자가 동기화를 활성화한 경우 구성은 \u003Ca href=\"https://accounts.google.com/ServiceLogin?service=chromiumsync\" target=\"_blank\">로그인한\u003C/a> 사용자에 대해 Chrome과 자동으로 동기화됩니다."
+   },
+   "tablist": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "탭 목록"
+   },
+   "tablistVisual": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "스크롤할 때 비주얼 탭 목록 표시"
+   },
+   "tablistkeyleft": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "왼쪽 버튼을 길게 누르고 스크롤합니다."
+   },
+   "tablistkeyright": {
+      "description": "Option in Tab List section on Wheel Gestures page",
+      "message": "오른쪽 버튼을 길게 누르고 스크롤합니다."
+   },
+   "testlink": {
+      "description": "Text in new Link Super Drag Gesture window",
+      "message": "테스트 링크"
+   },
+   "testwords": {
+      "description": "Text in new Text Super Drag Gesture window",
+      "message": "테스트 문자열"
+   },
+   "text": {
+      "description": "Buttons in New section on Super Drag page",
+      "message": "텍스트"
+   },
+   "thanks": {
+      "description": "Section on About page",
+      "message": "감사합니다"
+   },
+   "time": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "기간"
+   },
+   "timeout": {
+      "description": "Option in Miscellaneous section on General Settings",
+      "message": "타임아웃"
+   },
+   "tipforwhitelist": {
+      "description": "Text in whitelist section on all gesture boxes. Appears on all gesture boxes",
+      "message": "팁: URL 전체 또는 그중 일부를 사용할 수 있습니다. 예를 들어, \"cnn.com\"은 cnn.com이 들어있는 모든 URL을 지원합니다."
+   },
+   "titlechromepage": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "동작 이름 툴 팁,Chrome 내부 주소 대신 \"%name\"을 사용하십시오"
+   },
+   "titlecopyuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "동작 이름 툴 팁,사용자 형식 이름 대신 \"%name\"을 사용하십시오"
+   },
+   "titleisearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "동작 이름 툴 팁,검색 엔진 이름 대신 \"%name\"을 사용하십시오"
+   },
+   "titlenewusertab": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "동작 이름 툴 팁,사이트 이름 대신 \"%name\"을 사용하십시오"
+   },
+   "titlenexpre": {
+      "description": "Placeholder in Actions",
+      "message": "단어 일치, 여러 개의 단어는 \"|\"로 구분하십시오, 확장은 rel, rev, id, innerHTML, 제목, 클래스를 차례대로 감지합니다."
+   },
+   "titlesearchuser": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "URL,키워드 대신 \"%s\"를 사용하십시오"
+   },
+   "titletsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "동작 이름 툴 팁,검색 엔진 대신 \"%name\", 콘텐츠 대신 \"%s\"을 사용하십시오"
+   },
+   "titleuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "동작 이름 툴팁,스크립트 이름 대신 \"%name\"을 사용하십시오"
+   },
+   "tooltip": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "동작 이름 표시"
+   },
+   "translate": {
+      "description": "Translate",
+      "message": "번역"
+   },
+   "unclose": {
+      "description": "Do not close, and open the following URL",
+      "message": "닫지 말고, 다음 URL을 여십시오"
+   },
+   "unpinned": {
+      "description": "Action",
+      "message": "고정 해제"
+   },
+   "valuechromepage": {
+      "description": "Placeholder in Actions",
+      "message": "%name 열기"
+   },
+   "valueisearch": {
+      "description": "Placeholder in Actions",
+      "message": "%name을 사용하여 이미지 검색"
+   },
+   "valuenewusertab": {
+      "description": "Placeholder in Actions",
+      "message": "%name 열기"
+   },
+   "valuenone": {
+      "description": "Action",
+      "message": "없음"
+   },
+   "valuetsearch": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "%name을 사용하여 \"%s\" 검색"
+   },
+   "valueuserscript": {
+      "description": "Placeholder in Actions. Note! Do not translate text next to %.",
+      "message": "스크립트 실행: \"%name\""
+   },
+   "version": {
+      "description": "Version",
+      "message": "버전"
+   },
+   "wheelgesturealert": {
+      "description": "An alert that jumps up when users choose two options that overlap in the Wheel Gestures section",
+      "message": "이 두 기능은 중복됩니다"
+   },
+   "width": {
+      "description": "Option in Appearance section on Super Drag and Mouse Gestures pages",
+      "message": "너비:"
+   },
+   "wrongGesture": {
+      "description": "message flashing when user is making the wrong move",
+      "message": "잘못된 제스처입니다. 다시 시도하세요"
+   }
+}

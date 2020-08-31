@@ -1,2 +1,1 @@
-xmobar &
-exec xmonad
+exec i3

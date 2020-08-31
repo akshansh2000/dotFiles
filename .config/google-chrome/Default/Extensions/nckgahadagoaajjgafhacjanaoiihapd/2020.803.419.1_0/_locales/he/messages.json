@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "האדמין שלך ב-G Suite הפעיל את Google Chat. אפשר להשתמש ב-Chat כדי לשוחח, לעבוד ולשתף קבצים עם עובדים אחרים בחדרי צ'אטים.\n\nכדי ליהנות מהחוויה הטובה ביותר, מומלץ להסיר את התוסף הזה אחרי התקנת הגרסה החדשה של אפליקציית Google Chat."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "להורדת האפליקציה למחשב"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "כניסה ל-chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "נעים להכיר, Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "יש להיכנס ל-Chrome כדי להתחיל."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "ניסיון חוזר"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "יש לוודא שמחוברים לאינטרנט ולנסות שוב"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "שגיאת התחברות"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "התמיכה באפליקציית Hangouts ל-Chrome תופסק במהלך השנה. כדי להמשיך להשתמש ב-Hangouts בחלון נפרד, צריך להתקין את התוסף של Hangouts ל-Chrome."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "התמיכה באפליקציית Hangouts ל-Chrome הופסקה."
+   },
+   "chrome_app_description": {
+      "message": "אפליקציית Hangouts ל-Chrome הוצאה משימוש. צריך לעבור לתוסף של Hangouts ל-Chrome."
+   },
+   "chrome_app_download_button": {
+      "message": "להתקנת התוסף ל-Chrome"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "למידע נוסף"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "האפליקציה הזו מיושנת. זמינה גרסה חדשה יותר."
+   },
+   "chrome_app_outdated_title": {
+      "message": "עדכון אפליקציית Hangouts Chrome שלך"
+   },
+   "chrome_app_signin_button": {
+      "message": "כניסה"
+   },
+   "chrome_app_welcome_message": {
+      "message": "תיהנה משיחות פרטיות וקבוצתיות עם טקסט, תמונות, תצלומים, קול, וידאו ועוד."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - ‏$1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "לא ניתן להתחבר ל-Google. עליך לבדוק את החיבור שלך לאינטרנט."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts מוסיף חיים לשיחות באמצעות תמונות, אמוג&#39;י ואפילו שיחות וידאו קבוצתיות ללא תשלום."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "סטטוס: מחובר\nהודעות שלא נקראו"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)‎"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)‎"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)‎"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)‎"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)‎"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "סטטוס: הושבתה על ידי מנהל המערכת"
+   },
+   "quasar_tip_connected": {
+      "message": "סטטוס: מחובר"
+   },
+   "quasar_tip_connecting": {
+      "message": "סטטוס: מתחבר"
+   },
+   "quasar_tip_disconnected": {
+      "message": "סטטוס: מנותק"
+   },
+   "quasar_tip_not_load": {
+      "message": "סטטוס: שגיאה בטעינה"
+   },
+   "quasar_tip_not_login": {
+      "message": "סטטוס: לא מחובר"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "סטטוס: מתחבר מחדש"
+   }
+}

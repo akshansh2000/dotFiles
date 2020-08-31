@@ -1,0 +1,362 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.header {
+	background-image: linear-gradient(to bottom, #ffffff 25%, #f0f0f0);
+	min-height: 800px;
+	position: relative;
+	overflow: hidden;
+}
+
+.header:before {
+	pointer-events: none;
+	content: "";
+	border-radius: 50%;
+	width: 800px;
+	height: 1000px;
+	position: absolute;
+	right: -580px;
+	top: -500px;
+	background:#1b78ee;
+}
+
+.header:after {
+	pointer-events: none;
+	content: "";
+	border-radius: 50%;
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	left: -90px;
+	top: 350px;
+	background: #45a8fc;
+}
+
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 14px;
+	background: url(../assets/images/lt-logo.svg) 0 center no-repeat;
+	background-size: auto 52px;
+	padding-left: 64px;
+	font-size: 16px;
+}
+
+.name {
+	font-weight: 600;
+}
+
+.slogan {
+	color: #777;
+}
+
+.headline-wrapper {
+	margin: 17vh auto 50px;
+	width: 820px;
+	max-width: 90%;
+	text-align: center;
+}
+
+.headline-wrapper,
+.box-wrapper {
+	position: relative;
+	z-index: 1;
+}
+
+h1 {
+	font-weight: bold;
+	line-height: 1.2;
+	font-size: 54px;
+	margin: 0 0 12px;
+}
+
+h1 + p {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.box-wrapper {
+	padding: 0 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 0 60px;
+}
+
+.box {
+	margin-right: 30px;
+	max-width: 350px;
+	min-width: 280px;
+	box-sizing: border-box;
+	padding: 192px 20px 20px;
+	border-radius: 16px;
+	box-shadow: 0 10px 28px 0 rgba(0, 0, 0, 0.22);
+	background: #fff;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.box .banner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 178px;
+}
+
+.box-1 .banner {
+	background: #1978EF url(images/box-1.png) no-repeat;
+	background-size: cover;
+}
+
+.box-2 .banner {
+	background: #2d8cf0 url(images/box-2.png) no-repeat;
+	background-size: cover;
+}
+
+.box-3 .banner {
+	background: #f5a523 url(images/box-3.png) no-repeat;
+	background-size: cover;
+}
+
+.box:last-child {
+	margin-right: 0;
+}
+
+.box h2 {
+	color: #1978f0;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 600;
+	margin: 0 0 8px;
+}
+
+.box .badge {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	border-radius: 17px;
+	background-color: #eb7d0a;
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 24px;
+	padding: 0 12px;
+}
+
+.box-premium h2 {
+	color: #f5a523;
+}
+
+.box p {
+	color: #3c3f49;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 20px;
+	flex: 1;
+}
+
+.premium-button,
+.normal-button {
+	border-radius: 8px;
+	background-color: #45a8fc;
+	transition: background-color 0.2s;
+	line-height: 40px;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	border: 0;
+	color: #fff;
+	margin: 0;
+	cursor: pointer;
+	outline: 0;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.normal-button:hover {
+	background: #1b78ee;
+}
+
+.premium-button {
+	background-color: #f5a523;
+}
+
+.premium-button:hover {
+	background-color: #e2920f;
+}
+
+.new-stuff {
+	margin: 60px auto;
+	max-width: 800px;
+}
+
+.new-stuff h1 {
+	text-align: center;
+	margin: 0 0 20px;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
+.section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 60px;
+	margin: 0 0 60px;
+}
+
+.section .text,
+.section .image {
+	flex: 1 1 50%;
+}
+
+.section .text h3 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.33;
+	margin: 50px 0 12px;
+}
+
+.section .text p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #677075;
+	margin: 0;
+}
+
+.section .image {
+	height: 300px;
+	position: relative;
+	z-index: 1;
+}
+
+.section .image:before {
+	content: "";
+	width: 260px;
+	height: 260px;
+	background-color: #1b78ee;
+	border-radius: 50%;
+	position: absolute;
+	right: -40px;
+	top: -30px;
+	z-index: -1;
+}
+
+.section-2 .image::before {
+	right: auto;
+	top: auto;
+	bottom: -30px;
+	left: -50px;
+	background: #45a8fc;
+}
+
+.section-3 .image:before {
+	background: #f5a523;
+	top: -40px;
+	right: -120px;
+}
+
+.section-3 .media video {
+	margin-right: -2px;
+}
+
+.section .image + .text,
+.section .text + .image {
+	margin-left: 34px;
+}
+
+.section .media {
+	display: inline-block;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 20px 16px 0 rgba(2, 12, 24, 0.1), 0 10px 6px 0 rgba(20, 69, 130, 0.05);
+}
+
+.section .media * {
+	display: block;
+	margin: 0;
+
+}
+
+.cta-section {
+	width: 1000px;
+	margin: 0 auto 60px;
+	padding-top: 20px;
+	text-align: center;
+	background: url(images/section-4-bg.png) center top no-repeat;
+	background-size: 1000px auto;
+}
+
+.cta-section h1 {
+	width: 60%;
+	margin: 0 auto 20px;
+	font-size: 46px;
+	font-weight: bold;
+}
+
+.cta-section p {
+	width: 56%;
+	margin: 0 auto 30px;
+}
+
+.cta-section .premium-button {
+	font-size: 16px;
+
+}
+
+.limited-time {
+	font-size: 16px;
+	line-height: 32px;
+	display: inline-block;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	background-color: #1978f0;
+	border-radius: 16px;
+	padding: 0 14px;
+}
+
+.made-in-eu {
+	width: 900px;
+	display: none;
+	text-align: center;
+	margin: 50px auto 20px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+}
+
+.made-in-eu span {
+	color: #777;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.made-in-eu a {
+	color: #aaa;
+	text-decoration: none;
+}
+
+.made-in-eu span:before {
+	content: "";
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: -3px;
+	border-radius: 50%;
+	margin-right: 7px;
+	background: url(../assets/images/flags/eu.svg);
+}
+
+.shadow {
+	background-image: linear-gradient(to bottom, #ffffff 25%, #f0f0f0);
+	border-bottom: 1px solid transparent;
+	margin-bottom: 60px;
+	padding-bottom: 40px;
+}

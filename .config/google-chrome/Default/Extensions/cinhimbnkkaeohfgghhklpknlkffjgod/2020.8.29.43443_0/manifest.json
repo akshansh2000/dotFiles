@@ -1,0 +1,51 @@
+{
+   "app": {
+      "display_mode": "minimal-ui",
+      "icon_color": "#FF0000",
+      "launch": {
+         "web_url": "https://music.youtube.com/?source=pwa"
+      },
+      "linked_icons": [ {
+         "size": 48,
+         "url": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_48x48.png"
+      }, {
+         "size": 72,
+         "url": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_72x72.png"
+      }, {
+         "size": 96,
+         "url": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_96x96.png"
+      }, {
+         "size": 144,
+         "url": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_144x144.png"
+      }, {
+         "size": 192,
+         "url": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_192x192.png"
+      }, {
+         "size": 512,
+         "url": "https://www.gstatic.com/youtube/media/ytm/images/applauncher/music_icon_512x512.png"
+      } ],
+      "theme_color": "rgba(19,19,19,1)"
+   },
+   "description": "A new music service with official albums, singles, videos, remixes, live performances and more for Android, iOS and desktop. It's all here.",
+   "icons": {
+      "128": "icons/128.png",
+      "144": "icons/144.png",
+      "192": "icons/192.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png",
+      "72": "icons/72.png",
+      "96": "icons/96.png"
+   },
+   "key": "c7jY/GiXwlsn5gY9afLMf9H7TMvOunE+0MUijO2XKLo=",
+   "name": "YouTube Music",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://music.youtube.com/*" ],
+         "title": "YouTube Music"
+      }
+   },
+   "version": "2020.8.29.43443"
+}

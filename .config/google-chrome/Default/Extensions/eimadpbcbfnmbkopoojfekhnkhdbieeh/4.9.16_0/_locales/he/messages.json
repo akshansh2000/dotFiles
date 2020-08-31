@@ -1,0 +1,155 @@
+{
+   "add_site_to_list": {
+      "message": "הוסף אתר נוכחי לרשימה"
+   },
+   "automation": {
+      "message": "הפעלה אוטומטית:"
+   },
+   "brightness": {
+      "message": "בהירות"
+   },
+   "change_browser_theme": {
+      "message": "שנה את ערכת נושא הדפדפן"
+   },
+   "contrast": {
+      "message": "ניגודיות"
+   },
+   "custom_browser_theme_off": {
+      "message": "ברירת מחדל"
+   },
+   "custom_browser_theme_on": {
+      "message": "מותאם אישית"
+   },
+   "dark": {
+      "message": "אפל"
+   },
+   "donate": {
+      "message": "לתרום"
+   },
+   "engine_dynamic": {
+      "message": "דינמי"
+   },
+   "engine_filter": {
+      "message": "מסנן"
+   },
+   "engine_filter_plus": {
+      "message": "מסנן+"
+   },
+   "engine_static": {
+      "message": "סטטי"
+   },
+   "extension_description": {
+      "message": "מצב אפל לכל אתר. תשמור על העיניים שלך, השתמש בעיצוב כהה לגלישה בלילה או אפילו ביום."
+   },
+   "filter": {
+      "message": "מסנן"
+   },
+   "grayscale": {
+      "message": "גווני אפור"
+   },
+   "help": {
+      "message": "עזרה"
+   },
+   "invert_listed_only": {
+      "message": "רק מה שברשימה"
+   },
+   "latitude": {
+      "message": "קו רוחב"
+   },
+   "light": {
+      "message": "מואר"
+   },
+   "loading_please_wait": {
+      "message": "טוען... נא המתן"
+   },
+   "longitude": {
+      "message": "קו אורך"
+   },
+   "mode": {
+      "message": "מצב"
+   },
+   "more": {
+      "message": "עוד"
+   },
+   "news": {
+      "message": "חדשות"
+   },
+   "not_invert_listed": {
+      "message": "רק מה שלא ברשימה"
+   },
+   "off": {
+      "message": "כבוי"
+   },
+   "on": {
+      "message": "פעיל"
+   },
+   "only_for": {
+      "message": "רק עבור"
+   },
+   "only_for_description": {
+      "message": "החל הגדרות באתר הנוכחי בלבד"
+   },
+   "open_dev_tools": {
+      "message": "Dev tools"
+   },
+   "page_in_dark_list": {
+      "message": "אתר זה נמצא\nברשימה אפלה גלובלית"
+   },
+   "page_protected": {
+      "message": "דף זה מוגן\nעל ידי הדפדפן"
+   },
+   "privacy": {
+      "message": "פרטיות"
+   },
+   "read_more": {
+      "message": "קרא עוד"
+   },
+   "select_font": {
+      "message": "בחר גופן"
+   },
+   "sepia": {
+      "message": "גווני חום-אדמדם"
+   },
+   "set_active_hours": {
+      "message": "הגדר שעות פעילות"
+   },
+   "set_location": {
+      "message": "הפעל לאחר השקיעה במיקום זה"
+   },
+   "setup_add_site_hotkey": {
+      "message": "הגדר מקש קיצור להוספת אתר"
+   },
+   "setup_hotkey_toggle_extension": {
+      "message": "הפעל/כבה את התוסף\nהגדר מקש קיצור"
+   },
+   "setup_hotkey_toggle_site": {
+      "message": "הוסף/הסר אתר נוכחי מהרשימה\nהגדר מקש קיצור"
+   },
+   "site_list": {
+      "message": "רשימת אתרים"
+   },
+   "store_listing": {
+      "message": "תוסף טיפוח לעיניים זה מאפשר למצב לילה ליצור ערכות נושא כהות לאתרי אינטרנט גלישה. קורא כהה ממיר צבעים בהירים מה שהופך אותם לניגודיות גבוהה וקל לקריאה בלילה.\n\nניתן להתאים את הבהירות, הניגודיות, מסנן חום-אדמדם, מצב כהה, הגדרות גופן ורשימת אתרים להתעלמות.\n\nReader Dark אינו מציג מודעות ואינו שולח את נתוני המשתמש לשום מקום. זהו קוד פתוח לחלוטין https://github.com/darkreader/darkreader\n\nלצורך פעולה תקינה, השבת תוספים דומים. צפייה נעימה!"
+   },
+   "system_dark_mode": {
+      "message": "השתמש בסכמת הצבעים של המערכת"
+   },
+   "system_dark_mode_description": {
+      "message": "הפעל כאשר מצב החשכה של המערכת פועל"
+   },
+   "text_stroke": {
+      "message": "מריחת טקסט"
+   },
+   "theme_generation_mode": {
+      "message": "מצב יצירת ערכת נושא"
+   },
+   "toggle_current_site": {
+      "message": "הוסף/הסר אתר נוכחי מהרשימה"
+   },
+   "toggle_extension": {
+      "message": "הפעל/כבה את התוסף"
+   },
+   "try_experimental_theme_engines": {
+      "message": "נסה מנועי ערכת נושא ניסיוניים:\nפילטר + שומר על רוויה בצבעים, משתמש ב- GPU\nנושא סטטי מייצר נושא מהיר פשוט\nנושא דינמי מנתח צבעים ותמונות"
+   }
+}

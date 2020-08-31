@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "سرپرست G Suite شما Google Chat را روشن کرده است. در اتاق‌های تیمی همکاری کنید و فایل‌ها را به‌آسانی با Chat هم‌رسانی کنید.\n\nبرای داشتن بهترین تجربه، حتماً بعد از نصب برنامه Google Chat جدید، این افزونه را حذف نصب کنید."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "دریافت برنامه میزکار"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "رفتن به chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "به Google Chat سلام کنید"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "برای شروع به کار به Chrome وارد شوید"
+   },
+   "chrome_app_connection_error_button": {
+      "message": "تلاش مجدد"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "مطمئن شوید به اینترنت متصل هستید و دوباره امتحان کنید"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "خطا در اتصال"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "امسال Chrome Apps دیگر کاربردی ندارند. برای ادامه استفاده از Hangouts در پنجره متعلق به خود، افزونه Hangouts Chrome را نصب کنید."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "از برنامه Hangouts Chrome دیگر پشتیبانی نمی‌شود."
+   },
+   "chrome_app_description": {
+      "message": "برنامه Hangouts Chrome منسوخ شده است. لطفاً به «افزونه Hangouts Chrome» بروید."
+   },
+   "chrome_app_download_button": {
+      "message": "دریافت افزونه CHROME"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "بیشتر بیاموزید"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "این برنامه به‌روز نیست. یک نسخه جدیدتر موجود است."
+   },
+   "chrome_app_outdated_title": {
+      "message": "برنامه Hangouts Chrome خودتان را ارتقا دهید"
+   },
+   "chrome_app_signin_button": {
+      "message": "به سیستم وارد شوید"
+   },
+   "chrome_app_welcome_message": {
+      "message": "از مکالمه‌های خصوصی و گروهی با نوشتار، عکس، تصاویر gif، صدا، ویدئو و موارد بیشتر لذت ببرید."
+   },
+   "chrome_app_window_title": {
+      "message": "‎Google Hangouts - $1‎",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "‫ارتباط با Google برقرار نشد. لطفاً اتصال اینترنت خود را بررسی کنید."
+   },
+   "chrome_ext_description": {
+      "message": "‫Hangouts با امکانات رایگانی همچون عکس‌ها، اموجی و حتی تماس‌های تصویری گروهی به مکالمات جان می‌بخشد."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "وضعیت: متصل\nپیام‌هایی از دست رفت"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (برنامه، بتا)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (برنامه، اشکال‌زدایی)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (افزونه، آلفا)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (افزونه، بتا)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (افزونه، اشکال‌زدایی)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "وضعیت: سرپرست آن را غیرفعال کرده است"
+   },
+   "quasar_tip_connected": {
+      "message": "وضعیت: متصل"
+   },
+   "quasar_tip_connecting": {
+      "message": "وضعیت: در حال اتصال"
+   },
+   "quasar_tip_disconnected": {
+      "message": "وضعیت: قطع اتصال"
+   },
+   "quasar_tip_not_load": {
+      "message": "وضعیت: خطای بارگیری"
+   },
+   "quasar_tip_not_login": {
+      "message": "وضعیت: وارد سیستم نشد"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "وضعیت: در حال اتصال مجدد"
+   }
+}

@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "Администраторът ви на G Suite е включил Google Chat. Работете съвместно в стаи за екипи и лесно споделяйте файлове с Chat.\n\nЗа най-добра практическа работа трябва да деинсталирате това разширение след инсталирането на приложението Google Chat."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Изтегляне на настолното приложение"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Продължаване към chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Представяме ви Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "За да започнете, влезте в Chrome."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Нов опит"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Проверете дали имате връзка с интернет и опитайте отново"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Грешка във връзката"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Приложенията за Chrome ще бъдат оттеглени през тази година. За да продължите да използвате Hangouts в негов собствен прозорец, инсталирайте разширението Hangouts за Chrome."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Приложението Hangouts за Chrome вече не се поддържа."
+   },
+   "chrome_app_description": {
+      "message": "Приложението Hangouts за Chrome е оттеглено. Моля, превключете към разширението Hangouts."
+   },
+   "chrome_app_download_button": {
+      "message": "ИЗТЕГЛЯНЕ НА РАЗШИРЕНИЕТО ЗА CHROME"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Научете повече"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Това приложение не е актуално. Налице е по-нова версия."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Актуализиране на приложението Hangouts за Chrome"
+   },
+   "chrome_app_signin_button": {
+      "message": "Вход"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Наслаждавайте се на частни и групови разговори с текст, снимки, GIF файлове, глас, видео и др."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts – $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Свързването с Google не е възможно. Моля, проверете връзката си с интернет."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts оживява разговорите със снимки, емотикони и дори групови видеообаждания – безплатно."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Състояние: Установена е връзка\nПропуснати са съобщения"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Състояние: Деактивирано от администратора"
+   },
+   "quasar_tip_connected": {
+      "message": "Състояние: Установена е връзка"
+   },
+   "quasar_tip_connecting": {
+      "message": "Състояние: Установява се връзка"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Състояние: Изключено"
+   },
+   "quasar_tip_not_load": {
+      "message": "Състояние: Грешка при зареждането"
+   },
+   "quasar_tip_not_login": {
+      "message": "Състояние: Не е в профила си"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Състояние: Повторно свързване"
+   }
+}

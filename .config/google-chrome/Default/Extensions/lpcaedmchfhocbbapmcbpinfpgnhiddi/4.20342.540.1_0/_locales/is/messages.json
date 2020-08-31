@@ -1,0 +1,176 @@
+{
+  "11138431688427255": {
+    "message": "Bæta við flokki"
+  },
+  "1122146167985532789": {
+    "message": "í gær"
+  },
+  "125608713654167241": {
+    "message": "Grænblár"
+  },
+  "1333255388111908292": {
+    "message": "Matvörur"
+  },
+  "1478393252643397554": {
+    "message": "Appelsínugulur"
+  },
+  "1857224091554117760": {
+    "message": "Rauður"
+  },
+  "1986228872461282439": {
+    "message": "Sjálfgefið"
+  },
+  "1988879857371940328": {
+    "message": "Fjarlægja flokkinn $1​"
+  },
+  "2269286357657606271": {
+    "message": "Netfang hefur verið fjarlægt"
+  },
+  "2633701539319779732": {
+    "message": "Senda álit (einungis innanhússprófun)"
+  },
+  "2803553109654833664": {
+    "message": "Bleikur"
+  },
+  "2973306402585941108": {
+    "message": "Morgunn"
+  },
+  "3121560585545725724": {
+    "message": "$1​, $2​"
+  },
+  "3190546672187601036": {
+    "message": "Síðkvöld/nótt"
+  },
+  "3249966726137025950": {
+    "message": "Fjölskylduhópur þátttakanda"
+  },
+  "3385831848537487538": {
+    "message": "Ferðalög"
+  },
+  "3551522853788442530": {
+    "message": "Til baka"
+  },
+  "3555297636767750285": {
+    "message": "Grænn"
+  },
+  "4047470251075013857": {
+    "message": "Fjarlægja tengil"
+  },
+  "4153306913989815073": {
+    "message": "Ekki hægt að vista lokaða mynd."
+  },
+  "4343848624651344174": {
+    "message": "Síðdegi"
+  },
+  "4409688924773693376": {
+    "message": "Vistar"
+  },
+  "4439831283519683004": {
+    "message": "Grár"
+  },
+  "4533605085334699862": {
+    "message": "Tilvitnanir"
+  },
+  "456512308416555173": {
+    "message": "Bækur"
+  },
+  "4586373282767984140": {
+    "message": "Gulur"
+  },
+  "4840513623749850224": {
+    "message": "Kvikmyndir"
+  },
+  "5061847320181369179": {
+    "message": "Taka niður glósu…"
+  },
+  "5403636185480096151": {
+    "message": "Sjónvarp"
+  },
+  "5446819851466650207": {
+    "message": "Titill"
+  },
+  "5478662967017843220": {
+    "message": "Dökkblár"
+  },
+  "577539731512680648": {
+    "message": "Opna í Keep"
+  },
+  "5782779707150593352": {
+    "message": "Án nettengingar"
+  },
+  "6175061706159277390": {
+    "message": "Slóð vistuð"
+  },
+  "6252259197986158120": {
+    "message": "Í gær"
+  },
+  "6324768448533022780": {
+    "message": "$1​ $2​"
+  },
+  "6366376928558090914": {
+    "message": "Matur"
+  },
+  "6428000916830484004": {
+    "message": "Brúnn"
+  },
+  "6497197865876438261": {
+    "message": "Tónlist"
+  },
+  "6510131849363684615": {
+    "message": "Á morgun"
+  },
+  "6579707685908557993": {
+    "message": "Kvöld"
+  },
+  "689017442055275529": {
+    "message": "Fjölskylduhópur sem $1​ hefur umsjón með"
+  },
+  "6932835915069019531": {
+    "message": "Fjarlægja mynd"
+  },
+  "7653702763016575386": {
+    "message": "Blár"
+  },
+  "7669846901402551021": {
+    "message": "Í dag"
+  },
+  "7728066040934031356": {
+    "message": "Fjólublár"
+  },
+  "7733569569331009603": {
+    "message": "Flokknum $1​ bætt við."
+  },
+  "8133866583554546341": {
+    "message": "$1​, $2​"
+  },
+  "8149439558305434788": {
+    "message": "$1​, $2​"
+  },
+  "8169232898590866289": {
+    "message": "+ Búa til „$1​“"
+  },
+  "8602525917014156029": {
+    "message": "Staðir"
+  },
+  "9116610943383363940": {
+    "message": "Vistað"
+  },
+  "911698676339750373": {
+    "message": "Fjölskylduhópur"
+  },
+  "9218540601355708194": {
+    "message": "Eyða glósu"
+  },
+  "appDesc": {
+    "description": "App description",
+    "message": "Vistaðu í Google Keep með einum smelli!"
+  },
+  "appName": {
+    "description": "App name",
+    "message": "Chrome viðbótin fyrir Google Keep"
+  },
+  "shortName": {
+    "description": "App short name",
+    "message": "Vista í Keep"
+  }
+}

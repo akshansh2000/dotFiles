@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "మీ G Suite అడ్మినిస్ట్రేట‌ర్‌ Google Chatను ఆన్ చేశారు. Chat ద్వారా టీమ్ రూముల్లో ప‌ర‌స్ప‌రం సహకరించుకోండి. అలాగే ఫైల్‌లను సులువుగా షేర్ చేసుకోండి.\n\nఉత్తమమైన అనుభవం కోసం, కొత్త Google Chat యాప్‌ను ఇన్‌స్టాల్ చేసుకున్న తర్వాత ఈ ఎక్స్‌టెన్షన్‌ను అన్‌ఇన్‌స్టాల్ చేశారని నిర్ధారించుకోండి."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "డెస్క్‌టాప్ యాప్‌ని పొందండి"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "chat.google.comకి కొనసాగించు"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Google Chatకు స్వాగతం"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "ప్రారంభించడానికి Chromeకి సైన్ ఇన్ చేయండి."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "మళ్లీ ప్రయత్నించు"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "మీరు ఇంటర్నెట్‌కు కనెక్ట్ అయ్యి ఉన్నారని నిర్ధారించుకొని, మళ్లీ ప్రయత్నించండి"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "కనెక్షన్ లోపం"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "ఈ సంవత్సరంలో Chrome యాప్‌లు విస్మరించబడుతున్నాయి. Hangoutsని దాని స్వంత విండోలో వినియోగించడాన్ని కొనసాగించాలనుకుంటే, Hangouts Chrome ఎక్స్‌టెన్షన్‌ని ఇన్‌స్టాల్ చేయండి."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Hangouts Chrome యాప్‌కి ఇప్పుడు మద్దతు లేదు."
+   },
+   "chrome_app_description": {
+      "message": "Hangouts Chrome యాప్ విస్మరించబడింది. దయచేసి Hangouts Chrome ఎక్స్‌టెన్షన్‌కి మారండి."
+   },
+   "chrome_app_download_button": {
+      "message": "CHROME ఎక్స్‌టెన్షన్‌ని పొందండి"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "మరింత తెలుసుకోండి"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "ఈ అనువర్తనం గడువు ముగిసింది. కొత్త సంస్కరణ అందుబాటులో ఉంది."
+   },
+   "chrome_app_outdated_title": {
+      "message": "మీ Hangouts Chrome అనువర్తనాన్ని నవీకరించండి"
+   },
+   "chrome_app_signin_button": {
+      "message": "సైన్ ఇన్ చేయి"
+   },
+   "chrome_app_welcome_message": {
+      "message": "వచనం, ఫోటోలు, gifలు, వాయిస్, వీడియో మరియు మరిన్నింటితో ప్రైవేట్ మరియు సమూహ సంభాషణలను ఆస్వాదించండి."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Googleకు కనెక్ట్ చేయడం సాధ్యపడలేదు. దయచేసి మీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts ఫోటోలు, ఎమోజి మరియు వీటితో పాటు ఉచిత సమూహ వీడియో కాల్‌లతో సంభాషణలకు జీవాన్ని అందిస్తాయి."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "స్థితి: కనెక్ట్ అయ్యింది\nచూడని సందేశాలు"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (యాప్, బీటా)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (యాప్, డీబగ్)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (ఎక్స్‌టెన్షన్, ఆల్ఫా)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (ఎక్స్‌టెన్షన్, బీటా)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (ఎక్స్‌టెన్షన్, డీబగ్)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "స్థితి: నిర్వాహకుని ద్వారా నిలిపివేయబడింది"
+   },
+   "quasar_tip_connected": {
+      "message": "స్థితి: కనెక్ట్ చెయ్యబడింది"
+   },
+   "quasar_tip_connecting": {
+      "message": "స్థితి: కనెక్ట్ చేస్తోంది"
+   },
+   "quasar_tip_disconnected": {
+      "message": "స్థితి: డిస్‌కనెక్ట్ చెయ్యబడింది"
+   },
+   "quasar_tip_not_load": {
+      "message": "స్థితి: లోడ్ చెయ్యడంలో లోపం ఉంది"
+   },
+   "quasar_tip_not_login": {
+      "message": "స్థితి: లాగిన్ చెయ్యలేదు"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "స్థితి: తిరిగి కనెక్ట్ చేస్తోంది"
+   }
+}

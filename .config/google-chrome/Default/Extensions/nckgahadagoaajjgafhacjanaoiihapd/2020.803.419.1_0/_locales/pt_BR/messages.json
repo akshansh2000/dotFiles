@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "Seu administrador do G Suite ativou o Google Chat. Colabore com as equipes nas salas e compartilhe arquivos facilmente com o Chat.\n\nPara ter a melhor experiência, desinstale esta extensão após instalar o novo app Google Chat."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Fazer download do app para computador"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Continuar para chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Use o Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "Faça o login no Google Chrome para começar."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Tentar novamente"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Verifique se você está conectado à Internet e tente novamente"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Erro de conexão"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "O uso dos apps do Chrome está sendo suspenso este ano. Para continuar usando o Hangouts na própria janela, instale a extensão do Hangouts para o Chrome."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "O aplicativo Hangouts para o Chrome não é mais compatível."
+   },
+   "chrome_app_description": {
+      "message": "O uso do app Hangouts do Google Chrome está suspenso. Alterne para a extensão do Hangouts para o Chrome."
+   },
+   "chrome_app_download_button": {
+      "message": "INSTALAR EXTENSÃO DO CHROME"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Saiba mais"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Este aplicativo está desatualizado. Há uma nova versão disponível."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Atualize o app Hangouts do Chrome"
+   },
+   "chrome_app_signin_button": {
+      "message": "Fazer login"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Tenha conversas particulares e em grupo com texto, fotos, gifs, voz, vídeo e muito mais."
+   },
+   "chrome_app_window_title": {
+      "message": "Hangouts do Google: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Não foi possível conectar ao Google. Verifique sua conexão com a Internet."
+   },
+   "chrome_ext_description": {
+      "message": "O Hangouts anima as conversas com fotos, emojis e até videochamadas em grupo gratuitamente."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Status: Conectado\nMensagens perdidas"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Hangouts do Google"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Status: desativada pelo administrador"
+   },
+   "quasar_tip_connected": {
+      "message": "Status: conectado"
+   },
+   "quasar_tip_connecting": {
+      "message": "Status: conectando"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Status: desconectado"
+   },
+   "quasar_tip_not_load": {
+      "message": "Status: erro de carregamento"
+   },
+   "quasar_tip_not_login": {
+      "message": "Status: desconectado"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Status: reconectando"
+   }
+}

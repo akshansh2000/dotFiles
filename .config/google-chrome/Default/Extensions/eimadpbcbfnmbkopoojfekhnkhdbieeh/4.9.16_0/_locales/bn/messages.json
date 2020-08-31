@@ -1,0 +1,155 @@
+{
+   "add_site_to_list": {
+      "message": "লিস্টে সাইড যোগ করুন"
+   },
+   "automation": {
+      "message": "স্বয়ংক্রিয়করণ"
+   },
+   "brightness": {
+      "message": "উজ্জ্বলতা"
+   },
+   "change_browser_theme": {
+      "message": "ব্রাউজার থিম পরিবর্তন করুন"
+   },
+   "contrast": {
+      "message": "বৈপরিত্য"
+   },
+   "custom_browser_theme_off": {
+      "message": "Default"
+   },
+   "custom_browser_theme_on": {
+      "message": "Custom"
+   },
+   "dark": {
+      "message": "ডার্ক"
+   },
+   "donate": {
+      "message": "অনুদান"
+   },
+   "engine_dynamic": {
+      "message": "ডায়নামিক"
+   },
+   "engine_filter": {
+      "message": "ফিল্টার"
+   },
+   "engine_filter_plus": {
+      "message": "ফিল্টার+"
+   },
+   "engine_static": {
+      "message": "স্ট্যাটিক"
+   },
+   "extension_description": {
+      "message": "প্রত্যেক ওয়েবসাইটের জন্য ডার্কমোড। নিজ চোখের যত্ম নিন, নিত্যকার ব্রাউজিং এর জন্য ব্যবহার করুন ডার্ক থিম।"
+   },
+   "filter": {
+      "message": "ফিল্টার"
+   },
+   "grayscale": {
+      "message": "Grayscale"
+   },
+   "help": {
+      "message": "সহায়তা"
+   },
+   "invert_listed_only": {
+      "message": "কেবল ইনভার্ট লিস্টেড"
+   },
+   "latitude": {
+      "message": "অক্ষাংশ"
+   },
+   "light": {
+      "message": "লাইট"
+   },
+   "loading_please_wait": {
+      "message": "লোড হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন"
+   },
+   "longitude": {
+      "message": "দ্রাঘিমা"
+   },
+   "mode": {
+      "message": "মোড"
+   },
+   "more": {
+      "message": "আরও"
+   },
+   "news": {
+      "message": "বার্তা"
+   },
+   "not_invert_listed": {
+      "message": "ইনভার্ট লিস্টেড নয়"
+   },
+   "off": {
+      "message": "বন্ধ"
+   },
+   "on": {
+      "message": "চালু"
+   },
+   "only_for": {
+      "message": "Only for"
+   },
+   "only_for_description": {
+      "message": "শুধু বর্তমান ওয়েবসাইটের জন্য সেটিংস কার্যকর করুন"
+   },
+   "open_dev_tools": {
+      "message": "Dev tools"
+   },
+   "page_in_dark_list": {
+      "message": "এই সাইটটি গ্লোবালে আছে\nডার্ক লিস্ট"
+   },
+   "page_protected": {
+      "message": "এই পেজটি প্রোটেক্টেড\nব্রাউজার দ্বারা"
+   },
+   "privacy": {
+      "message": "গোপনীয়তা"
+   },
+   "read_more": {
+      "message": "আরও পড়ুন"
+   },
+   "select_font": {
+      "message": "ফন্ট বাছাই করুন"
+   },
+   "sepia": {
+      "message": "Sepia"
+   },
+   "set_active_hours": {
+      "message": "সক্রিয় কাল সেট করুন"
+   },
+   "set_location": {
+      "message": "লোকেশনে সূর্যাস্তের পরে সক্রিয় করুন"
+   },
+   "setup_add_site_hotkey": {
+      "message": "Setup a hotkey for adding site"
+   },
+   "setup_hotkey_toggle_extension": {
+      "message": "এক্সটেনসন ঠিক করুন\ntoggle hotkey"
+   },
+   "setup_hotkey_toggle_site": {
+      "message": "বর্তমান সাইট ঠিক করুন\ntoggle hotkey"
+   },
+   "site_list": {
+      "message": "সাইট লিস্ট"
+   },
+   "store_listing": {
+      "message": "এই চক্ষু-তদারক এক্সটেনশান কোনরূপ ব্যাঘাত ছাড়া ওয়েবসাইটের জন্য ডার্ক থিম তৈরি করতে নাইট মোডকে সক্ষম করে। ডার্ক রিডার উজ্জ্বল রঙগুলিকে পাল্টে এগুলোর মধ্যে উচ্চ বৈপরিত্য তৈরি করে এবং রাতে পাঠকার্য সহজ করে তোলে।\n\nআপনি উজ্জ্বলতা, বৈসাদৃশ্য, সেপিয়া ফিল্টার, অন্ধকার মোড, ফন্ট সেটিংস এবং উপেক্ষা-তালিকা সমন্বয় করতে পারেন।\n\nDark Reader বিজ্ঞাপন দেখায় না এবং ব্যবহারকারীর ডেটা কোথাও প্রেরণ করে না। এটি সম্পূর্ণ ওপেন সোর্স https://github.com/darkreader/darkreader\n\nআপনি ইনস্টল করার আগে অনুরূপ এক্সটেনশন অক্ষম করুন। দর্শন উপভোগ করুন!"
+   },
+   "system_dark_mode": {
+      "message": "সিস্টেম কালার স্কিম ব্যবহার করুন"
+   },
+   "system_dark_mode_description": {
+      "message": "চালু করুন যখন সিস্টেম মোড চালু আছে"
+   },
+   "text_stroke": {
+      "message": "Text stroke"
+   },
+   "theme_generation_mode": {
+      "message": "থিম জেনারেশন মোড"
+   },
+   "toggle_current_site": {
+      "message": "Toggle current site"
+   },
+   "toggle_extension": {
+      "message": "Toggle extension"
+   },
+   "try_experimental_theme_engines": {
+      "message": "**পরীক্ষামূলক** থিম ইঞ্জিন পরখ করুন:\n**Filter+** রঙ সম্পৃক্তি রক্ষা করে, GPU ব্যবহার করে\n**স্ট্যাটিক থিম** একটি সরল দ্রুত থিম তৈরি করে\n**ডায়নামিক থিম** রঙ ও চিত্র বিশ্লেষণ করে"
+   }
+}

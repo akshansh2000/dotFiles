@@ -1,0 +1,371 @@
+@font-face {
+    font-family: PixelColeco;
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/PixelColeco.otf);
+}
+
+#crxmousecanvas{
+	background:transparent !important;}
+
+#infoshowjlgkpaicikihijadgifklkbpdajbkhjo{
+	padding:0;
+	background:transparent !important;
+	position:fixed;
+	left:0;
+	top:0;
+	text-align:center;
+	z-index:1000 !important;
+	font:12px Arial,SimSun,sans-serif;
+	}
+
+#infoshowjlgkpaicikihijadgifklkbpdajbkhjo img{
+	padding:0;
+	border:none;
+	/*padding-top:3px;*/
+	font-size:12px;}
+
+#dirshowjlgkpaicikihijadgifklkbpdajbkhjo{
+	padding:0;
+	border-radius:3px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	/*padding:3px 0;
+	padding-top:3px;*/
+    width: fit-content;
+	}
+
+#tipshowjlgkpaicikihijadgifklkbpdajbkhjo{
+	text-align:center;
+	margin: 5px auto auto auto;
+	font-weight:bold;
+	text-shadow:0 0 2px  #FFFFFF;
+    padding: 0 5px;
+    width: fit-content;
+	}
+
+#svgdivjlgkpaicikihijadgifklkbpdajbkhjo {
+	position:fixed !important;
+	left:0px !important;
+	top:0px !important;
+	display:block !important;
+	background:transparent !important;
+	border:none !important;
+}
+
+#escshowjlgkpaicikihijadgifklkbpdajbkhjo {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+#crxmousetablist{
+	position:fixed;
+	z-index:10000;
+	border:#CCC solid 1px;
+	background-color:/*rgba(53, 53, 80,.9)*/rgba(0, 0, 0,.8);
+	border-radius:3px;
+	width:400px;
+	padding:3px;
+	text-align:left !important;
+	color: #FFF/*rgb(3, 253, 23)*/;
+	font-size:14px;
+	overflow-y: auto;
+	box-shadow:0 0 9px rgb(46, 45, 51);}
+
+.crxmousetablisttab{
+	display:block;
+	border:transparent solid 1px;
+	padding:5px 10px;
+	margin:1px 0;
+	white-space:nowrap;
+	overflow:hidden;}
+
+.crxmousetablisttab img{
+	width:16px;
+	height:16px;}
+
+#crxmousetablisttabcurrent{
+	/*background:#633 !important;*/
+	color:#000;
+	text-shadow: #000 1px 1px 3px;
+	border: solid 1px #bcd;
+	border-radius: 2px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f0f5fc), color-stop(1, #e0e9f4));
+	background: -webkit-gradient(linear, left top, left bottom,
+		color-stop(0, #fff),  color-stop(0.4, hsl(215, 67%, 97%)), color-stop(0.41, hsl(213, 48%, 95%)));
+
+	/*?border: solid 1px #c5cdd3;
+	?background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f5f9fe), color-stop(1, #e8f1f9));*/
+	}
+
+#crxmousedown,#notifiboxjlgkpaicikihijadgifklkbpdajbkhjo{
+	position:fixed;
+	top:-10px;
+	z-index:1000;
+	height: 40px;
+	line-height: 45px;
+	min-width:200px;
+	background-color:rgba(18,20,133,.7);
+	border: solid 1px #cde;
+	border-radius: 10px;
+	padding: 5px 10px;
+	box-shadow:0 0 10px rgb(250,100,0);
+	color: #FFF;
+	text-align: center;
+	font-size:14px;
+	font-weight:bold;
+	}
+
+#idcheckbox{
+	position:fixed;
+	top:0;
+	z-index:100;
+	background:#F00;}
+
+#trashshowjlgkpaicikihijadgifklkbpdajbkhjo {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 74px;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 11px;
+    color: #ffffff;
+}
+
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo {
+    background: white;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    z-index: 2147483647;
+    bottom: 124px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    opacity: 0.8;
+}
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo:after {
+    z-index: 2147483647;
+    position: absolute;
+    left: -99px;
+    right: 0;
+    bottom: -50px;
+    width: 300px;
+}
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo span {
+    position: absolute;
+    background: white;
+    right: -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: rotate(0deg);
+    transition: transform 250ms;
+    transform-origin: 19% 100%;
+    height: 3px;
+    top: -6px;
+    left: -3px;
+    width: 31px;
+}
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo span:after {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    top: -4px;
+    left: 9px;
+    width: 14px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: rotate(0deg);
+    transition: transform 250ms;
+    transform-origin: 19% 100%;
+}
+
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo:hover {
+    opacity: 1.0;
+}
+
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo:hover span {
+    transform: rotate(-45deg);
+    transition: transform 250ms;
+}
+
+#trashspanjlgkpaicikihijadgifklkbpdajbkhjo:hover ~ #trashshowjlgkpaicikihijadgifklkbpdajbkhjo {
+    opacity: 1.0;
+}
+
+.wrongGestureMessage {
+    background: url('chrome-extension://__MSG_@@extension_id__/image/wrong-gesture-message-bg.svg') no-repeat;
+    background-size: 42vw 19vh;
+    width: 42vw;
+    height: 19vh;
+    position: fixed;
+    top: calc(50% - 6.5vh);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: PixelColeco;
+    font-size: 3vh;
+    color: #ffffff;
+    z-index: 3;
+}
+.messageIn {
+    animation-name: messageInAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.messageOut {
+    animation-name: messageOutAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes messageInAnimation {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1);
+    }
+    70% {
+        left: 50px;
+    }
+    80% {
+        left: -50px;
+    }
+    90% {
+        left: 50px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes messageOutAnimation {
+    0% {
+        top: calc(50% - 6.5vh);
+    }
+    100% {
+        top: -19vh;
+    }
+}
+
+.onboardingReminder {
+    background: url('chrome-extension://__MSG_@@extension_id__/image/reminder-bg.png') no-repeat;
+    background-size: 355px 173px;
+    width: 355px;
+    height: 173px;
+    position: fixed;
+    top: 10px;
+    z-index: 2147483647;
+}
+
+.onboardingReminderInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.onboardingReminderCloseButton {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+
+.onboardingReminderAnimationIn {
+    animation-name: onboardingReminderIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.onboardingReminderAnimationOut {
+    animation-name: onboardingReminderOut;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.onboardingReminderLeftFlex {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 22px 22px;
+    align-items: center;
+}
+
+.onboardingReminderLogo {
+    width: 203px;
+    height: 36px;
+}
+
+.onboardingReminderCTA {
+    background: url('chrome-extension://__MSG_@@extension_id__/image/onboarding-button-bg.svg') no-repeat;
+    background-size: 187px 42px;
+    height: 42px;
+    width: 187px;
+    margin-top: 22px;
+    line-height: 42px;
+    font-family: PixelColeco;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.onboardingReminderRemindMeLater {
+    font-size: 14px;
+    font-family: PixelColeco;
+    color: #0c80df;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.onboardingReminderMouseLogo {
+    width: 111px;
+    height: 102px;
+    margin-top: 38px;
+    margin-left: 8px;
+}
+
+@keyframes onboardingReminderIn {
+    0% {
+        right: -355px;
+    }
+    100% {
+        right: 13px;
+    }
+}
+
+@keyframes onboardingReminderOut {
+    0% {
+        right: 13px;
+    }
+    100% {
+        right: -355px;
+    }
+}
+
+
+

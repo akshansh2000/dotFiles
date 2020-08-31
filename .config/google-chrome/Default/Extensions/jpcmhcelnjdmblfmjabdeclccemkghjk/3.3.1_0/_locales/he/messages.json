@@ -1,0 +1,50 @@
+{
+   "appDesc": {
+      "description": "תיאור היישום, כפי שמוצג בחנות האינטרנט.",
+      "message": "מחזיר את הלחצנים' \"הצג תמונה\" ו \"חפש לפי תמונה\" בגוגל תמונות."
+   },
+   "appName": {
+      "description": "כותרת היישום, כפי שמוצג בחנות האינטרנט.",
+      "message": "הצג תמונה"
+   },
+   "donatePayPal": {
+      "description": "הטקסט שמוצג על לחצן התרומה.",
+      "message": " תרום באמצעות PayPal"
+   },
+   "optionsButton": {
+      "description": "הטקסט שמוצג על לחצן האפשרויות.",
+      "message": "אפשרויות"
+   },
+   "resetButton": {
+      "description": "הטקסט שמוצג על לחצן האיפוס.",
+      "message": "איפוס"
+   },
+   "searchImage": {
+      "description": "לחצן שמוביל לדף חיפוש לפי תמונה בגוגל.",
+      "message": "חפש לפי תמונה"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "הגדרה לפתיחה בכרטיסייה חדשה עבור דף חיפוש לפי תמונה.",
+      "message": "פתח את \"חפש לפי תמונה\" בכרטיסייה חדשה:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "הגדרה לפתיחת תמונות בכרטיסייה חדשה.",
+      "message": "פתח את \"הצג תמונה\" בכרטיסייה חדשה:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "הגדרת כיתוב ידני ללחצנים, במקום כיתוב ברירת המחדל.",
+      "message": "הגדר ידנית את כיתוב הלחצנים:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "הגדרה עבור הצגת סמל הגלובוס על לחצן \"הצג תמונה\".",
+      "message": "הצג סמל גלובוס בלחצן \"הצג תמונה\":"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "הגדרה עבור הסתרת אזהרת זכויות היוצרים בדף תוצאות חיפוש התמונות.",
+      "message": "הסתר את האזהרה \"ייתכן שהתמונות כפופות לזכויות יוצרים\":"
+   },
+   "viewImage": {
+      "description": "לחצן עבור הצגת תמונה.",
+      "message": "הצג תמונה"
+   }
+}

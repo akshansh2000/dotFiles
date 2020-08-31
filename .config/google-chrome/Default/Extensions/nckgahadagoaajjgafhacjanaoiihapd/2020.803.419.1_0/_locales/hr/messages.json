@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "Administrator G Suitea uključio je Google Chat. Surađujte u timskim prostorijama i jednostavno dijelite datoteke s Chatom.\n\nZa najbolji doživljaj provjerite jeste li deinstalirali proširenje nakon instalacije nove aplikacije Google Chata."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Preuzmi računalnu aplikaciju"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "Nastavite na chat.google.com"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Upoznajte se s Google Chatom"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "Prijavite se u Chrome da biste započeli."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Pokušaj ponovno"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "Provjerite jeste li povezani s internetom i pokušajte ponovno"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Pogreška pri povezivanju"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chromeove aplikacije obustavljaju se ove godine. Da biste nastavili upotrebljavati Hangouts u vlastitom prozoru, instalirajte Chromeovo proširenje za Hangouts."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Aplikacija Hangouts Chrome više se ne podržava."
+   },
+   "chrome_app_description": {
+      "message": "Aplikacija Hangouts Chrome ukida se. Prebacite se na Chromeovo proširenje za Hangouts."
+   },
+   "chrome_app_download_button": {
+      "message": "NABAVI CHROMEOVO PROŠIRENJE"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Saznajte više"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Aplikacija je zastarjela. Dostupna je novija verzija."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Ažurirajte aplikaciju Hangouts za Chrome"
+   },
+   "chrome_app_signin_button": {
+      "message": "Prijava"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Uživajte u privatnim i grupnim razgovorima s tekstom, fotografijama, .gif slikama, glasom, videozapisima i ostalim."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts: $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Povezivanje s Googleom nije moguće. Provjerite internetsku vezu."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts oživljava razgovore uz fotografije, emotikone pa čak i besplatne grupne videopozive."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Status: povezano\nImate propuštene poruke"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Status: Onemogućio administrator"
+   },
+   "quasar_tip_connected": {
+      "message": "Status: povezan"
+   },
+   "quasar_tip_connecting": {
+      "message": "Status: povezivanje u tijeku"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Status: veza je prekinuta"
+   },
+   "quasar_tip_not_load": {
+      "message": "Status: pogreška pri učitavanju"
+   },
+   "quasar_tip_not_login": {
+      "message": "Status: niste prijavljeni"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Status: ponovno povezivanje u tijeku"
+   }
+}

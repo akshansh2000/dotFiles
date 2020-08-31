@@ -1,0 +1,900 @@
+{
+   "_1filecouldnotberemoved": {
+      "description": "[aws:2019-09-22 23:05:39] 1 file could not be removed.",
+      "message": "파일 1개를 제거할 수 없습니다."
+   },
+   "_1filewassuccessfullyremoved": {
+      "description": "[aws:2019-09-22 23:05:40] 1 file was successfully removed.",
+      "message": "파일 1개가 제거되었습니다."
+   },
+   "_Adjustrepeatingelements": {
+      "description": "[aws:2019-09-22 23:05:40] Adjust repeating elements",
+      "message": "반복 요소 조정"
+   },
+   "_Advancedscrolling": {
+      "description": "[aws:2019-09-22 23:05:41] Advanced scrolling",
+      "message": "고급 스크롤"
+   },
+   "_Align": {
+      "description": "[aws:2019-09-22 23:05:42] Align",
+      "message": "정렬"
+   },
+   "_Anyissues": {
+      "description": "[aws:2019-09-22 23:05:43] Any issues?",
+      "message": "어떤 문제라도?"
+   },
+   "_AnyoptionalpermissionsthatwerepreviouslygrantedwillappearcheckedhereYoucanrevokethematanytimeIftheyareneededagaininthefuturetheywillbererequested": {
+      "description": "[aws:2019-09-22 23:05:43] Any optional permissions that were previously granted will appear checked here. You can revoke them at any time. If they are needed again in the future, they will be re-requested.",
+      "message": "이전에 부여된 선택적 사용 권한은 여기에 선택되어 표시됩니다. 언제든지 취소할 수 있습니다. 나중에 다시 필요한 경우 다시 요청됩니다."
+   },
+   "_Areyouenjoyingthisextension": {
+      "description": "[aws:2019-09-22 23:05:44] Are you enjoying this extension?",
+      "message": "이 확장 프로그램을 즐기고 있습니까?"
+   },
+   "_Areyousureyouwanttodelete1screencaptureThisactioncannotbeundone": {
+      "description": "[aws:2019-09-22 23:05:45] Are you sure you want to delete 1 screencapture?\n (This action cannot be undone.)",
+      "message": "스크린 캡쳐 1개를 삭제하시겠습니까?\n (이 작업은 실행 취소할 수 없습니다.)"
+   },
+   "_AreyousureyouwanttodeletecountscreencapturesThisactioncannotbeundone": {
+      "description": "[aws:2019-09-22 23:05:45] Are you sure you want to delete $count$ screen captures?\n (This action cannot be undone.)",
+      "message": "$count$ 화면 캡처를 삭제하시겠습니까?\n (이 작업은 실행 취소할 수 없습니다.)",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "_AreyousureyouwanttodeletethisscreenshotThisactioncannotbeundone": {
+      "description": "[aws:2019-09-22 23:05:46] Are you sure you want to delete this screenshot?\n(This action cannot be undone.)",
+      "message": "이 스크린샷을 삭제하시겠습니까?\n(이 작업은 실행 취소할 수 없습니다.)"
+   },
+   "_Areyousureyouwanttoresettotheextensionsoriginalthemedefaults": {
+      "description": "[aws:2019-09-22 23:05:47] Are you sure you want to reset to the extension’s original theme defaults?",
+      "message": "확장 프로그램의 원래 테마 기본값으로 재설정하시겠습니까?"
+   },
+   "_Arrow": {
+      "description": "[aws:2019-09-22 23:05:47] Arrow",
+      "message": "화살표"
+   },
+   "_Autodownloadfiles": {
+      "description": "[aws:2019-09-22 23:05:48] Auto-download files",
+      "message": "파일 자동 다운로드"
+   },
+   "_AutodownloadisenabledYoucanchangethisinahrefdatahrefoptionshtmltargetblankrelnoopenernoreferreroptionsa": {
+      "description": "[aws:2019-09-23 19:22:06] Auto-download is enabled. You can change this in \u003Ca href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">options\u003C/a>.",
+      "message": "자동 다운로드가 활성화되었습니다. \u003Ca href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">옵션\u003C/a>에서 변경할 수 있습니다."
+   },
+   "_AutomaticallydownloadyourscreenshotinsteadofopeningitinanewwindowThismeanstheextensioncapturetabwillnotopenYoucanreturnbackherebyrightclickingontheextensionandselectingOptions": {
+      "description": "[aws:2019-09-22 23:05:49] Automatically download your screenshot instead of opening it in a new window.This means the extension capture tab will not open. You can return back here by right-clicking on the extension and selecting \"Options\".",
+      "message": "스크린 샷을 새 창에서 여는 대신 자동으로 다운로드합니다.즉, 확장 캡처 탭이 열리지 않습니다. 확장 프로그램을 마우스 오른쪽 버튼으로 클릭하고 “옵션”을 선택하여 여기로 돌아갈 수 있습니다."
+   },
+   "_AutomaticallyshowasaveasdialogwhendownloadingyourscreenshotsIftheAskwheretosaveeachfilebeforedownloadingoptionisenabledinyourChromesettingsthenthattakespriority": {
+      "description": "[aws:2019-09-22 23:05:50] Automatically show a \"save as\" dialog when downloading your screenshots. If the “Ask where to save each file before downloading” option is enabled in your Chrome settings, then that takes priority.",
+      "message": "스크린샷을 다운로드할 때 “다른 이름으로 저장” 대화 상자가 자동으로 표시됩니다. Chrome 설정에서 “다운로드하기 전에 각 파일을 저장할 위치 묻기”옵션이 활성화되어 있으면 우선 순위가 적용됩니다."
+   },
+   "_Backtocapturechangesareautosaved": {
+      "description": "[aws:2019-09-22 23:05:50] Back to capture (changes are auto-saved)",
+      "message": "캡처로 돌아가기 (변경 사항이 자동 저장됨)"
+   },
+   "_Blur": {
+      "description": "[aws:2019-09-22 23:05:52] Blur",
+      "message": "흐림 효과"
+   },
+   "_Bold": {
+      "description": "[aws:2019-09-22 23:05:52] Bold",
+      "message": "굵게"
+   },
+   "_Cancel": {
+      "description": "[aws:2019-09-23 19:22:06] Cancel",
+      "message": "취소"
+   },
+   "_CannotautodownloadyouneedtoreapprovetheDownloadspermissioninahrefdatahrefoptionshtmltargetblankrelnoopenernoreferreroptionsa": {
+      "description": "[aws:2019-09-23 19:22:07] Cannot auto-download, you need to reapprove the Downloads permission in \u003Ca href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">options\u003C/a>.",
+      "message": "자동 다운로드할 수 없습니다. \u003Ca href=\"#\" data-href=\"/options.html\" target=\"_blank\" rel=\"noopener noreferrer\">옵션\u003C/a>에서 다운로드 권한을 다시 승인해야 합니다."
+   },
+   "_Cannotdownloadfiles": {
+      "description": "[aws:2019-09-22 23:05:54] Cannot download files",
+      "message": "파일을 다운로드할 수 없습니다."
+   },
+   "_Capture": {
+      "description": "[aws:2019-09-22 23:05:54] Capture",
+      "message": "캡처"
+   },
+   "_ChromedoesnotallowaccesstosomeURLsforsecurityreasonsThisincludesthewebstoregalleryotherchromeextensionsandchromeURLsThecurrentpageappearstobearestrictedURL": {
+      "description": "[aws:2019-09-23 19:22:08] Chrome does not allow access to some URLs for security reasons. This includes the webstore gallery, other chrome extensions, and chrome:// URLs. The current page appears to be a restricted URL.",
+      "message": "Chrome은 보안상의 이유로 일부 URL에 대한 액세스를 허용하지 않습니다. 여기에는 웹 스토어 갤러리, 기타 크롬 확장 프로그램 및 chrome: // URL이 포함됩니다. 현재 페이지는 제한된 URL로 나타납니다."
+   },
+   "_ChromepreventsextensionsfromsavingfilesoutsideofthedefaultdownloadsdirectoryThepathyouenteredhasbeenupdatedaccordinglySorry": {
+      "description": "[aws:2019-09-22 23:05:55] Chrome prevents extensions from saving files outside of the default downloads directory. The path you entered has been updated accordingly. Sorry!",
+      "message": "Chrome은 확장 프로그램이 기본 다운로드 디렉토리 외부에 파일을 저장하지 못하도록 합니다. 입력한 경로가 그에 따라 업데이트되었습니다. 미안해!"
+   },
+   "_Clickdraginlayerspane": {
+      "description": "[aws:2019-09-22 23:05:56] Click + drag in layers pane",
+      "message": "레이어 창에서 클릭+드래그"
+   },
+   "_Color": {
+      "description": "[aws:2019-09-22 23:05:56] Color",
+      "message": "색상"
+   },
+   "_ConfigureyoursettingsfortheFullPageScreenCaptureextensionStaytunedforfurtherupdatesBetasettingsmaychangeinthefuture": {
+      "description": "[aws:2019-09-22 23:05:57] Configure your settings for the Full Page Screen Capture extension. Stay tuned for further updates. Beta settings may change in the future.",
+      "message": "전체 페이지 화면 캡처 확장에 대한 설정을 구성합니다. 추가 업데이트를 위해 계속 지켜봐 주시기 바랍니다. 베타 설정은 나중에 변경될 수 있습니다."
+   },
+   "_Continueediting": {
+      "description": "[aws:2019-09-22 23:05:58] Continue editing",
+      "message": "계속 편집"
+   },
+   "_CropImage": {
+      "description": "[aws:2019-09-22 23:05:59] Crop Image",
+      "message": "이미지 자르기"
+   },
+   "_Cropeditannotateandexport": {
+      "description": "[aws:2019-09-22 23:05:58] Crop, edit, annotate, and export",
+      "message": "자르기, 편집, 주석 달기 및 내보내기"
+   },
+   "_Delete": {
+      "description": "[aws:2019-09-22 23:06:00] Delete",
+      "message": "삭제"
+   },
+   "_Deletecurrentselection": {
+      "description": "[aws:2019-09-22 23:06:00] Delete current selection",
+      "message": "현재 선택 항목 삭제"
+   },
+   "_Directory": {
+      "description": "[aws:2019-09-22 23:06:01] Directory:",
+      "message": "디렉토리:"
+   },
+   "_Document": {
+      "description": "[aws:2019-09-22 23:06:02] Document",
+      "message": "문서"
+   },
+   "_Documentedits": {
+      "description": "[aws:2019-09-22 23:06:02] Document edits",
+      "message": "문서 편집"
+   },
+   "_DoneCropping": {
+      "description": "[aws:2019-09-22 23:06:03] Done Cropping",
+      "message": "자르기 완료"
+   },
+   "_Download": {
+      "description": "[aws:2019-09-22 23:06:04] Download",
+      "message": "다운로드"
+   },
+   "_DownloadExport": {
+      "description": "[aws:2019-09-22 23:06:04] Download & Export",
+      "message": "다운로드 및 내보내기"
+   },
+   "_Downloadpermissionisrequired": {
+      "description": "[aws:2019-09-22 23:06:05] Download permission is required",
+      "message": "다운로드 권한이 필요합니다."
+   },
+   "_Downloadpermissionnotgranted": {
+      "description": "[aws:2019-09-22 23:06:06] Download permission not granted",
+      "message": "다운로드 권한이 부여되지 않았습니다."
+   },
+   "_Downloadspermission": {
+      "description": "[aws:2019-09-22 23:06:06] Downloads permission",
+      "message": "다운로드 권한"
+   },
+   "_Draglayercontrolpoints": {
+      "description": "[aws:2019-09-22 23:06:07] Drag layer control points",
+      "message": "레이어 제어점 드래그"
+   },
+   "_Duplicateselection": {
+      "description": "[aws:2019-09-22 23:06:07] Duplicate selection",
+      "message": "중복 선택 항목"
+   },
+   "_Edited": {
+      "description": "[aws:2019-09-22 23:06:08] Edited",
+      "message": "편집됨"
+   },
+   "_Elements": {
+      "description": "[aws:2019-09-22 23:06:09] Elements",
+      "message": "요소"
+   },
+   "_Emoji": {
+      "description": "[aws:2019-09-22 23:06:10] Emoji",
+      "message": "이모티콘"
+   },
+   "_Enabled": {
+      "description": "[aws:2019-09-22 23:06:10] Enabled",
+      "message": "활성화됨"
+   },
+   "_Entertexthere": {
+      "description": "[aws:2019-09-22 23:06:11] Enter text here",
+      "message": "여기에 텍스트를 입력하십시오."
+   },
+   "_Error": {
+      "description": "[aws:2019-09-22 23:06:11] Error",
+      "message": "오류"
+   },
+   "_Errordownloadingfile": {
+      "description": "[aws:2019-09-22 23:06:12] Error downloading file",
+      "message": "파일을 다운로드하는 중 오류가 발생했습니다."
+   },
+   "_Errordownloadingfiles": {
+      "description": "[aws:2019-09-22 23:06:13] Error downloading files",
+      "message": "파일을 다운로드하는 중 오류가 발생했습니다."
+   },
+   "_ErrorhandlingfilesPleasereportthisviatheflagreportingbuttonabove": {
+      "description": "[aws:2019-09-22 23:06:13] Error handling files. Please report this via the flag reporting button above.",
+      "message": "파일을 처리하는 동안 오류가 발생했습니다. 위의 플래그 신고 버튼을 통해 신고하십시오."
+   },
+   "_Errorloadinghistory": {
+      "description": "[aws:2019-09-22 23:06:14] Error loading history",
+      "message": "히스토리를 로드하는 중 오류 발생"
+   },
+   "_Errorloadingimage": {
+      "description": "[aws:2019-09-22 23:06:15] Error loading image",
+      "message": "이미지를 로드하는 중 오류 발생"
+   },
+   "_Erroropeningscreenshot": {
+      "description": "[aws:2019-09-22 23:06:15] Error opening screenshot",
+      "message": "스크린샷을 여는 중 오류 발생"
+   },
+   "_Errorremovingscreenshot": {
+      "description": "[aws:2019-09-22 23:06:16] Error removing screenshot",
+      "message": "스크린샷을 제거하는 중 오류 발생"
+   },
+   "_Exitzoom": {
+      "description": "[aws:2019-09-22 23:06:17] Exit zoom",
+      "message": "줌 종료"
+   },
+   "_Export": {
+      "description": "[aws:2019-09-22 23:06:17] Export",
+      "message": "내보내기"
+   },
+   "_Extensionsettings": {
+      "description": "[aws:2019-09-23 19:22:10] Extension settings",
+      "message": "확장 설정"
+   },
+   "_Extrapermissionsarerequiredtoaccesstheunderlyingpage": {
+      "description": "[aws:2019-09-23 19:22:11] Extra permissions are required to access the underlying page.",
+      "message": "기본 페이지에 액세스하려면 추가 권한이 필요합니다."
+   },
+   "_Extrapermissionsrequired": {
+      "description": "[aws:2019-09-23 19:22:11] Extra permissions required",
+      "message": "추가 사용 권한이 필요합니다."
+   },
+   "_Fileaccessneeded": {
+      "description": "[aws:2019-09-23 19:22:12] File access needed",
+      "message": "필요한 파일 액세스"
+   },
+   "_Filenolongerexistsperhapsithasbeenclearedfromyourbrowser": {
+      "description": "[aws:2019-09-22 23:06:18] File no longer exists—perhaps it has been cleared from your browser",
+      "message": "파일이 더 이상 존재하지 않습니다. 브라우저에서 삭제되었을 수 있습니다."
+   },
+   "_Fill": {
+      "description": "[aws:2019-09-22 23:06:19] Fill",
+      "message": "채우기"
+   },
+   "_Font": {
+      "description": "[aws:2019-09-22 23:06:19] Font",
+      "message": "글꼴"
+   },
+   "_Foradditionalquestionsaidinvalidlinkdatahrefhttpsscreencapturemrcolescomhrefhttpsscreencapturemrcolescomtargetblankrelnoopenernoreferrercontactusa": {
+      "description": "[aws:2019-09-23 19:22:12] For additional questions, \u003Ca id=\"invalid-link\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">contact us\u003C/a>.",
+      "message": "추가 질문은 \u003Ca id=\"invalid-link\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">당사에 문의하십시오\u003C/a>."
+   },
+   "_Getstarted": {
+      "description": "[aws:2019-09-22 23:06:21] Get started",
+      "message": "시작하기"
+   },
+   "_Gotit": {
+      "description": "[aws:2019-09-22 23:06:21] Got it!",
+      "message": "잡았어!"
+   },
+   "_Gotoyouraccount": {
+      "description": "[aws:2019-09-22 23:06:22] Go to your account",
+      "message": "귀하의 계정으로 이동"
+   },
+   "_Help": {
+      "description": "[aws:2019-09-22 23:06:23] Help",
+      "message": "도움말"
+   },
+   "_HelpShortcuts": {
+      "description": "[aws:2019-09-22 23:06:24] Help / Shortcuts",
+      "message": "도움말/바로 가기"
+   },
+   "_History": {
+      "description": "[aws:2019-09-22 23:06:24] History",
+      "message": "역사"
+   },
+   "_Hooray": {
+      "description": "[aws:2019-09-22 23:06:25] Hooray",
+      "message": "만세"
+   },
+   "_Icon": {
+      "description": "[aws:2019-09-22 23:06:26] Icon",
+      "message": "아이콘"
+   },
+   "_Ifthispersistspleasereportitviatheflagreportingbuttonabove": {
+      "description": "[aws:2019-09-22 23:06:27] If this persists, please report it via the flag reporting button above.",
+      "message": "이 문제가 지속되면 위의 플래그 신고 버튼을 통해 신고하십시오."
+   },
+   "_IfyoudliketotrythisfeatureinthefutureclickontheEditbuttonuptop": {
+      "description": "[aws:2019-09-22 23:06:28] If you’d like to try this feature in the future, click on the “Edit” button up top.",
+      "message": "나중에 이 기능을 사용해보고 싶다면 상단의 “편집” 버튼을 클릭하십시오."
+   },
+   "_Imagedeleted": {
+      "description": "[aws:2019-09-22 23:06:28] Image deleted",
+      "message": "이미지가 삭제됨"
+   },
+   "_Imageformat": {
+      "description": "[aws:2019-09-22 23:06:29] Image format:",
+      "message": "이미지 형식:"
+   },
+   "_Insertshapes": {
+      "description": "[aws:2019-09-22 23:06:30] Insert shapes",
+      "message": "쉐이프 삽입"
+   },
+   "_Italic": {
+      "description": "[aws:2019-09-22 23:06:30] Italic",
+      "message": "기울임꼴"
+   },
+   "_Layers": {
+      "description": "[aws:2019-09-22 23:06:31] Layers",
+      "message": "도면층"
+   },
+   "_Learnmore": {
+      "description": "[aws:2019-09-22 23:06:31] Learn more",
+      "message": "자세히 알아보기"
+   },
+   "_Line": {
+      "description": "[aws:2019-09-22 23:06:32] Line",
+      "message": "선"
+   },
+   "_Loadpermissionsdialog": {
+      "description": "[aws:2019-09-23 19:22:13] Load permissions dialog?",
+      "message": "권한 로드 대화 상자"
+   },
+   "_LogintoExport": {
+      "description": "[aws:2019-09-22 23:06:33] Login to Export",
+      "message": "내보내기 로그인"
+   },
+   "_Lookforanelementwithinthepagewithitsownscrollbarsandscrollthatitemduringthecapture": {
+      "description": "[aws:2019-09-22 23:06:34] Look for an element within the page with its own scroll bars and scroll that item during the capture.",
+      "message": "페이지 내에서 자체 스크롤 막대가 있는 요소를 찾고 캡처 중에 해당 항목을 스크롤합니다."
+   },
+   "_MightyouconsidertakingaminutetorateitintheWebstore": {
+      "description": "[aws:2019-09-22 23:06:35] Might you consider taking a minute to rate it in the Webstore?",
+      "message": "웹 스토어에서 평가하는 데 1 분 정도 걸리는 것을 고려해 볼 수 있습니까?"
+   },
+   "_More": {
+      "description": "[aws:2019-09-22 23:06:35] More",
+      "message": "더"
+   },
+   "_Mouseorarrowkeys": {
+      "description": "[aws:2019-09-22 23:06:36] Mouse or arrow keys",
+      "message": "마우스 또는 화살표 키"
+   },
+   "_Mouseorlayerspane": {
+      "description": "[aws:2019-09-22 23:06:37] Mouse or layers pane",
+      "message": "마우스 또는 레이어 창"
+   },
+   "_Movelayer": {
+      "description": "[aws:2019-09-22 23:06:37] Move layer",
+      "message": "레이어 이동"
+   },
+   "_None": {
+      "description": "[aws:2019-09-22 23:06:38] None",
+      "message": "없음"
+   },
+   "_NoscreencapturesfoundGomakesome": {
+      "description": "[aws:2019-09-22 23:06:39] No screen captures found. Go make some!",
+      "message": "화면 캡처를 찾을 수 없습니다. 가서 좀 만들어라!"
+   },
+   "_NotethispageistoolargefortheChromebrowsertocaptureasoneimageItwillbesplitintospanidscreenshotcountmultiplespanimages": {
+      "description": "[aws:2019-09-23 19:22:14] Note: this page is too large for the Chrome browser to capture as one image. It will be split into \u003Cspan id=\"screenshot-count\">multiple\u003C/span> images.",
+      "message": "참고: 이 페이지는 너무 커서 Chrome 브라우저가 하나의 이미지로 캡처할 수 없습니다. 그것은 \u003Cspan id=\"screenshot-count\">여러\u003C/span> 이미지로 분할됩니다."
+   },
+   "_Nothanks": {
+      "description": "[aws:2019-09-22 23:06:39] No, thanks.",
+      "message": "아뇨, 고마워요"
+   },
+   "_Nothankscontinueediting": {
+      "description": "[aws:2019-09-22 23:06:40] No thanks continue editing",
+      "message": "아니 감사 편집을 계속"
+   },
+   "_Notreally": {
+      "description": "[aws:2019-09-22 23:06:41] Not really",
+      "message": "정말 아닙니다."
+   },
+   "_OK": {
+      "description": "[aws:2019-09-23 19:22:15] OK",
+      "message": "확인"
+   },
+   "_On": {
+      "description": "[aws:2019-09-22 23:06:43] On",
+      "message": "에"
+   },
+   "_OnMacChromethereareissueswithsaveasforautodownloadandwhendownloadingmultiplefilessoitisdisabledinthosescenarios": {
+      "description": "[aws:2019-09-22 23:06:44] On Mac Chrome there are issues with \"save as\" for auto-download and when downloading multiple files, so it is disabled in those scenarios.",
+      "message": "Mac Chrome에서는 자동 다운로드 및 여러 파일을 다운로드 할 때 “다른 이름으로 저장”문제가 있으므로 이러한 시나리오에서는 비활성화됩니다."
+   },
+   "_Options": {
+      "description": "[aws:2019-09-22 23:06:44] Options",
+      "message": "옵션"
+   },
+   "_Orderlayer": {
+      "description": "[aws:2019-09-22 23:06:45] Order layer",
+      "message": "레이어 순서 지정"
+   },
+   "_Outline": {
+      "description": "[aws:2019-09-22 23:06:46] Outline",
+      "message": "아웃라인"
+   },
+   "_Oval": {
+      "description": "[aws:2019-09-22 23:06:47] Oval",
+      "message": "타원형"
+   },
+   "_PDFsize": {
+      "description": "[aws:2019-09-22 23:06:49] PDF size:",
+      "message": "PDF 크기:"
+   },
+   "_PNGislosslessandshouldmatchexactlywhatisseenonthescreenbutwillusuallyhavelargerfilesizesthanJPGwhichusescompression": {
+      "description": "[aws:2019-09-22 23:06:52] PNG is lossless and should match exactly what is seen on the screen, but will usually have larger file sizes than JPG, which uses compression.",
+      "message": "PNG는 무손실이 없으며 화면에 표시되는 것과 정확히 일치해야하지만 일반적으로 압축을 사용하는 JPG보다 파일 크기가 큽니다."
+   },
+   "_Pad": {
+      "description": "[aws:2019-09-22 23:06:47] Pad",
+      "message": "패드"
+   },
+   "_Padding": {
+      "description": "[aws:2019-09-22 23:06:48] Padding",
+      "message": "패딩"
+   },
+   "_PaddingBorder": {
+      "description": "[aws:2019-09-22 23:06:49] Padding / Border",
+      "message": "패딩/테두리"
+   },
+   "_Permissionneededtodownloadfiles": {
+      "description": "[aws:2019-09-22 23:06:50] Permission needed to download files",
+      "message": "파일 다운로드에 필요한 권한"
+   },
+   "_Permissions": {
+      "description": "[aws:2019-09-22 23:06:51] Permissions",
+      "message": "사용 권한"
+   },
+   "_PleasegotoyourChromeextensionsettingsandenablestrongx201CAllowaccesstofileURLsx201Dstrongsotheextensioncanaccessthispagebrbr": {
+      "description": "[aws:2019-09-23 19:22:15] Please go to your Chrome extension settings and enable \u003Cstrong>&#x201C;Allow access to file URLs&#x201D;\u003C/strong>, so the extension can access this page. \u003Cbr>\u003Cbr>",
+      "message": "Chrome 확장 프로그램 설정으로 이동하여 \u003Cstrong>“파일 URL에 대한 액세스 허용”을\u003C/strong>활성화하면 확장 프로그램이 이 페이지에 액세스 할 수 있습니다. \u003Cbr>\u003Cbr>"
+   },
+   "_Position": {
+      "description": "[aws:2019-09-22 23:06:52] Position",
+      "message": "위치"
+   },
+   "_Radius": {
+      "description": "[aws:2019-09-22 23:06:53] Radius",
+      "message": "반지름"
+   },
+   "_Rectangle": {
+      "description": "[aws:2019-09-22 23:06:54] Rectangle",
+      "message": "직사각형"
+   },
+   "_Redo": {
+      "description": "[aws:2019-09-22 23:06:54] Redo",
+      "message": "다시 실행"
+   },
+   "_Removefiles": {
+      "description": "[aws:2019-09-22 23:06:55] Remove files",
+      "message": "파일 제거"
+   },
+   "_Reportissue": {
+      "description": "[aws:2019-09-22 23:06:55] Report issue.",
+      "message": "문제를 보고합니다."
+   },
+   "_Resizelayer": {
+      "description": "[aws:2019-09-22 23:06:56] Resize layer",
+      "message": "레이어 크기 조정"
+   },
+   "_Roundedcorners": {
+      "description": "[aws:2019-09-22 23:06:57] Rounded corners",
+      "message": "둥근 모서리"
+   },
+   "_Saveas": {
+      "description": "[aws:2019-09-22 23:06:58] Save as",
+      "message": "다른 이름으로 저장"
+   },
+   "_Saved": {
+      "description": "[aws:2019-09-22 23:06:59] Saved",
+      "message": "저장되었습니다"
+   },
+   "_SavethispermissionifacceptedforfuturecapturesItcanstillberevokedlaterfromtheoptionspage": {
+      "description": "[aws:2019-09-22 23:06:59] Save this permission (if accepted) for future captures. It can still be revoked later from the options page.",
+      "message": "나중에 캡처할 수 있도록 이 권한을 저장합니다 (수락된 경우). 나중에 옵션 페이지에서 취소할 수 있습니다."
+   },
+   "_Screencaptureinprogress": {
+      "description": "[aws:2019-09-23 19:22:16] Screen capture in progress…",
+      "message": "화면 캡처 진행 중..."
+   },
+   "_Select1ormorescreenshotstousethisaction": {
+      "description": "[aws:2019-09-22 23:07:01] Select 1 or more screenshots to use this action.",
+      "message": "이 작업을 사용하려면 하나 이상의 스크린샷을 선택합니다."
+   },
+   "_Selected": {
+      "description": "[aws:2019-09-22 23:07:01] Selected",
+      "message": "선택됨"
+   },
+   "_Selectlayer": {
+      "description": "[aws:2019-09-22 23:07:02] Select layer",
+      "message": "레이어 선택"
+   },
+   "_Setthemedefaults": {
+      "description": "[aws:2019-09-22 23:07:03] Set theme defaults",
+      "message": "테마 기본값 설정"
+   },
+   "_Shapes": {
+      "description": "[aws:2019-09-22 23:07:03] Shapes",
+      "message": "모양"
+   },
+   "_Signupforafree7daytrialtounlocktheeditoranddownloadyourmasterpiece": {
+      "description": "[aws:2019-09-22 23:07:04] Sign up for a free 7-day trial to unlock the editor and download your masterpiece.",
+      "message": "에디터의 잠금을 해제하고 걸작을 다운로드하려면 7일 무료 평가판에 가입하세요."
+   },
+   "_SignuptoExport": {
+      "description": "[aws:2019-09-22 23:07:05] Sign up to Export",
+      "message": "내보내기 등록하기"
+   },
+   "_Size": {
+      "description": "[aws:2019-09-22 23:07:05] Size",
+      "message": "사이즈"
+   },
+   "_SomethingwentwrongTryrefreshingthepageandrunningthisagainbrbrIfthispersistspleaseaidreportlinkclassnowrapdatahrefhttpsscreencapturemrcolescomhrefhttpsscreencapturemrcolescomtargetblankrelnoopenernoreferrercontactusa": {
+      "description": "[aws:2019-09-23 19:22:17] Something went wrong. Try refreshing the page and running this again. \u003Cbr>\u003Cbr> If this persists, please \u003Ca id=\"report-link\" class=\"nowrap\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">contact us\u003C/a>.",
+      "message": "뭔가 잘못됐어 페이지를 새로 고침하고 다시 실행하십시오. \u003Cbr>\u003Cbr>이 경우, \u003Ca id=\"report-link\" class=\"nowrap\" data-href=\"https://screencapture.mrcoles.com/\" href=\"https://screencapture.mrcoles.com/\" target=\"_blank\" rel=\"noopener noreferrer\">문의하시기\u003C/a>바랍니다."
+   },
+   "_Somethingwentwrongdeletingyourscreenshot": {
+      "description": "[aws:2019-09-22 23:07:06] Something went wrong deleting your screenshot.",
+      "message": "스크린 샷을 삭제하는 데 문제가 발생했습니다."
+   },
+   "_Somethingwentwrongopeningthisscreenshotintoanew": {
+      "description": "[aws:2019-09-22 23:07:07] Something went wrong opening this screenshot into a new.",
+      "message": "이 스크린 샷을 새로운 것으로 여는 데 문제가 발생했습니다."
+   },
+   "_SometimeselementslikeabacktotopbuttonorastickyfooterwillrepeatonthepageThistriestopositionthemabsolutelytostopthemfromrepeatinginascreeshot": {
+      "description": "[aws:2019-09-22 23:07:08] Sometimes elements, like a “back to top” button or a sticky footer will repeat on the page. This tries to position them absolutely to stop them from repeating in a screeshot.",
+      "message": "때로는 “맨 위로”버튼이나 끈적 끈적한 바닥 글과 같은 요소가 페이지에서 반복됩니다. 이것은 절대적으로 그들이 스크레 핫에서 반복되는 것을 막기 위해 그들을 위치시키려고합니다."
+   },
+   "_Sorry": {
+      "description": "[aws:2019-09-22 23:07:08] Sorry",
+      "message": "미안해요"
+   },
+   "_SpecifyadirectoryunderneathyourdownloadsdirectorytosaveyourscreenshotssuchasscreencapturesDefaultstothedownloadsdirectoryifblankPleaselimitittolettersnumbersdashesunderscoresandslashesinvalidcharacterswillautomaticallyberemoved": {
+      "description": "[aws:2019-09-22 23:07:09] Specify a directory underneath your downloads directory to save your screenshots, such as “screencaptures”. Defaults to the downloads directory if blank. (Please limit it to letters, numbers, dashes, underscores, and slashes—invalid characters will automatically be removed).",
+      "message": "다운로드 디렉토리 아래에 디렉토리를 지정하여 스크린샷을 저장할 수 있습니다 (예: “스크린 캡처”). 기본값은 다운로드 디렉토리가 비어 있는 경우 입니다. (문자, 숫자, 대시, 밑줄 및 슬래시로 제한하십시오. 잘못된 문자는 자동으로 제거됩니다.)"
+   },
+   "_SpecifytheformatsizeofPDFsforwhenexportingtoPDF": {
+      "description": "[aws:2019-09-22 23:07:10] Specify the format size of PDFs for when exporting to PDF.",
+      "message": "PDF로 내보낼 때 사용할 PDF의 형식 크기를 지정합니다."
+   },
+   "_Startyourfreetrial": {
+      "description": "[aws:2019-09-22 23:07:11] Start your free trial",
+      "message": "무료 평가판 시작"
+   },
+   "_Stickers": {
+      "description": "[aws:2019-09-22 23:07:11] Stickers",
+      "message": "스티커"
+   },
+   "_Stillloading": {
+      "description": "[aws:2019-09-22 23:07:12] Still loading",
+      "message": "아직 로드 중"
+   },
+   "_TakemetotheWebstore": {
+      "description": "[aws:2019-09-22 23:07:12] Take me to the Webstore!",
+      "message": "웹스토어로 데려다 줘!"
+   },
+   "_Text": {
+      "description": "[aws:2019-09-22 23:07:13] Text",
+      "message": "텍스트"
+   },
+   "_ThankyouforsupportingFullPageScreenCapture": {
+      "description": "[aws:2019-09-22 23:07:14] Thank you for supporting Full Page Screen Capture",
+      "message": "전체 페이지 화면 캡처를 지원해 주셔서 감사합니다."
+   },
+   "_Thebestandsafestwaytocaptureascreenshotofanentirewebpage": {
+      "description": "[aws:2019-09-22 23:07:14] The best and safest way to capture a screenshot of an entire web page.",
+      "message": "전체 웹 페이지의 스크린 샷을 캡처하는 가장 안전하고 안전한 방법입니다."
+   },
+   "_ThedownloadpermissionisrequiredtoenablethedownloadasPDFfeature": {
+      "description": "[aws:2019-09-22 23:07:15] The download permission is required to enable the download as PDF feature.",
+      "message": "PDF로 다운로드 기능을 사용하려면 다운로드 권한이 필요합니다."
+   },
+   "_Thefollowingfilescouldnotbedownloaded": {
+      "description": "[aws:2019-09-22 23:07:16] The following files could not be downloaded:",
+      "message": "다음 파일을 다운로드할 수 없습니다."
+   },
+   "_ThemeDefaults": {
+      "description": "[aws:2019-09-22 23:07:16] Theme Defaults",
+      "message": "테마 기본값"
+   },
+   "_Therewasanerrordownloadingfilespleasereportitviatheflagbuttonabove": {
+      "description": "[aws:2019-09-22 23:07:17] There was an error downloading files, please report it via the flag button above.",
+      "message": "파일을 다운로드하는 중 오류가 발생했습니다. 위의 플래그 버튼을 통해 보고하십시오."
+   },
+   "_ThesesettingswillapplytoallfutureeditsofscreenshotsChangesareautosaved": {
+      "description": "[aws:2019-09-22 23:07:18] These settings will apply to all future edits of screenshots. Changes are autosaved.",
+      "message": "이러한 설정은 이후의 모든 스크린 샷 편집에 적용됩니다. 변경 사항은 자동으로 저장됩니다."
+   },
+   "_Thespecifiedimagecouldnotbefound": {
+      "description": "[aws:2019-09-22 23:07:19] The specified image could not be found.",
+      "message": "지정한 이미지를 찾을 수 없습니다."
+   },
+   "_ThisextensiontakesalotofworktomaintainItsreallymeaningfultohearthatyoufindituseful": {
+      "description": "[aws:2019-09-22 23:07:19] This extension takes a lot of work to maintain. It’s really meaningful to hear that you find it useful!",
+      "message": "이 확장은 유지 관리에 많은 작업이 필요합니다. 당신이 유용하다고 생각한다는 것을 듣는 것은 정말로 의미가 있습니다!"
+   },
+   "_ThisistakinglongertoloadthanexpectedHangtightIfnothingupdatesafterawhilepleasereportthisviathereportingflagbuttonabove": {
+      "description": "[aws:2019-09-22 23:07:20] This is taking longer to load than expected. Hang tight! If nothing updates after a while, please report this via the reporting flag button above.",
+      "message": "이 작업은 예상보다 로드하는 데 시간이 오래 걸립니다. 꽉 조여! 잠시 후 아무 것도 업데이트되지 않으면 위의 보고 플래그 버튼을 통해 신고하십시오."
+   },
+   "_ThispermissionallowsgreatercontroloverhowdownloadsworkwithintheextensionYourpreferencehasbeensavedandthisdownloadbuttonwillnowfallbacktodefaultbrowseronclickdownloadsHoweveryoustillbepromptedforitinordertouseanyoftheadvancedfeaturesontheHistoryorOptionspagessincetheyneedthispermissionstowork": {
+      "description": "[aws:2019-09-22 23:07:21] This permission allows greater control over how downloads work within the extension. Your preference has been saved, and this download button will now fallback to default browser on-click downloads. However, you still be prompted for it in order to use any of the advanced features on the History or Options pages, since they need this permissions to work.",
+      "message": "이 권한을 사용하면 확장 프로그램 내에서 다운로드가 작동하는 방식을 보다 잘 제어할 수 있습니다. 기본 설정이 저장되었으며 이 다운로드 버튼이 기본 브라우저 클릭 시 다운로드로 대체됩니다. 그러나 작업 내역 또는 옵션 페이지의 고급 기능을 사용하려면 이 권한이 필요하기 때문에 이 기능을 입력하라는 메시지가 계속 표시됩니다."
+   },
+   "_Thispermissionisrequiredforthedownloadbuttonsandtheautodownloadfeature": {
+      "description": "[aws:2019-09-22 23:07:22] This permission is required for the download buttons and the auto-download feature.",
+      "message": "이 권한은 다운로드 버튼과 자동 다운로드 기능에 필요합니다."
+   },
+   "_Thisscreenshotbeensuccessfullyremoved": {
+      "description": "[aws:2019-09-22 23:07:23] This screenshot been successfully removed.",
+      "message": "이 스크린샷은 성공적으로 제거되었습니다."
+   },
+   "_ThissiteappearstohaveembeddedcontentwithinanaatargetblankrelnoopenernoreferrerhrefhttpsdevelopermozillaorgenUSdocsWebHTMLElementframesetframeseta": {
+      "description": "[aws:2019-09-23 19:22:17] This site appears to have embedded content within an a \u003Ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset\">frameset\u003C/a>.",
+      "message": "이 사이트는 \u003Ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/frameset\">프레임세트\u003C/a>내에 포함된 콘텐츠가 있는 것으로 보입니다."
+   },
+   "_ThissiteappearstohaveembeddedcontentwithinanatargetblankrelnoopenernoreferrerhrefhttpsdevelopermozillaorgenUSdocsWebHTMLElementiframeiframea": {
+      "description": "[aws:2019-09-23 19:22:18] This site appears to have embedded content within an \u003Ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe\">iframe\u003C/a>.",
+      "message": "이 사이트는 \u003Ca target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe\">iframe\u003C/a>내에 포함 된 콘텐츠가있는 것으로 보입니다."
+   },
+   "_ThistestversionhasexpiredPleasereachouttogetanupdateorswitchovertotheproperextensionintheahrefhttpschromegooglecomwebstoredetailfullpagescreencapturefdpohaocaechififmbbbbbknoalclaclhlenUStargetblankrelnoopenernoreferrerChromeWebStorea": {
+      "description": "[aws:2019-09-23 19:22:19] This test version has expired. Please reach out to get an update or switch over to the proper extension in the \u003Ca href=\"https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en-US\" target=\"_blank\" rel=\"noopener noreferrer\"> Chrome Web Store\u003C/a>.",
+      "message": "이 테스트 버전은 만료되었습니다. 업데이트를 받거나 \u003Ca href=\"https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl?hl=en-US\" target=\"_blank\" rel=\"noopener noreferrer\"> Chrome 웹 스토어에서\u003C/a>적절한 확장 프로그램으로 전환하려면 연락하십시오."
+   },
+   "_ToggleURLbrowser": {
+      "description": "[aws:2019-09-22 23:07:25] Toggle URL / browser",
+      "message": "URL/브라우저 전환"
+   },
+   "_Togglecrop": {
+      "description": "[aws:2019-09-22 23:07:24] Toggle crop",
+      "message": "자르기 토글"
+   },
+   "_Togglepaddingborder": {
+      "description": "[aws:2019-09-22 23:07:25] Toggle padding / border",
+      "message": "패딩/테두리 전환"
+   },
+   "_Type": {
+      "description": "[aws:2019-09-22 23:07:26] Type",
+      "message": "를 입력합니다"
+   },
+   "_URLBrowser": {
+      "description": "[aws:2019-09-22 23:07:29] URL / Browser",
+      "message": "URL/ 브라우저"
+   },
+   "_URLonbottom": {
+      "description": "[aws:2019-09-22 23:07:30] URL on bottom",
+      "message": "하단의 URL"
+   },
+   "_URLontop": {
+      "description": "[aws:2019-09-22 23:07:30] URL on top",
+      "message": "상단에 URL"
+   },
+   "_Unabletofindimage": {
+      "description": "[aws:2019-09-22 23:07:26] Unable to find image",
+      "message": "이미지를 찾을 수 없습니다."
+   },
+   "_Unabletoloadimage": {
+      "description": "[aws:2019-09-22 23:07:27] Unable to load image",
+      "message": "이미지를 로드할 수 없습니다."
+   },
+   "_Undo": {
+      "description": "[aws:2019-09-22 23:07:28] Undo",
+      "message": "실행 취소"
+   },
+   "_WarningtheextensionisnotdesignedtohandleextremelylargecapturesItmightfailtocompleteacaptureofthispage": {
+      "description": "[aws:2019-09-23 19:22:20] Warning: the extension is not designed to handle extremely large captures. It might fail to complete a capture of this page.",
+      "message": "경고: 확장 프로그램은 매우 큰 캡처를 처리하도록 설계되지 않았습니다. 이 페이지의 캡처를 완료하지 못할 수 있습니다."
+   },
+   "_WatchDemo": {
+      "description": "[aws:2019-09-22 23:07:32] Watch Demo",
+      "message": "데모 시청"
+   },
+   "_WelcometotheFullPageEditor": {
+      "description": "[aws:2019-09-22 23:07:33] Welcome to the Full Page Editor!",
+      "message": "전체 페이지 편집기에 오신 것을 환영합니다!"
+   },
+   "_WelcometotheFullPageScreenCaptureextension": {
+      "description": "[aws:2019-09-23 19:22:21] Welcome to the Full Page Screen Capture extension.",
+      "message": "전체 페이지 화면 캡처 확장에 오신 것을 환영합니다."
+   },
+   "_WelcometotheofficialFullPageEditor": {
+      "description": "[aws:2019-09-22 23:07:34] Welcome to the official Full Page Editor!",
+      "message": "공식 전체 페이지 편집기에 오신 것을 환영합니다!"
+   },
+   "_Wereexcitedtohaveyouaboard": {
+      "description": "[aws:2019-09-22 23:07:34] We’re excited to have you aboard.",
+      "message": "우리는 당신을 타고 기쁘게 생각합니다."
+   },
+   "_Width": {
+      "description": "[aws:2019-09-22 23:07:35] Width",
+      "message": "너비"
+   },
+   "_Wouldyouliketoreportanyissuesyoureexperiencingsowecanimprovethisextensiontogether": {
+      "description": "[aws:2019-09-22 23:07:36] Would you like to report any issues you’re experiencing, so we can improve this extension together?",
+      "message": "이 확장 프로그램을 함께 개선할 수 있도록 발생한 문제를 보고하시겠습니까?"
+   },
+   "_Yes": {
+      "description": "[aws:2019-09-22 23:07:36] Yes!",
+      "message": "네!"
+   },
+   "_YoucanrunthisonanywebpageexceptforoneswherethebrowserrestrictsextensionsfromrunningscriptsThisincludestheChromewebstorebrowsersettingspagesandotherextensions": {
+      "description": "[aws:2019-09-23 19:22:22] You can run this on any webpage, except for ones where the browser restricts extensions from running scripts. This includes the Chrome web store, browser settings pages, and other extensions.",
+      "message": "브라우저가 확장 스크립트를 실행하지 못하도록 제한하는 웹 페이지를 제외한 모든 웹 페이지에서이 작업을 실행할 수 있습니다. 여기에는 Chrome 웹 스토어, 브라우저 설정 페이지 및 기타 확장 프로그램이 포함됩니다."
+   },
+   "_YoumayneedtoreruntheextensionafterinteractingwiththedialogIfyoucancelitwillcapturejustthevisiblescreen": {
+      "description": "[aws:2019-09-23 19:22:22] You may need to re-run the extension after interacting with the dialog. If you cancel, it will capture just the visible screen.",
+      "message": "대화 상자와 상호 작용 한 후 확장 프로그램을 다시 실행해야 할 수도 있습니다. 취소하면 보이는 화면만 캡처됩니다."
+   },
+   "_Youneedtograntthedownloadprivilegeinordertodownloadfiles": {
+      "description": "[aws:2019-09-22 23:07:37] You need to grant the download privilege in order to download files",
+      "message": "파일을 다운로드하려면 다운로드 권한을 부여해야 합니다."
+   },
+   "_Zoom": {
+      "description": "[aws:2019-09-22 23:07:38] Zoom",
+      "message": "줌"
+   },
+   "_Zoomin": {
+      "description": "[aws:2019-09-22 23:07:38] Zoom in",
+      "message": "확대"
+   },
+   "_Zoomout": {
+      "description": "[aws:2019-09-22 23:07:39] Zoom out",
+      "message": "축소"
+   },
+   "_billedannually": {
+      "description": "[aws:2019-09-22 23:05:51] billed annually",
+      "message": "연간 청구됨"
+   },
+   "_cancelanytime": {
+      "description": "[aws:2019-09-22 23:05:53] cancel anytime",
+      "message": "언제든지 취소"
+   },
+   "_close": {
+      "description": "[aws:2019-09-23 19:22:09] close",
+      "message": "을 닫습니다"
+   },
+   "_details": {
+      "description": "[aws:2019-09-23 19:22:09] details…",
+      "message": "세부 정보..."
+   },
+   "_fullimage": {
+      "description": "[aws:2019-09-22 23:06:20] full image",
+      "message": "전체 이미지"
+   },
+   "_iFramepermission": {
+      "description": "[aws:2019-09-22 23:06:26] iFrame permission",
+      "message": "iFrame 사용 권한"
+   },
+   "_loading": {
+      "description": "[aws:2019-09-22 23:06:33] loading…",
+      "message": "로드 중..."
+   },
+   "_numfilescouldnotberemoved": {
+      "description": "[aws:2019-09-22 23:06:41] $num$ files could not be removed.",
+      "message": "$num$ 파일을 제거할 수 없습니다.",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "_numfilesweresuccessfullyremoved": {
+      "description": "[aws:2019-09-22 23:06:42] $num$ files were successfully removed.",
+      "message": "$num$ 파일이 성공적으로 제거되었습니다.",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "_or": {
+      "description": "[aws:2019-09-22 23:06:45] or",
+      "message": "또는"
+   },
+   "_restorefactorydefaults": {
+      "description": "[aws:2019-09-22 23:06:57] restore factory defaults",
+      "message": "출하 시 기본값 복원"
+   },
+   "_search": {
+      "description": "[aws:2019-09-22 23:07:00] search…",
+      "message": "검색..."
+   },
+   "_upontrialcompletion": {
+      "description": "[aws:2019-09-22 23:07:28] upon trial completion",
+      "message": "시험 완료 시"
+   },
+   "_version": {
+      "description": "[aws:2019-09-22 23:07:31] version",
+      "message": "버전을 사용할 수 있습니다"
+   },
+   "_watchademovideo": {
+      "description": "[aws:2019-09-22 23:07:32] watch a demo video",
+      "message": "데모 비디오 시청"
+   },
+   "actionClose": {
+      "description": "[aws:2019-09-22 23:07:40] Close",
+      "message": "닫기"
+   },
+   "actionDeleteImage": {
+      "description": "[aws:2019-09-22 23:07:40] Delete image",
+      "message": "이미지 삭제"
+   },
+   "actionDownloadImage": {
+      "description": "[aws:2019-09-22 23:07:41] Download image",
+      "message": "이미지 다운로드"
+   },
+   "actionDownloadPDF": {
+      "description": "[aws:2019-09-22 23:07:41] Download PDF",
+      "message": "PDF 다운로드"
+   },
+   "actionEdit": {
+      "description": "[aws:2019-09-22 23:07:42] Edit",
+      "message": "편집"
+   },
+   "actionOK": {
+      "description": "[aws:2019-09-22 23:07:43] OK",
+      "message": "확인"
+   },
+   "actionReport": {
+      "description": "[aws:2019-09-22 23:07:43] Report issue",
+      "message": "문제 보고"
+   },
+   "appDesc": {
+      "description": "[aws:2019-09-22 23:05:38] Capture a screenshot of your current page in entirety and reliably—without requesting any extra permissions!",
+      "message": "추가 권한을 요청하지 않고 현재 페이지의 스크린샷을 전체적으로 캡처하고 신뢰할 수 있습니다!"
+   },
+   "goPremiumHeader": {
+      "description": "Take your screenshots to the next level with Full Page Screen Capture Premium",
+      "message": "Full Page Screen Capture Premium에 등록하셔서 훨씬 다양한 기능으로 스크린샷을 캡쳐하세요"
+   },
+   "goPremiumLink": {
+      "description": "Get started (free 1-week trial)",
+      "message": "시작하기 (1주 무료 이용)"
+   },
+   "goPremiumSignInLink": {
+      "description": "Sign in",
+      "message": "로그인"
+   },
+   "goPremiumSignInMessage": {
+      "description": "Already have an account?",
+      "message": "이미 계정이 있으십니까?"
+   },
+   "goPremiumSubHeader": {
+      "description": "Including advanced editing and annotation features of screenshots",
+      "message": "더 나아가 고급 편집과 주석 기능을 사용하여 작업 속도도 훨씬 단축 시키실수있습니다."
+   },
+   "navHistory": {
+      "description": "[aws:2019-09-22 23:07:44] History",
+      "message": "역사"
+   },
+   "navOptions": {
+      "description": "[aws:2019-09-22 23:07:45] Options",
+      "message": "옵션"
+   },
+   "tryEditingNo": {
+      "description": "No thanks",
+      "message": "취소"
+   },
+   "tryEditingRequest": {
+      "description": "Try editing and annotating your screenshot",
+      "message": "스크린 샷을 수정하거나 주석을 달고 싶은신가요?"
+   },
+   "tryEditingYes": {
+      "description": "Ok!",
+      "message": "확인"
+   }
+}

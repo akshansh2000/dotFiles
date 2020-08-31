@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "G Suite yöneticiniz Google Chat'i etkinleştirdi. Chat ile ekip odalarında ortak çalışmalar yapın ve kolayca dosya paylaşın.\n\nEn iyi deneyim için, yeni Google Chat uygulamasını yükledikten sonra bu uzantıyı kaldırdığınızdan emin olun."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "Masaüstü uygulamasını indir"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "chat.google.com sitesine devam edin"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Google Chat ile tanışın"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "Kullanmaya başlamak için Chrome'da oturum açın."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "Tekrar dene"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "İnternet bağlantınızın olduğundan emin olun ve tekrar deneyin"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "Bağlantı Hatası"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome Uygulamaları bu yıl kullanımdan kaldırılıyor. Hangouts'u kendi penceresinde kullanmaya devam etmek için Hangouts Chrome uzantısını yükleyin."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Hangouts Chrome Uygulaması artık desteklenmiyor."
+   },
+   "chrome_app_description": {
+      "message": "Hangouts Chrome uygulaması kullanımdan kaldırıldı. Lütfen Hangouts Chrome Uzantısı'na geçin."
+   },
+   "chrome_app_download_button": {
+      "message": "CHROME UZANTISINI AL"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "Daha fazla bilgi edinin"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "Bu uygulama eski. Uygulamanın daha yeni bir sürümü mevcut."
+   },
+   "chrome_app_outdated_title": {
+      "message": "Hangouts Chrome uygulamanızı güncelleyin"
+   },
+   "chrome_app_signin_button": {
+      "message": "Oturum aç"
+   },
+   "chrome_app_welcome_message": {
+      "message": "Metin, fotoğraf, gif dosyaları, ses, video vs. ile özel görüşmelerin ve grup görüşmelerinin keyfini çıkarın."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Google'a bağlanılamadı. Lütfen İnternet bağlantınızı kontrol edin."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts; fotoğraflar, emoji ve hatta grup video görüşmeleri yardımıyla ücretsiz olarak sohbetlerinize canlılık kazandırır."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "Durum: Bağlı\nKaçırılan iletiler var"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "Durum: Yönetici Tarafından Devre Dışı Bırakıldı"
+   },
+   "quasar_tip_connected": {
+      "message": "Durum: Bağlı"
+   },
+   "quasar_tip_connecting": {
+      "message": "Durum: Bağlanıyor"
+   },
+   "quasar_tip_disconnected": {
+      "message": "Durum: Bağlantı kesildi"
+   },
+   "quasar_tip_not_load": {
+      "message": "Durum: Yükleme hatası"
+   },
+   "quasar_tip_not_login": {
+      "message": "Durum: Giriş yapılmadı"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "Durum: Yeniden bağlanıyor"
+   }
+}

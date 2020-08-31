@@ -1,0 +1,34 @@
+{
+   "appDesc": {
+      "description": "La descripción de la aplicación, mostrada en la Tienda Web.",
+      "message": "Reimplementa los botones de Google Imágenes: \"Ver imagen\" y \"Buscar por imagen\"."
+   },
+   "appName": {
+      "description": "Título de la aplicación, mostrado en la Tienda Web.",
+      "message": "Ver Imagen"
+   },
+   "donatePayPal": {
+      "description": "Text used for the donation button.",
+      "message": " Donar usando PayPal"
+   },
+   "optionsButton": {
+      "description": "Text displayed on the link to options button.",
+      "message": "Configuración"
+   },
+   "resetButton": {
+      "description": "Texto mostrado en el botón de reinicio.",
+      "message": "Reiniciar"
+   },
+   "searchImage": {
+      "description": "Botón que lleva a la página de búsqueda por imágenes de Google.",
+      "message": "Buscar por imagen"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Opción de configuración que hace que las imágenes se abran en una nueva pestaña.",
+      "message": "Abrir imágenes en una nueva pestaña:"
+   },
+   "viewImage": {
+      "description": "Botón para ver la imagen.",
+      "message": "Ver imagen"
+   }
+}

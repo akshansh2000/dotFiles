@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "உங்கள் G Suite நிர்வாகி Google Chatடை இயக்கியுள்ளார். Chat மூலம் குழு அறைகளில் கோப்புகளை எளிதாகப் பகிர்ந்து சிறப்பாகக் கூட்டுப்பணியாற்றுங்கள்.\n\nசிறந்த அனுபவத்தைப் பெற புதிய Google Chat ஆப்ஸை நிறுவியபிறகு இந்த நீட்டிப்பை நிறுவல் நீக்கம் செய்யவும்."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "டெஸ்க்டாப் ஆப்ஸைப் பெறுக"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "chat.google.comமில் தொடர்க"
+   },
+   "admin_disabled_screen_title": {
+      "message": "Google Chatடுக்கு வரவேற்கிறோம்"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "தொடங்க, Chrome இல் உள்நுழையவும்."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "மீண்டும் முயற்சிக்கவும்"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "இணையத்துடன் இணைக்கப்பட்டுள்ளீர்களா என்பதைச் சரிபார்த்து, மீண்டும் முயற்சிக்கவும்"
+   },
+   "chrome_app_connection_error_title": {
+      "message": "இணைப்புப் பிழை"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome ஆப்ஸ் இந்த ஆண்டுடன் நிறுத்தப்படவுள்ளன. Hangoutsஐ அதன் சாளரத்திலேயே தொடர்ந்து பயன்படுத்த, Hangouts Chrome நீட்டிப்பை நிறுவவும்."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Hangouts Chrome ஆப்ஸ் இனி ஆதரிக்கப்படாது."
+   },
+   "chrome_app_description": {
+      "message": "Hangouts Chrome ஆப்ஸ் நிறுத்தப்பட்டது. Hangouts Chrome நீட்டிப்புக்கு மாறவும்."
+   },
+   "chrome_app_download_button": {
+      "message": "CHROME நீட்டிப்பைப் பெறு"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "மேலும் அறிக"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "இது காலாவதியான ஆப்ஸ். புதிய பதிப்பு உள்ளது."
+   },
+   "chrome_app_outdated_title": {
+      "message": "உங்கள் Hangouts Chrome பயன்பாட்டைப் புதுப்பிக்கவும்"
+   },
+   "chrome_app_signin_button": {
+      "message": "உள்நுழைக"
+   },
+   "chrome_app_welcome_message": {
+      "message": "தனிப்பட்ட மற்றும் குழு உரையாடல்களில் உரைச் செய்தி, படங்கள், gifகள், குரல், வீடியோ, மேலும் பலவற்றைப் பயன்படுத்தி மகிழலாம்."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Google உடன் இணைக்க முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்கவும்."
+   },
+   "chrome_ext_description": {
+      "message": "புகைப்படங்கள், ஈமோஜி மூலம் உரையாடல்களுக்கு Hangouts உயிரோட்டமளிக்கிறது, மேலும் இலவசமாக குழு வீடியோ அழைப்புகளையும் மேற்கொள்ளலாம்."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "நிலை: இணைக்கப்பட்டது\nதவறிய செய்திகள்"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "நிலை: நிர்வாகி முடக்கியுள்ளார்"
+   },
+   "quasar_tip_connected": {
+      "message": "நிலை: இணைக்கப்பட்டது"
+   },
+   "quasar_tip_connecting": {
+      "message": "நிலை: இணைக்கிறது"
+   },
+   "quasar_tip_disconnected": {
+      "message": "நிலை: துண்டிக்கப்பட்டது"
+   },
+   "quasar_tip_not_load": {
+      "message": "நிலை: ஏற்றுவதில் பிழை"
+   },
+   "quasar_tip_not_login": {
+      "message": "நிலை: உள்நுழையவில்லை"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "நிலை: மீண்டும் இணைக்கிறது"
+   }
+}

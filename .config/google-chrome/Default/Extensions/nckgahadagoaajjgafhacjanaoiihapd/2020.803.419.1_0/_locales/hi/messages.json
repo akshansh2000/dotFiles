@@ -1,0 +1,109 @@
+{
+   "admin_disabled_screen_description": {
+      "message": "आपके G Suite एडमिन ने Google Chat चालू कर दिया है. टीम के चैट रूम में मिलकर काम करें और Chat के ज़रिए आसानी से फ़ाइलें शेयर करें.\n\nबेहतरीन अनुभव के लिए, नए Google Chat ऐप्लिकेशन को इंस्टॉल करने के बाद इस एक्सटेंशन को अनइंस्टॉल करना न भूलें."
+   },
+   "admin_disabled_screen_get_desktop_app_button": {
+      "message": "डेस्कटॉप ऐप्लिकेशन डाउनलोड करें"
+   },
+   "admin_disabled_screen_hangouts_chat_link": {
+      "message": "chat.google.com पर जारी रखें"
+   },
+   "admin_disabled_screen_title": {
+      "message": "पेश है Google Chat"
+   },
+   "chrome_app_chrome_signin_message": {
+      "message": "आरंभ करने के लिए Chrome में प्रवेश करें."
+   },
+   "chrome_app_connection_error_button": {
+      "message": "फिर से प्रयास करें"
+   },
+   "chrome_app_connection_error_detail": {
+      "message": "पक्का करें कि आप इंटरनेट से कनेक्ट हैं और फिर से प्रयास करें."
+   },
+   "chrome_app_connection_error_title": {
+      "message": "कनेक्शन गड़बड़ी"
+   },
+   "chrome_app_deprecated_detail": {
+      "message": "Chrome ऐप्लिकेशन इस साल रोके जा रहे हैं. Hangouts अपनी ही विंडो में काम करता रहे, इसके लिए Hangouts Chrome एक्सटेंशन इंस्टॉल करें."
+   },
+   "chrome_app_deprecated_title": {
+      "message": "Hangouts Chrome ऐप्लिकेशन अब काम नहीं करता है."
+   },
+   "chrome_app_description": {
+      "message": "Hangouts Chrome ऐप्लिकेशन को बंद किया जा रहा है. कृपया Hangouts Chrome एक्सटेंशन में बदलें."
+   },
+   "chrome_app_download_button": {
+      "message": "CHROME एक्सटेंशन हासिल करें"
+   },
+   "chrome_app_learn_more_message": {
+      "message": "और जानें"
+   },
+   "chrome_app_outdated_detail": {
+      "message": "यह ऐप्लिकेशन पुराना है. एक नया वर्शन उपलब्ध है."
+   },
+   "chrome_app_outdated_title": {
+      "message": "अपना Hangouts Chrome ऐप्लिकेशन अपडेट करें"
+   },
+   "chrome_app_signin_button": {
+      "message": "प्रवेश करें"
+   },
+   "chrome_app_welcome_message": {
+      "message": "लेख, फ़ोटो, gif, वॉइस, वीडियो, वगैरह के साथ निजी और सामूहिक वार्तालाप का आनंद लें."
+   },
+   "chrome_app_window_title": {
+      "message": "Google Hangouts - $1",
+      "placeholders": {
+         "1": {
+            "content": "$1"
+         }
+      }
+   },
+   "chrome_ext_cannot_connect": {
+      "message": "Google से कनेक्ट होने में असमर्थ. कृपया अपने इंटरनेट कनेक्शन की जाँच करें."
+   },
+   "chrome_ext_description": {
+      "message": "Hangouts, फ़ोटो, इमोजी और यहां तक कि मुफ़्त समूह वीडियो कॉल के साथ बातचीत को जीवंत बनाते हैं."
+   },
+   "chrome_ext_tip_connected_missed_messages": {
+      "message": "स्थिति: कनेक्ट है\nछूटे संदेश"
+   },
+   "chrome_hangouts_app_beta_short_name": {
+      "message": "Google Hangouts (App, Beta)"
+   },
+   "chrome_hangouts_app_debug_short_name": {
+      "message": "Google Hangouts (App, Debug)"
+   },
+   "chrome_hangouts_ext_alpha_short_name": {
+      "message": "Google Hangouts (Extension, Alpha)"
+   },
+   "chrome_hangouts_ext_beta_short_name": {
+      "message": "Google Hangouts (Extension, Beta)"
+   },
+   "chrome_hangouts_ext_debug_short_name": {
+      "message": "Google Hangouts (Extension, Debug)"
+   },
+   "chrome_hangouts_short_name": {
+      "message": "Google Hangouts"
+   },
+   "quasar_tip_admin_disabled": {
+      "message": "स्थिति: एडमिन ने बंद कर दिया"
+   },
+   "quasar_tip_connected": {
+      "message": "स्थिति: कनेक्ट हो गया"
+   },
+   "quasar_tip_connecting": {
+      "message": "स्थिति: कनेक्ट हो रहा है"
+   },
+   "quasar_tip_disconnected": {
+      "message": "स्थिति: डिसकनेक्ट हो गया"
+   },
+   "quasar_tip_not_load": {
+      "message": "स्थिति: गड़बड़ी लोड कर रहा है"
+   },
+   "quasar_tip_not_login": {
+      "message": "स्थिति: प्रवेश नहीं किया गया है"
+   },
+   "quasar_tip_reconnecting": {
+      "message": "स्थिति: फिर से कनेक्ट हो रहा है"
+   }
+}

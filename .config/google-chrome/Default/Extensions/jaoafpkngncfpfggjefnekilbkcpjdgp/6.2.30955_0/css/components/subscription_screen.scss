@@ -1,0 +1,132 @@
+.subscription_screen{
+  background: white;
+  right: -100%;
+
+  header{
+    background: linear-gradient(180deg, #3AE2FF 2.04%, #085FE5 100%);
+    color: white;
+    border-bottom: 0px;
+    padding-bottom: 24px;
+
+    nav{
+      display: flex;
+      align-items: center; justify-content: center;
+      position: relative;
+      font-size: 17px;
+      line-height: 20px;
+      .title{
+        font-weight: bold;
+      }
+
+      #subscription_screen_back_btn{
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center; justify-content: center;
+        position: absolute;
+        top: -2px;
+        left: -3px;
+        cursor: pointer;
+
+        img{
+          width: 14px;
+          height: auto;
+        }
+      }
+    }
+
+    .icon-wrap{
+      display: flex; justify-content: center;
+      padding-top: 19px;
+
+      img{
+        width: 84px;
+        height: auto;
+      }
+    }
+    
+  }
+
+  main{
+    .plan-card{
+      margin-top: 15px;
+      padding: 8px 0;
+      border: 1px solid #E6E8EB;
+      background: #FFFFFF;
+      box-sizing: border-box;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.07);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .subscription-type{
+        background: #D5DAE6;
+        border-radius: 20px;
+        width: 114px; 
+        height: 23px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+
+        display: flex;
+        align-items: center; justify-content: center;
+
+        color: #3D4855;
+
+        span{
+          margin-top: -1px;
+        }
+
+        &.popular{
+          color: white;
+          background: #F96380;
+        }
+        
+        &.best{
+          color: white;
+          background: #085FE5;
+
+        }
+      }
+
+      .price{
+        margin-top: 7px;
+        font-size: 24px;
+        color: #3D4855;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+
+        span{
+          color: #8491b0;
+          font-size: 13px;
+          margin-left: 1px;
+        }
+      }
+
+      .description{
+        margin-top: 5px;
+        font-size: 10px;
+        letter-spacing: 0.6px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+
+        color: #8491B0;
+        font-weight: 600;
+
+        .red{
+          margin: 0 3px;
+          color: #f96380;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  &.js-opened{
+    right: 0;
+  }
+}

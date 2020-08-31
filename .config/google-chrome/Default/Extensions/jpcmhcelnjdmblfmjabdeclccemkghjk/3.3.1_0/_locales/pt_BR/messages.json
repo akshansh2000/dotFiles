@@ -1,0 +1,54 @@
+{
+   "appDesc": {
+      "description": "A descrição da extensão, como mostrada na web store.",
+      "message": "Reimplementa no Google Imagens o botão \"Ver Imagem\" e o link \"Pesquisar por imagem\"."
+   },
+   "appName": {
+      "description": "Nome da extensão, mostrada na web store.",
+      "message": "View image"
+   },
+   "donatePayPal": {
+      "description": "Texto usado no botão de doação.",
+      "message": " Doe com PayPal"
+   },
+   "optionsButton": {
+      "description": "Texto exibido no link para o botão de opções.",
+      "message": "Opções"
+   },
+   "resetButton": {
+      "description": "Texto do botão Reset.",
+      "message": "Redefinir"
+   },
+   "searchImage": {
+      "description": "Botão encaminha a imagem para o Google Imagens, procurando por ela em toda a internet.",
+      "message": "Pesquisar por imagem"
+   },
+   "settingsToggle_NewTab_searchByImage": {
+      "description": "Alterar a opção faz com que a página 'pesquisar por imagem' seja aberta em uma nova aba.",
+      "message": "Abrir \"Pesquisar por imagem\" em uma nova aba:"
+   },
+   "settingsToggle_NewTab_viewImage": {
+      "description": "Alterar a opção significa que as imagens serão abertas em uma nova guia.",
+      "message": "Abrir as imagens em uma nova guia:"
+   },
+   "settingsToggle_buttonText": {
+      "description": "Alterar a opção permite definir manualmente o texto dos botões em vez do da tradução.",
+      "message": "Definir texto do botão manualmente:"
+   },
+   "settingsToggle_globeIcon": {
+      "description": "Alterar a opção irá fazer com que o ícone do globo seja exibido no botão \"Ver Imagem\".",
+      "message": "Exibir ícone do Globo no botão \"Ver Imagem\":"
+   },
+   "settingsToggle_noReferrer": {
+      "description": "Configurações que alternam rel='noreferrer' no botão \"Ver Imagem\".",
+      "message": "Ocultar referenciador do site ao clicar \"Ver Imagem\":"
+   },
+   "settingsToggle_subjectCopyright": {
+      "description": "Alterar a opção irá ocultar a mensagem de direitos autorais na página de resultados de imagens.",
+      "message": "Ocultar mensagem \"As imagens podem estar sujeitas a direitos autorais\":"
+   },
+   "viewImage": {
+      "description": "Botão para visualizar a imagem.",
+      "message": "Ver imagem"
+   }
+}
