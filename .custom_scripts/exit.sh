@@ -1,7 +1,7 @@
 option=$(echo -e "lock\nsuspend\nexit i3\nshut down" | rofi -i -dmenu -no-custom -p "exit session" -theme Arc-Dark)
 
 if [ "$option" == "lock" ]; then
-  i3lock
+  .config/i3lock/.i3lockrc
 elif [ "$option" == "suspend" ]; then
   systemctl suspend
 elif [ "$option" == "exit i3" ]; then
