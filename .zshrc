@@ -143,7 +143,7 @@ alias update="source ~/.zshrc"
 alias upgrade="yes | sudo pacman -Syu"
 alias open="xdg-open"
 alias pls="sudo"
-alias get="yes | sudo pacman -S"
+alias get="yes | sudo pacman -Sy"
 alias remove="yes | sudo pacman -R"
 alias hs="history | grep"
 alias aux="ps aux | grep"
@@ -170,7 +170,7 @@ alias zshrc='open ~/.zshrc'
 alias adbscrcpy='scrcpy -b2M -m800'
 # alias scrcpy='ADB=~/Android/Sdk/adb scrcpy'
 alias pm='~/Postman/app/Postman &'
-alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29 -netdelay none -netspeed full &'
+alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29'
 
 alias push='git push'
 alias pull='git pull'
@@ -313,7 +313,7 @@ function sha256() {
   fi
 }
 
-export PATH="~/flutter/bin":$PATH
+export PATH="/home/akshansh2000/flutter/bin":$PATH
 export PATH='/home/akshansh2000/flutter/bin/cache/dart-sdk/bin':$PATH
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools

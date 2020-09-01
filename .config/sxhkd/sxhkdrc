@@ -45,3 +45,7 @@ XF86MonBrightnessUp
 # brightness down
 XF86MonBrightnessDown
   brightnessctl set 10%-
+
+# monitors
+mod4+m
+  .custom_scripts/monitors.sh
