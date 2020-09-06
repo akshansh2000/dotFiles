@@ -1,0 +1,8 @@
+[Added Associations]
+image/jpeg=org.nomacs.ImageLounge.desktop;
+
+[Default Applications]
+image/png=org.nomacs.ImageLounge.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+image/jpeg=org.nomacs.ImageLounge.desktop
+application/pdf=mupdf.desktop;
