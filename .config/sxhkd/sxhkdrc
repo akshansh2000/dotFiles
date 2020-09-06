@@ -49,3 +49,7 @@ XF86MonBrightnessDown
 # monitors
 mod4+m
   .custom_scripts/monitors.sh
+
+# clipboard
+mod4+x
+  rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' -theme Arc-Dark
