@@ -53,3 +53,15 @@ mod4+m
 # clipboard
 mod4+x
   rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' -theme Arc-Dark
+
+# complete screenshot
+Print
+  scrot -q 100 -e 'mv $f ~/Pictures/Screenshots/'
+
+# window screenshot
+mod4+Print
+  scrot -uq 100 -e 'mv $f ~/Pictures/Screenshots/'
+
+# custom screenshot
+mod4+shift+Print
+  scrot -a $(slop -f '%x,%y,%w,%h') -q 100 -e 'mv $f ~/Pictures/Screenshots/'
