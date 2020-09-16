@@ -12,4 +12,8 @@ elif [ "$option" == "extend and scale eDP-1" ]; then
 elif [ "$option" == "off" ]; then
   mons -o
   xrandr --output eDP-1 --scale 1x1
+else
+  exit
 fi
+
+~/.custom_scripts/polybar.sh
