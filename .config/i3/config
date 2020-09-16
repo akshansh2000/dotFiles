@@ -12,7 +12,7 @@ font pango:LiberationMono 10
 exec --no-startup-id compton
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id sxhkd
-exec --no-startup-id polybar -c ~/.config/polybar/config example
+exec --no-startup-id ~/.custom_scripts/polybar.sh 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

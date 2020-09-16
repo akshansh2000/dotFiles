@@ -1,4 +1,4 @@
-option=$(echo -e "zsh\ni3\nsxhkd\ndunst\ni3lock\nbash\nxinit\nxmonad\nxmobar\nalacritty" | rofi -show drun -i -dmenu --no-custom -p "config" -theme Arc-Dark)
+option=$(echo -e "zsh\ni3\nsxhkd\npolybar\ndunst\ni3lock\nbash\nxinit\nxmonad\nxmobar\nalacritty" | rofi -show drun -i -dmenu --no-custom -p "config" -theme Arc-Dark)
 
 if [ $option == "zsh" ]; then
   alacritty -e nvim ~/.zshrc
@@ -20,4 +20,6 @@ elif [ $option == "xmobar" ]; then
   alacritty -e nvim ~/.config/xmobar/xmobar.hs
 elif [ $option == "alacritty" ]; then
   alacritty -e nvim ~/.config/alacritty/alacritty.yml
+elif [ $option == "polybar" ]; then
+  alacritty -e nvim ~/.config/polybar/config
 fi
