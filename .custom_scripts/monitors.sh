@@ -16,4 +16,4 @@ else
   exit
 fi
 
-~/.custom_scripts/polybar.sh
+/home/akshansh2000/.custom_scripts/polybar.sh
