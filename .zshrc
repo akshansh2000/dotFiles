@@ -1,3 +1,5 @@
+printf '\n%.0s' {1..100}
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -143,7 +145,7 @@ alias update="source ~/.zshrc"
 alias upgrade="yes | sudo pacman -Syu"
 alias open="xdg-open"
 alias pls="sudo"
-alias get="yes | sudo pacman -Sy"
+alias get="yes | sudo pacman -S"
 alias remove="yes | sudo pacman -R"
 alias hs="history | grep"
 alias aux="ps aux | grep"
@@ -158,6 +160,7 @@ alias rn='npx react-native'
 alias rns='npx react-native start'
 alias rnr='npx react-native run-android'
 alias cp='cpv'
+alias perm='stat -c "%a"'
 
 alias repo='cd ~/Repositories'
 alias top='cd `git rev-parse --show-toplevel`'
@@ -211,16 +214,16 @@ function ginit() {
   fi
 }
 
-function build() {
-  git clone "$1"
-  repo_name=`echo "$1" | perl -nle 'm/([^\/]+(?=\.git))/; print $1'`
-  
-  builtin cd $repo_name
-  yes | makepkg -si
-  
-  builtin cd '..'
-  rm -rf $repo_name
-}
+# function build() {
+#   git clone "$1"
+#   repo_name=`echo "$1" | perl -nle 'm/([^\/]+(?=\.git))/; print $1'`
+#   
+#   builtin cd $repo_name
+#   yes | makepkg -si
+#   
+#   builtin cd '..'
+#   rm -rf $repo_name
+# }
 
 function up() {
   if [ $# -eq 0 ]; then
@@ -251,12 +254,9 @@ function c() {
 }
 
 function gcc() {
-  builtin cd ~/Desktop/Repositories
-  
+  builtin cd ~/Repositories
   git clone "$1"
-  
-  repo_name=`echo "$1" | perl -nle 'm/([^\/]+(?=\.git))/; print $1'`
-  cd $repo_name
+  cd `basename "$1"`  
 }
 
 function temp() {
@@ -311,6 +311,10 @@ function sha256() {
   else
     echo "couldn't verify checksum"
   fi
+}
+
+function perms() {
+  sudo chmod $1 "$2"
 }
 
 export PATH="/home/akshansh2000/flutter/bin":$PATH
