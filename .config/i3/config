@@ -71,26 +71,25 @@ bindsym $mod+space focus mode_toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
-set $ws11 "I"
-set $ws12 "II"
-set $ws13 "III"
-set $ws14 "IV"
-set $ws15 "V"
-set $ws16 "VI"
-set $ws17 "VII"
-set $ws18 "VIII"
-set $ws19 "IX"
-set $ws20 "X"
+set $ws1 "1:1"
+set $ws2 "2:2"
+set $ws3 "3:3"
+set $ws4 "4:4"
+set $ws5 "5:5"
+set $ws6 "6:6"
+set $ws7 "7:7"
+set $ws8 "8:8"
+set $ws9 "9:9"
+set $ws10 "10:10"
+set $ws11 "11:I"
+set $ws12 "12:II"
+set $ws13 "13:III"
+set $ws14 "14:IV"
+set $ws15 "15:V"
+set $ws16 "16:VI"
+set $ws17 "17:VII"
+set $ws18 "18:VIII"
+set $ws19 "19:IX"
 
 # multi monitor setup
 workspace $ws1 output eDP-1
@@ -112,6 +111,10 @@ workspace $ws16 output HDMI-1-0 eDP-1
 workspace $ws17 output HDMI-1-0 eDP-1
 workspace $ws18 output HDMI-1-0 eDP-1
 workspace $ws19 output HDMI-1-0 eDP-1
+
+# move between workspaces
+bindsym $mod+Ctrl+l workspace next
+bindsym $mod+Ctrl+h workspace prev
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -177,8 +180,8 @@ bindsym $mod+Mod2+Shift+KP_Up move container to workspace $ws18; workspace $ws18
 bindsym $mod+Mod2+Shift+KP_Prior move container to workspace $ws19; workspace $ws19
 
 # i3-gaps specific
-gaps inner 5
-gaps outer 3 
+gaps inner 8
+gaps outer 5
 
 # reload the configuration file
 # bindsym $mod+Shift+q reload
@@ -199,9 +202,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-#         status_command i3status
-# }
