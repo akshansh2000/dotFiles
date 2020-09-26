@@ -1,15 +1,16 @@
 font:
   size: 10.0
   normal:
-    family: "LiberationMono"
+    family: "monospace"
+
+env:
+  WINIT_X11_SCALE_FACTOR: "1.0"
 
 colors:
   primary:
-    background: "#000000"
+    background: "#263238"
 
 window:
   padding:
     x: 20
     y: 20
-
-background_opacity: 0.9
