@@ -161,6 +161,7 @@ alias rns='npx react-native start'
 alias rnr='npx react-native run-android'
 alias cp='cpv'
 alias perm='stat -c "%a"'
+alias rm='rm -rf'
 
 alias repo='cd ~/Repositories'
 alias top='cd `git rev-parse --show-toplevel`'
@@ -327,6 +328,8 @@ export TERMINAL=/usr/bin/alacritty
 export BROWSER=$GOOGLE_CHROME_BIN
 export PATH=$PATH:/home/akshansh2000/.local/bin
 export PATH=$PATH:/snap/bin
+export PATH=$PATH:/home/akshansh2000/.emacs.d/bin
+export PATH=$PATH:/home/akshansh2000/.cargo/bin
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
