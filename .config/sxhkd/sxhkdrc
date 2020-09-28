@@ -24,7 +24,7 @@ mod4+d
 
 # file manager
 mod4+shift+e
-  pcmanfm
+  thunar
 
 # exit script
 mod4+shift+q
