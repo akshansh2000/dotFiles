@@ -65,3 +65,7 @@ filetype plugin indent on
 
 " autoformat on save
 let g:rustfmt_autosave = 1
+
+" pmenu colors
+hi Pmenu ctermbg=237 ctermfg=white
+hi PmenuSel ctermbg=246 ctermfg=black
