@@ -30,8 +30,11 @@ inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " auto insert closing braces
 inoremap { {}<Esc>i
+inoremap {<CR> {<CR>}<Esc>O
 inoremap ( ()<Esc>i
+inoremap (<CR> (<CR>)<Esc>O
 inoremap [ []<Esc>i
+inoremap [<CR> [<CR>]<Esc>O
 
 " plugins
 call plug#begin()
