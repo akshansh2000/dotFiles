@@ -37,6 +37,7 @@ inoremap [ []<Esc>i
 call plug#begin()
 Plug 'preservim/nerdtree' " nerdtree navigation
 Plug 'rust-lang/rls' " rust rls server
+Plug 'rust-lang/rust.vim' " formatting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc (code completion)
 call plug#end()
 
@@ -54,3 +55,10 @@ inoremap <expr> } getline('.')[getpos('.')[2] - 1] == '}' ? '<Right>' : '}'
 inoremap <expr> ] getline('.')[getpos('.')[2] - 1] == ']' ? '<Right>' : ']'
 inoremap <expr> " getline('.')[getpos('.')[2] - 1] == '"' ? '<Right>' : '""<Esc>i'
 inoremap <expr> ' getline('.')[getpos('.')[2] - 1] == "'" ? '<Right>' : "''<Esc>i"
+
+" enable syntax highlighting and indent
+syntax enable
+filetype plugin indent on
+
+" autoformat on save
+let g:rustfmt_autosave = 1
