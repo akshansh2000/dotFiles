@@ -254,10 +254,21 @@ function c() {
   rm "$file_name" 2> /dev/null
 }
 
+function rs() {
+  file_name=`echo $1 | perl -nle 'm/(.+(?=\.))/; print $1'`
+  rustc $@
+
+  if [ -f $file_name ]; then
+    ./$file_name
+  fi
+
+  rm $file_name 2> /dev/null
+}
+
 function gcc() {
   builtin cd ~/Repositories
   git clone "$1"
-  cd `basename "$1"`  
+  cd `basename -s .git "$1"`  
 }
 
 function temp() {
@@ -316,6 +327,10 @@ function sha256() {
 
 function perms() {
   sudo chmod $1 "$2"
+}
+
+function cat() {
+  bat $@
 }
 
 export PATH="/home/akshansh2000/flutter/bin":$PATH
