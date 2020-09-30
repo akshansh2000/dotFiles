@@ -28,8 +28,24 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-" nerdtree
+" auto insert closing braces
+inoremap { {}<Esc>i
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+
+" plugins
 call plug#begin()
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' " nerdtree navigation
+Plug 'rust-lang/rls' " rust rls server
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc (code completion)
 call plug#end()
+
+" nerdtree shortcut
 map <C-n> :NERDTreeToggle<CR>
+
+" coc suggestions
+" move between suggestions
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
