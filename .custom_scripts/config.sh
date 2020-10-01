@@ -1,25 +1,29 @@
-option=$(echo -e "zsh\ni3\nsxhkd\npolybar\ndunst\ni3lock\nbash\nxinit\nxmonad\nxmobar\nalacritty" | rofi -show drun -i -dmenu --no-custom -p "config" -theme Arc-Dark)
+option=$(echo -e "nvim\nzsh\nxresources\ni3\nsxhkd\npolybar\ndunst\ni3lock\nbash\nxinit\nxmonad\nxmobar\nalacritty" | rofi -show drun -i -dmenu --no-custom -p "config" -theme Arc-Dark)
 
 if [ $option == "zsh" ]; then
-  alacritty -e nvim ~/.zshrc
+  urxvt -e nvim ~/.zshrc
 elif [ $option == "i3" ]; then
-  alacritty -e nvim ~/.config/i3/config
+  urxvt -e nvim ~/.config/i3/config
 elif [ $option == "sxhkd" ]; then
-  alacritty -e nvim ~/.config/sxhkd/sxhkdrc 
+  urxvt -e nvim ~/.config/sxhkd/sxhkdrc 
 elif [ $option == "dunst" ]; then
-  alacritty -e nvim ~/.config/dunst/dunstrc
+  urxvt -e nvim ~/.config/dunst/dunstrc
 elif [ $option == "i3lock" ]; then
-  alacritty -e nvim ~/.config/i3lock/.i3lockrc
+  urxvt -e nvim ~/.config/i3lock/.i3lockrc
 elif [ $option == "bash" ]; then
-  alacritty -e nvim ~/.bashrc
+  urxvt -e nvim ~/.bashrc
 elif [ $option == "xinit" ]; then
-  alacritty -e nvim ~/.xinitrc
+  urxvt -e nvim ~/.xinitrc
 elif [ $option == "xmonad" ]; then
-  alacritty -e nvim ~/.xmonad/xmonad.hs
+  urxvt -e nvim ~/.xmonad/xmonad.hs
 elif [ $option == "xmobar" ]; then
-  alacritty -e nvim ~/.config/xmobar/xmobar.hs
+  urxvt -e nvim ~/.config/xmobar/xmobar.hs
 elif [ $option == "alacritty" ]; then
-  alacritty -e nvim ~/.config/alacritty/alacritty.yml
+  urxvt -e nvim ~/.config/alacritty/alacritty.yml
 elif [ $option == "polybar" ]; then
-  alacritty -e nvim ~/.config/polybar/config
+  urxvt -e nvim ~/.config/polybar/config
+elif [ $option == "nvim" ]; then
+  urxvt -e nvim ~/.config/nvim/init.vim
+elif [ $option == "xresources" ]; then
+  urxvt -e nvim ~/.Xresources
 fi
