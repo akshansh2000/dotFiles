@@ -42,7 +42,18 @@ Plug 'preservim/nerdtree' " nerdtree navigation
 Plug 'rust-lang/rls' " rust rls server
 Plug 'rust-lang/rust.vim' " formatting
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc (code completion)
+Plug 'google/vim-maktaba' " multilang format
+Plug 'google/vim-codefmt' " multilang format
+Plug 'google/vim-glaive' " multilang format
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} " markdown preview
+Plug 'junegunn/goyo.vim' " distraction-free vim
 call plug#end()
+
+" markdown auto preview
+let g:mkdp_auto_start = 1
+
+" multilang format
+call glaive#Install()
 
 " nerdtree shortcut
 map <C-n> :NERDTreeToggle<CR>
@@ -63,9 +74,20 @@ inoremap <expr> ' getline('.')[getpos('.')[2] - 1] == "'" ? '<Right>' : "''<Esc>
 syntax enable
 filetype plugin indent on
 
-" autoformat on save
-let g:rustfmt_autosave = 1
-
 " pmenu colors
 hi Pmenu ctermbg=237 ctermfg=white
 hi PmenuSel ctermbg=246 ctermfg=black
+
+" autoformat on save
+augroup autoformat_settings
+  autocmd FileType bzl AutoFormatBuffer buildifier
+  autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+  autocmd FileType dart AutoFormatBuffer dartfmt
+  autocmd FileType go AutoFormatBuffer gofmt
+  autocmd FileType gn AutoFormatBuffer gn
+  autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+  autocmd FileType java AutoFormatBuffer google-java-format
+  autocmd FileType python AutoFormatBuffer autopep8
+  autocmd FileType rust AutoFormatBuffer rustfmt
+  autocmd FileType vue AutoFormatBuffer prettier
+augroup END
