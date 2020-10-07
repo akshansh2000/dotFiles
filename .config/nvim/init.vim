@@ -28,14 +28,6 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-" auto insert closing braces
-inoremap { {}<Esc>i
-inoremap {<CR> {<CR>}<Esc>O
-inoremap ( ()<Esc>i
-inoremap (<CR> (<CR>)<Esc>O
-inoremap [ []<Esc>i
-inoremap [<CR> [<CR>]<Esc>O
-
 " plugins
 call plug#begin()
 Plug 'preservim/nerdtree' " nerdtree navigation
@@ -47,28 +39,29 @@ Plug 'google/vim-codefmt' " multilang format
 Plug 'google/vim-glaive' " multilang format
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} " markdown preview
 Plug 'junegunn/goyo.vim' " distraction-free vim
+Plug 'jiangmiao/auto-pairs' " auto close pairs and more
+Plug 'sheerun/vim-polyglot' " all language packs
 call plug#end()
 
-" markdown auto preview
-let g:mkdp_auto_start = 1
+" markdown auto preview, don't close automatically
+let g:mkdp_auto_close = 0
 
 " multilang format
 call glaive#Install()
 
 " nerdtree shortcut
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :CocCommand explorer<CR>
 
 " coc suggestions
 " move between suggestions
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" overwrite closing bracket
-inoremap <expr> ) getline('.')[getpos('.')[2] - 1] == ')' ? '<Right>' : ')'
-inoremap <expr> } getline('.')[getpos('.')[2] - 1] == '}' ? '<Right>' : '}'
-inoremap <expr> ] getline('.')[getpos('.')[2] - 1] == ']' ? '<Right>' : ']'
-inoremap <expr> " getline('.')[getpos('.')[2] - 1] == '"' ? '<Right>' : '""<Esc>i'
-inoremap <expr> ' getline('.')[getpos('.')[2] - 1] == "'" ? '<Right>' : "''<Esc>i"
+" <CR> to accept
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
 
 " enable syntax highlighting and indent
 syntax enable
@@ -91,3 +84,18 @@ augroup autoformat_settings
   autocmd FileType rust AutoFormatBuffer rustfmt
   autocmd FileType vue AutoFormatBuffer prettier
 augroup END
+
+" exit terminal's insert mode for god's sake
+:tnoremap <Esc> <C-\><C-n>
+
+" git colors
+hi DiffAdd ctermbg=49 ctermfg=black
+hi DiffChange ctermbg=75 ctermfg=black
+hi DiffDelete ctermbg=203 ctermfg=black
+
+" fly mode for autopairs
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsShortcutBackInsert = '<M-b>'
+
+" selection color
+hi Visual ctermbg=black

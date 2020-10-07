@@ -6,5 +6,6 @@
             "filetypes": ["sh"],
             "ignoredRootPaths": ["~"]
         }
-    }
+    },
+    "explorer.icon.enableNerdfont": true
 }
