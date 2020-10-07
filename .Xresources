@@ -12,7 +12,7 @@ URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
 ! font
-URxvt.font: xft:monospace:size=10
+URxvt.font: xft:monospace:size=10:antialias=true:minspace=false, xft:DejaVu Sans:size=8
 
 ! reduce spacing
 URxvt.letterSpace: -1
@@ -24,7 +24,7 @@ URxvt.print-pipe: "cat > /dev/null"
 URxvt.perl-ext-common: clipboard,default,matcher,url-select,resize-font
 
 ! copying
-URxvt.clipboard.autocopy: true
+URxvt.clipboard.autocopy: false
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 
@@ -42,7 +42,7 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! URxvt appearance
-URxvt.background: #2F343F
+URxvt.background: #212121
 URxvt.foreground: #aaaaaa
 URxvt.scrollBar: off
 
@@ -78,3 +78,6 @@ URxvt.keysym.Control-Right: \033[1;5C
 
 ! padding
 URxvt.internalBorder: 20
+
+! transparency
+! URxvt.depth: 32

@@ -8,7 +8,9 @@ env:
 
 colors:
   primary:
-    background: "#2F343F"
+    background: "#212121"
+
+    # background_opacity: 0.5
 
 window:
   padding:
