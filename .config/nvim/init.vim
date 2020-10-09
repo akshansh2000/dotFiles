@@ -41,6 +41,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'junegunn/goyo.vim' " distraction-free vim
 Plug 'jiangmiao/auto-pairs' " auto close pairs and more
 Plug 'sheerun/vim-polyglot' " all language packs
+Plug 'Yggdroot/indentLine' " indentation lines
 call plug#end()
 
 " markdown auto preview, don't close automatically
@@ -98,4 +99,13 @@ let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 " selection color
-hi Visual ctermbg=black
+hi Visual ctermbg=237
+
+" move to end and beginning of line while in insert mode
+inoremap <C-e> <Esc>$a
+inoremap <C-a> <Esc>0i
+
+" indentation characters
+let g:indentLine_char = '¦'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '.'

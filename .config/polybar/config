@@ -33,7 +33,7 @@ module-margin-right = 2
 
 font-0 = monospace:size=10:antialias=true;1
 
-modules-left = battery cpu temperature memory filesystem
+modules-left = battery cpu temperature memory filesystem kernel
 modules-center = i3
 modules-right = wlan eth pulseaudio backlight-acpi date
 
@@ -60,10 +60,11 @@ label-unmounted-foreground = #e02f2f
 
 [module/i3]
 type = internal/i3
-format = <label-state>
+format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 strip-wsnumbers = true
+pin-workspaces = true
 
 label-focused = %name%
 label-focused-padding = 1
@@ -166,7 +167,7 @@ type = internal/pulseaudio
 
 format-volume = <label-volume>
 label-volume = vol: %percentage%%
-label-volume-foreground = #f29dd6
+label-volume-foreground = #ff4f4f
 
 label-muted = vol: muted
 label-muted-foreground = #888888
@@ -179,13 +180,13 @@ adapter = ACAD
 full-at = 100
 
 format-charging = charging: <label-charging>
-format-charging-foreground = #ff4f4f
+format-charging-foreground = #f29dd6
 
 format-discharging = discharging: <label-discharging>
-format-discharging-foreground = #ff4f4f
+format-discharging-foreground = #f29dd6
 
-format-full = charged
-format-full-foreground = #ff4f4f
+format-full = fully charged
+format-full-foreground = #f29dd6
 
 
 [module/temperature]
@@ -201,6 +202,13 @@ format-foreground = #94e3d7
 label-warn = %temperature-c%
 format-warn = temp: <label-warn>
 format-warn-foreground = #f7805c
+
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+label = %output%
+label-foreground = #ffbaba
 
 
 [global/wm]
