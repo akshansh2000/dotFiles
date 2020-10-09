@@ -1,4 +1,5 @@
-printf '\n%.0s' {1..100}
+# printf '\n%.0s' {1..200}
+# tput cup $(tput lines) 0
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -147,6 +148,7 @@ alias open="xdg-open"
 alias pls="sudo"
 alias get="yes | sudo pacman -S"
 alias remove="yes | sudo pacman -R"
+alias clean="yes | yay -Sc"
 alias hs="history | grep"
 alias aux="ps aux | grep"
 alias kx="sudo kill -9"
@@ -179,7 +181,7 @@ alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29'
 alias push='git push'
 alias pull='git pull'
 alias add='git add'
-alias gadd='command git add .'
+alias gadd='command git add -A'
 alias branch='git branch'
 alias switch='git checkout'
 alias status='git status'
