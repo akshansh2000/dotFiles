@@ -63,8 +63,8 @@ URxvt.scrollBar: off
 *color4:  #46aede
 *color12: #46aede
 ! magenta
-*color5:  #ff4f4f
-*color13: #ff4f4f
+*color5:  #f7838f
+*color13: #f7838f
 ! cyan
 *color6:  #4a8c86
 *color14: #4a8c86
