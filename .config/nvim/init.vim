@@ -42,6 +42,7 @@ Plug 'junegunn/goyo.vim' " distraction-free vim
 Plug 'jiangmiao/auto-pairs' " auto close pairs and more
 Plug 'sheerun/vim-polyglot' " all language packs
 Plug 'Yggdroot/indentLine' " indentation lines
+Plug 'junegunn/limelight.vim' " focused lighting
 call plug#end()
 
 " markdown auto preview, don't close automatically
@@ -109,3 +110,20 @@ inoremap <C-a> <Esc>0i
 let g:indentLine_char = '¦'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '.'
+
+" limelight colors
+let g:limelight_conceal_ctermfg = 'DarkGrey'
+let g:limelight_default_coefficient = 0.1
+
+" goyo settings
+function! s:goyo_enter()
+  set rnu nu
+  Limelight
+endfunction
+
+function! s:goyo_leave()
+  Limelight!
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()

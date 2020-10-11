@@ -1,4 +1,4 @@
-option=$(echo -e "lock\nsuspend\nexit i3\nshut down" | rofi -i -dmenu -no-custom -p "exit session" -theme slate)
+option=$(echo -e "lock\nsuspend\nexit i3\nshut down" | rofi -i -dmenu -no-custom -p "exit session")
 
 if [ "$option" == "lock" ]; then
   .config/i3lock/.i3lockrc

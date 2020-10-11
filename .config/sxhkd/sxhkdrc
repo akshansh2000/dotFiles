@@ -20,7 +20,11 @@ XF86AudioMicMute
 
 # spawn
 mod4+d
-  rofi -show run -theme slate
+  rofi -show run
+
+# spawn
+mod4+shift+d
+  rofi -show drun
 
 # file manager
 mod4+shift+e
@@ -52,7 +56,7 @@ mod4+m
 
 # clipboard
 mod4+x
-  rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}' -theme slate
+  rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # complete screenshot
 Print

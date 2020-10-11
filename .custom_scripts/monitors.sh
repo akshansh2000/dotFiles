@@ -1,4 +1,4 @@
-option=$(echo -e "duplicate\nextend\nextend and scale eDP-1\noff" | rofi -i -dmenu -no-custom -p "xrandr" -theme slate)
+option=$(echo -e "duplicate\nextend\nextend and scale eDP-1\noff" | rofi -i -dmenu -no-custom -p "xrandr")
 
 if [ "$option" == "duplicate" ]; then
   mons -d
