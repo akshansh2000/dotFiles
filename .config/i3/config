@@ -15,6 +15,7 @@ exec --no-startup-id sxhkd
 exec --no-startup-id /home/akshansh2000/.custom_scripts/polybar.sh 
 exec --no-startup-id /home/akshansh2000/.custom_scripts/battery.sh
 exec --no-startup-id /home/akshansh2000/.custom_scripts/xinput.sh
+exec --no-startup-id udiskie
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
