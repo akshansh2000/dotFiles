@@ -1,4 +1,4 @@
-option=$(echo -e "nvim\nzsh\nxresources\ni3\nsxhkd\npolybar\ndunst\ni3lock\nrofi\nbash\nxinit\nxmonad\nxmobar\nalacritty" | rofi -show drun -i -dmenu --no-custom -p "config")
+option=$(echo -e "nvim\nzsh\nxresources\ni3\nsxhkd\ncustom scripts\npolybar\ndunst\ni3lock\nrofi\nbash\nxinit\nxmonad\nxmobar\nalacritty" | rofi -show drun -i -dmenu --no-custom -p "config")
 
 term=$(which urxvt)
 
@@ -30,4 +30,6 @@ elif [ $option == "xresources" ]; then
   $term -e nvim ~/.Xresources
 elif [ $option == "rofi" ]; then
   $term -e nvim ~/.config/rofi/config.rasi
+elif [ "$option" == "custom scripts" ]; then
+  ~/.custom_scripts/scripts_config.sh
 fi
