@@ -33,7 +33,7 @@ module-margin-right = 2
 
 font-0 = monospace:size=10:antialias=true;1
 
-modules-left = battery cpu temperature memory filesystem kernel
+modules-left = battery cpu temp memory filesystem kernel
 modules-center = i3
 modules-right = wlan eth pulseaudio backlight-acpi date
 
@@ -189,19 +189,12 @@ format-full = fully charged
 format-full-foreground = #f29dd6
 
 
-[module/temperature]
-type = internal/temperature
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input
-warn-temperature = 65
+[module/temp]
+type = custom/script
+exec = ~/.custom_scripts/temperature.sh
 interval = 1
 
-label = %temperature-c%
-format = temp: <label>
-format-foreground = #94e3d7
-
-label-warn = %temperature-c%
-format-warn = temp: <label-warn>
-format-warn-foreground = #f7805c
+label = %output%°C
 
 
 [module/kernel]
