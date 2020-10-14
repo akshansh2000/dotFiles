@@ -177,6 +177,7 @@ alias adbscrcpy='scrcpy -b2M -m800'
 # alias scrcpy='ADB=~/Android/Sdk/adb scrcpy'
 alias pm='~/Postman/app/Postman &'
 alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29'
+alias mpv='mpv --sub-scale=0.4'
 
 alias push='git push'
 alias pull='git pull'
