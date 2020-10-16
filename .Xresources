@@ -81,3 +81,6 @@ URxvt.internalBorder: 20
 
 ! transparency
 ! URxvt.depth: 32
+
+! for irssi
+rxvt.modifier: alt
