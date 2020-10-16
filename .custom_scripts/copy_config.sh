@@ -15,6 +15,7 @@ fileList=(
   .config/sxhkd
   .config/xmobar
   .custom_scripts
+  .irssi
   .p10k.zsh
   restart_network.sh
   Pictures/wallpapers
