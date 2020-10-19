@@ -1,20 +1,21 @@
+"=============================================================================
+" init.vim --- Entry file for neovim
+" Copyright (c) 2016-2020 Wang Shidong & Contributors
+" Author: Wang Shidong < wsdjeg@outlook.com >
+" URL: https://spacevim.org
+" License: GPLv3
+"=============================================================================
+
+execute 'source' fnamemodify(expand('<sfile>'), ':h').'/config/main.vim'
+
 " convert tab to 2 spaces
 set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" line numbers
-set relativenumber number
-
-" pair matching colors
-hi MatchParen cterm=bold ctermbg=none ctermfg=160
-
 " case insensitive search unless caps in search
 set ignorecase
 set smartcase
-
-" enable mouse support
-set mouse+=a
 
 " force out of bad habit of using arrow keys
 " normal mode
@@ -28,50 +29,14 @@ inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-" plugins
-call plug#begin()
-Plug 'preservim/nerdtree' " nerdtree navigation
-Plug 'rust-lang/rls' " rust rls server
-Plug 'rust-lang/rust.vim' " formatting
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " coc (code completion)
-Plug 'google/vim-maktaba' " multilang format
-Plug 'google/vim-codefmt' " multilang format
-Plug 'google/vim-glaive' " multilang format
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} " markdown preview
-Plug 'junegunn/goyo.vim' " distraction-free vim
-Plug 'jiangmiao/auto-pairs' " auto close pairs and more
-Plug 'sheerun/vim-polyglot' " all language packs
-Plug 'Yggdroot/indentLine' " indentation lines
-Plug 'junegunn/limelight.vim' " focused lighting
-call plug#end()
-
-" markdown auto preview, don't close automatically
-let g:mkdp_auto_close = 0
+let g:neomake_rust_enabled_makers = ['rustc']
 
 " multilang format
 call glaive#Install()
 
-" nerdtree shortcut
-map <C-n> :CocCommand explorer<CR>
-
-" coc suggestions
-" move between suggestions
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" <CR> to accept
-if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-endif
-
 " enable syntax highlighting and indent
 syntax enable
 filetype plugin indent on
-
-" pmenu colors
-hi Pmenu ctermbg=237 ctermfg=white
-hi PmenuSel ctermbg=246 ctermfg=black
 
 " autoformat on save
 augroup autoformat_settings
@@ -99,17 +64,9 @@ hi DiffDelete ctermbg=203 ctermfg=black
 let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<M-b>'
 
-" selection color
-hi Visual ctermbg=237
-
 " move to end and beginning of line while in insert mode
 inoremap <C-e> <Esc>$a
 inoremap <C-a> <Esc>0i
-
-" indentation characters
-let g:indentLine_char = '¦'
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '.'
 
 " limelight colors
 let g:limelight_conceal_ctermfg = 'DarkGrey'
@@ -127,3 +84,5 @@ endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+hi Visual ctermbg=232

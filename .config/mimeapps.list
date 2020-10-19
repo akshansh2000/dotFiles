@@ -3,3 +3,7 @@ x-scheme-handler/mailto=google-chrome.desktop
 application/pdf=mupdf.desktop;
 x-scheme-handler/webcal=google-chrome.desktop
 x-scheme-handler/kite=kite-copilot.desktop
+x-scheme-handler/lbry=lbry.desktop
+
+[Added Associations]
+text/x-python=nvim.desktop
