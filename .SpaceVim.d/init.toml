@@ -80,3 +80,11 @@ default_height = 30
 [[custom_plugins]]
   repo = "jiangmiao/auto-pairs"
   merged = false
+
+[[custom_plugins]]
+  repo = "ryanoasis/vim-devicons"
+  merged = false
+
+[[custom_plugins]]
+  repo = "lilydjwg/colorizer"
+  merged = false
