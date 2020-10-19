@@ -20,6 +20,7 @@ fileList=(
   restart_network.sh
   Pictures/wallpapers
   slate.rasi
+  .SpaceVim.d/init.toml
   .xinitrc
   .xmonad
   .Xresources
