@@ -341,6 +341,7 @@ export PATH='/home/akshansh2000/flutter/bin/cache/dart-sdk/bin':$PATH
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export EDITOR=/sbin/nvim
 export GOOGLE_CHROME_BIN=/usr/bin/google-chrome-stable
 export TERMINAL=/sbin/urxvt
 export BROWSER=$GOOGLE_CHROME_BIN

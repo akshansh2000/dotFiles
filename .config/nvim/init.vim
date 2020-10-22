@@ -65,8 +65,8 @@ let g:AutoPairsFlyMode = 0
 let g:AutoPairsShortcutBackInsert = '<M-b>'
 
 " move to end and beginning of line while in insert mode
-inoremap <C-e> <Esc>$a
-inoremap <C-a> <Esc>0i
+inoremap <C-e> <Esc>A
+inoremap <C-a> <Esc>I
 
 " limelight colors
 let g:limelight_conceal_ctermfg = 'DarkGrey'
