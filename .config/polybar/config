@@ -133,7 +133,7 @@ interval = 1
 
 format-connected = wifi: <label-connected>
 label-connected = %essid%
-format-connected-foreground = #84fa64
+format-connected-foreground = #88b87b
 
 format-disconnected = wifi: disconnected
 format-disconnected-foreground = #888888
@@ -180,13 +180,13 @@ adapter = ACAD
 full-at = 100
 
 format-charging = charging: <label-charging>
-format-charging-foreground = #f29dd6
+format-charging-foreground = #bf80aa
 
 format-discharging = discharging: <label-discharging>
-format-discharging-foreground = #f29dd6
+format-discharging-foreground = #bf80aa
 
 format-full = fully charged
-format-full-foreground = #f29dd6
+format-full-foreground = #bf80aa
 
 
 [module/temp]

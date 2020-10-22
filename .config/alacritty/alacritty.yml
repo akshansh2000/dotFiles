@@ -8,7 +8,7 @@ env:
 
 colors:
   primary:
-    background: "#212121"
+    background: "#262626"
 
     # background_opacity: 0.5
 
