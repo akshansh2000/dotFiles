@@ -354,6 +354,16 @@ source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
 source $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# ^e to enter vim edit mode
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+# use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
 # ~/Repositories/Color-Scripts/color-scripts/$(command ls ~/Repositories/Color-Scripts/color-scripts | sort -R | head -1)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

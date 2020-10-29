@@ -3,7 +3,7 @@
   border-color: #2e343f;
   text-color: #8ca0aa;
   spacing: 0;
-  width: 300px;
+  width: 800px;
 }
 
 inputbar {
@@ -31,7 +31,7 @@ listview {
   cycle: true;
   margin: 0 0 -1px 0;
   scrollbar: false;
-  lines: 8;
+  lines: 15;
 }
 
 element {

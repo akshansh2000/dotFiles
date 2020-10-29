@@ -69,3 +69,11 @@ mod4+Print
 # custom screenshot
 mod4+shift+Print
   scrot -a $(slop -f '%x,%y,%w,%h') -q 100 -e 'mv $f ~/Pictures/Screenshots/'
+
+# ranger
+mod4+ctrl+e
+  urxvt -e ranger
+
+# emojis
+mod4+z
+  ~/.custom_scripts/emojis.sh
