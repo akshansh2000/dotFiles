@@ -20,11 +20,11 @@ XF86AudioMicMute
 
 # spawn
 mod4+d
-  rofi -show run
+  rofi -show run -no-custom
 
 # spawn
 mod4+shift+d
-  rofi -show drun
+  rofi -show drun -no-custom
 
 # file manager
 mod4+shift+e
