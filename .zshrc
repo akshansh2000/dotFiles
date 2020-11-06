@@ -340,7 +340,8 @@ function cat() {
 }
 
 function qr() {
-  segno -s25 -o/tmp/qr.png "$@"
+  read string
+  segno -s25 -o/tmp/qr.png "$string"
   feh --full-screen /tmp/qr.png
 }
 

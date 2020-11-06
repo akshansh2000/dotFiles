@@ -90,3 +90,6 @@ hi Visual ctermbg=232
 
 " devicons
 let g:webdevicons_enable_vimfiler = 1
+
+" text wrapping
+set wrap
