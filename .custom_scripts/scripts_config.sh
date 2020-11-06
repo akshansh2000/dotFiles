@@ -1,6 +1,6 @@
 #!/bin/bash
 
-option=$(echo -e "battery\nconfig\ncopy_config\nemojis\nexit\nmonitors\npolybar\nscripts_config\ntemperature\nxinput" | rofi -i -dmenu -no-custom -p "custom scripts")
+option=$(for file in ~/.custom_scripts/*; do if [ -x "$file" ]; then echo $(basename $file); fi | cut -d. -f1; done | rofi -i -dmenu -p "custom scripts" -no-custom)
 
 if [ -f ~/.custom_scripts/$option.sh ]; then
   urxvt -e nvim ~/.custom_scripts/$option.sh
