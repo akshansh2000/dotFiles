@@ -10,8 +10,8 @@ font pango:monospace 10
 
 # autostart apps
 exec --no-startup-id compton
-exec --no-startup-id nitrogen --restore
 exec --no-startup-id sxhkd
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id /home/akshansh2000/.custom_scripts/polybar.sh 
 exec --no-startup-id /home/akshansh2000/.custom_scripts/battery.sh
 exec --no-startup-id /home/akshansh2000/.custom_scripts/xinput.sh
@@ -25,7 +25,7 @@ set $refresh_i3status killall -SIGUSR1 i3status
 floating_modifier $mod
 
 # kill focused window
-bindsym $mod+Shift+c kill
+bindsym $mod+q kill
 
 # window borders
 default_border pixel
