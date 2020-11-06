@@ -339,6 +339,11 @@ function cat() {
   bat $@
 }
 
+function qr() {
+  segno -s25 -o/tmp/qr.png "$@"
+  feh --full-screen /tmp/qr.png
+}
+
 export PATH="/home/akshansh2000/flutter/bin":$PATH
 export PATH='/home/akshansh2000/flutter/bin/cache/dart-sdk/bin':$PATH
 export ANDROID_HOME=$HOME/Android/Sdk
