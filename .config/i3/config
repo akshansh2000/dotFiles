@@ -17,6 +17,7 @@ exec --no-startup-id /home/akshansh2000/.custom_scripts/battery.sh
 exec --no-startup-id /home/akshansh2000/.custom_scripts/xinput.sh
 exec --no-startup-id udiskie
 exec --no-startup-id redshift -O 5500
+exec --no-startup-id xmodmap ~/.config/xmodmap/xmodmaprc
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

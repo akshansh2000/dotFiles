@@ -15,7 +15,7 @@ URxvt.secondaryScroll: 0
 URxvt.font: xft:monospace:size=10:antialias=true:minspace=false, xft:DejaVu Sans:size=8
 
 ! reduce spacing
-URxvt.letterSpace: -1
+URxvt.letterSpace: 0
 
 ! disable printing via lpr
 URxvt.print-pipe: "cat > /dev/null"
