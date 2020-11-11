@@ -1,4 +1,4 @@
-# printf '\n%.0s' {1..200}
+printf '\n%.0s' {1..200}
 # tput cup $(tput lines) 0
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
