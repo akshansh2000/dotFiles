@@ -152,6 +152,7 @@ alias clean="yes | yay -Sc"
 alias hs="history | grep"
 alias aux="ps aux | grep"
 alias kx="sudo kill -9"
+alias kxd="kill -9 `ps aux | grep discord | perl -nle 'm/(.*)(?=\/opt\/discord\/Discord)/; print $1' | cut -d' ' -f3 | head -1`"
 alias fr='flutter run'
 alias fpg='flutter pub get'
 alias fu='flutter upgrade'
