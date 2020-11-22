@@ -204,6 +204,7 @@ bindsym Mod1+l resize grow width 10 px or 10 ppt
 
 # discord sticky floating window
 for_window [class="discord"] sticky enable
+for_window [class="Google-chrome"] sticky enable
 
 # colors
 # class                 border  backgr  text    indicator child_border
