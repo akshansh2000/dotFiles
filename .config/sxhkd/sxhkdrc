@@ -77,3 +77,7 @@ mod4+ctrl+e
 # emojis
 mod4+z
   ~/.custom_scripts/emojis.sh
+
+# dunst toggle
+mod4+grave
+  ~/.custom_scripts/dunst_toggle.sh
