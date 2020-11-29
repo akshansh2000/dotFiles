@@ -7,6 +7,7 @@ fileList=(
   .config/i3
   .config/i3lock
   .config/mimeapps.list
+  .config/mpv/mpv.conf
   .config/nvim/init.vim
   .config/picom.conf
   .config/polybar
