@@ -151,8 +151,8 @@ alias remove="yes | sudo pacman -R"
 alias clean="yes | yay -Sc"
 alias hs="history | grep"
 alias aux="ps aux | grep"
-alias kx="sudo kill -9"
-alias kxd="kill -9 `ps aux | grep discord | perl -nle 'm/(.*)(?=\/opt\/discord\/Discord)/; print $1' | cut -d' ' -f3 | head -1`"
+alias kx="kill -9"
+alias skx="sudo kill -9"
 alias fr='flutter run'
 alias fpg='flutter pub get'
 alias fu='flutter upgrade'
@@ -179,7 +179,6 @@ alias adbscrcpy='scrcpy -b2M -m800'
 # alias scrcpy='ADB=~/Android/Sdk/adb scrcpy'
 alias pm='~/Postman/app/Postman &'
 alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29'
-alias mpv='mpv --sub-scale=0.35 --slang=en,eng'
 alias v='nvim'
 alias sv='sudo nvim'
 
