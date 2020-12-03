@@ -6,6 +6,7 @@ while true; do
 
   if [ $batteryLevel -lt 20 -a $batteryStatus == "Discharging" ]; then
     i3-msg "fullscreen disable"
+    dunstctl set-paused false
     notify-send -a "Power Level" "Battery Low ($batteryLevel%)" "You might want to plug in to a power source."
   fi
 done
