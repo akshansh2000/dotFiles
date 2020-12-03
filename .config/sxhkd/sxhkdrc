@@ -36,6 +36,8 @@ mod4+shift+q
 
 # browser
 mod4+b
+  qutebrowser
+mod4+shift+b
   google-chrome-stable
 
 # config files
