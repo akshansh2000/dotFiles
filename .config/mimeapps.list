@@ -2,6 +2,11 @@
 x-scheme-handler/mailto=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/webcal=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/lbry=lbry.desktop
+text/html=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
+x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
 
 [Added Associations]
 text/x-python=nvim.desktop
