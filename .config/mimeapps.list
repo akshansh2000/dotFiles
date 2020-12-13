@@ -10,5 +10,5 @@ x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
 
 [Added Associations]
 text/x-python=nvim.desktop
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
 text/html=org.qutebrowser.qutebrowser.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
