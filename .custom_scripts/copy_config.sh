@@ -18,9 +18,9 @@ fileList=(
   .custom_scripts
   .irssi
   .p10k.zsh
+  custom.rasi
   restart_network.sh
   Pictures/wallpapers
-  slate.rasi
   .SpaceVim.d/init.toml
   .xinitrc
   .xmonad
