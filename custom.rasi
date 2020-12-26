@@ -3,8 +3,8 @@
   border-color: #2e343f00;
   text-color: #8ca0aa;
   spacing: 0;
-  width: 1920px;
-  height: 1080px;
+  width: 30%;
+  height: 50%;
 }
 
 inputbar {
