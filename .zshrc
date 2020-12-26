@@ -279,7 +279,7 @@ function rs() {
 
 function gcc() {
   builtin cd ~/Repositories
-  git clone "$1"
+  git clone "$@"
   cd `basename -s .git "$1"`  
 }
 
