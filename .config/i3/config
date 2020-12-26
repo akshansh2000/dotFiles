@@ -11,7 +11,8 @@ font pango:monospace 10
 # autostart apps
 exec --no-startup-id compton
 exec --no-startup-id sxhkd
-exec --no-startup-id nitrogen --restore
+# exec --no-startup-id nitrogen --restore
+exec --no-startup-id feh --bg-fill /home/akshansh2000/Pictures/wallpapers/wallpaper
 exec --no-startup-id /home/akshansh2000/.custom_scripts/polybar.sh 
 exec --no-startup-id /home/akshansh2000/.custom_scripts/battery.sh
 exec --no-startup-id /home/akshansh2000/.custom_scripts/xinput.sh
