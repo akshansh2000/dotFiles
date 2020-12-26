@@ -83,3 +83,7 @@ mod4+z
 # dunst toggle
 mod4+grave
   ~/.custom_scripts/dunst_toggle.sh
+
+# taskell
+mod4+t
+  ~/.custom_scripts/taskell.sh
