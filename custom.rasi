@@ -1,5 +1,5 @@
 * {
-  background-color: #26262690;
+  background-color: #26262670;
   border-color: #2e343f00;
   text-color: #8ca0aa;
   spacing: 0;
@@ -36,6 +36,7 @@ listview {
   scrollbar: false;
   lines: 12;
   padding: 8px 0px;
+  background-color: #26262670;
 }
 
 element {
@@ -46,4 +47,5 @@ element {
 
 element selected {
   text-color: #8ca0aa;
+  background-color: #26262670;
 }
