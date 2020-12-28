@@ -40,9 +40,6 @@ modules-right = wlan eth pulseaudio backlight-acpi date
 tray-position = none
 tray-padding = 0
 
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-
 cursor-click = pointer
 
 
