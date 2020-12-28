@@ -372,7 +372,7 @@ source $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.z
 
 # ^e to enter vim edit mode
 autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
+bindkey '^[e' edit-command-line
 
 # use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
