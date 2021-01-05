@@ -365,6 +365,7 @@ export PATH=$PATH:/home/akshansh2000/.local/bin
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:/home/akshansh2000/.emacs.d/bin
 export PATH=$PATH:/home/akshansh2000/.cargo/bin
+export PATH=$PATH:/home/akshansh2000/.gem/ruby/2.7.0/bin
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
