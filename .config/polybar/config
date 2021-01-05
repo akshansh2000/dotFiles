@@ -1,5 +1,5 @@
 [colors]
-background = #000000
+background = #80000000
 background-alt = #444
 foreground = #dfdfdf
 foreground-alt = #555
@@ -11,7 +11,7 @@ alert = #bd2c40
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 30
+height = 40
 offset-y = 0%
 radius = 0.0
 fixed-center = false
@@ -36,6 +36,7 @@ modules-center = i3
 modules-right = wlan eth pulseaudio backlight-acpi date
 
 font-0 = monospace:size=10:antialias=true;1
+font-2 = monspace:size=16:antialias=true;1
 
 tray-position = none
 tray-padding = 0
@@ -46,7 +47,7 @@ cursor-click = pointer
 [bar/bottom]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 30
+height = 40
 offset-y = 0%
 radius = 0.0
 fixed-center = false
@@ -66,6 +67,8 @@ padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 2
+
+modules-center = i3-windows
 
 font-0 = monospace:size=10:antialias=true;1
 
@@ -231,6 +234,12 @@ type = custom/script
 exec = uname -r
 label = %output%
 label-foreground = #ffbaba
+
+
+[module/i3-windows]
+type = custom/script
+exec = ~/Repositories/polybar-i3-windows/module.py
+tail = true
 
 
 [global/wm]
