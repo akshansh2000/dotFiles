@@ -8,13 +8,86 @@ secondary = #e60053
 alert = #bd2c40
 
 
+[bar/top_underlay]
+monitor = ${env:MONITOR:}
+width = 98%
+height = 40
+offset-x = 1%
+offset-y = 0.6%
+radius = 15.0
+fixed-center = false
+
+background = #00000000
+foreground = #00000000
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #263238
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+modules-center = blank
+
+font-0 = monospace:size=10:antialias=true;1
+font-2 = monspace:size=16:antialias=true;1
+
+tray-position = none
+tray-padding = 0
+
+cursor-click = pointer
+
+
+[bar/bottom_underlay]
+monitor = ${env:MONITOR:}
+width = 98%
+height = 40
+offset-x = 1%
+offset-y = 0.6%
+radius = 15.0
+fixed-center = false
+bottom = true
+
+background = #00000000
+foreground = #00000000
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #263238
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+modules-center = blank
+
+font-0 = monospace:size=10:antialias=true;1
+font-2 = monspace:size=16:antialias=true;1
+
+tray-position = none
+tray-padding = 0
+
+cursor-click = pointer
+
+
 [bar/top]
 monitor = ${env:MONITOR:}
-width = 100%
+width = 98%
 height = 40
-offset-y = 0%
-radius = 0.0
+offset-x = 1%
+offset-y = 0.6%
+radius = 15.0
 fixed-center = false
+override-redirect = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -46,12 +119,14 @@ cursor-click = pointer
 
 [bar/bottom]
 monitor = ${env:MONITOR:}
-width = 100%
+width = 98%
 height = 40
-offset-y = 0%
-radius = 0.0
+offset-x = 1%
+offset-y = 0.6%
+radius = 15.0
 fixed-center = false
 bottom = true
+override-redirect = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -240,6 +315,11 @@ label-foreground = #ffbaba
 type = custom/script
 exec = ~/Repositories/polybar-i3-windows/module.py
 tail = true
+
+
+[module/blank]
+type = custom/script
+exec = echo ""
 
 
 [global/wm]
