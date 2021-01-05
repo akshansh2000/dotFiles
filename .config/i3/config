@@ -30,9 +30,9 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # window borders
-default_border pixel
-default_floating_border pixel
-hide_edge_borders smart
+default_border none
+default_floating_border none
+# hide_edge_borders smart
 
 # change focus
 bindsym $mod+h focus left
