@@ -16,6 +16,7 @@ offset-x = 1%
 offset-y = 0.6%
 radius = 15.0
 fixed-center = false
+wm-restack = i3
 
 background = #00000000
 foreground = #00000000
@@ -52,6 +53,7 @@ offset-y = 0.6%
 radius = 15.0
 fixed-center = false
 bottom = true
+wm-restack = i3
 
 background = #00000000
 foreground = #00000000
@@ -88,6 +90,7 @@ offset-y = 0.6%
 radius = 15.0
 fixed-center = false
 override-redirect = true
+wm-restack = i3
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -127,6 +130,7 @@ radius = 15.0
 fixed-center = false
 bottom = true
 override-redirect = true
+wm-restack = i3
 
 background = ${colors.background}
 foreground = ${colors.foreground}
