@@ -201,10 +201,10 @@ bindsym $mod+Shift+r restart
 workspace_auto_back_and_forth yes
 
 # resize window (you can also use the mouse for that)
-bindsym Mod1+h resize shrink width 10 px or 10 ppt
-bindsym Mod1+j resize grow height 10 px or 10 ppt
-bindsym Mod1+k resize shrink height 10 px or 10 ppt
-bindsym Mod1+l resize grow width 10 px or 10 ppt
+bindsym Mod1+h resize shrink width 5 px or 5 ppt
+bindsym Mod1+j resize grow height 5 px or 5 ppt
+bindsym Mod1+k resize shrink height 5 px or 5 ppt
+bindsym Mod1+l resize grow width 5 px or 5 ppt
 
 # discord sticky floating window
 for_window [class="discord"] sticky enable
