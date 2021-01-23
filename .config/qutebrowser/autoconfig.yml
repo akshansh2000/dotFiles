@@ -6,8 +6,40 @@
 
 config_version: 2
 settings:
+  colors.completion.category.bg:
+    global: '#171a1f'
+  colors.completion.even.bg:
+    global: '#171a1f'
+  colors.completion.item.selected.bg:
+    global: white
+  colors.completion.item.selected.border.bottom:
+    global: white
+  colors.completion.item.selected.border.top:
+    global: white
+  colors.completion.item.selected.fg:
+    global: black
+  colors.completion.item.selected.match.fg:
+    global: darkred
+  colors.completion.match.fg:
+    global: lightblue
+  colors.completion.odd.bg:
+    global: '#272a2f'
+  colors.statusbar.command.bg:
+    global: '#272a2f'
+  colors.statusbar.insert.bg:
+    global: white
+  colors.statusbar.insert.fg:
+    global: black
   colors.statusbar.normal.bg:
-    global: '#171A1F'
+    global: '#272a2f'
+  colors.statusbar.url.error.fg:
+    global: '#877887'
+  colors.statusbar.url.hover.fg:
+    global: '#877887'
+  colors.statusbar.url.success.https.fg:
+    global: white
+  colors.statusbar.url.warn.fg:
+    global: '#877887'
   colors.tabs.bar.bg:
     global: '#171A1F'
   colors.tabs.even.bg:
@@ -15,11 +47,19 @@ settings:
   colors.tabs.odd.bg:
     global: '#171A1F'
   colors.tabs.selected.even.bg:
-    global: black
+    global: '#272a2f'
+  colors.tabs.selected.even.fg:
+    global: white
   colors.tabs.selected.odd.bg:
-    global: black
+    global: '#272a2f'
+  colors.tabs.selected.odd.fg:
+    global: white
   colors.webpage.bg:
     global: '#171A1F'
+  colors.webpage.darkmode.enabled:
+    global: true
+  colors.webpage.prefers_color_scheme_dark:
+    global: true
   content.autoplay:
     global: false
   content.geolocation:
