@@ -164,9 +164,9 @@ interval = 30
 mount-0 = /
 
 label-mounted = hdd: %free% free
-label-mounted-foreground = #93a9f5
+# label-mounted-foreground = #93a9f5
 label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = #e02f2f
+# label-unmounted-foreground = #e02f2f
 
 
 [module/i3]
@@ -218,7 +218,7 @@ type = internal/backlight
 card = intel_backlight
 
 label = disp: %percentage%%
-label-foreground = #c3e88d
+# label-foreground = #c3e88d
 
 
 [module/cpu]
@@ -226,7 +226,7 @@ type = internal/cpu
 interval = 1
 
 label = cpu: %percentage%%
-label-foreground = #efb668
+# label-foreground = #efb668
 
 
 [module/memory]
@@ -234,7 +234,7 @@ type = internal/memory
 interval = 1
 
 label = ram: %percentage_used%%
-label-foreground = #db9540
+# label-foreground = #db9540
 
 
 [module/wlan]
@@ -244,10 +244,10 @@ interval = 1
 
 format-connected = wifi: <label-connected>
 label-connected = %essid%
-format-connected-foreground = #88b87b
+# format-connected-foreground = #88b87b
 
 format-disconnected = wifi: disconnected
-format-disconnected-foreground = #888888
+# format-disconnected-foreground = #888888
 
 
 [module/eth]
@@ -256,10 +256,10 @@ interface = enp59s0
 interval = 1
 
 label-connected = eth: %local_ip%
-label-connected-foreground = #7dc6f0
+# label-connected-foreground = #7dc6f0
 
 format-disconnected = eth: disconnected
-format-disconnected-foreground = #888888
+# format-disconnected-foreground = #888888
 
 
 [module/date]
@@ -270,7 +270,7 @@ date = %a, %b %d
 time = %I:%M %p
 
 label = %date% | %time%
-label-foreground = #caa5e6
+# label-foreground = #caa5e6
 
 
 [module/pulseaudio]
@@ -278,10 +278,10 @@ type = internal/pulseaudio
 
 format-volume = <label-volume>
 label-volume = vol: %percentage%%
-label-volume-foreground = #ff4f4f
+# label-volume-foreground = #ff4f4f
 
 label-muted = vol: muted
-label-muted-foreground = #888888
+# label-muted-foreground = #888888
 
 
 [module/battery]
@@ -291,13 +291,13 @@ adapter = ACAD
 full-at = 100
 
 format-charging = charging: <label-charging>
-format-charging-foreground = #bf80aa
+# format-charging-foreground = #bf80aa
 
 format-discharging = discharging: <label-discharging>
-format-discharging-foreground = #bf80aa
+# format-discharging-foreground = #bf80aa
 
 format-full = fully charged
-format-full-foreground = #bf80aa
+# format-full-foreground = #bf80aa
 
 
 [module/temp]
@@ -312,7 +312,7 @@ label = %output%°C
 type = custom/script
 exec = uname -r
 label = %output%
-label-foreground = #ffbaba
+# label-foreground = #ffbaba
 
 
 [module/i3-windows]
