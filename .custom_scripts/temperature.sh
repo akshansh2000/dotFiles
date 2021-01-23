@@ -6,7 +6,7 @@ temperatureFile=`echo $output | perl -nle 'm/((?<=Package id 0 ).+(?= coretemp: 
 
 temperature=`\cat $temperatureFile`
 if [ $temperature -gt 65000 ]; then
-  echo %{F#f7805c}temp: ${temperature:0:2}
+  echo temp: ${temperature:0:2}
 else
-  echo %{F#94e3d7}temp: ${temperature:0:2}
+  echo temp: ${temperature:0:2}
 fi
