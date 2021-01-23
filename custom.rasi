@@ -1,5 +1,5 @@
 * {
-  background-color: #26262670;
+  background-color: #171A1F70;
   border-color: #2e343f00;
   text-color: #8ca0aa;
   spacing: 0;
@@ -36,16 +36,16 @@ listview {
   scrollbar: false;
   lines: 12;
   padding: 8px 0px;
-  background-color: #26262670;
+  background-color: #171A1F70;
 }
 
 element {
   border: 0 0 0px 0;
   padding: 12px 16px;
-  text-color: #665c54;
+  text-color: #777;
 }
 
 element selected {
   text-color: #8ca0aa;
-  background-color: #26262670;
+  background-color: #171A1F70;
 }
