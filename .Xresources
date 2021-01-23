@@ -42,7 +42,7 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! URxvt appearance
-URxvt.background: [70]#000000
+URxvt.background: [70]#171A1F
 URxvt.foreground: #ebdbb2
 URxvt.scrollBar: off
 

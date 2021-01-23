@@ -11,6 +11,7 @@ fileList=(
   .config/nvim/init.vim
   .config/picom.conf
   .config/polybar
+  .config/qutebrowser
   .config/ranger
   .config/rofi
   .config/sxhkd
