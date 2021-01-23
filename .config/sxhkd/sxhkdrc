@@ -1,6 +1,6 @@
 # terminal
 mod4+Return
-  urxvt
+  alacritty
 
 # vol up
 XF86AudioRaiseVolume

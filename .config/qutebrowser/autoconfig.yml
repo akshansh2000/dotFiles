@@ -11,11 +11,11 @@ settings:
   colors.completion.even.bg:
     global: '#171a1f'
   colors.completion.item.selected.bg:
-    global: white
+    global: '#aaa'
   colors.completion.item.selected.border.bottom:
-    global: white
+    global: '#aaa'
   colors.completion.item.selected.border.top:
-    global: white
+    global: '#aaa'
   colors.completion.item.selected.fg:
     global: black
   colors.completion.item.selected.match.fg:
