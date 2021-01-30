@@ -6,6 +6,9 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      normal: {}
   colors.completion.category.bg:
     global: '#171a1f'
   colors.completion.even.bg:
@@ -77,6 +80,7 @@ settings:
     https://meet.google.com: true
     https://web.whatsapp.com: true
     https://www.bennish.net: true
+    https://www.facebook.com: false
     https://www.instagram.com: true
     https://www.reddit.com: true
   content.pdfjs:
