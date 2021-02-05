@@ -15,6 +15,10 @@ XF86AudioMute
   pulseaudio-ctl mute
 
 # mic mute
+shift+XF86AudioMute
+  ~/.custom_scripts/mute_mic.sh
+
+# mic mute
 XF86AudioMicMute
   pulseaudio-ctl mute-input
 
