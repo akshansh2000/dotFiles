@@ -58,9 +58,9 @@ settings:
   colors.tabs.selected.odd.fg:
     global: white
   colors.webpage.bg:
-    global: '#171A1F'
+    global: white
   colors.webpage.darkmode.enabled:
-    global: false
+    global: true
   colors.webpage.prefers_color_scheme_dark:
     global: true
   content.autoplay:

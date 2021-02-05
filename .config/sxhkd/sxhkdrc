@@ -74,7 +74,7 @@ mod4+shift+Print
 
 # ranger
 mod4+ctrl+e
-  urxvt -e ranger
+  alacritty -e ranger
 
 # emojis
 mod4+z
