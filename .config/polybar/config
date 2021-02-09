@@ -109,7 +109,7 @@ module-margin-right = 2
 
 modules-left = battery cpu temp memory filesystem kernel
 modules-center = i3
-modules-right = wlan eth pulseaudio backlight-acpi date
+modules-right = wlan eth pulseaudio backlight-acpi date mic-dot
 
 font-0 = monospace:size=10:antialias=true;1
 font-2 = monspace:size=16:antialias=true;1
@@ -329,3 +329,11 @@ exec = echo ""
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+
+[module/mic-dot]
+type = custom/script
+exec = ~/.custom_scripts/mic_dot.sh
+interval = 1
+
+label = %output%
