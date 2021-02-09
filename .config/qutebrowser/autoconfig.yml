@@ -47,8 +47,12 @@ settings:
     global: '#171A1F'
   colors.tabs.even.bg:
     global: '#171A1F'
+  colors.tabs.even.fg:
+    global: '#777'
   colors.tabs.odd.bg:
     global: '#171A1F'
+  colors.tabs.odd.fg:
+    global: '#777'
   colors.tabs.selected.even.bg:
     global: '#272a2f'
   colors.tabs.selected.even.fg:
@@ -87,6 +91,8 @@ settings:
     global: true
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  fonts.default_size:
+    global: 8pt
   tabs.last_close:
     global: close
   url.default_page:
