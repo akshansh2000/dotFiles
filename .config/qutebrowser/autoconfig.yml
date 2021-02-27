@@ -8,7 +8,8 @@ config_version: 2
 settings:
   bindings.commands:
     global:
-      normal: {}
+      normal:
+        W: open -p
   colors.completion.category.bg:
     global: '#171a1f'
   colors.completion.even.bg:
@@ -70,6 +71,7 @@ settings:
   content.autoplay:
     global: false
   content.geolocation:
+    https://www.bestbuy.ca: false
     https://www.google.com: true
   content.media.audio_capture:
     https://meet.google.com: true
