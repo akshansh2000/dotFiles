@@ -9,7 +9,7 @@ font pango:monospace 0
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # autostart apps
-exec --no-startup-id compton
+exec --no-startup-id picom
 exec --no-startup-id sxhkd
 # exec --no-startup-id nitrogen --restore
 exec --no-startup-id feh --bg-fill /home/akshansh2000/Pictures/wallpapers/wallpaper

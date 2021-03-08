@@ -1,3 +1,7 @@
+# environment variables
+source ~/.profile
+
+# shift prompt to bottom
 printf '\n%.0s' {1..200}
 # tput cup $(tput lines) 0
 
@@ -348,6 +352,18 @@ function qr() {
   read string
   segno -s25 -o/tmp/qr.png "$string"
   feh --full-screen /tmp/qr.png
+}
+
+function gpush() {
+  repo_name=`basename \`pwd\``
+  [[ $1 = -p ]] && is_private=true || is_private=false
+
+  curl -i -H "Authorization: token $REPO_TOKEN_GITHUB" -d '{ "name": "'$repo_name'", "private": '$is_private' }' https://api.github.com/user/repos
+
+  git checkout -b main
+  git branch -D master
+  git remote add origin https://github.com/akshansh2000/$repo_name.git
+  git push -u origin main
 }
 
 export PATH="/home/akshansh2000/flutter/bin":$PATH

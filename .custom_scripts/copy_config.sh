@@ -25,6 +25,7 @@ fileList=(
   .SpaceVim.d/init.toml
   .xinitrc
   .xmonad
+  .xprofile
   .Xresources
   .zsh_history
   .zshrc
