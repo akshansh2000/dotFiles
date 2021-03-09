@@ -360,6 +360,8 @@ function gpush() {
 
   curl -i -H "Authorization: token $REPO_TOKEN_GITHUB" -d '{ "name": "'$repo_name'", "private": '$is_private' }' https://api.github.com/user/repos
 
+  git add --all
+  git commit -m "initial commit"
   git checkout -b main
   git branch -D master
   git remote add origin https://github.com/akshansh2000/$repo_name.git
