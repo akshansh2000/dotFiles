@@ -176,6 +176,8 @@ alias perm='stat -c "%a"'
 alias rm='rm -rf'
 alias cc='~/.custom_scripts/copy_config.sh && cd ~/Repositories/dotFiles'
 alias fonts='display "$(fc-list | cut -d: -f1 | rofi -i -dmenu -p -no-custom fonts)"'
+alias bon='bluetoothctl power on && bluetoothctl connect 98:09:CF:F2:BC:66'
+alias boff='bluetoothctl power off'
 
 alias repo='cd ~/Repositories'
 alias top='cd `git rev-parse --show-toplevel`'
