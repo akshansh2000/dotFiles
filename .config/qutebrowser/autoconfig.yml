@@ -65,7 +65,7 @@ settings:
   colors.webpage.bg:
     global: white
   colors.webpage.darkmode.enabled:
-    global: true
+    global: false
   colors.webpage.prefers_color_scheme_dark:
     global: true
   content.autoplay:
