@@ -160,7 +160,7 @@ alias clean="yes | yay -Sc"
 alias hs="history | grep"
 alias aux="ps aux | grep"
 alias kx="kill -9"
-alias kxd="kill -9 `ps aux | grep lightcord | perl -nle 'm/(.*)lightcord\s*$/; print $1' | awk '{print $2}' | head -1`"
+alias kxd="kill -9 `ps aux | grep discord | perl -nle 'm/(.*)Discord\s*$/; print $1' | awk '{print $2}' | head -1`"
 alias skx="sudo kill -9"
 alias fr='flutter run'
 alias fpg='flutter pub get'
@@ -362,6 +362,7 @@ function gpush() {
 
   curl -i -H "Authorization: token $REPO_TOKEN_GITHUB" -d '{ "name": "'$repo_name'", "private": '$is_private' }' https://api.github.com/user/repos
 
+  git init
   git add --all
   git commit -m "initial commit"
   git checkout -b main
@@ -385,6 +386,7 @@ export PATH=$PATH:/snap/bin
 export PATH=$PATH:/home/akshansh2000/.emacs.d/bin
 export PATH=$PATH:/home/akshansh2000/.cargo/bin
 export PATH=$PATH:/home/akshansh2000/.gem/ruby/2.7.0/bin
+export XAUTHORITY=~/.Xauthority
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.oh-my-zsh/plugins/calc/calc.plugin.zsh
