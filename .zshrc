@@ -193,6 +193,7 @@ alias pm='~/Postman/app/Postman &'
 alias nexus='~/Android/Sdk/emulator/emulator -avd Nexus_S_API_29'
 alias v='nvim'
 alias sv='sudo nvim'
+alias e='emacsclient -ncs emacsDaemon'
 
 alias push='git push'
 alias pull='git pull'
