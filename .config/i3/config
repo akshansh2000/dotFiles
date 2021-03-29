@@ -19,6 +19,7 @@ exec --no-startup-id /home/akshansh2000/.custom_scripts/xinput.sh
 exec --no-startup-id udiskie
 exec --no-startup-id redshift -O 5500
 exec --no-startup-id xmodmap ~/.config/xmodmap/xmodmaprc
+exec --no-startup-id emacs --daemon=emacsDaemon
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -192,10 +193,8 @@ gaps outer 12
 # title alignment
 title_align center
 
-# reload the configuration file
-# bindsym $mod+Shift+q reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+# reload gui components (kinda)
+bindsym $mod+Shift+r exec ~/.custom_scripts/reload.sh
 
 # workspace switching same key
 workspace_auto_back_and_forth yes
