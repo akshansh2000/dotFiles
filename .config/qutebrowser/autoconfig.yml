@@ -66,18 +66,20 @@ settings:
     global: white
   colors.webpage.darkmode.enabled:
     global: false
-  colors.webpage.prefers_color_scheme_dark:
-    global: true
+  colors.webpage.preferred_color_scheme:
+    global: dark
   content.autoplay:
     global: false
   content.geolocation:
     https://www.bestbuy.ca: false
     https://www.google.com: true
   content.media.audio_capture:
+    https://discord.com: true
     https://meet.google.com: true
   content.media.audio_video_capture:
     https://meet.google.com: true
   content.media.video_capture:
+    https://discord.com: true
     https://meet.google.com: true
   content.mouse_lock:
     https://www.figma.com: true
