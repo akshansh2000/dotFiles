@@ -9,6 +9,7 @@ settings:
   bindings.commands:
     global:
       normal:
+        Q: :open radiant-brushlands-42789.herokuapp.com/{url:host}/{url:path}
         W: open -p
   colors.completion.category.bg:
     global: '#171a1f'
