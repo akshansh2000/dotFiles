@@ -86,6 +86,7 @@ settings:
     https://www.figma.com: true
   content.notifications:
     https://drive.google.com: true
+    https://dubs5k.xyz: false
     https://meet.google.com: true
     https://web.whatsapp.com: true
     https://www.bennish.net: true
