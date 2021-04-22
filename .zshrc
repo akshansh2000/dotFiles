@@ -263,6 +263,8 @@ function up() {
 
 function c() {
   file_name=`basename -s .cpp "$1"`
+  file_name=`basename -s .c "$file_name"`
+
   g++ -std=c++17 -o "$file_name" "$@"
   
   if [ -f "$file_name" ]; then
