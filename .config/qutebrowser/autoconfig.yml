@@ -84,7 +84,7 @@ settings:
     https://meet.google.com: true
   content.mouse_lock:
     https://www.figma.com: true
-  content.notifications:
+  content.notifications.enabled:
     https://drive.google.com: true
     https://dubs5k.xyz: false
     https://meet.google.com: true
@@ -92,6 +92,7 @@ settings:
     https://www.bennish.net: true
     https://www.facebook.com: false
     https://www.instagram.com: true
+    https://www.netflix.com: false
     https://www.reddit.com: true
   content.pdfjs:
     global: true
