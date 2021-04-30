@@ -7,7 +7,6 @@ x-scheme-handler/about=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/lbry=lbry.desktop
-
 text/html=org.qutebrowser.qutebrowser.desktop;
 image/x-eps=feh-usercreated-1.desktop;
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
@@ -20,6 +19,7 @@ text/x-arduino=emacsclient-usercreated-2.desktop;
 application/x-shellscript=emacsclient-usercreated-2.desktop;
 application/x-perl=emacsclient-usercreated-2.desktop;
 application/json=emacsclient-usercreated-2.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-90XE20.desktop
 
 [Added Associations]
 text/html=org.qutebrowser.qutebrowser.desktop;
@@ -34,3 +34,4 @@ text/x-arduino=emacsclient-usercreated-2.desktop;
 application/x-shellscript=emacsclient-usercreated-2.desktop;
 application/x-perl=emacsclient-usercreated-2.desktop;
 application/json=emacsclient-usercreated-2.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-90XE20.desktop;
