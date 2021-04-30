@@ -16,6 +16,7 @@ fileList=(
   .config/rofi
   .config/sxhkd
   .config/xmobar
+  .config/xmodmap
   .custom_scripts
   .irssi
   .p10k.zsh
