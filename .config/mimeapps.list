@@ -20,6 +20,8 @@ application/x-shellscript=emacsclient-usercreated-2.desktop;
 application/x-perl=emacsclient-usercreated-2.desktop;
 application/json=emacsclient-usercreated-2.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-90XE20.desktop
+image/png=feh.desktop;
+image/jpeg=feh.desktop;
 
 [Added Associations]
 text/html=org.qutebrowser.qutebrowser.desktop;
@@ -35,3 +37,5 @@ application/x-shellscript=emacsclient-usercreated-2.desktop;
 application/x-perl=emacsclient-usercreated-2.desktop;
 application/json=emacsclient-usercreated-2.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-90XE20.desktop;
+image/png=feh.desktop;
+image/jpeg=feh.desktop;

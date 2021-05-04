@@ -91,3 +91,7 @@ mod4+grave
 # taskell
 mod4+t
   ~/.custom_scripts/taskell.sh
+
+# bpytop
+mod4+p
+  alacritty -e bpytop

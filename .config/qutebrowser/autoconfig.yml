@@ -72,6 +72,7 @@ settings:
   content.autoplay:
     global: false
   content.geolocation:
+    https://online.kfc.co.in: false
     https://www.bestbuy.ca: false
     https://www.google.com: true
   content.media.audio_capture:
@@ -85,9 +86,11 @@ settings:
   content.mouse_lock:
     https://www.figma.com: true
   content.notifications.enabled:
+    https://0.checkup08.biz: false
     https://drive.google.com: true
     https://dubs5k.xyz: false
     https://meet.google.com: true
+    https://online.kfc.co.in: false
     https://web.whatsapp.com: true
     https://www.bennish.net: true
     https://www.facebook.com: false
