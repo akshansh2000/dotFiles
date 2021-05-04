@@ -20,7 +20,7 @@ exec --no-startup-id udiskie
 exec --no-startup-id redshift -O 5500
 exec --no-startup-id xmodmap ~/.config/xmodmap/xmodmaprc
 exec --no-startup-id emacs --daemon=emacsDaemon
-exec --no-startup-id i3-msg 'workspace 20:X; exec spotify; workspace 20:X'
+# exec --no-startup-id i3-msg 'workspace 20:X; exec spotify; workspace 20:X'
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -189,8 +189,8 @@ bindsym $mod+Mod2+Shift+KP_Up move container to workspace $ws18; workspace $ws18
 bindsym $mod+Mod2+Shift+KP_Prior move container to workspace $ws19; workspace $ws19
 
 # i3-gaps specific
-gaps inner 8
-gaps outer 12
+# gaps inner 8
+# gaps outer 12
 
 # title alignment
 title_align center
