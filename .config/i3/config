@@ -20,6 +20,7 @@ exec --no-startup-id udiskie
 exec --no-startup-id redshift -O 5500
 exec --no-startup-id xmodmap ~/.config/xmodmap/xmodmaprc
 exec --no-startup-id emacs --daemon=emacsDaemon
+exec --no-startup-id i3-msg 'workspace 20:X; exec spotify; workspace 20:X'
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -31,9 +32,10 @@ floating_modifier $mod
 bindsym $mod+q kill
 
 # window borders
-default_border none
+# default_border none
+default_border pixel 5px
 default_floating_border none
-# hide_edge_borders smart
+hide_edge_borders smart
 
 # change focus
 bindsym $mod+h focus left
