@@ -10,7 +10,7 @@ colors:
   primary:
     background: "#171A1F"
 
-background_opacity: 0.7
+# background_opacity: 0.7
 
 window:
   padding:

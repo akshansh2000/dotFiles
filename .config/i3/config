@@ -211,6 +211,7 @@ bindsym Mod1+l resize grow width 5 px or 5 ppt
 for_window [class="discord"] sticky enable
 for_window [class="lightcord"] sticky enable
 for_window [class="qutebrowser"] sticky enable
+for_window [class="polybar"] border normal 0
 
 # colors
 # class                 border  backgr  text    indicator child_border

@@ -42,7 +42,8 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! URxvt appearance
-URxvt.background: [70]#171A20
+! URxvt.background: [70]#171A20
+URxvt.background: #171A20
 URxvt.foreground: #ebdbb2
 URxvt.scrollBar: off
 
@@ -105,7 +106,7 @@ URxvt.keysym.Control-Right: \033[1;5C
 URxvt.internalBorder: 20
 
 ! transparency
-URxvt.depth: 32
+! URxvt.depth: 32
 
 ! for irssi
 rxvt.modifier: alt
