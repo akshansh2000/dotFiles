@@ -176,8 +176,11 @@ alias perm='stat -c "%a"'
 alias rm='rm -rf'
 alias cc='~/.custom_scripts/copy_config.sh && cd ~/Repositories/dotFiles'
 alias fonts='display "$(fc-list | cut -d: -f1 | rofi -i -dmenu -p -no-custom fonts)"'
-alias bon='bluetoothctl power on && bluetoothctl connect 98:09:CF:F2:BC:66'
+alias bono='bluetoothctl power on && bluetoothctl connect 98:09:CF:F2:BC:66'
+alias bon='bluetoothctl power on && bluetoothctl connect 14:3F:A6:3D:3B:B8'
 alias boff='bluetoothctl power off'
+alias cenv='python3 -m venv venv'
+alias penv='source venv/bin/activate'
 
 alias repo='cd ~/Repositories'
 alias top='cd `git rev-parse --show-toplevel`'
@@ -387,7 +390,7 @@ export PATH=$PATH:/home/akshansh2000/.local/bin
 export PATH=$PATH:/snap/bin
 export PATH=$PATH:/home/akshansh2000/.emacs.d/bin
 export PATH=$PATH:/home/akshansh2000/.cargo/bin
-export PATH=$PATH:/home/akshansh2000/.gem/ruby/2.7.0/bin
+export PATH=$PATH:/home/akshansh2000/.gem/ruby/3.0.0/bin
 export XAUTHORITY=~/.Xauthority
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

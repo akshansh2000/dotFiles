@@ -26,7 +26,7 @@ image/jpeg=feh.desktop;
 [Added Associations]
 text/html=org.qutebrowser.qutebrowser.desktop;
 image/x-eps=feh-usercreated-1.desktop;
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+application/pdf=google-chrome.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
 text/plain=emacsclient-usercreated-2.desktop;
 text/x-c++src=emacsclient-usercreated-2.desktop;
 text/x-python=emacsclient-usercreated-2.desktop;
