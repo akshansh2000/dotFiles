@@ -42,7 +42,7 @@ mod4+shift+q
 mod4+b
   qutebrowser
 mod4+shift+b
-  google-chrome-stable
+  brave
 
 # config files
 mod4+c

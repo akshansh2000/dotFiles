@@ -22,6 +22,10 @@ application/json=emacsclient-usercreated-2.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-90XE20.desktop
 image/png=feh.desktop;
 image/jpeg=feh.desktop;
+x-scheme-handler/discord-478576776990425110=discord-478576776990425110.desktop
+application/x-ica=wfica.desktop
+application/vnd.citrix.receiver.configure=new_store.desktop
+x-scheme-handler/receiver=receiver.desktop
 
 [Added Associations]
 text/html=org.qutebrowser.qutebrowser.desktop;
