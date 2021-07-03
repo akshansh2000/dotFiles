@@ -90,6 +90,7 @@ settings:
     https://drive.google.com: true
     https://dubs5k.xyz: false
     https://meet.google.com: true
+    https://messages.google.com: false
     https://online.kfc.co.in: false
     https://tecadmin.net: false
     https://web.whatsapp.com: true

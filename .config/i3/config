@@ -34,7 +34,7 @@ bindsym $mod+q kill
 # window borders
 # default_border none
 default_border pixel 5px
-default_floating_border none
+default_floating_border pixel 5px
 hide_edge_borders smart
 
 # change focus

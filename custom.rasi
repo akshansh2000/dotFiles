@@ -5,6 +5,7 @@
   spacing: 0;
   width: 30%;
   height: 50%;
+  font-family: "monospace";
 }
 
 inputbar {
