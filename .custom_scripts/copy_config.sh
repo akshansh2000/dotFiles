@@ -8,6 +8,7 @@ fileList=(
   .config/i3lock
   .config/mimeapps.list
   .config/mpv/mpv.conf
+  .config/mpv/input.conf
   .config/nvim/init.vim
   .config/picom.conf
   .config/polybar
@@ -15,9 +16,9 @@ fileList=(
   .config/ranger
   .config/rofi
   .config/sxhkd
-  .config/xmobar
   .config/xmodmap
   .custom_scripts
+  .gitconfig
   .irssi
   .p10k.zsh
   custom.rasi
@@ -25,10 +26,8 @@ fileList=(
   Pictures/wallpapers
   .SpaceVim.d/init.toml
   .xinitrc
-  .xmonad
   .xprofile
   .Xresources
-  .zsh_history
   .zshrc
 )
 
