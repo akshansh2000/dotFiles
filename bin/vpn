@@ -7,3 +7,5 @@ selected=`echo -e "$choices" | dmenu -i -p "select nordvpn server"`
 [[ $selected = "" ]] && exit
 [[ $selected = "disconnect" ]] || nordvpn connect $selected
 [[ $selected = "disconnect" ]] && nordvpn disconnect
+
+refresh_bar
