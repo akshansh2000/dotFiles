@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+choices="lock\nsuspend\nexit dwm\nshut down"
+
+selected=`echo -e "$choices" | dmenu -i -p "session options"`
+
+case $selected in
+  lock)
+    slock
+    ;;
+  suspend)
+    slock &
+    sleep 1
+    systemctl suspend
+    ;;
+  "exit dwm")
+    killall dwm
+    ;;
+  "shut down")
+    shutdown now
+    ;;
+esac
