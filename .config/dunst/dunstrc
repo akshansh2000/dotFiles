@@ -31,7 +31,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-30+20"
+    geometry = "450x10-30+60"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -185,7 +185,7 @@
     dmenu = /usr/bin/dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/google-chrome-stable
+    browser = /usr/bin/qutebrowser
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -362,9 +362,9 @@
 #           withdrawn from screen again and will get delayed like a new notification
 [fullscreen_delay_everything]
     fullscreen = pushback
-#[fullscreen_show_critical]
-#    msg_urgency = critical
-#    fullscreen = show
+[fullscreen_show_critical]
+    msg_urgency = critical
+    fullscreen = show
 
 #[espeak]
 #    summary = "*"

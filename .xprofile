@@ -1,3 +1,11 @@
-#!/bin/bash
+#!/bin/sh
 
-pulseaudio-ctl mute yes
+xinput set-prop 'ELAN1201:00 04F3:3098 Touchpad' 'libinput Tapping Enabled' 1
+xinput set-prop 'ELAN1201:00 04F3:3098 Touchpad' 'libinput Natural Scrolling Enabled' 1
+dunst &
+xmodmap ~/.config/xmodmap/xmodmaprc
+sxhkd &
+xrdb -merge ~/.Xresources
+xrandr --output eDP-1 --mode 2560x1440 --dpi 144
+xwallpaper --zoom ~/Pictures/wallpaper
+~/bin/set_bar &

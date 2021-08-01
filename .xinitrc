@@ -1,2 +1,2 @@
-exec xrdb ~/.Xresources &
-exec i3
+[ -f ~/.xprofile ] && ~/.xprofile
+exec dwm

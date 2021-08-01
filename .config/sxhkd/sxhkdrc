@@ -1,68 +1,68 @@
 # terminal
 mod4+Return
-  alacritty
+  st
 
 # vol up
 XF86AudioRaiseVolume
-  pulseaudio-ctl up
+  pulseaudio-ctl up && ~/bin/refresh_bar
 
 # vol down
 XF86AudioLowerVolume
-  pulseaudio-ctl down
+  pulseaudio-ctl down && ~/bin/refresh_bar
 
 # vol mute
 XF86AudioMute
-  pulseaudio-ctl mute
+  pulseaudio-ctl mute && ~/bin/refresh_bar
 
 # mic mute
-shift+XF86AudioMute
-  pulseaudio-ctl mute-input
-
-# mic mute
-XF86AudioMicMute
-  pulseaudio-ctl mute-input
+XF86Launch1
+  pulseaudio-ctl mute-input && ~/bin/refresh_bar
 
 # spawn
-mod4+d
-  rofi -show run -no-custom
+# mod4+d
+  # rofi -show run -no-custom
 
 # spawn
-mod4+shift+d
-  rofi -show drun -no-custom
+# mod4+shift+d
+  # rofi -show drun -no-custom
 
 # file manager
 mod4+shift+e
   thunar
 
 # exit script
-mod4+shift+q
-  ~/.custom_scripts/exit.sh
+# mod4+shift+q
+  # ~/.custom_scripts/exit.sh
 
 # browser
 mod4+b
   qutebrowser
-mod4+shift+b
-  brave
+# mod4+shift+b
+  # firefox-developer-edition
 
 # config files
-mod4+c
-  ~/.custom_scripts/config.sh
+# mod4+c
+  # ~/.custom_scripts/config.sh
 
 # brightness up
 XF86MonBrightnessUp
-  brightnessctl set +10%
+  brightnessctl set +5% && ~/bin/refresh_bar
+XF86KbdBrightnessUp
+  brightnessctl -d asus::kbd_backlight set +1
 
 # brightness down
 XF86MonBrightnessDown
-  brightnessctl set 10%-
+  brightnessctl set 5%- && ~/bin/refresh_bar
+XF86KbdBrightnessDown
+  brightnessctl -d asus::kbd_backlight set 1-
 
 # monitors
-mod4+m
-  .custom_scripts/monitors.sh
+mod4+shift+m
+  ~/bin/monitors
 
 # clipboard
-mod4+x
-  rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+# mod4+x
+  # rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 
 # complete screenshot
 Print
@@ -73,25 +73,25 @@ mod4+Print
   scrot -uq 100 -e 'mv $f ~/Pictures/Screenshots/'
 
 # custom screenshot
-mod4+shift+Print
+ctrl+Print
   scrot -a $(slop -f '%x,%y,%w,%h') -q 100 -e 'mv $f ~/Pictures/Screenshots/'
 
 # ranger
 mod4+ctrl+e
-  alacritty -e ranger
+  st -e ranger
 
 # emojis
-mod4+z
-  ~/.custom_scripts/emojis.sh
+# mod4+z
+  # ~/.custom_scripts/emojis.sh
 
 # dunst toggle
-mod4+grave
-  ~/.custom_scripts/dunst_toggle.sh
+# mod4+grave
+  # ~/.custom_scripts/dunst_toggle.sh
 
 # taskell
-mod4+t
-  ~/.custom_scripts/taskell.sh
+# mod4+t
+  # ~/.custom_scripts/taskell.sh
 
 # bpytop
-mod4+p
-  alacritty -e bpytop
+# mod4+p
+  # alacritty -e bpytop
