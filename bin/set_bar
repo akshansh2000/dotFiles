@@ -2,6 +2,12 @@
 
 delim="|"
 
+function vpn() {
+  status=`nordvpn status | sed '1!d' | awk '{print $4}'`
+  [[ $status = "Connected" ]] && echo `nordvpn status | sed '2!d' | awk '{print $3}'`
+  [[ $status = "Disconnected" ]] && echo Disconnected
+}
+
 function battery() {
   acpi -i | sed '1!d' | cut -d',' -f2 | tr -d ' '
   [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Charging," ]] && echo "(charging)"
@@ -22,7 +28,7 @@ function date_time() {
 }
 
 while :; do
-  content=`echo " Battery: $(battery) $delim Volume: $(volume) $delim Brightness: $(brightness) $delim $(date_time)" | tr '\n' ' '`
+  content=`echo " VPN: $(vpn) $delim Battery: $(battery) $delim Volume: $(volume) $delim Brightness: $(brightness) $delim $(date_time)" | tr '\n' ' '`
   xsetroot -name "$content"
   sleep 1m
 done
