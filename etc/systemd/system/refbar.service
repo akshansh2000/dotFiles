@@ -1,0 +1,9 @@
+[Unit]
+Description=Refresh bar after suspend
+After=suspend.target hybrid-sleep.target
+
+[Service]
+ExecStart=/bin/sh -c '/home/akshansh2000/bin/refresh_bar'
+
+[Install]
+WantedBy=suspend.target hybrid-sleep.target

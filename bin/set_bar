@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+delim="|"
+
+function battery() {
+  acpi -i | sed '1!d' | cut -d',' -f2 | tr -d ' '
+  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Charging," ]] && echo "(charging)"
+}
+
+function volume() {
+  echo `pulseaudio-ctl full-status | cut -d' ' -f1`%
+  [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "no" ]] || echo "(source muted)"
+  [[ `pulseaudio-ctl full-status | cut -d' ' -f3` = "no" ]] || echo "(sink muted)"
+}
+
+function brightness() {
+  brightnessctl | sed '2!d' | awk -F'[()]' '{print $2}'
+}
+
+function date_time() {
+  timedatectl | sed '1!d' | awk '{$1=$1};1' | awk -F'[: ]' '{print $4", "$5" | "$6":"$7}'
+}
+
+while :; do
+  content=`echo " Battery: $(battery) $delim Volume: $(volume) $delim Brightness: $(brightness) $delim $(date_time)" | tr '\n' ' '`
+  xsetroot -name "$content"
+  sleep 1m
+done

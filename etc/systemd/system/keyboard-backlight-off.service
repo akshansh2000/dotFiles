@@ -1,0 +1,11 @@
+[Unit]
+Description=Set keyboard backlight brightness to minimum before suspend
+Before=suspend.target hybrid-sleep.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sh -c 'brightnessctl -d asus::kbd_backlight get > /home/akshansh2000/.config/kbd_backlight'
+ExecStart=brightnessctl -d asus::kbd_backlight set 0
+
+[Install]
+WantedBy=suspend.target hybrid-sleep.target

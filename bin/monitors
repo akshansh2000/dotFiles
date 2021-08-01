@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+choices="duplicate\nextend_left\nextend_right\nmain_only\nexternal_only"
+
+`echo -e "$choices" | dmenu`
