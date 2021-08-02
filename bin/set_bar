@@ -3,23 +3,27 @@
 delim="|"
 
 function vpn() {
+  echo "旅 "
   status=`nordvpn status | sed '1!d' | awk '{print $4}'`
   [[ $status = "Connected" ]] && echo `nordvpn status | sed '2!d' | awk '{print $3}'`
-  [[ $status = "Disconnected" ]] && echo Disconnected
+  [[ $status = "Disconnected" ]] && echo none
 }
 
 function battery() {
+  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Charging," ]] && echo " "
+  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Discharging," ]] && echo " "
   acpi -i | sed '1!d' | cut -d',' -f2 | tr -d ' '
-  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Charging," ]] && echo "(charging)"
 }
 
 function volume() {
+  [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "no" ]] || echo "婢 "
+  [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "yes" ]] || echo " "
   echo `pulseaudio-ctl full-status | cut -d' ' -f1`%
-  [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "no" ]] || echo "(source muted)"
   [[ `pulseaudio-ctl full-status | cut -d' ' -f3` = "no" ]] || echo "(sink muted)"
 }
 
 function brightness() {
+  echo "盛 "
   brightnessctl | sed '2!d' | awk -F'[()]' '{print $2}'
 }
 
@@ -28,7 +32,7 @@ function date_time() {
 }
 
 while :; do
-  content=`echo " VPN: $(vpn) $delim Battery: $(battery) $delim Volume: $(volume) $delim Brightness: $(brightness) $delim $(date_time)" | tr '\n' ' '`
+  content=`echo " $(vpn) $delim $(battery) $delim $(volume) $delim $(brightness) $delim $(date_time)" | tr '\n' ' '`
   xsetroot -name "$content"
   sleep 1m
 done

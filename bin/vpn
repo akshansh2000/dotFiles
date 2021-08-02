@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-choices="india\nuk\nus\ngermany\nnetherlands\ndisconnect"
+choices="uk\nus\ngermany\nnetherlands\nindia\ndisconnect"
 
 selected=`echo -e "$choices" | dmenu -i -p "select nordvpn server"`
 
