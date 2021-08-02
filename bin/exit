@@ -6,10 +6,10 @@ selected=`echo -e "$choices" | dmenu -i -p "session options"`
 
 case $selected in
   lock)
-    slock
+    ~/.config/i3lock/.i3lockrc
     ;;
   suspend)
-    slock &
+    ~/.config/i3lock/.i3lockrc &
     sleep 1
     systemctl suspend
     ;;
