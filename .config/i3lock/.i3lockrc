@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
+dunstctl set-paused true
+
 i3lock -n -i ~/Pictures/lockWallpaper --inside-color=37344500 --ring-color=ffffffff --line-uses-inside --keyhl-color=d23c3dff --bshl-color=d23c3dff --separator-color=00000000 --insidever-color=fecf4dff --insidewrong-color=d23c3dff --ringver-color=ffffffff --ringwrong-color=ffffffff --ind-pos="x+850:y+480" --verif-text="" --wrong-text="" --ignore-empty-password --clock --wrong-color=ffffffff --time-color=ffffffff --time-pos="x+1570:y+870" --date-color=ffffffff --date-str="%A, %d %B" --noinput-text="" --ring-width=10 --radius=70 --time-str="%I:%M %p" --tiling --pass-screen-keys
+
+dunstctl set-paused false
