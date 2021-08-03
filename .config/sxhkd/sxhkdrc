@@ -31,8 +31,8 @@ mod4+shift+e
   thunar
 
 # exit script
-# mod4+shift+q
-  # ~/.custom_scripts/exit.sh
+mod4+shift+q
+  ~/bin/exit
 
 # browser
 mod4+b
@@ -95,3 +95,11 @@ mod4+ctrl+e
 # bpytop
 # mod4+p
   # alacritty -e bpytop
+
+# vpn
+mod4+v
+  ~/bin/vpn
+
+# google search
+mod4+g
+  ~/bin/open_url
