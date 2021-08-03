@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+query=`cat /dev/null | dmenu -p "enter subreddit"`
+
+[[ $query = "" ]] || qutebrowser --target=window "https://reddit.com/r/$query"
