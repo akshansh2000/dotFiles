@@ -9,3 +9,4 @@ xrdb -merge ~/.Xresources
 xrandr --output eDP-1 --mode 2560x1440 --dpi 144
 xwallpaper --zoom ~/Pictures/wallpaper
 ~/bin/set_bar &
+redshift -O 5500

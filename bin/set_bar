@@ -12,6 +12,7 @@ function vpn() {
 function battery() {
   [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Charging," ]] && echo " "
   [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Discharging," ]] && echo " "
+  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Not" ]] && echo "not charging: "
   acpi -i | sed '1!d' | cut -d',' -f2 | tr -d ' '
 }
 
