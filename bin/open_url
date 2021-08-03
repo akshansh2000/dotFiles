@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+query=`cat /dev/null | dmenu -p "enter search query or url"`
+
+[[ $query = "" ]] || qutebrowser --target=window "$query"

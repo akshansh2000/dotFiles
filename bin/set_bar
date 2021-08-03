@@ -11,14 +11,14 @@ function vpn() {
 
 function battery() {
   [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Charging," ]] && echo " "
-  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Discharging," ]] && echo " "
+  [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Discharging," ]] && echo " "
   [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Not" ]] && echo "not charging: "
   acpi -i | sed '1!d' | cut -d',' -f2 | tr -d ' '
 }
 
 function volume() {
   [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "no" ]] || echo "婢 "
-  [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "yes" ]] || echo " "
+  [[ `pulseaudio-ctl full-status | cut -d' ' -f2` = "yes" ]] || echo "墳 "
   echo `pulseaudio-ctl full-status | cut -d' ' -f1`%
   [[ `pulseaudio-ctl full-status | cut -d' ' -f3` = "no" ]] || echo "(sink muted)"
 }
