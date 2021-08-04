@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  remove locked links list on Real-Debrid's torrents page
 // @author       akshansh2000
-// @match        https://real-debrid.com/torrents
+// @match        https://real-debrid.com/torrents*
 // @grant        none
 // ==/UserScript==
 
