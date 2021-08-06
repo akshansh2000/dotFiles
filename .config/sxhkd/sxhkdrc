@@ -37,8 +37,8 @@ mod4+shift+q
 # browser
 mod4+b
   qutebrowser
-# mod4+shift+b
-  # firefox-developer-edition
+mod4+w
+  qutebrowser --target=private-window
 
 # config files
 # mod4+c
@@ -105,3 +105,11 @@ mod4+g
   ~/bin/open_url
 mod4+shift+g
   ~/bin/open_subreddit
+
+# screen off on power button
+XF86PowerOff
+  XAUTHORITY=/home/akshansh2000/.Xauthority xset -display :0.0 dpms force off
+
+# bitwarden dmenu
+mod4+shift+p
+  ~/Programs/Source/dmenu-bitwarden/dmenu_bitwarden.py -p
