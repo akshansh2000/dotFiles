@@ -3,7 +3,11 @@
 history_file="/home/akshansh2000/.config/subreddit_history"
 update_history "$history_file"
 
-query=`cat "$history_file" | dmenu -i -p "enter subreddit"`
-[[ "$query" = "" ]] || qutebrowser --target=window "https://reddit.com/r/$query" &
+subreddit=`cat "$history_file" | dmenu -i -p "enter subreddit"`
+sorting_options="default\nall\nyear\nmonth\nweek\nday\nhour"
 
-update_history "$query" "$history_file"
+[[ "$subreddit" = "" ]] || sort_by=`echo -e "$sorting_options" | dmenu -i -p "sorting"`
+[[ "$sort_by" = "default" ]] && qutebrowser --target=window "https://reddit.com/r/$subreddit" &
+[[ "$sort_by" != "" ]] && [[ "$sort_by" != "default" ]] && qutebrowser --target=window "https://reddit.com/r/$subreddit/top?t=$sort_by" &
+
+update_history "$subreddit" "$history_file"
