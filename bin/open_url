@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
-query=`cat /dev/null | dmenu -p "enter search query or url"`
+history_file="/home/akshansh2000/.config/url_history"
+update_history "$history_file"
 
-[[ $query = "" ]] || qutebrowser --target=window "$query"
+query=`cat "$history_file" | dmenu -i -p "enter search query or url"`
+[[ "$query" = "" ]] || qutebrowser --target=window "$query" &
+
+update_history "$query" "$history_file"
