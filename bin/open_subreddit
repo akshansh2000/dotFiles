@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
-query=`cat /dev/null | dmenu -p "enter subreddit"`
+history_file="/home/akshansh2000/.config/subreddit_history"
+update_history "$history_file"
 
-[[ $query = "" ]] || qutebrowser --target=window "https://reddit.com/r/$query"
+query=`cat "$history_file" | dmenu -i -p "enter subreddit"`
+[[ "$query" = "" ]] || qutebrowser --target=window "https://reddit.com/r/$query" &
+
+update_history "$query" "$history_file"
