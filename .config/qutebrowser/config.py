@@ -196,6 +196,7 @@ c.bindings.commands = {
         "W": "open -p",
         "gf": "view-source --pygments",
         "m": "set-cmd-text -s :bookmark-del",
+        "<F11>": "fullscreen ;; config-cycle tabs.show switching always ;; config-cycle statusbar.show never always",
     }
 }
 
