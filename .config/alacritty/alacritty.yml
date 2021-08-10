@@ -1,0 +1,18 @@
+font:
+  size: 8.0
+  normal:
+    family: "monospace"
+
+# env:
+#   WINIT_X11_SCALE_FACTOR: "1.0"
+
+colors:
+  primary:
+    background: "#000000"
+
+# background_opacity: 0.7
+
+window:
+  padding:
+    x: 20
+    y: 20
