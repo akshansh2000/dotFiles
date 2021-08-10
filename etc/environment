@@ -14,3 +14,6 @@ _JAVA_AWT_WM_NONREPARENTING=1
 ANDROID_HOME=/home/akshansh2000/Programs/android-sdk
 EDITOR=/usr/bin/nvim
 BROWSER=/usr/bin/qutebrowser
+CM_HISTLENGTH=40
+TERMINAL=/usr/bin/alacritty
+CM_SELECTIONS=clipboard
