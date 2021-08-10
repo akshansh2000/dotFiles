@@ -1,6 +1,6 @@
 # terminal
 mod4+Return
-  st
+  $TERMINAL
 
 # vol up
 XF86AudioRaiseVolume
@@ -29,6 +29,8 @@ XF86Launch1
 # file manager
 mod4+shift+e
   thunar
+mod4+ctrl+e
+  $TERMINAL -e ranger
 
 # exit script
 mod4+shift+q
@@ -76,10 +78,6 @@ mod4+Print
 ctrl+Print
   scrot -a $(slop -f '%x,%y,%w,%h') -q 100 -e 'mv $f ~/Pictures/Screenshots/'
 
-# ranger
-mod4+ctrl+e
-  st -e ranger
-
 # emojis
 # mod4+z
   # ~/.custom_scripts/emojis.sh
@@ -113,3 +111,11 @@ XF86PowerOff
 # bitwarden dmenu
 mod4+shift+p
   ~/Programs/Source/dmenu-bitwarden/dmenu_bitwarden.py -p
+
+# feedly
+# mod4+shift+f
+#   qutebrowser "https://feedly.com" :fullscreen --target=window -s tabs.show switching -s statusbar.show never
+
+# clipmenu
+mod4+x
+  clipmenu
