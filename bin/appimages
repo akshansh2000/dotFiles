@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd ~/Programs/AppImages
+`echo -e ./* | tr ' ' '\n' | dmenu`
