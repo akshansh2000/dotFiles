@@ -212,4 +212,12 @@ c.url.start_pages = "file:///home/akshansh2000/Code/startpage-wave/index.html"
 c.url.default_page = "file:///home/akshansh2000/Code/startpage-wave/index.html"
 
 # software rendering
-c.qt.force_software_rendering = "qt-quick"
+# c.qt.force_software_rendering = "qt-quick"
+
+# permissions
+with config.pattern("https://meet.google.com/*") as p:
+    p.content.desktop_capture = True
+    p.content.media.audio_capture = True
+    p.content.media.video_capture = True
+
+config.set("content.notifications.enabled", False)

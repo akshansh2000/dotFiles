@@ -119,3 +119,11 @@ mod4+shift+p
 # clipmenu
 mod4+x
   clipmenu
+
+# secondary clipboard paste
+mod4+shift+v
+  xclip -out -selection secondary
+
+# appimages
+mod4+a
+  ~/bin/appimages

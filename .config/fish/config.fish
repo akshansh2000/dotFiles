@@ -7,7 +7,7 @@ end
 # end
 
 abbr --add --global cat bat
-abbr --add --global get sudo pacman -S
+abbr --add --global get sudo pacman -S --needed
 abbr --add --global pls sudo
 abbr --add --global l ls -AFl
 abbr --add --global v nvim
@@ -15,9 +15,7 @@ abbr --add --global sv sudo nvim
 abbr --add --global aux "ps aux | grep -i"
 abbr --add --global td transmission-daemon
 abbr --add --global tsm transmission-remote
-abbr --add --global nuk sudo nordvpn connect uk
-abbr --add --global nde sudo nordvpn connect germany
-abbr --add --global ndi sudo nordvpn disconnect
+abbr --add --global pixel ~/Programs/android-sdk/emulator/emulator @Pixel_4a_API_30
 
 function cd
   builtin cd $argv
