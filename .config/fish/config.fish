@@ -16,6 +16,8 @@ abbr --add --global aux "ps aux | grep -i"
 abbr --add --global td transmission-daemon
 abbr --add --global tsm transmission-remote
 abbr --add --global pixel ~/Programs/android-sdk/emulator/emulator @Pixel_4a_API_30
+abbr --add --global rm rm -rf
+abbr --add --global ar "aria2c -x 10 -s 10 -j 1 -i links"
 
 function cd
   builtin cd $argv

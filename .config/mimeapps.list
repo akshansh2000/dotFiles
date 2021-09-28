@@ -2,4 +2,4 @@
 image/jpeg=usr-usercreated-1.desktop;
 x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop;
 x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop;
-application/pdf=org.qutebrowser.qutebrowser.desktop;
+application/pdf=mupdf.desktop;

@@ -60,11 +60,11 @@ case "$1" in
         case "$3" in
             close)
                 logger 'LID closed'
-		/home/akshansh2000/bin/lid_close
+                /home/akshansh2000/bin/lid_close
                 ;;
             open)
                 logger 'LID opened'
-		/home/akshansh2000/bin/lid_open
+                /home/akshansh2000/bin/lid_open
                 ;;
             *)
                 logger "ACPI action undefined: $3"

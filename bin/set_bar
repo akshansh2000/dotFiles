@@ -33,7 +33,7 @@ function date_time() {
 }
 
 while :; do
-  content=`echo " $(vpn) $delim $(battery) $delim $(volume) $delim $(brightness) $delim $(date_time)" | tr '\n' ' '`
+  content=`echo " $(vpn) $delim $(battery) $delim $(volume) $delim $(date_time)" | tr '\n' ' '`
   xsetroot -name "$content"
   sleep 1m
 done

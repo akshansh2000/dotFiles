@@ -4,7 +4,7 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 
-PATH="/home/akshansh2000/Programs/Source/flutter/bin:/home/akshansh2000/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+PATH="/home/akshansh2000/Programs/AppImages:/home/akshansh2000/Programs/Source/flutter/bin:/home/akshansh2000/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 
 GDK_SCALE=2
 GDK_DPI_SCALE=0.7

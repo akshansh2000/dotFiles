@@ -48,13 +48,13 @@ mod4+w
 
 # brightness up
 XF86MonBrightnessUp
-  brightnessctl set +5% && ~/bin/refresh_bar
+  brightnessctl set +5%
 XF86KbdBrightnessUp
   brightnessctl -d asus::kbd_backlight set +1
 
 # brightness down
 XF86MonBrightnessDown
-  brightnessctl set 5%- && ~/bin/refresh_bar
+  brightnessctl set 5%-
 XF86KbdBrightnessDown
   brightnessctl -d asus::kbd_backlight set 1-
 
@@ -122,7 +122,7 @@ mod4+x
 
 # secondary clipboard paste
 mod4+shift+v
-  xclip -out -selection secondary
+  sleep 0.5 && xdotool type `xclip -out -selection secondary`
 
 # appimages
 mod4+a
