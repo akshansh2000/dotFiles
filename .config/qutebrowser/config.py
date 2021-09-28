@@ -195,6 +195,7 @@ c.bindings.commands = {
         "Q": "open radiant-brushlands-42789.herokuapp.com/{url:host}/{url:path}",
         "W": "open -p",
         "gf": "view-source --pygments",
+        "am": "bookmark-del {url}",
         "m": "set-cmd-text -s :bookmark-del",
         "<F11>": "fullscreen ;; config-cycle tabs.show switching always ;; config-cycle statusbar.show never always",
         "<F10>": "fullscreen",
@@ -221,3 +222,4 @@ with config.pattern("https://meet.google.com/*") as p:
     p.content.media.video_capture = True
 
 config.set("content.notifications.enabled", False)
+config.set("content.geolocation", False)
