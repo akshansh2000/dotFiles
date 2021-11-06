@@ -13,3 +13,4 @@ redshift -O 5500
 # pulseaudio --start --daemonize=no --log-target=journal &
 systemctl --user import-environment DISPLAY
 systemctl --user start clipmenud
+bluetoothctl power on

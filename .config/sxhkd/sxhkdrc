@@ -17,6 +17,8 @@ XF86AudioMute
 # mic mute
 XF86Launch1
   pulseaudio-ctl mute-input && ~/bin/refresh_bar
+shift+XF86AudioMute
+  pulseaudio-ctl mute-input && ~/bin/refresh_bar
 
 # spawn
 # mod4+d
@@ -127,3 +129,7 @@ mod4+shift+v
 # appimages
 mod4+a
   ~/bin/appimages
+
+# touchpad toggle
+XF86TouchpadToggle
+  ~/bin/touchpad_toggle

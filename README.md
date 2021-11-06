@@ -1,6 +1,6 @@
 # dotFiles
 
 - **OS**: Arch Linux
-- **Kernel**: 5.14.7-arch1-1
+- **Kernel**: 5.14.15-arch1-1
 - **WM**: dwm-6.2
 - **Shell**: fish 3.3.1
