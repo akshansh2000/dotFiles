@@ -3,8 +3,8 @@ font:
   normal:
     family: "monospace"
 
-# env:
-#   WINIT_X11_SCALE_FACTOR: "1.0"
+env:
+  WINIT_X11_SCALE_FACTOR: "2.0"
 
 colors:
   primary:

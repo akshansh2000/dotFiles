@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+old_state=`xinput list-props 'ELAN1201:00 04F3:3098 Touchpad' | grep -i "device enabled" | rev | cut -c1`
+
+new_state=`[[ $old_state = 1 ]] && echo 0 || echo 1`
+
+xinput set-prop 'ELAN1201:00 04F3:3098 Touchpad' 'Device Enabled' $new_state
