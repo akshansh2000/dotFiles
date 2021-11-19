@@ -4,11 +4,11 @@ mod4+Return
 
 # vol up
 XF86AudioRaiseVolume
-  pulseaudio-ctl up && ~/bin/refresh_bar
+  pulseaudio-ctl up 1 && ~/bin/refresh_bar
 
 # vol down
 XF86AudioLowerVolume
-  pulseaudio-ctl down && ~/bin/refresh_bar
+  pulseaudio-ctl down 1 && ~/bin/refresh_bar
 
 # vol mute
 XF86AudioMute
