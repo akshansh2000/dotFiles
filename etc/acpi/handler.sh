@@ -36,6 +36,7 @@ case "$1" in
                 ;;
             *)
                 logger "ACPI action undefined: $2"
+                /home/akshansh2000/bin/refresh_bar
                 ;;
         esac
         ;;
