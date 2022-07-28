@@ -7,12 +7,16 @@ XF86AudioRaiseVolume
   pulseaudio-ctl up 1 && ~/bin/refresh_bar
 shift+XF86AudioRaiseVolume
   pulseaudio-ctl set 100 && ~/bin/refresh_bar
+ctrl+XF86AudioRaiseVolume
+  pulseaudio-ctl up 10 && ~/bin/refresh_bar
 
 # vol down
 XF86AudioLowerVolume
   pulseaudio-ctl down 1 && ~/bin/refresh_bar
 shift+XF86AudioLowerVolume
   pulseaudio-ctl down 50 && ~/bin/refresh_bar
+ctrl+XF86AudioLowerVolume
+  pulseaudio-ctl down 10 && ~/bin/refresh_bar
 
 # vol mute
 XF86AudioMute
@@ -55,12 +59,16 @@ mod4+w
 # brightness up
 XF86MonBrightnessUp
   brightnessctl set +5%
+shift+XF86MonBrightnessUp
+  brightnessctl set 100%
 XF86KbdBrightnessUp
   brightnessctl -d asus::kbd_backlight set +1
 
 # brightness down
 XF86MonBrightnessDown
   brightnessctl set 5%-
+shift+XF86MonBrightnessDown
+  brightnessctl set 0%
 XF86KbdBrightnessDown
   brightnessctl -d asus::kbd_backlight set 1-
 
@@ -137,3 +145,7 @@ mod4+a
 # touchpad toggle
 XF86TouchpadToggle
   ~/bin/touchpad_toggle
+
+# bitly shortener
+mod4+s
+  ~/bin/bitly_shorten
