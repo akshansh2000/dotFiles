@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd ~/Programs/AppImages
-`echo -e * | tr ' ' '\n' | dmenu -i`
+`echo -e * | tr ' ' '\n' | "${ROFI_X}" -dmenu -i -p "choose AppImage"`

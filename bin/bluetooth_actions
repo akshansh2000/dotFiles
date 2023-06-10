@@ -1,0 +1,50 @@
+#!/usr/bin/env python
+
+import dbus
+from dbus.mainloop.glib import DBusGMainLoop
+import gobject
+
+import subprocess
+
+SERVICE_NAME = "org.bluez"
+OBJECT_IFACE =  "org.freedesktop.DBus.ObjectManager"
+ADAPTER_IFACE = SERVICE_NAME + ".Adapter1"
+DEVICE_IFACE = SERVICE_NAME + ".Device1"
+PROPERTIES_IFACE = "org.freedesktop.DBus.Properties"
+
+# ID of the device we care about
+DEV_ID = 'DC:2C:26:33:65:DD'.replace(":", "_")
+
+dbus_loop = DBusGMainLoop()
+bus = dbus.SystemBus(mainloop=dbus_loop)
+
+# Figure out the path to the headset
+man = bus.get_object('org.bluez', '/')
+iface = dbus.Interface(man, OBJECT_IFACE)
+
+objects = iface.GetManagedObjects()
+
+global adapterPath
+for path, ifaces in objects.items():
+    adapter = ifaces.get(ADAPTER_IFACE)
+
+    if adapter is not None:
+        obj = bus.get_object(SERVICE_NAME, path)
+        adapterPath = dbus.Interface(obj, ADAPTER_IFACE)
+        break
+
+print(adapterPath + '/dev_' + DEV_ID)
+headset = bus.get_object('org.bluez', adapterPath + '/dev_' + DEV_ID)
+# ^^^ I'm not sure if that's kosher. But it works.
+
+def cb(*args, **kwargs):
+    is_connected = args[-1]
+    if isinstance(is_connected, dbus.Boolean) and is_connected:
+        print("Connected")
+    elif isinstance(is_connected, dbus.Boolean) and not is_connected:
+        print("Disconnected")
+
+headset.connect_to_signal("PropertyChanged", cb, interface_keyword='iface', member_keyword='mbr', path_keyword='path')
+
+loop = gobject.MainLoop()
+loop.run()

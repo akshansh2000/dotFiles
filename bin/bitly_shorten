@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-long_url=`echo "" | dmenu -i -p "enter long url"`
+long_url=`echo "" | "${ROFI_X}" -dmenu -i -p "enter long url"`
 
 link=`curl \
 -H 'Authorization: Bearer '"$BITLY_TOKEN" \
@@ -13,4 +13,4 @@ link=`curl \
 }' \
 https://api-ssl.bitly.com/v4/shorten -s | jq ".link"`
 
-echo -n "$link" | sed 's/"//g' | xclip -i -selection clipboard
+[[ "$link" == "" ]] || echo -n "$link" | sed 's/"//g' | xclip -i -selection clipboard

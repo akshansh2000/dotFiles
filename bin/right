@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+main_only
+sleep 1
+xrandr --output eDP --mode 2560x1440 --dpi 144 --output HDMI-A-0 --right-of eDP --mode 1920x1080 --scale 1.3333333x1.3333333
