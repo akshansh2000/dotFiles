@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+while true; do
+  op=`spt pb 2> /dev/null`
+  [[ "$op" = "" ]] && echo "" && continue
+
+  state=`spt pb -f %s 2> /dev/null`
+  song=`spt playback -f "%t - %a" 2> /dev/null`
+
+  [[ "$state" = "▶" ]] && echo "$song"
+  [[ "$state" = "⏸" ]] && echo "%{F#F0C674}(p)%{F-} $song"
+done

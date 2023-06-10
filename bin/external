@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+main_only
+sleep 1
+xrandr --output eDP --off --output HDMI-A-0 --same-as eDP --mode 1920x1080 --scale 1.3333333x1.3333333
+brightnessctl -d asus::kbd_backlight get > /home/akshansh2000/.config/kbd_backlight
+brightnessctl -d asus::kbd_backlight set 0

@@ -2,7 +2,7 @@
 
 choices="lock\nsuspend\nexit dwm\nshut down"
 
-selected=`echo -e "$choices" | dmenu -i -p "session options"`
+selected=`echo -e "$choices" | "${ROFI_X}" -dmenu -i -p "session options"`
 
 case $selected in
   lock)

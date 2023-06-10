@@ -4,9 +4,10 @@ delim="|"
 
 function vpn() {
   echo "旅 "
-  status=`nordvpn status | sed '1!d' | awk '{print $4}'`
-  [[ $status = "Connected" ]] && echo `nordvpn status | sed '2!d' | awk '{print $3}'`
-  [[ $status = "Disconnected" ]] && echo none
+  # status=`nordvpn status | grep -vi "update" | sed '1!d' | rev | awk '{print $1}' | rev`
+  status=`nordvpn status | grep -i "status" | rev | awk '{print $1}' | rev`
+  [[ $status = "Connected" ]] && echo `nordvpn status | grep -i "hostname" | rev | awk '{print $1}' | rev`
+  [[ $status = "Disconnected" ]] && echo `nmcli con show --active | grep wifi | cut -d' ' -f1`
 }
 
 function battery() {
