@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+XAUTHORITY=/home/akshansh2000/.Xauthority xset -display :0.0 dpms force on
+logger 'Display turned on'
+systemctl start keyboard-backlight-on
+logger 'Keyboard backlight turned on'

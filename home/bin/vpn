@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+choices="disconnect\nuk\nnetherlands\nus\ngermany\nindia"
+
+selected=`echo -e "$choices" | "${ROFI_X}" -dmenu -i -p "select nordvpn server"`
+
+[[ $selected = "" ]] && exit
+[[ $selected = "disconnect" ]] || nordvpn connect $selected
+[[ $selected = "disconnect" ]] && nordvpn disconnect
+
+refresh_bar

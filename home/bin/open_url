@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+history_file="/home/akshansh2000/.config/url_history"
+update_history "$history_file"
+
+query=`cat "$history_file" | "${ROFI_X}" -dmenu -i -p "enter search query or url"`
+[[ "$query" = "" ]] || QT_SCALE_FACTOR=1.5 qutebrowser --target=window "$query" &
+
+update_history "$query" "$history_file"

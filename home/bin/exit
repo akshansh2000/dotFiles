@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+choices="lock\nsuspend\nexit dwm\nshut down"
+
+selected=`echo -e "$choices" | "${ROFI_X}" -dmenu -i -p "session options"`
+
+case $selected in
+  lock)
+    ~/.config/i3lock/.i3lockrc
+    ;;
+  suspend)
+    ~/.config/i3lock/.i3lockrc &
+    sleep 0.5
+    systemctl suspend
+    ;;
+  "exit dwm")
+    killall dwm
+    ;;
+  "shut down")
+    shutdown now
+    ;;
+esac

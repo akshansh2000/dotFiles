@@ -1,0 +1,9 @@
+[Unit]
+Description=Restor keyboard backlight brightness after wakeup from suspend
+After=suspend.target hybrid-sleep.target
+
+[Service]
+ExecStart=/bin/sh -c 'asusctl led-mode static && brightnessctl -d asus::kbd_backlight set $(cat /home/akshansh2000/.config/kbd_backlight)'
+
+[Install]
+WantedBy=suspend.target hybrid-sleep.target

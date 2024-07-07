@@ -1,0 +1,14 @@
+colors:
+  primary:
+    background: '#141C2F'
+env:
+  WINIT_X11_SCALE_FACTOR: '2.0'
+font:
+  size: 8
+  normal:
+    family: monospace
+window:
+  padding:
+    x: 20
+    'y': 20
+

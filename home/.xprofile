@@ -1,0 +1,28 @@
+#!/bin/sh
+
+xinput set-prop 'ELAN1201:00 04F3:3098 Touchpad' 'libinput Tapping Enabled' 1 &
+xinput set-prop 'ELAN1201:00 04F3:3098 Touchpad' 'libinput Natural Scrolling Enabled' 1 &
+dunst &
+xmodmap ~/.config/xmodmap/xmodmaprc &
+sxhkd &
+xrdb -merge ~/.Xresources &
+main_only
+# xrandr --output eDP-1-0 --mode 2560x1440 --dpi 144
+~/bin/set_bar &
+redshift -O 5500 &
+# pulseaudio --start --daemonize=no --log-target=journal &
+systemctl --user import-environment DISPLAY &
+systemctl --user start clipmenud &
+bluetoothctl power on
+# xset -dpms
+# xset s off
+# polybar firstBar -c $HOME/.config/polybar/config.ini &
+xwallpaper --zoom ~/Pictures/wallpaper &
+greenclip daemon &
+pulseaudio-ctl set 80 &
+# picom &
+tilda &
+echo 1 > ~/.config/kbd_backlight &
+brightnessctl -d asus::kbd_backlight set 1 &
+battery_notify &
+noisetorch -i &

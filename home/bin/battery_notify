@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+
+last=100
+
+while true
+do
+  capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+
+  if [ $capacity -lt 21 ] && [ $last -ne $capacity ] && [ $(($capacity % 5)) -eq 0 ] && [[ `acpi -i | sed '1!d' | cut -d' ' -f3` = "Discharging," ]]
+  then
+    # exit fullscreen
+    xsetroot -name "fsignal:69"
+    notify-send  "$capacity% pe hai, charger laga lo" -a "Low Battery"
+  fi
+
+  last=$capacity
+  sleep 30
+done

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+choices="duplicate\nright\nleft\nmain_only\nexternal"
+
+`echo -e "$choices" | "${ROFI_X}" -dmenu -i -p "monitor options"`
+launch_polybar &
+xwallpaper --zoom ~/Pictures/wallpaper
