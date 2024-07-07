@@ -1,6 +1,0 @@
-[Default Applications]
-image/jpeg=usr-usercreated-1.desktop;
-x-scheme-handler/http=org.qutebrowser.qutebrowser.desktop;
-x-scheme-handler/https=org.qutebrowser.qutebrowser.desktop;
-application/pdf=mupdf.desktop;
-image/png=sxiv-usercreated-1.desktop;

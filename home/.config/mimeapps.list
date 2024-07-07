@@ -1,0 +1,31 @@
+[Default Applications]
+image/jpeg=usr-usercreated-1.desktop;
+x-scheme-handler/http=firefoxdeveloperedition.desktop
+x-scheme-handler/https=firefoxdeveloperedition.desktop
+application/pdf=mupdf.desktop;
+image/png=sxiv-usercreated-1.desktop;
+video/quicktime=mpv.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/chrome=firefoxdeveloperedition.desktop
+text/html=firefoxdeveloperedition.desktop
+application/x-extension-htm=firefoxdeveloperedition.desktop
+application/x-extension-html=firefoxdeveloperedition.desktop
+application/x-extension-shtml=firefoxdeveloperedition.desktop
+application/xhtml+xml=firefoxdeveloperedition.desktop
+application/x-extension-xhtml=firefoxdeveloperedition.desktop
+application/x-extension-xht=firefoxdeveloperedition.desktop
+x-scheme-handler/msteams=teams.desktop
+
+[Added Associations]
+video/quicktime=mpv.desktop;
+x-scheme-handler/http=firefoxdeveloperedition.desktop;
+x-scheme-handler/https=firefoxdeveloperedition.desktop;
+x-scheme-handler/chrome=firefoxdeveloperedition.desktop;
+text/html=firefoxdeveloperedition.desktop;
+application/x-extension-htm=firefoxdeveloperedition.desktop;
+application/x-extension-html=firefoxdeveloperedition.desktop;
+application/x-extension-shtml=firefoxdeveloperedition.desktop;
+application/xhtml+xml=firefoxdeveloperedition.desktop;
+application/x-extension-xhtml=firefoxdeveloperedition.desktop;
+application/x-extension-xht=firefoxdeveloperedition.desktop;
+application/x-desktop=sublime_text.desktop;
