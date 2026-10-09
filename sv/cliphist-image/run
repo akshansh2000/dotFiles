@@ -1,0 +1,3 @@
+#!/bin/sh
+# Clipboard history watcher (images). See cliphist-text/run.
+exec wl-paste --type image --watch cliphist store

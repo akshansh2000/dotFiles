@@ -1,0 +1,18 @@
+#!/bin/sh
+# Lock on suspend, and fix the keyboard backlight on resume. Split out of the
+# swayidle service on 2026-09-18 and deliberately kept in its own supervisor:
+# the ladder service gets stopped while something holds an idle inhibit (see
+# ~/.config/river/screensaver-inhibit.py), and lock-on-suspend must NOT stop
+# with it. Otherwise closing the lid during a video would suspend the machine
+# with the session unlocked.
+#
+# `-w` makes swayidle wait for each before-sleep command to finish before
+# letting the system sleep; lock.sh passes `-fork-on-lock`, so it returns only
+# once the session is actually locked. Together that closes the race where the
+# machine suspends with an unlocked screen and wakes showing the desktop.
+#
+# This service has no `timeout` clauses at all, so it never reacts to idleness -
+# only to the sleep/resume signals elogind sends.
+exec swayidle -w \
+	before-sleep "$HOME/.config/waylock/lock.sh" \
+	after-resume "$HOME/.config/river/idle.sh kbd-restore"

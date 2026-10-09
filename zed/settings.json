@@ -1,0 +1,85 @@
+// Zed - the day-one GUI editor, used for Krypton work only.
+//
+// Neovim is the long-term editor (personal work, and where vim gets learned);
+// Zed exists so Krypton work never waits on that. Installed by hand from the
+// official tarball into ~/.local/opt/zed.app (like zen/blip), with the `zed`
+// symlink in ~/.local/bin. It updates itself - nothing else would.
+//
+// Hand-edited. Zed rewrites this file when settings are changed from its UI,
+// so comments survive but key order may not.
+{
+  "base_keymap": "VSCode",
+  // Restricted mode stays on: a newly opened folder runs no language servers or
+  // tasks until it is trusted by hand from Zed's prompt. Turning this on would
+  // trust every folder, including freshly cloned repos nobody has read yet.
+  "session": {
+    "trust_all_worktrees": false
+  },
+
+  // Telemetry off; self-update on (the tarball has no package manager).
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "auto_update": true,
+
+  // Deliberate: vim is practised in Neovim/vimtutor, Zed stays conventional.
+  "vim_mode": false,
+
+  // Stock Catppuccin Mocha from the extension. ~/.config/theme/colors.sh is
+  // stock Mocha too, so they match today - but this is a second copy of the
+  // palette. The planned fix is a theme file in ~/.config/zed/themes/ rendered
+  // by apply-theme.sh; until then a colors.sh change will NOT reach Zed.
+  "theme": "Catppuccin Mocha",
+  "icon_theme": "Catppuccin Mocha",
+
+  // Families mirror ~/.config/theme/fonts.sh (FONT_MONO_FAMILY,
+  // FONT_SANS_FAMILY). Sizes are Zed's px at the panel's 1.3 scale, tuned by
+  // eye: 15 (Zed's default) read large for the buffer; the terminal's size is
+  // set under "terminal" below - unset, it would follow the buffer's.
+  "buffer_font_family": "Fira Code",
+  "buffer_font_size": 14,
+  "ui_font_family": "Noto Sans",
+  "ui_font_size": 16,
+
+  // Installed on first start. Python (basedpyright + ruff) and TypeScript
+  // (vtsls) are built in; language servers are auto-downloaded into
+  // ~/.local/share/zed until the Neovim setup moves them to system installs.
+  "auto_install_extensions": {
+    "catppuccin": true,
+    "catppuccin-icons": true,
+    "solidity": true,
+    "toml": true,
+    "graphql": true,
+    "dockerfile": true
+  },
+
+  // Zed is Krypton-only, so everything Claude inside it runs on the Krypton
+  // account - the same thing `claudek` does for one process
+  // (~/.config/fish/functions/claudek.fish). Set in both places Claude can
+  // start from: the integrated terminal (where a plain `claude` then also
+  // means Krypton, and claude.fish's personal-account hint stays quiet) and
+  // the agent panel. Codex needs nothing: ~/.codex is already Krypton's.
+  "terminal": {
+    "font_family": "Fira Code",
+    "font_size": 13,
+    "env": {
+      "CLAUDE_CONFIG_DIR": "/home/akshansh/.claude-krypton"
+    }
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+      "env": {
+        "CLAUDE_CONFIG_DIR": "/home/akshansh/.claude-krypton"
+      }
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "fast-mode": false,
+        "model": "gpt-6.1-sol"
+      },
+      "type": "registry"
+    }
+  }
+}

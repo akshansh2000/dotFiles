@@ -1,0 +1,5 @@
+#!/bin/sh
+# Clipboard history watcher (text). cliphist upstream wants one watcher per
+# MIME type, and a runit service runs exactly one foreground process, so text
+# and image are two services rather than one script backgrounding both.
+exec wl-paste --type text --watch cliphist store

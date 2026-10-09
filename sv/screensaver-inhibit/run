@@ -1,0 +1,7 @@
+#!/bin/sh
+# org.freedesktop.ScreenSaver on the session bus, so Firefox can stop the idle
+# ladder while it plays video. The reasoning, and the evidence that Firefox has
+# no other working route on this machine, is in the script itself.
+#
+# stdbuf is not needed - the script flushes every log line itself.
+exec python3 "$HOME/.config/river/screensaver-inhibit.py"

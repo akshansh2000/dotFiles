@@ -1,0 +1,88 @@
+#!/bin/sh
+# river's layout generator. Replaced rivertile on 2026-09-25 for its extra
+# layouts (wide, monocle, top/bottom/left/right), per-tag layout memory, and
+# smart gaps + smart borders - a single window on a tag gets no gap and no
+# border, which river 0.3.7 cannot do on its own.
+#
+# Built from source (not in the Void repos) at ~/.local/src/wideriver, tag
+# 1.3.1, and installed with `sudo make install` into /usr/local. Update with:
+#   cd ~/.local/src/wideriver && git fetch --tags && git checkout <tag> && make && sudo make install
+# then `sv restart wideriver`. rivertile is still installed as part of the
+# river package and river/init falls back to it if this binary is missing.
+#
+# Supervised rather than backgrounded from river/init: if the layout client
+# dies, river has no layout at all and new windows pile up unarranged.
+#
+# BORDERS ARE OWNED HERE, not in river/init. wideriver sets river's
+# border-width and border colours itself over zriver_control_v1 (src/displ.c),
+# overwriting any `riverctl border-color-*` call - and its own defaults are
+# Solarized greys. So the colours come from colors.sh on every start, and
+# apply-theme.sh restarts this service instead of calling riverctl.
+# border-color-urgent is NOT managed by wideriver and stays in river/init.
+#
+# Flags:
+#   --layout monocle --layout-alt left
+#       Every tag starts in MONOCLE, with left (stack) pre-seeded as its
+#       "previous" layout - so Super+T (--layout-toggle, which swaps current and
+#       previous) goes monocle <-> left on a fresh tag. State is per tag, in
+#       memory only. Swapped from left/monocle on 2026-10-06: stack only when
+#       wanted, and a link opened from a one-window tag (Slack etc.) arrives as a
+#       new full-size window without reflowing the layout.
+#   --stack dwindle
+#       How the non-master windows split their area. Applies to left/right/
+#       top/bottom and to BOTH side stacks in wide; monocle ignores it.
+#   --ratio-master 0.6
+#       Master's share of the width in left/right (height in top/bottom).
+#       wideriver's default is 0.5; 0.6 = 1159px master / 773px stack on the
+#       1968px panel. Super+H/L still nudge it by 0.05 per tag.
+#   --inner-gaps 12 --outer-gaps 12
+#       Matches the old `rivertile -view-padding 6 -outer-padding 6`: rivertile
+#       pads every view on all sides, so two neighbours sat 12px apart and the
+#       screen edge was 6+6=12px away. wideriver's inner gap is the single gap
+#       BETWEEN views, so 6/6 here would have halved the spacing.
+#   --smart-gaps --border-width-smart-gaps 0
+#       With one window on a tag, drop both the gaps and the border. The two
+#       are coupled in wideriver: the border width only changes when smart
+#       gaps are active.
+#   --border-width-monocle 0
+#       wideriver's own default, stated so it is visible.
+#   --count-wide-left 1 --ratio-wide 0.4
+#       Wide only becomes "master centred, stacks on both sides" when the left
+#       count is > 0. At wideriver's default of 0 it takes the "mid and right"
+#       branch in src/arrange.c: master pinned to the LEFT edge at
+#       ratio + (1-ratio)/2 wide, everything else on the right - geometrically
+#       identical to the left/stack layout, which is exactly what it looked like
+#       at first. The count is a ceiling, not a guarantee: the left never takes
+#       a window the right needs, and with only two windows wide is "left stack
+#       + master on the right" - the centred layout starts at three.
+#       Super+Shift+H/L change the count per tag while in wide. ratio-wide is the
+#       centred master's share of the width: 0.4 = 768px of the 1968px panel,
+#       ~576px each side (0.35 default gave 672/624).
+#       NEW WINDOWS DO NOT TAKE THE MASTER IN WIDE. river attaches new views at
+#       the top of the stack (default-attach-mode top), and in every other
+#       layout the first view is the master. But wide hands out boxes in the
+#       order left-stack, master, right-stack (src/layout.c), so the newest
+#       count-wide-left windows go to the LEFT stack and the master is the next
+#       one. Verified 2026-09-25: four windows, count 1 -> newest on the far
+#       left, second-newest centred, the two oldest on the right. No attach
+#       mode fixes this for wide without breaking the other layouts. There is no alternating
+#       or auto-balanced left/right mode in 1.3.1 or master; a local patch was
+#       considered and deferred (2026-09-25).
+. "$HOME/.config/theme/colors.sh"
+
+exec /usr/local/bin/wideriver \
+	--layout monocle \
+	--layout-alt left \
+	--stack dwindle \
+	--ratio-master 0.6 \
+	--count-wide-left 1 \
+	--ratio-wide 0.4 \
+	--inner-gaps 12 \
+	--outer-gaps 12 \
+	--smart-gaps \
+	--border-width 2 \
+	--border-width-smart-gaps 0 \
+	--border-width-monocle 0 \
+	--border-color-focused "0x$THEME_MAUVE" \
+	--border-color-focused-monocle "0x$THEME_MAUVE" \
+	--border-color-unfocused "0x$THEME_SURFACE1"

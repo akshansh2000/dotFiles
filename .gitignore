@@ -1,0 +1,106 @@
+# WHITELIST (2026-10-10): the repo root is ~/.config, which also holds browser
+# profiles, tokens and app state - so everything is ignored and only what is
+# named below is tracked. A new config needs a `!` line here, or git won't see
+# it at all (check with `git status --ignored`).
+#
+# Deliberately left out, so nobody re-adds them by accident:
+#   secrets/state   gh/ (hosts.yml = GitHub token), pulse/cookie, qBittorrent/,
+#                   vercel-plugin/, obs-studio/ (stream keys), dconf/user
+#   not config      mozilla/ + zen/ (browser profiles), libreoffice/,
+#                   fish/fish_variables (tide's prompt cache + temp copies),
+#                   app-written defaults (btop, eog, qalculate, nwg-look,
+#                   QtProject.conf, autostart/)
+#   generated       everything apply-theme.sh renders from a .tmpl, the
+#                   colors/fonts .fish copies, the river-state binary,
+#                   build-gtk-theme.sh's gtk-4.0 output
+#   vendored        mpv/scripts + mpv/fonts (uosc/thumbfast), fish plugins
+#                   installed by fisher (fish_plugins lists them)
+
+/*
+
+!/.gitignore
+!/README.md
+!/AGENTS.md
+!/mimeapps.list
+
+# --- system (staged /etc copies + inventories) ---
+!/system/
+
+# --- runit user services (~/.local/sv is a symlink to here) ---
+!/sv/
+/sv/*/supervise/
+/sv/*/log/main/
+
+# --- desktop entries (symlinked from ~/.local/share/applications) ---
+!/applications/
+
+# --- theme sources ---
+!/theme/
+/theme/colors.fish
+/theme/fonts.fish
+
+# --- river ---
+!/river/
+/river/init.bak
+/river/river-state/river-state
+/river/river-state/*.o
+/river/river-state/river-status-unstable-v1-client-protocol.h
+/river/river-state/river-status-unstable-v1-protocol.c
+
+# --- bar, launcher, notifications, lock ---
+!/waybar/
+/waybar/style.css
+/waybar/scripts/__pycache__/
+!/rofi/
+/rofi/colors.rasi
+/rofi/fonts.rasi
+/rofi/icons.rasi
+!/mako/
+/mako/config
+!/waylock/
+!/kanshi/
+
+# --- terminals, shell, tools ---
+!/foot/
+/foot/foot.ini
+!/alacritty/
+/alacritty/alacritty.toml
+!/fish/
+/fish/*
+!/fish/config.fish
+!/fish/fish_plugins
+!/fish/functions/
+/fish/functions/*
+!/fish/functions/claude.fish
+!/fish/functions/claudek.fish
+!/tmux/
+!/yazi/
+/yazi/theme.toml
+!/path/
+!/zed/
+
+# --- browsers ---
+!/firefox/
+/firefox/chrome/
+!/zen-rice/
+/zen-rice/chrome/
+/zen-rice/user.js
+!/tridactyl/
+/tridactyl/themes/catppuccin.css
+!/startpage/
+/startpage/index.html
+!/qutebrowser/
+/qutebrowser/*
+!/qutebrowser/config.py
+
+# --- desktop apps ---
+!/gtk-3.0/
+/gtk-3.0/settings.ini
+!/mpv/
+/mpv/scripts/
+/mpv/fonts/
+/mpv/script-opts/uosc.conf
+/mpv/script-opts/uosc.conf.reference
+!/wireplumber/
+!/libfm/
+!/pcmanfm/

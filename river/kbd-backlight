@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Keyboard backlight control for the ASUS ROG N-Key keyboard, via hidraw.
+
+WHY THIS EXISTS
+---------------
+The kernel normally exposes this as /sys/class/leds/asus::kbd_backlight, and
+`brillo -k` drives that. On this machine hid-asus fails to register the LED, so
+that sysfs node does not exist and brillo has nothing to talk to. See
+kbd-probe.py for the failing feature-report exchange.
+
+The driver's own write path is trivial, though - asus_kbd_backlight_work() in
+drivers/hid/hid-asus.c is nothing but a HID SET_FEATURE:
+
+    u8 buf[] = { 0x5a, 0xba, 0xc5, 0xc4, brightness };
+    asus_kbd_set_report(hdev, buf, sizeof(buf));
+
+and its "get" is a cached value the driver never reads back from the device.
+So this script is functionally identical to the driver, just in userspace, and
+it keeps working regardless of whether the LED registration is ever fixed.
+
+Levels are 0-3, matching cdev.max_brightness = 3.
+
+  kbd-backlight get
+  kbd-backlight set 2
+  kbd-backlight up
+  kbd-backlight down
+
+Needs write access to the keyboard's hidraw node; see
+/etc/udev/rules.d/99-asus-nkey-hidraw.rules.
+"""
+import fcntl, os, sys, glob
+
+MAX = 3
+VENDOR = "000B05"          # as it appears in HID_ID
+
+# The device cannot report its own level back (neither can the driver - its
+# brightness_get just returns a cached value), so the level lives in a file.
+#
+# /run is root-only, so the shared file only exists once rc.local's boot-time
+# `set 1` has created it 0666. Until then - and if /run is unwritable for any
+# other reason - fall back to a per-user copy, so up/down still counts
+# correctly instead of silently restarting from 0 every keypress.
+STATE = "/run/asus-kbd-backlight"
+_rt = os.environ.get("XDG_RUNTIME_DIR")
+STATE_FALLBACK = os.path.join(_rt or os.path.expanduser("~/.cache"),
+                              "asus-kbd-backlight")
+
+
+def _ioc_sfeature(n):
+    v = (3 << 30) | (n << 16) | (ord('H') << 8) | 0x06
+    return v - (1 << 32) if v >= (1 << 31) else v
+
+
+def find_node():
+    """The ASUS interface carrying feature report 0x5a - the LED endpoint.
+
+    Located by content rather than by name: hidrawN numbering shifts on every
+    re-enumeration (a suspend/resume is enough), and only one of the keyboard's
+    three interfaces declares report 0x5a.
+    """
+    for path in sorted(glob.glob("/sys/class/hidraw/hidraw*")):
+        try:
+            with open(path + "/device/uevent") as f:
+                if VENDOR not in f.read():
+                    continue
+            with open(path + "/device/report_descriptor", "rb") as f:
+                if b"\x85\x5a" not in f.read():
+                    continue
+        except OSError:
+            continue
+        return "/dev/" + os.path.basename(path)
+    return None
+
+
+def read_state():
+    for path in (STATE, STATE_FALLBACK):
+        try:
+            with open(path) as f:
+                return max(0, min(MAX, int(f.read().strip())))
+        except (OSError, ValueError):
+            continue
+    return 0
+
+
+def write_state(level):
+    # 0666 so the boot-time root call and the later session calls share one
+    # value.
+    for path in (STATE, STATE_FALLBACK):
+        try:
+            fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o666)
+        except OSError:
+            continue
+        try:
+            try:
+                os.fchmod(fd, 0o666)
+            except OSError:
+                pass
+            os.write(fd, b"%d\n" % level)
+        finally:
+            os.close(fd)
+        return
+    print("warning: could not record level", file=sys.stderr)
+
+
+def apply(level):
+    level = max(0, min(MAX, level))
+    node = find_node()
+    if node is None:
+        sys.exit("asus n-key keyboard hidraw node not found")
+    buf = bytearray([0x5A, 0xBA, 0xC5, 0xC4, level])
+    try:
+        fd = os.open(node, os.O_RDWR)
+    except PermissionError:
+        sys.exit("no write access to %s - is the udev rule installed?" % node)
+    try:
+        fcntl.ioctl(fd, _ioc_sfeature(len(buf)), buf)
+    except OSError as e:
+        sys.exit("set failed on %s: %s" % (node, e.strerror))
+    finally:
+        os.close(fd)
+    write_state(level)
+    return level
+
+
+def main(argv):
+    cmd = argv[1] if len(argv) > 1 else "get"
+    if cmd == "get":
+        print(read_state())
+    elif cmd == "set":
+        if len(argv) < 3:
+            sys.exit("usage: kbd-backlight set <0-%d>" % MAX)
+        print(apply(int(argv[2])))
+    elif cmd == "up":
+        print(apply(read_state() + 1))
+    elif cmd == "down":
+        print(apply(read_state() - 1))
+    else:
+        sys.exit(__doc__.strip().splitlines()[-1] if False else
+                 "usage: kbd-backlight {get|set N|up|down}")
+
+
+if __name__ == "__main__":
+    main(sys.argv)

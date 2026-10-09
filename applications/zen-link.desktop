@@ -1,0 +1,23 @@
+[Desktop Entry]
+# Zen as the handler for links/pages opened from OTHER apps (xdg-open, Slack,
+# documents) - 2026-10-06. Hidden (NoDisplay): rofi shows only zen.desktop.
+# `--blank-window <url>` opens the link in a new UNSYNCED Zen window
+# (BrowserContentHandler.sys.mjs marks it _zenStartupSyncFlag = 'unsynced'):
+# the same as Ctrl+Shift+N "New blank window" - it inherits the current Space's
+# container, has a "Move to..." button, and its tabs are temporary (not
+# restored). Why not prefs: zen.window-sync.open-link-in-new-unsynced-window
+# only applies on a URILoadingHelper path external links never take, and
+# browser.link.open_newwindow.override.external=2 opens SYNCED windows
+# (BrowserWindowTracker.openWindow defaults zenSyncedWindow=true) - tested.
+Type=Application
+Name=Zen Browser (link)
+GenericName=Web Browser
+Comment=Open a link in a new unsynced Zen window
+Exec=/home/akshansh/.local/opt/zen/zen --blank-window %u
+Icon=/home/akshansh/.local/opt/zen/browser/chrome/icons/default/default128.png
+Terminal=false
+NoDisplay=true
+Categories=Network;WebBrowser;
+MimeType=text/html;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+StartupWMClass=zen

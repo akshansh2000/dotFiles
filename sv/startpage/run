@@ -1,0 +1,26 @@
+#!/bin/sh
+# Serves ~/.config/startpage on loopback so Tridactyl's `newtab` setting can
+# point at it. It has to be http:// - Tridactyl's own docs rule out file:///
+# for newtab, and an extension's moz-extension:// page can't be injected into
+# by another extension, so http is the only scheme where the bindings work.
+#
+# darkhttpd is the intended server (~50KB, static-only). The python fallback
+# exists so this service works before darkhttpd is installed; it is not meant
+# to be the steady state.
+#
+# Cache-Control: no-cache is load-bearing (2026-09-30). darkhttpd sends only
+# Last-Modified, so Firefox guessed freshness as 10% of the file's age and
+# served new tabs from its disk cache WITHOUT asking - an edited startpage or
+# an apply-theme.sh palette change stayed invisible for a day or more (seen
+# when the inline-CSS rewrite didn't show up). no-cache means "revalidate
+# first", not "don't cache": each new tab gets a 304 from here in microseconds.
+# The python fallback cannot add headers, so it has the old stale-cache
+# behaviour - one more reason it isn't the steady state.
+DIR="$HOME/.config/startpage"
+
+if command -v darkhttpd >/dev/null 2>&1; then
+	exec darkhttpd "$DIR" --addr 127.0.0.1 --port 8123 \
+		--header 'Cache-Control: no-cache'
+fi
+
+exec python3 -m http.server 8123 --bind 127.0.0.1 --directory "$DIR"

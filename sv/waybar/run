@@ -1,0 +1,29 @@
+#!/bin/sh
+# The status bar. Supervised since 2026-09-29, like every other long-running
+# piece of the session: a bar that dies stays dead with nothing saying why.
+# Before this, waybar was launched from river/init with a bare `&`, and when the
+# session bus was killed on 2026-09-18 it went down and stayed down until a
+# re-login.
+#
+# The wait below is the actual bug fix. waybar's pulseaudio module connects to
+# the PulseAudio server ONCE, at startup, and never retries - if the server is
+# not there yet, the volume module is silently absent for the whole session.
+# runsvdir starts this service alongside pipewire-pulse, so the race is real: on
+# 2026-09-29 waybar started at 14:12:40, pipewire-pulse at 14:12:41, and there
+# was no volume on the bar.
+#
+# So: poll `pactl info` every 0.1s and start the moment it answers (~1s after
+# login; instant on a mid-session restart - a check takes ~10ms). Give up after
+# 5s and start the bar ANYWAY. Do not turn this into "exit and let runit retry
+# until audio is up": if audio were ever truly broken, there would be no bar.
+#
+# Restart with `sv restart waybar` (apply-theme.sh does). Never `pkill waybar`
+# plus a manual relaunch - runit would start a second one alongside it.
+# The wifi/bluetooth menus still refresh modules with `pkill -RTMIN+N waybar`;
+# a signal is not a kill and is unaffected by supervision.
+for _ in $(seq 50); do
+	pactl info >/dev/null 2>&1 && break
+	sleep 0.1
+done
+
+exec waybar

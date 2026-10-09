@@ -1,0 +1,29 @@
+#!/bin/sh
+# The idle LADDER only - dim, blank, lock-on-idle. Supervised rather than
+# backgrounded from river/init for the same reason as mako: a dead idle daemon
+# is completely silent - the screen simply never dims again and nothing says why.
+#
+#   5 min   dim the panel
+#   10 min  panel off + keyboard backlight off
+#   30 min  lock
+#
+# There is deliberately NO auto-suspend step: on battery this machine will sit
+# locked with the screen off indefinitely. elogind's IdleAction is left at its
+# default `ignore` to match.
+#
+# This service is STOPPED AND STARTED by ~/.config/river/screensaver-inhibit.py
+# whenever an application asks the session bus for idle inhibition (Firefox does
+# this while playing video). That is why before-sleep lives in the separate
+# swayidle-sleep service and not here: if the lock-on-suspend hook were in this
+# file, closing the lid during a video would suspend the machine WITHOUT
+# locking it. Keep the two apart.
+#
+# Restarting also resets swayidle's clock, so the 5-minute timer starts fresh
+# when playback ends instead of firing immediately.
+#
+# Commands are given as absolute paths: swayidle hands them to `sh -c`, and
+# relying on ~ expansion there is a needless dependency on the shell it picks.
+exec swayidle -w \
+	timeout 300  "$HOME/.config/river/idle.sh dim"  resume "$HOME/.config/river/idle.sh undim" \
+	timeout 600  "$HOME/.config/river/idle.sh off"  resume "$HOME/.config/river/idle.sh on" \
+	timeout 1800 "$HOME/.config/waylock/lock.sh"

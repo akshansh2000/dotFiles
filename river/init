@@ -1,0 +1,368 @@
+#!/bin/sh
+
+# --- D-Bus session bus ---
+# No systemd/DM/PAM on this setup starts a session bus, only the system
+# bus (used by e.g. bluetoothctl) is running. Without one, sandboxed apps
+# (flatpak) get a hard "disabled:" transport error - bwrap explicitly
+# refuses to guess.
+#
+# NOTE: dbus-launch --exit-with-session was tried first and doesn't work
+# here - it ties the bus to an X11 connection or, failing that, to a HUP
+# on the invoking terminal's stdin, and river/init has no real controlling
+# terminal, so the bus died almost immediately after starting. (man
+# dbus-launch itself says not to use it for a non-X/text-mode session.)
+# Plain dbus-daemon has no such lifetime babysitting, so instead we cache
+# its address across river restarts (liveness-checked with a ping) so a
+# restart reuses the existing bus instead of leaking a fresh orphaned one.
+dbus_addr_file="$HOME/.cache/river-dbus-session-bus-address"
+mkdir -p "$HOME/.cache"
+
+if [ -r "$dbus_addr_file" ]; then
+	DBUS_SESSION_BUS_ADDRESS=$(cat "$dbus_addr_file")
+	dbus-send --bus="$DBUS_SESSION_BUS_ADDRESS" --print-reply --dest=org.freedesktop.DBus \
+		/org/freedesktop/DBus org.freedesktop.DBus.Peer.Ping >/dev/null 2>&1 || DBUS_SESSION_BUS_ADDRESS=
+fi
+
+if [ -z "$DBUS_SESSION_BUS_ADDRESS" ]; then
+	DBUS_SESSION_BUS_ADDRESS=$(dbus-daemon --session --fork --print-address)
+	echo "$DBUS_SESSION_BUS_ADDRESS" > "$dbus_addr_file"
+fi
+export DBUS_SESSION_BUS_ADDRESS
+
+# --- Theme + PATH ---
+# Single source of truth for colors (edit colors.sh, then run
+# ~/.config/theme/apply-theme.sh) and for extra PATH entries (managed via
+# the Super+Shift+D rofi menu, see path/path-menu.sh).
+. "$HOME/.config/theme/colors.sh"
+. "$HOME/.config/path/build-path.sh"
+
+# Cursor: one theme + size everywhere (source of truth: theme/gtk.sh).
+# `riverctl xcursor-theme` covers river-drawn cursors (cursor-shape-v1 clients)
+# and exports XCURSOR_* to what RIVER spawns (keybindings) and to Xwayland -
+# but this init script and its children (runsvdir services, and the D-Bus
+# activation environment below) don't inherit river's later env changes, so
+# export them here too, before both.
+. "$HOME/.config/theme/gtk.sh"
+export XCURSOR_THEME="$GTK_CURSOR_THEME" XCURSOR_SIZE="$GTK_CURSOR_SIZE"
+riverctl xcursor-theme "$GTK_CURSOR_THEME" "$GTK_CURSOR_SIZE"
+
+# flatpak's own env setup (adds its .desktop exports to XDG_DATA_DIRS, so
+# rofi's drun mode can actually find flatpak-installed apps). Normally only
+# sourced by login shells via /etc/profile.d - river/init isn't one, so do
+# it explicitly. Guarded since it won't exist until flatpak is installed.
+[ -r /etc/profile.d/flatpak.sh ] && . /etc/profile.d/flatpak.sh
+
+# --- D-Bus activation environment ---
+# The session bus is created by session-wrapper.sh *before* river execs, because
+# river has to inherit DBUS_SESSION_BUS_ADDRESS. The consequence is that the
+# bus's activation environment has no WAYLAND_DISPLAY - it did not exist yet.
+# Anything D-Bus-activated therefore starts blind to the compositor. That is
+# what stopped xdg-desktop-portal-wlr from ever working: OBS asks for
+# ScreenCast, the bus spawns the wlr backend with no Wayland connection, and it
+# offers no capture sources. Push the variables in now that river is up.
+# XCURSOR_*: so D-Bus-activated apps (portal dialogs, flatpaks started over
+# D-Bus) draw the same cursor as everything else (theme/gtk.sh).
+dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE XCURSOR_THEME XCURSOR_SIZE
+
+# --- User-level service supervision (pipewire/wireplumber via runit) ---
+# No systemd --user on Void/runit, so supervise audio daemons ourselves.
+# Guarded so re-sourcing this file (e.g. a future "reload" keybind) doesn't
+# spawn a second supervisor tree.
+pgrep -u "$USER" -f "runsvdir $HOME/.local/sv" >/dev/null 2>&1 || \
+	runsvdir "$HOME/.local/sv" >/tmp/runsvdir-user.log 2>&1 &
+
+# --- GPU / output ---
+# Hybrid-GPU laptop: AMD iGPU (Cezanne, PCI 04:00.0) + NVIDIA RTX 3060 Mobile
+# (no driver loaded, no /dev/dri node). Pin to AMD explicitly via its stable
+# PCI-path symlink rather than a numeric card index, which can shift if
+# NVIDIA drivers are ever installed.
+export WLR_DRM_DEVICES=/dev/dri/by-path/pci-0000:04:00.0-card
+# Output layout (scale, position, mode) lives in ~/.config/kanshi/config and
+# is applied by the supervised kanshi service in ~/.local/sv/kanshi, not here.
+# A one-shot wlr-randr line used to sit on this spot; it could not survive
+# hotplug or reapply after anything else touched the output.
+
+# Restore the panel brightness saved by the XF86MonBrightness* keybindings.
+# Void has nothing that does this on its own - systemd's systemd-backlight@
+# service has no elogind counterpart - so the panel otherwise comes up at the
+# firmware default every boot. Ignore failure: on a machine that has never had
+# a level stored there is simply nothing to restore.
+brillo -I 2>/dev/null || true
+
+# --- Input: ELAN touchpad ---
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad tap enabled
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad natural-scroll enabled
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad click-method clickfinger
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad drag enabled
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad disable-while-typing enabled
+# Cursor acceleration curve + speed, and scroll distance per tick. Note:
+# there's no compositor-level "smooth/kinetic scroll animation" to enable —
+# libinput already reports continuous (non-stepped) scroll deltas for this
+# touchpad; any remaining "jumpiness" is down to how individual apps render
+# scroll events, not something tunable here.
+#
+# 2026-10-09: scroll-factor 1.3 -> 1.0 (scrolling felt too fast) - kept.
+# Acceleration was switched off (flat, pointer-accel 0) the same day to try
+# plain input, then restored: adaptive with pointer-accel 0.1 ("acceleration
+# back, pointer a tad faster" than flat 0). Natural scroll and two-finger
+# (incl. horizontal) scrolling unchanged throughout.
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad accel-profile adaptive
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad pointer-accel 0.1
+riverctl input pointer-1267-12440-ELAN1201:00_04F3:3098_Touchpad scroll-factor 1.0
+
+# --- Focus ---
+# Hover to focus. `normal` (not `always`): the cursor focuses a view when it
+# moves onto it, but moving *within* a view will not re-focus it once focus has
+# gone elsewhere. That distinction is what keeps this from fighting the focus
+# keybindings - under `always`, Super+J followed by any stray touchpad movement
+# would snap focus straight back to whatever sits under the pointer.
+#
+# Not paired with `set-cursor-warp on-focus-change` (which teleports the cursor
+# to the centre of a newly focused view to keep pointer and focus together).
+# Add that only if keyboard focus changes followed by a stray touch prove
+# annoying - a jumping cursor is its own kind of irritating.
+riverctl focus-follows-cursor normal
+
+# --- Keybindings (GENERATED) ---
+# Everything between the markers below is rendered from
+# ~/.config/river/keybindings.conf by ~/.config/river/gen-keybindings.sh.
+# Edit that file, then run `gen-keybindings.sh --apply`. Changes made
+# directly inside the block are lost on the next run.
+# >>> BEGIN GENERATED KEYBINDINGS - do not edit, see keybindings.conf >>>
+
+# --- Core: terminal, close, session menu ---
+riverctl map normal Super Return spawn 'foot'
+riverctl map normal Super Q close
+riverctl map normal Super+Shift Q spawn '~/.config/river/session-menu.sh'
+
+# --- file manager, browser, pwvucontrol ---
+riverctl map normal Super E spawn 'pcmanfm'
+riverctl map normal Super+Control E spawn 'foot yazi'
+riverctl map normal Super B spawn '~/.local/bin/zen'
+riverctl map normal Super+Shift B spawn 'firefox -P krypton'
+riverctl map normal Super A spawn 'pwvucontrol'
+
+# --- rofi ---
+riverctl map normal Super p spawn 'rofi -show drun'
+riverctl map normal Super+Shift P spawn '~/.config/path/path-menu.sh'
+
+# Clipboard history. cliphist stores entries via the wl-paste watchers
+# supervised in ~/.local/sv/cliphist-{text,image}; this only reads them back.
+# `cliphist decode` is needed because list output is id-prefixed and images
+# are stored as references, not literal data.
+riverctl map normal Super V spawn 'sh -c '\''cliphist list | rofi -dmenu -p clipboard | cliphist decode | wl-copy'\'''
+
+# --- Focus / swap / zoom ---
+riverctl map normal Super J focus-view next
+riverctl map normal Super K focus-view previous
+riverctl map normal Super+Shift J swap next
+riverctl map normal Super+Shift K swap previous
+
+# --- Layout (wideriver) ---
+# Layout, previous layout and stack mode are all tracked PER TAG, in memory -
+# a wideriver or river restart puts every tag back to left/dwindle.
+# --ratio and --count act on whatever layout the tag is in: in wide they set
+# the wide ratio and how many windows go to the left-hand stack.
+riverctl map normal Super H send-layout-cmd wideriver "--ratio -0.05"
+riverctl map normal Super L send-layout-cmd wideriver "--ratio +0.05"
+riverctl map normal Super+Shift H send-layout-cmd wideriver "--count +1"
+riverctl map normal Super+Shift L send-layout-cmd wideriver "--count -1"
+riverctl map normal Super Up send-layout-cmd wideriver "--layout top"
+riverctl map normal Super Right send-layout-cmd wideriver "--layout right"
+riverctl map normal Super Down send-layout-cmd wideriver "--layout bottom"
+riverctl map normal Super Left send-layout-cmd wideriver "--layout left"
+# S/M/W jump straight to stack (= left, same as Super+Left), monocle and wide.
+# Super+S sits next to Super+Shift+S (screenshot): a missed Shift opens nothing
+# worse than a layout change.
+riverctl map normal Super S send-layout-cmd wideriver "--layout left"
+riverctl map normal Super M send-layout-cmd wideriver "--layout monocle"
+riverctl map normal Super W send-layout-cmd wideriver "--layout wide"
+# Super+T swaps the current and previous layout - "the last two", not a fixed
+# pair. On a fresh tag the previous is seeded to monocle (--layout-alt), so it
+# starts as left <-> monocle. Setting a layout the tag is already in does not
+# touch "previous", so Super+M in monocle followed by Super+T still goes back.
+riverctl map normal Super T send-layout-cmd wideriver "--layout-toggle"
+
+# --- Move / resize / snap (keyboard) ---
+riverctl map normal Super+Alt H move left 100
+riverctl map normal Super+Alt J move down 100
+riverctl map normal Super+Alt K move up 100
+riverctl map normal Super+Alt L move right 100
+riverctl map normal Super+Alt+Control H snap left
+riverctl map normal Super+Alt+Control J snap down
+riverctl map normal Super+Alt+Control K snap up
+riverctl map normal Super+Alt+Control L snap right
+riverctl map normal Super+Alt+Shift H resize horizontal -100
+riverctl map normal Super+Alt+Shift J resize vertical 100
+riverctl map normal Super+Alt+Shift K resize vertical -100
+riverctl map normal Super+Alt+Shift L resize horizontal 100
+
+# --- Move / resize / float via mouse ---
+riverctl map-pointer normal Super BTN_LEFT move-view
+riverctl map-pointer normal Super BTN_RIGHT resize-view
+riverctl map-pointer normal Super BTN_MIDDLE toggle-float
+
+# --- Floating / fullscreen ---
+riverctl map normal Super Space toggle-float
+riverctl map normal Super F toggle-fullscreen
+
+# --- Multi-output ---
+riverctl map normal Super Period focus-output next
+riverctl map normal Super Comma focus-output previous
+riverctl map normal Super+Shift Period send-to-output next
+riverctl map normal Super+Shift Comma send-to-output previous
+
+# --- Tags (river's "workspaces") ---
+for i in $(seq 1 9)
+do
+	tags=$((1 << ($i - 1)))
+	riverctl map normal Super $i set-focused-tags $tags
+	riverctl map normal Super+Shift $i set-view-tags $tags
+	riverctl map normal Super+Control $i toggle-focused-tags $tags
+	riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
+done
+all_tags=$(((1 << 32) - 1))
+riverctl map normal Super 0 set-focused-tags $all_tags
+riverctl map normal Super+Shift 0 set-view-tags $all_tags
+# Super+Tab bounces between the last two tag sets, like sway's
+# `workspace back_and_forth`. river tracks the previous tag value per output
+# itself, so this needs no script and no state file. Verified 2026-09-18 that
+# repeated presses alternate rather than walking a history: the command stores
+# the tags it leaves as the new "previous", so 3 -> 1 -> 3 -> 1.
+riverctl map normal Super Tab focus-previous-tags
+# Ctrl+Super+Left/Right step to the previous/next tag. riverctl cannot say which
+# tag is focused, so ~/.config/river/river-state reads it over river-status and
+# prints the neighbouring tag's bitmask. Rules: tags 1-9, wrapping at both ends,
+# every tag counts (empty or not), and with several tags visible the step
+# starts from the lowest. It goes through set-focused-tags, so Super+Tab still
+# bounces back to where you were. (Super+Left/Right are the layout keys.)
+riverctl map normal Super+Control Left spawn 'm=$(~/.local/bin/river-state prev) && riverctl set-focused-tags "$m"'
+riverctl map normal Super+Control Right spawn 'm=$(~/.local/bin/river-state next) && riverctl set-focused-tags "$m"'
+
+# --- Volume / brightness / media keys (normal + locked, per river's own docs) ---
+riverctl map normal None XF86AudioRaiseVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'
+riverctl map locked None XF86AudioRaiseVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'
+riverctl map normal None XF86AudioLowerVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
+riverctl map locked None XF86AudioLowerVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
+riverctl map normal None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
+riverctl map locked None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
+
+# `brillo -O` after each change stores the level in ~/.cache/brillo, which
+# `brillo -I` in river/init restores at session start. Nothing else does this:
+# systemd has systemd-backlight@.service, elogind ships no equivalent
+# (`xbps-query -f elogind | grep -i backlight` is empty), so without this the
+# panel comes up at the firmware default every boot.
+# Saving on every change rather than at shutdown is deliberate - the value
+# then survives a crash or a held power button, and does not depend on
+# /etc/rc.shutdown running.
+riverctl map normal None XF86MonBrightnessUp spawn 'sh -c '\''brillo -A 5 && brillo -O'\'''
+riverctl map locked None XF86MonBrightnessUp spawn 'sh -c '\''brillo -A 5 && brillo -O'\'''
+riverctl map normal None XF86MonBrightnessDown spawn 'sh -c '\''brillo -U 5 && brillo -O'\'''
+riverctl map locked None XF86MonBrightnessDown spawn 'sh -c '\''brillo -U 5 && brillo -O'\'''
+
+# The kernel's asus::kbd_backlight LED does not exist on this machine -
+# hid-asus binds the keyboard but fails to register the LED, so there is no
+# /sys/class/leds entry for brillo to drive. `brillo -k` therefore fell back
+# to whatever else was in /sys/class/leds, which is input*::capslock: that is
+# why "increase" turned the Caps Lock light on and "decrease" did nothing
+# (the input subsystem re-asserts that LED from the real Caps Lock state).
+# 
+# kbd-backlight talks to the keyboard over hidraw with the exact SET_FEATURE
+# the driver itself would send. See the header of that script, and
+# kbd-probe.py for the failing exchange that made the LED disappear.
+riverctl map normal None XF86KbdBrightnessUp spawn '~/.config/river/kbd-backlight up'
+riverctl map locked None XF86KbdBrightnessUp spawn '~/.config/river/kbd-backlight up'
+riverctl map normal None XF86KbdBrightnessDown spawn '~/.config/river/kbd-backlight down'
+riverctl map locked None XF86KbdBrightnessDown spawn '~/.config/river/kbd-backlight down'
+
+riverctl map normal None XF86AudioPlay spawn 'playerctl play-pause'
+riverctl map locked None XF86AudioPlay spawn 'playerctl play-pause'
+riverctl map normal None XF86AudioMedia spawn 'playerctl play-pause'
+riverctl map locked None XF86AudioMedia spawn 'playerctl play-pause'
+riverctl map normal None XF86AudioNext spawn 'playerctl next'
+riverctl map locked None XF86AudioNext spawn 'playerctl next'
+riverctl map normal None XF86AudioPrev spawn 'playerctl previous'
+riverctl map locked None XF86AudioPrev spawn 'playerctl previous'
+
+# --- Session / lock ---
+# Super+Control+Q mirrors macOS's lock shortcut, which is where the muscle
+# memory comes from. Note Super+Q on its own closes the focused window - a
+# slip of the Control finger closes something rather than locking.
+# Every L combination was already taken by rivertile/move/resize.
+riverctl map normal Super+Control Q spawn '~/.config/waylock/lock.sh'
+
+# --- Lid switch ---
+# river handles the lid itself (lid.sh): on AC elogind is told to ignore it, so
+# without this nothing turned the panel off. Bound in `locked` too so opening
+# the lid at the lock screen brings the panel back. Logs to socklog (river-lid).
+for mode in normal locked; do
+	riverctl map-switch $mode lid close spawn '~/.config/river/lid.sh close'
+	riverctl map-switch $mode lid open spawn '~/.config/river/lid.sh open'
+done
+
+# --- OCR ---
+# Select a region, OCR it, text lands on the clipboard (retrieve with Super+V
+# or a normal paste). Needs tesseract-ocr + tesseract-ocr-eng; pass another
+# language code as an argument to use a different one.
+riverctl map normal Super+Shift O spawn '~/.config/river/ocr-region.sh'
+
+# --- Screenshots (needs grim + slurp installed) ---
+# This ASUS keyboard's screenshot key is hardware-mapped to send Super+Shift+S
+# (mimicking the Windows Snip & Sketch shortcut) rather than a real Print
+# keysym - confirmed via libinput debug-events. Bind that directly. Print /
+# Super+Print are kept too, in case an external keyboard with a real PrtScn
+# key is ever plugged in.
+# Super+Shift+S is the hardware key (see above), so it gets the good workflow:
+# capture a region, open it in satty to annotate, then save. --copy-command
+# gives satty a working "copy" button (needs wl-clipboard, installed
+# 2026-09-10); --early-exit closes satty on save instead of leaving it open.
+riverctl map normal Super+Shift S spawn 'grim -g "$(slurp)" - | satty --filename - --early-exit --copy-command wl-copy --output-filename ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png'
+
+# Print / Super+Print stay the no-UI fast path, but now land on the clipboard
+# as well as on disk: tee writes the PNG out while passing it through to
+# wl-copy, so a single grim run feeds both.
+riverctl map normal None Print spawn 'grim - | tee ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png | wl-copy'
+riverctl map normal Super Print spawn 'grim -g "$(slurp)" - | tee ~/Pictures/screenshot-$(date +%Y%m%d-%H%M%S).png | wl-copy'
+# <<< END GENERATED KEYBINDINGS <<<
+
+# --- Cosmetics ---
+riverctl background-color "0x$THEME_BASE"
+# No border-color-focused/-unfocused (or border-width) here: wideriver owns
+# them and sets them itself over river-control, so anything set here would be
+# overwritten the moment it starts. They live in ~/.local/sv/wideriver/run.
+# Urgent = a window on another tag asked for focus via xdg-activation, the
+# same signal that lights the red dot on its tag in waybar.
+riverctl border-color-urgent "0x$THEME_RED"
+riverctl set-repeat 50 300
+
+# --- Rules ---
+riverctl rule-add -app-id "rofi" float
+
+# Force server-side decorations on everything so river draws its border on
+# every view. Without a rule river respects the client's wish, and GTK apps
+# (pcmanfm, and Firefox) always ask for CSD - GTK never implements the
+# xdg-decoration protocol - so they ended up with no border at all while
+# terminals had one. Applies to new and existing views.
+riverctl rule-add -app-id '*' ssd
+
+# --- Status bar ---
+# waybar is supervised at ~/.local/sv/waybar (started by runsvdir above), not
+# launched here. Its run script waits for the PulseAudio server first, because
+# the volume module connects only once - see the comments there.
+
+# --- Tiling layout ---
+# wideriver, supervised at ~/.local/sv/wideriver (started by runsvdir above, so
+# not launched here). river picks a layout client by namespace, so this line is
+# all that selects it.
+#
+# Fallback: wideriver is built from source into /usr/local and is not an xbps
+# package. If the binary is ever missing, use rivertile - which ships with the
+# river package itself - so the session still tiles instead of piling windows
+# up unarranged. The layout keybindings target wideriver and will do nothing
+# under the fallback; tiling itself still works.
+if [ -x /usr/local/bin/wideriver ]; then
+	riverctl default-layout wideriver
+else
+	riverctl default-layout rivertile
+	rivertile -view-padding 6 -outer-padding 6 &
+fi

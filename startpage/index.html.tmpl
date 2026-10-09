@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Startpage</title>
+	<link rel="icon" href="data:,">
+	<meta name="color-scheme" content="dark">
+	<!-- TEMPLATE - index.html is generated from index.html.tmpl by
+	     ~/.config/theme/apply-theme.sh; edit the .tmpl. Placeholders come from
+	     ~/.config/theme/colors.sh + fonts.sh.
+
+	     The CSS is inline ON PURPOSE (2026-09-30). As an external style.css it
+	     arrived after Firefox's first paint: a frame-by-frame recording showed
+	     this page unstyled - white, black serif links - for ~90-100 ms on every
+	     new tab and new window, although darkhttpd served the file in 8 ms.
+	     Inline styles are parsed before the first paint, so that cannot happen.
+	     Don't split it back out. -->
+	<style>
+		:root {
+			--base: #{{BASE}};
+			--mantle: #{{MANTLE}};
+			--surface1: #{{SURFACE1}};
+			--text: #{{TEXT}};
+			--subtext0: #{{SUBTEXT0}};
+			--mauve: #{{MAUVE}};
+			--blue: #{{BLUE}};
+			--green: #{{GREEN}};
+
+			--mono: "{{FONT_MONO_FAMILY}}", monospace;
+			--sans: "Noto Sans", "DejaVu Sans", sans-serif;
+			/* Glyphs live in nerd-fonts-symbols-ttf; the mono family is the fallback
+			   so a missing symbols font degrades to a box rather than a wrong glyph. */
+			--nerd: "Symbols Nerd Font Mono", "Symbols Nerd Font", var(--mono);
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			background: var(--base);
+			color: var(--text);
+			font-family: var(--sans);
+			color-scheme: dark;
+		}
+
+		.page {
+			min-height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 0;
+			padding: 2rem 1.5rem;
+		}
+
+		.nf {
+			font-family: var(--nerd);
+			font-style: normal;
+			line-height: 1;
+		}
+
+		/* ---------- clock ---------- */
+
+		.clock {
+			font-family: var(--mono);
+			font-size: clamp(3.5rem, 9vw, 7rem);
+			font-weight: 300;
+			line-height: 1.05;
+			letter-spacing: 0.02em;
+			font-variant-numeric: tabular-nums;
+		}
+
+		.date {
+			font-family: var(--mono);
+			font-size: clamp(0.9rem, 1.4vw, 1.15rem);
+			color: var(--subtext0);
+			letter-spacing: 0.18em;
+			text-transform: uppercase;
+			margin-top: 0.6rem;
+		}
+
+		/* ---------- search ---------- */
+
+		.search {
+			position: relative;
+			width: min(560px, 100%);
+			margin-top: 3rem;
+		}
+
+		.search input {
+			width: 100%;
+			background: var(--mantle);
+			border: 1px solid transparent;
+			border-radius: 999px;
+			color: var(--text);
+			font-family: inherit;
+			font-size: 1rem;
+			padding: 0.95rem 3rem 0.95rem 1.5rem;
+			outline: none;
+			transition: border-color 0.15s ease, background 0.15s ease;
+		}
+
+		.search input::placeholder {
+			color: var(--subtext0);
+		}
+
+		.search input:focus {
+			border-color: var(--mauve);
+			background: var(--mantle);
+		}
+
+		.search-icon {
+			position: absolute;
+			right: 1.35rem;
+			top: 50%;
+			transform: translateY(-50%);
+			color: var(--subtext0);
+			pointer-events: none;
+			font-size: 1rem;
+		}
+
+		/* ---------- cards ---------- */
+
+		.cards {
+			margin-top: 3.5rem;
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 1.5rem;
+			width: min(900px, 100%);
+		}
+
+		.card {
+			background: var(--mantle);
+			border-radius: 16px;
+			padding: 1.75rem 1.5rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.9rem;
+		}
+
+		.card h2 {
+			display: flex;
+			align-items: center;
+			gap: 0.6rem;
+			font-size: 0.95rem;
+			font-weight: 700;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			color: var(--accent);
+			margin-bottom: 0.6rem;
+		}
+
+		.card a {
+			display: flex;
+			align-items: center;
+			gap: 0.65rem;
+			color: var(--text);
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 0.25rem 0.5rem;
+			border-radius: 8px;
+			transition: color 0.12s ease, background 0.12s ease;
+		}
+
+		.card a .nf {
+			color: var(--subtext0);
+			width: 1.25em;
+			text-align: center;
+			transition: color 0.12s ease;
+		}
+
+		.card a:hover,
+		.card a:focus-visible {
+			color: var(--accent);
+			background: var(--surface1);
+			outline: none;
+		}
+
+		.card a:hover .nf,
+		.card a:focus-visible .nf {
+			color: var(--accent);
+		}
+
+		.card--green {
+			--accent: var(--green);
+		}
+
+		.card--blue {
+			--accent: var(--blue);
+		}
+
+		.card--mauve {
+			--accent: var(--mauve);
+		}
+
+		/* ---------- narrow windows ---------- */
+
+		@media (max-width: 720px) {
+			.cards {
+				grid-template-columns: minmax(0, 1fr);
+				gap: 1rem;
+			}
+
+			.search {
+				margin-top: 2rem;
+			}
+
+			.cards {
+				margin-top: 2.5rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<main class="page">
+		<div id="clock" class="clock">&nbsp;</div>
+		<div id="date" class="date">&nbsp;</div>
+
+		<!-- No autofocus, deliberately: it would drop Tridactyl into insert
+		     mode on every new tab and swallow f / o / gt. Use `gi` to focus. -->
+		<form class="search" method="GET" action="https://www.google.com/search">
+			<input id="q" name="q" type="text" placeholder="Search..." autocomplete="off" spellcheck="false">
+			<span class="search-icon nf">&#xf002;</span>
+		</form>
+
+		<div class="cards">
+			<section class="card card--green">
+				<h2><span class="nf">&#xf0ad;</span>General</h2>
+				<a href="https://www.youtube.com"><span class="nf">&#xf16a;</span>YouTube</a>
+				<a href="https://mail.google.com"><span class="nf">&#xf0e0;</span>Gmail</a>
+				<a href="https://real-debrid.com/torrents"><span class="nf">&#xf233;</span>Real Debrid</a>
+			</section>
+
+			<section class="card card--blue">
+				<h2><span class="nf">&#xf0c0;</span>Social</h2>
+				<a href="https://reddit.com"><span class="nf">&#xf1a1;</span>Reddit</a>
+				<a href="https://x.com"><span class="nf">&#xf099;</span>X</a>
+				<a href="https://web.whatsapp.com"><span class="nf">&#xf232;</span>WhatsApp</a>
+			</section>
+
+			<section class="card card--mauve">
+				<h2><span class="nf">&#xf121;</span>Dev</h2>
+				<a href="https://github.com"><span class="nf">&#xf09b;</span>GitHub</a>
+				<a href="https://docs.voidlinux.org"><span class="nf">&#xf17c;</span>Void Docs</a>
+				<a href="https://claude.ai"><span class="nf">&#xf06a9;</span>Claude</a>
+			</section>
+		</div>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

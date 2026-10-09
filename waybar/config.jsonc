@@ -1,0 +1,92 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 28,
+	"modules-left": ["river/tags", "custom/layout", "river/window"],
+	"modules-center": ["clock"],
+	"modules-right": ["custom/wifi", "custom/bluetooth", "custom/volume", "custom/battery", "tray"],
+
+	"river/tags": {
+		"num-tags": 9
+	},
+	// Current tag's layout, as wideriver's own box-drawing symbol (│ ├─┤ = stack,
+	// ├─┤ ├─┤ = wide, │ 3 │ = monocle with 3 windows, ...). NOT the built-in
+	// river/layout module: that one keeps showing the previous tag's symbol on an
+	// empty tag, because river only asks the layout client for a layout when there
+	// are windows to arrange. river-state (~/.config/river/river-state) watches
+	// river-status and prints empty text when the focused tags hold no windows,
+	// which makes waybar hide the module. restart-interval brings it back if it
+	// ever exits - without it the indicator would silently vanish for good.
+	// Click = --layout-toggle, the same as Super+T. No setsid needed: riverctl
+	// returns immediately, so it cannot stall this module's updates.
+	"custom/layout": {
+		"exec": "~/.local/bin/river-state waybar",
+		"return-type": "json",
+		"restart-interval": 2,
+		"on-click": "riverctl send-layout-cmd wideriver '--layout-toggle'",
+		"tooltip": false
+	},
+	"river/window": {
+		"max-length": 60
+	},
+	"clock": {
+		"format": "{:%a, %b %d   %I:%M %p}"
+	},
+	// Volume: icon only, custom module (2026-10-09). Replaced the built-in
+	// pulseaudio module so the tooltip can show the bluetooth codec on its own
+	// line (Volume / device / Codec) - the built-in tooltip can't reach sink
+	// properties. The script prints a line per change, woken by `pactl
+	// subscribe`, so no "interval". Icons (empty circle + 8-step pie) and the
+	// .muted class come from the script. Custom modules don't scroll the
+	// volume, so scrolling stays off with no extra config.
+	"custom/volume": {
+		"exec": "~/.config/waybar/scripts/volume-status.py",
+		"return-type": "json",
+		"restart-interval": 5,
+		"on-click": "setsid -f ~/.config/waybar/scripts/audio-menu.sh",
+		"on-click-right": "setsid -f pwvucontrol"
+	},
+	// Battery: icon only, custom module (2026-10-09). The script prints a line
+	// per change, waking on kernel power_supply events (instant plug/unplug)
+	// and every 30 s - so no "interval" here. Colour classes and the tooltip
+	// (status, time, health, charge limit) come from the script.
+	"custom/battery": {
+		"exec": "~/.config/waybar/scripts/battery-status.py",
+		"return-type": "json",
+		"restart-interval": 5
+	},
+	"tray": {
+		"spacing": 8
+	},
+	// "signal" lets the menu scripts force an immediate refresh with
+	// `pkill -RTMIN+8 waybar` after they change something, so the bar reacts
+	// the moment an action completes instead of up to "interval" later.
+	// "interval" is then only a safety net for changes made outside the menu
+	// (wifi dropping on its own, a device powering off). Polling these every
+	// second was measured at ~37ms/s of CPU across both modules - each status
+	// script shells out to iwctl/bluetoothctl a few times plus jq - which is
+	// not worth paying at idle when the signal covers every case you actually
+	// watch for.
+	// on-click is wrapped in `setsid -f` because waybar waits on the child it
+	// spawns for a click, and that blocks THIS module's polling for as long as
+	// the menu lives - i.e. the entire time rofi is on screen. Measured
+	// 2026-09-14: a 26.3s gap in custom/wifi's polls while its menu was open,
+	// while custom/bluetooth kept its 3s cadence throughout, so the stall is
+	// per-module, not global. `-f` (always fork) matters: plain `setsid` only
+	// forks when the caller is already a process group leader, otherwise it
+	// execs in place and the menu stays waybar's child.
+	"custom/wifi": {
+		"exec": "~/.config/waybar/scripts/wifi-status.sh",
+		"return-type": "json",
+		"interval": 3,
+		"signal": 8,
+		"on-click": "setsid -f ~/.config/waybar/scripts/wifi-menu.sh"
+	},
+	"custom/bluetooth": {
+		"exec": "~/.config/waybar/scripts/bt-status.sh",
+		"return-type": "json",
+		"interval": 3,
+		"signal": 9,
+		"on-click": "setsid -f ~/.config/waybar/scripts/bt-menu.sh"
+	}
+}

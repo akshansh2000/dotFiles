@@ -1,0 +1,6 @@
+#!/bin/sh
+# Notification daemon. Supervised rather than launched from river/init so that
+# `sv status mako` can answer "are notifications working?" - a dead mako is
+# otherwise completely silent, which is how this machine ran without any
+# notification daemon at all until 2026-09-10.
+exec mako

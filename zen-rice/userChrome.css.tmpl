@@ -1,0 +1,193 @@
+/* TEMPLATE - chrome/userChrome.css is generated from this file by
+   ~/.config/theme/apply-theme.sh; edit this, not the output. Placeholders
+   come from ~/.config/theme/colors.sh + fonts.sh.
+
+   Zen browser's frame (the "personal" browser; krypton stays on stock Firefox).
+   ~/.config/zen-rice/ is OUR folder; ~/.config/zen/ is Zen's own profile root -
+   don't mix them up. Zen OWNS its profile's chrome/ dir (it writes
+   zen-themes.css there for its mods), so only this one generated FILE is
+   symlinked in: <profile>/chrome/userChrome.css -> ~/.config/zen-rice/chrome/.
+   Needs toolkit.legacyUserProfileCustomizations.stylesheets (../user.js) and a
+   FULL Zen restart for every change.
+
+   How Zen colours itself (read from Zen 1.22.3b's browser/omni.ja):
+   - the frame is --zen-main-browser-background(-toolbar), set INLINE per Space
+     by its gradient generator on #zen-browser-background/#zen-toolbar-background;
+   - nearly everything else derives from one accent, --zen-primary-color, set
+     inline on the window root AND on each <zen-workspace> element;
+   - Zen does not follow GTK (zen.theme.use-system-colors=false).
+   User-sheet !important beats those inline values. Before changing a selector,
+   re-read Zen's own CSS/JS - it changes between releases.
+   Design decided 2026-10-03, from rendered previews in a throwaway Zen. */
+
+/* Backdrop behind every page until its first paint (same fix as Firefox).
+   Private windows keep their own cue. */
+:root:not([privatebrowsingmode="temporary"]) {
+  --tabpanel-background-color: #{{BASE}} !important;
+}
+
+/* Mixing base for Zen's derived colours (borders, hovers, inputs): crust
+   instead of Zen's neutral #101010, so every color-mix() stays in the palette
+   family. Address bar in surface0. */
+:root {
+  --zen-branding-dark: #{{CRUST}} !important;
+  --zen-urlbar-background: #{{SURFACE0}} !important;
+}
+
+/* Accent. Each Space's accent comes from Zen's own picker (chosen in the UI,
+   incl. the "Create a Space" form) - deliberately NO per-Space map of IDs.
+   A Space with NO picker colour gets exact mauve: Zen sets
+   [zen-should-be-dark-mode] on the root only while the active Space is themed.
+   (The zen.theme.accent-color pref was rejected: in dark mode Zen keeps only
+   40% of it - blendColors(rgb, black, 40) - so mauve came out ~#51424f.)
+   Picker colours are wheel positions, not palette hexes, so themed Spaces are
+   close to Catppuccin, not exact - accepted. */
+:root:not([zen-should-be-dark-mode]),
+:root:not([zen-should-be-dark-mode]) zen-workspace[active] {
+  --zen-primary-color: #{{MAUVE}} !important;
+}
+
+/* Frame: BASE + 5% of the current Space's accent. Base = the startpage's
+   background, so a new tab sits seamlessly in the window. History 2026-10-06:
+   crust+5% chosen first (from the preview), 10% tried and reverted, 0% tried,
+   then the frame moved from crust to base at 5% - the user's final pick. The
+   tint is one number; keep the mechanism. Each Space gets a faint
+   cast of its own colour. -old variants are what Zen cross-fades from on a
+   Space switch; grain off. */
+#zen-browser-background,
+#zen-toolbar-background {
+  --zen-main-browser-background: color-mix(in srgb, var(--zen-primary-color) 5%, #{{BASE}}) !important;
+  --zen-main-browser-background-old: color-mix(in srgb, var(--zen-primary-color) 5%, #{{BASE}}) !important;
+  --zen-main-browser-background-toolbar: color-mix(in srgb, var(--zen-primary-color) 5%, #{{BASE}}) !important;
+  --zen-main-browser-background-toolbar-old: color-mix(in srgb, var(--zen-primary-color) 5%, #{{BASE}}) !important;
+  --zen-grainy-background-opacity: 0 !important;
+}
+
+/* The DEFAULT Space - no picker colour, the one a new window opens into - gets
+   NO tint: frame exactly base, so frame, waybar and startpage are one
+   continuous #{{BASE}} (2026-10-06, "a borderless window that merges into the
+   startpage and waybar"). Themed Spaces keep the 5% above. Same hook as the
+   mauve fallback accent: [zen-should-be-dark-mode] is absent only while the
+   active Space is unthemed. */
+:root:not([zen-should-be-dark-mode]) #zen-browser-background,
+:root:not([zen-should-be-dark-mode]) #zen-toolbar-background {
+  --zen-main-browser-background: #{{BASE}} !important;
+  --zen-main-browser-background-old: #{{BASE}} !important;
+  --zen-main-browser-background-toolbar: #{{BASE}} !important;
+  --zen-main-browser-background-toolbar-old: #{{BASE}} !important;
+}
+
+/* No drop shadow on the page card (zen-browser-container.css:
+   box-shadow: var(--zen-big-shadow) = rgba(0,0,0,.24) 0 3px 8px). Measured in
+   the default Space it was the last seam: a ~9px darker fade at the page's top
+   and left edges. Everywhere, not only the default Space. The rounded corners
+   and the 8px gap then vanish on their own - same colour on both sides.
+   Glance (.zen-glance-overlay, Zen's floating link preview) keeps its shadow,
+   as Zen does - there it separates a popup from the page. */
+#tabbrowser-tabpanels .browserSidebarContainer:not(.zen-glance-overlay) {
+  box-shadow: none !important;
+}
+
+/* Always dark. A BRIGHT picker accent makes Zen switch a Space to light mode:
+   [zen-should-be-dark-mode='false'] #browser { color-scheme: light } in
+   zen-theme.css, plus a dark --toolbox-textcolor and color-scheme set inline on
+   the root and on each <zen-workspace> (ZenSpace.mjs onGradientCacheChanged).
+   On this crust frame that made the tab list unreadable (seen in the preview
+   with a green preset). Side effect, accepted: the picker's sun/moon/auto
+   buttons have no effect. */
+:root,
+zen-workspace {
+  --toolbox-textcolor: color-mix(in srgb, #{{TEXT}} 90%, transparent) !important;
+  --toolbar-color-scheme: dark !important;
+}
+zen-workspace {
+  color-scheme: dark !important;
+}
+:root[zen-should-be-dark-mode] #browser {
+  color-scheme: dark !important;
+  --zen-urlbar-outline-offset: -2px !important;
+  --zen-urlbar-filter: blur(40px) saturate(110%) brightness(25%) contrast(100%) !important;
+}
+
+/* Selected tab: surface0 fill + the Space's accent as text (the Firefox
+   decision). Set ON the tab: Zen pins --tab-background-color-selected on the
+   Space container with !important, and a value on the element itself wins. */
+.tabbrowser-tab {
+  --tab-background-color-selected: #{{SURFACE0}} !important;
+  --tab-selected-textcolor: var(--zen-primary-color) !important;
+}
+.tabbrowser-tab[visuallyselected] .tab-label {
+  color: var(--zen-primary-color) !important;
+}
+
+/* The Space theme picker panel, in palette colours instead of Zen's grey.
+   Only this panel for now; setting these on :root would theme every Zen panel
+   and menu - a later step. */
+#PanelUI-zen-gradient-generator {
+  --arrowpanel-background: #{{MANTLE}} !important;
+  --panel-background-color: #{{MANTLE}} !important;
+  --arrowpanel-border-color: #{{SURFACE0}} !important;
+}
+
+/* ALL menus and popups (2026-10-08): mantle with a 1px surface0 border, like
+   the picker panel above (kept explicit). Every menupopup (right-click menus)
+   and panel (app menu, extensions, downloads, site info, Space menus) reads
+   --panel-background-color = var(--arrowpanel-background) (zen-popup.css),
+   which Zen pins to a neutral #1f1f1f with !important in zen-theme.css.
+   Panels that set their OWN --arrowpanel-background keep it (e.g.
+   #confirmation-hint, the split-view hint, in the accent). Zen's transparent
+   panel borders are Windows/macOS-only (zen-panel-ui.css); on Linux the
+   border comes from Firefox. Item hover/separators are currentColor mixes and
+   the selected urlbar suggestion is the Space accent - already in palette. */
+:root {
+  --arrowpanel-background: #{{MANTLE}} !important;
+  --zen-dialog-background: #{{MANTLE}} !important;  /* share, prompts, print */
+}
+menupopup,
+panel {
+  --panel-border-color: #{{SURFACE0}} !important;
+}
+
+/* Address-bar dropdown (the urlbar while typing, [breakout-extend]): mantle,
+   matching the other popups, with Zen's hard-coded rgb(75,75,75) outline in
+   surface0. Zen's colour is --zen-urlbar-background-base (rgb 24,24,24) or,
+   with zen.theme.acrylic-urlbar, a translucent variant - both pinned. */
+#urlbar .urlbar-background {
+  --zen-urlbar-background-base: #{{MANTLE}} !important;
+  --zen-urlbar-background-transparent: #{{MANTLE}} !important;
+}
+#urlbar[breakout-extend] .urlbar-background {
+  outline-color: #{{SURFACE0}} !important;
+}
+
+/* The address field itself (and other sidebar elements such as the pinned
+   Essentials tiles): surface0. It is painted by .urlbar-background {
+   background: var(--zen-toolbar-element-bg) !important } (zen-omnibox.css) -
+   NOT --zen-urlbar-background, so the earlier "address bar = surface0" never
+   took effect: it measured #3d3d52, a translucent white wash over the frame. */
+:root {
+  --zen-toolbar-element-bg: #{{SURFACE0}} !important;
+}
+
+/* Status panel (link targets, "Transferring data from..."): bottom RIGHT,
+   off Tridactyl's command line - ported verbatim from the Firefox template
+   (2026-10-06). Zen 1.22.3b ships Firefox's own status panel unchanged:
+   content-area.css positions it, and tabbrowser/status-panel.js
+   getMouseTargetRect() always puts the [mirror] flip hit box bottom-LEFT, so
+   pin it right in BOTH states (a "mirrored = left" rule would throw it under
+   the pointer). Accepted: it no longer dodges the pointer.
+   zen.theme.styled-status-panel (a pill in the accent's dark tone) stays off. */
+#statuspanel {
+  left: auto !important;
+  right: 0 !important;
+}
+#statuspanel-label {
+  border-right-style: none !important;
+  border-left-style: solid !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0.3em !important;
+  margin-right: 0 !important;
+  margin-left: 1em !important;
+  padding-left: 4px !important;
+  padding-right: max(4px, calc(var(--chrome-block-radius, 0px) / 2)) !important;
+}

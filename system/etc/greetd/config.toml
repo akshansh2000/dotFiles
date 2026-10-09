@@ -1,0 +1,41 @@
+# Staged copy of /etc/greetd/config.toml - the repo copy is the source; edit
+# here, then install with (shows the diff, asks, sudo-installs):
+#   ~/.config/system/install.sh etc/greetd/config.toml
+#
+# Two Void-specific things worth knowing:
+#
+#  * The stock config that ships in this file says `user = "greeter"`, but the
+#    account Void's greetd package actually creates is `_greeter`. Left as
+#    shipped, greetd fails to start.
+#  * greetd and agetty will fight over the same VT. Whichever tty is named
+#    below, that agetty service has to be disabled:
+#        sudo rm /var/service/agetty-tty1
+#    (Void's own /usr/share/doc/greetd/README.voidlinux says the same.)
+
+[terminal]
+vt = 1
+
+[default_session]
+# --session-wrapper makes tuigreet run river through session-wrapper.sh rather
+# than execing it directly, which is what sets up the D-Bus session bus. It
+# applies to both --cmd and anything picked from the session menu, and when a
+# wrapper is present tuigreet leaves the XDG_* variables for the wrapper to
+# set, so don't drop it.
+#
+# --remember/--remember-session persist to /var/cache/tuigreet, which the
+# tuigreet package already creates owned by _greeter.
+#
+# --power-shutdown/--power-reboot: tuigreet's defaults shell out to runit's
+# `shutdown -h now` and `reboot`, both of which need root - the greeter runs as
+# the unprivileged _greeter, so they abort with "Not enough permissions to
+# execute shutdown". Routing through loginctl hands the job to elogind, which
+# execs /sbin/poweroff itself as root. No sudoers entry and no setuid needed:
+# org.freedesktop.login1.policy ships <allow_active>yes</allow_active> for
+# power-off and reboot, so any active session on a seat is authorised with no
+# prompt, and _greeter gets an elogind session because /etc/pam.d/greetd pulls
+# in system-login, which has pam_elogind.so. polkitd needs no runit service; it
+# is D-Bus activated on demand.
+# If the power menu ever appears to do nothing, try --power-no-setsid before
+# suspecting polkit - tuigreet prefixes these commands with setsid by default.
+command = "tuigreet --time --remember --remember-session --asterisks --cmd river --session-wrapper /home/akshansh/.config/river/session-wrapper.sh --power-shutdown 'loginctl poweroff' --power-reboot 'loginctl reboot'"
+user = "_greeter"

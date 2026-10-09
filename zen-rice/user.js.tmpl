@@ -1,0 +1,37 @@
+// TEMPLATE - ~/.config/zen-rice/user.js is generated from this file by
+// ~/.config/theme/apply-theme.sh (it carries a palette colour); edit this.
+//
+// user.js for Zen's profile (~/.config/zen/slf69t0h.Default (release)/),
+// which symlinks to the generated ~/.config/zen-rice/user.js. Zen re-applies
+// these on every start.
+//
+// Same rules as ~/.config/firefox/user.js: only rice-defining prefs; nothing
+// Firefox Sync carries; nothing an extension manages. And Zen-specific: never
+// the Firefox sidebar prefs (sidebar.verticalTabs / sidebar.revamp) - Zen
+// LOCKS them false and has its own sidebar.
+//
+// Removing a line here does NOT revert the pref - reset it in about:config too.
+
+// Load chrome/userChrome.css (generated from userChrome.css.tmpl).
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// The canvas colour painted for a dark-mode page that sets no background of its
+// own - blank pages (about:blank) included. Default #1c1b22, which is what the
+// 2026-09-30 flash recordings measured for about:blank. Chosen over a
+// userContent.css about:blank rule (2026-10-06): that rule would also hit every
+// iframe that starts as about:blank (ad slots, widgets, rich-text editors like
+// Gmail compose keep that URL), turning them opaque base with dark-on-dark text.
+// This pref only recolours what is ALREADY painted with the default dark canvas
+// - it never makes anything opaque. Not a Firefox Sync pref.
+user_pref("browser.display.background_color.dark", "#{{BASE}}");
+
+// Scrolling, 2026-10-09: both were switched OFF the same day to try plain
+// scrolling, then turned back ON - so these lines pin Zen's own defaults.
+// They stay (rather than being deleted) because removing a user.js line does
+// NOT revert a pref: the old false would linger in prefs.js.
+// - general.smoothScroll: animated wheel/keyboard/page scrolling;
+// - apz.gtk.kinetic_scroll.enabled: touchpad momentum/glide after the fingers
+//   lift. Neither is a Firefox Sync pref. Touchpad speed/acceleration live in
+//   river/init.
+user_pref("general.smoothScroll", true);
+user_pref("apz.gtk.kinetic_scroll.enabled", true);

@@ -1,0 +1,48 @@
+// Staged copy of /etc/polkit-1/rules.d/50-greeter-power.rules - the repo copy
+// is the source; edit here, then install with (shows the diff, asks,
+// sudo-installs root:root 644; polkitd reloads rules by itself):
+//   ~/.config/system/install.sh etc/polkit-1/rules.d/50-greeter-power.rules
+//
+// Why this exists:
+//
+// tuigreet's power menu runs `loginctl poweroff` / `loginctl reboot` as the
+// unprivileged _greeter (see etc/greetd/config.toml). org.freedesktop.login1.policy
+// already ships <allow_active>yes</allow_active> for those actions, so in
+// principle no rule is needed - any active session on a seat is authorised
+// without a prompt.
+//
+// In practice that only holds *after* some session has come and gone. On a
+// fresh boot polkit does not treat the greeter's session as active, and every
+// attempt fails with:
+//     loginctl[...]: Failed to reboot system via elogind: Interactive
+//     authentication required.
+// Log evidence (2026-09-10): the greeter started at 17:10:10, polkitd was
+// bus-activated at 17:10:13 and the reboot was denied 33ms later - and a second
+// attempt 11 seconds afterwards, with polkitd long since warm, was denied too.
+// So it is not a polkitd startup race; polkit stays wrong for the lifetime of
+// that greeter. Log in once and log out again - which emits session add/remove
+// events - and the very next greeter can power off fine.
+//
+// Rather than depend on that, authorise _greeter for these actions outright.
+// This grants nothing meaningful: whoever can reach the greeter is sitting at
+// the machine and already has the power button.
+
+polkit.addRule(function (action, subject) {
+	if (subject.user !== "_greeter") {
+		return;
+	}
+
+	switch (action.id) {
+	case "org.freedesktop.login1.power-off":
+	case "org.freedesktop.login1.power-off-multiple-sessions":
+	case "org.freedesktop.login1.reboot":
+	case "org.freedesktop.login1.reboot-multiple-sessions":
+	case "org.freedesktop.login1.halt":
+	case "org.freedesktop.login1.halt-multiple-sessions":
+	// Not required, but without it every power action first logs
+	//     loginctl[...]: Failed to set wall message, ignoring: ...
+	// which is harmless noise in /var/log/socklog.
+	case "org.freedesktop.login1.set-wall-message":
+		return polkit.Result.YES;
+	}
+});

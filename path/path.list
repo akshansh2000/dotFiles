@@ -1,0 +1,7 @@
+# PATH entries, one absolute path per line, top = highest priority.
+# Prepended to your normal system PATH by build-path.sh (river/init) and
+# build-path.fish (fish shells). A line starting with "#/" is a disabled
+# entry (kept, not deleted). Manage with the PATH menu (Super+Shift+D)
+# rather than hand-editing - it keeps this format consistent.
+/home/akshansh/.local/bin
+/home/akshansh/.foundry/bin

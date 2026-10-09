@@ -1,0 +1,43 @@
+" Tridactyl config. Sourced with:
+"     :source --url http://127.0.0.1:8123/tridactylrc
+" which needs no native messenger - `source --url` is a plain fetch, unlike
+" `source <file>` which reads from disk and does.
+"
+" Served because ~/.config/startpage/tridactylrc is a symlink to this file and
+" darkhttpd is already running for the startpage.
+
+" --- new tab -----------------------------------------------------------------
+" Why a local http page rather than an extension or file:// - see
+" ~/.config/startpage/README.md. Short version: Tridactyl only injects into
+" <all_urls>, which excludes moz-extension://.
+" Literal 127.0.0.1, never `localhost`: /etc/hosts maps localhost to ::1 as
+" well as 127.0.0.1 and the resolver returns ::1 first, while darkhttpd listens
+" on 127.0.0.1 only. Every page load through the name therefore attempted IPv6,
+" got refused, and fell back - measurable delay on every new tab.
+set newtab http://127.0.0.1:8123
+
+" --- theme -------------------------------------------------------------------
+" Generated from ~/.config/theme/colors.sh by apply-theme.sh. --update forces a
+" re-fetch; without it Tridactyl keeps the copy already in extension storage.
+colourscheme --url http://127.0.0.1:8123/tridactyl-catppuccin.css --update catppuccin
+
+" --- hinting -----------------------------------------------------------------
+" Element highlighting is neutralised in the theme itself (both the direct and
+" the overlay variables), leaving only a lavender ring on the active element.
+" For pure Vimium style - hint labels and nothing else at all - instead set:
+"     set hintstylesnohighlights true
+
+" --- ignore ------------------------------------------------------------------
+" Automatically enter ignore mode for below sites
+blacklistadd ://youtube.com
+blacklistadd ://figma.com
+blacklistadd ://mail.google.com
+
+" --- tab navigation ----------------------------------------------------------
+" J = next tab (down the vertical tab list), K = previous (up) - the reverse of
+" Tridactyl's defaults (J tabprev, K tabnext), which follow a horizontal strip
+" read left-to-right. With vertical tabs (Zen; personal Firefox) "next" is
+" DOWN, like vim's j. Set 2026-10-09. Tridactyl's config syncs through the
+" Firefox account, so this applies to every browser signed into it.
+bind J tabnext
+bind K tabprev

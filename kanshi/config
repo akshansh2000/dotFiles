@@ -1,0 +1,34 @@
+# Output configuration. This is the single source of truth for display layout -
+# river has no built-in output config (unlike sway's `output` directive), so
+# everything goes through the wlr-output-management protocol, which kanshi,
+# wlr-randr and wdisplays are all just clients of.
+#
+# This replaced a one-shot `wlr-randr --output eDP-1 --scale 1.5` in river/init.
+# That line ran once at startup and nothing reapplied it: it could not survive
+# hotplug, could not correct drift, and raced against the output being
+# advertised. kanshi is a daemon that reapplies the matching profile whenever
+# outputs change.
+#
+# kanshi picks the first profile whose outputs are all present, so `docked` is
+# listed before `laptop`.
+
+# Laptop panel + external monitor over HDMI, monitor to the right.
+#
+# Position is in *logical* pixels, i.e. after scaling. wlroots quantises
+# fractional scale to 1/256 steps, and a request of 1.3 lands on 333/256 =
+# 1.300781 - so the 2560px panel is 2560 / 1.300781 = 1968 logical pixels wide.
+# That is why the external starts at x=1968 and not at 2560.
+#
+# Worth knowing if this ever looks off by a few pixels: `wlr-randr --scale 1.3`
+# rounds the other way, to 332/256 = 1.296875, which would make the panel 1974
+# logical pixels wide instead. Trust what `wlr-randr` *reports*, not what was
+# requested.
+profile docked {
+	output eDP-1 mode 2560x1440@120Hz position 0,0 scale 1.3
+	output HDMI-A-1 mode 1920x1080@60Hz position 1968,0 scale 1
+}
+
+# Laptop panel alone.
+profile laptop {
+	output eDP-1 mode 2560x1440@120Hz position 0,0 scale 1.3
+}

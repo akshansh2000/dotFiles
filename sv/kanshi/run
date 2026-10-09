@@ -1,0 +1,5 @@
+#!/bin/sh
+# Applies ~/.config/kanshi/config and reapplies it on every output hotplug.
+# Supervised rather than backgrounded from river/init so that a crash restarts
+# it instead of silently leaving the display unmanaged.
+exec kanshi

@@ -1,0 +1,17 @@
+agetty-tty2
+agetty-tty3
+agetty-tty4
+agetty-tty5
+agetty-tty6
+bluetoothd
+chronyd
+cupsd
+dbus
+elogind
+greetd
+iwd
+nanoklogd
+seatd
+socklog-unix
+sshd
+udevd

@@ -1,0 +1,203 @@
+/* TEMPLATE - do not edit catppuccin.css directly, it is generated.
+   Edit this file, then run ~/.config/theme/apply-theme.sh, then re-run the
+   :colourscheme line at the bottom of ~/.config/tridactyl/README.md - Tridactyl
+   snapshots the CSS into extension storage, so regenerating the file alone
+   changes nothing until it is re-fetched.
+
+   Variable names taken from Tridactyl 1.25.1's own static/css/*.css. Anything
+   left unset falls back to themes/auto/auto.css. */
+
+:root {
+	/* Catppuccin Mocha, from ~/.config/theme/colors.sh */
+	--ctp-crust: #{{CRUST}};
+	--ctp-mantle: #{{MANTLE}};
+	--ctp-base: #{{BASE}};
+	--ctp-surface0: #{{SURFACE0}};
+	--ctp-surface1: #{{SURFACE1}};
+	--ctp-surface2: #{{SURFACE2}};
+	--ctp-overlay0: #{{OVERLAY0}};
+	--ctp-overlay1: #{{OVERLAY1}};
+	--ctp-subtext0: #{{SUBTEXT0}};
+	--ctp-subtext1: #{{SUBTEXT1}};
+	--ctp-text: #{{TEXT}};
+	--ctp-lavender: #{{LAVENDER}};
+	--ctp-mauve: #{{MAUVE}};
+	--ctp-blue: #{{BLUE}};
+	--ctp-sapphire: #{{SAPPHIRE}};
+	--ctp-teal: #{{TEAL}};
+	--ctp-green: #{{GREEN}};
+	--ctp-yellow: #{{YELLOW}};
+	--ctp-peach: #{{PEACH}};
+	--ctp-red: #{{RED}};
+
+	/* Generic */
+	--tridactyl-font-family: "{{FONT_MONO_FAMILY}}", monospace;
+	--tridactyl-font-family-sans: "Noto Sans", sans-serif;
+	--tridactyl-font-size: 12pt;
+	--tridactyl-small-font-size: 9pt;
+	--tridactyl-bg: var(--ctp-mantle);
+	--tridactyl-fg: var(--ctp-text);
+
+	/* Mode indicator (bottom-right corner) */
+	--tridactyl-status-font-family: var(--tridactyl-font-family);
+	--tridactyl-status-font-size: 9pt;
+	--tridactyl-status-fg: var(--ctp-mauve);
+	--tridactyl-status-bg: var(--ctp-mantle);
+	--tridactyl-status-border: 1px solid var(--ctp-surface1);
+	--tridactyl-status-border-radius: 4px;
+	--tridactyl-indicator-border-style: solid;
+	--tridactyl-indicator-border-width: 1px;
+
+	/* Command line */
+	--tridactyl-cmdl-font-family: var(--tridactyl-font-family);
+	--tridactyl-cmdl-font-size: 10pt;
+	--tridactyl-cmdl-line-height: 1.6em;
+	--tridactyl-cmdl-fg: var(--ctp-text);
+	--tridactyl-cmdl-bg: var(--ctp-mantle);
+
+	/* Completions */
+	--tridactyl-cmplt-font-family: var(--tridactyl-font-family);
+	--tridactyl-cmplt-font-size: 10pt;
+	--tridactyl-cmplt-option-height: 1.6em;
+	--tridactyl-cmplt-fg: var(--ctp-subtext0);
+	--tridactyl-cmplt-bg: var(--ctp-base);
+	--tridactyl-cmplt-border-top: 1px solid var(--ctp-surface1);
+
+	/* Completion section headers */
+	--tridactyl-header-font-size: 10pt;
+	--tridactyl-header-font-weight: bold;
+	--tridactyl-header-border-bottom: 1px solid var(--ctp-surface1);
+	--tridactyl-header-first-bg: var(--ctp-surface0);
+	--tridactyl-header-second-bg: var(--ctp-surface0);
+	--tridactyl-header-third-bg: var(--ctp-surface0);
+
+	/* URLs inside completions */
+	--tridactyl-url-fg: var(--ctp-blue);
+	--tridactyl-url-bg: none;
+	--tridactyl-url-text-decoration: none;
+	--tridactyl-url-cursor: pointer;
+
+	/* Focused completion row */
+	--tridactyl-of-fg: var(--ctp-base);
+	--tridactyl-of-bg: var(--ctp-mauve);
+
+	/* Hint labels (the f/F letters) */
+	--tridactyl-hintspan-font-family: var(--tridactyl-font-family);
+	--tridactyl-hintspan-font-size: var(--tridactyl-small-font-size);
+	--tridactyl-hintspan-font-weight: bold;
+	--tridactyl-hintspan-fg: var(--ctp-base);
+	--tridactyl-hintspan-bg: var(--ctp-yellow);
+	--tridactyl-hintspan-border-color: var(--ctp-surface1);
+	--tridactyl-hintspan-border-width: 1px;
+	--tridactyl-hintspan-border-style: solid;
+	--tridactyl-hintspan-active-fg: var(--ctp-base);
+	--tridactyl-hintspan-active-bg: var(--ctp-green);
+	--tridactyl-hintspan-active-border-color: var(--ctp-surface1);
+	/* Characters already typed, greyed against the yellow label */
+	--tridactyl-hintspan-pressed-fg: var(--ctp-surface1);
+	--tridactyl-hintspan-js-background: var(--ctp-peach);
+
+	/* Tridactyl has TWO highlighting paths and a theme must handle both:
+	   `hintstylesdirect` restyles the real elements using these --tridactyl-hint-*
+	   variables (this is where the lime-green filled search box comes from -
+	   default.css sets --tridactyl-hint-active-bg to #88ff00), while
+	   `hintstylesoverlays` draws separate divs using the --tridactyl-hint-highlight-*
+	   variables below. Setting only the second leaves the first at its defaults. */
+	--tridactyl-hint-fg: inherit;
+	--tridactyl-hint-bg: transparent;
+	--tridactyl-hint-outline: none;
+	--tridactyl-hint-active-fg: inherit;
+	--tridactyl-hint-active-bg: transparent;
+	--tridactyl-hint-active-outline: 2px solid var(--ctp-lavender);
+
+	/* The wash Tridactyl paints over every hinted element.
+	   Turned OFF deliberately. Tridactyl's default is a yellow 25% fill plus a
+	   brown outline on EVERY hintable element at once (see its
+	   themes/default/default.css), which on a busy page - Google results, say -
+	   buries the page under boxes, and on an input it fills the field with a
+	   flat colour so you cannot read what you typed. The labels alone say where
+	   the hints are.
+	   Only the *active* element keeps a marker, and only an outline: a thin
+	   lavender ring on the one element about to be picked. */
+	--tridactyl-hint-highlight-opacity: 1;
+	--tridactyl-hint-highlight-bg: transparent;
+	--tridactyl-hint-highlight-outline: none;
+	--tridactyl-hint-highlight-active-bg: transparent;
+	--tridactyl-hint-highlight-active-outline: 2px solid var(--ctp-lavender);
+
+	/* `/` search matches */
+	--tridactyl-search-highlight-color: var(--ctp-yellow);
+	--tridactyl-search-highlight-text-color: var(--ctp-base);
+	--tridactyl-search-highlight-active-color: var(--ctp-peach);
+
+	/* :viewsource and the external-editor box */
+	--tridactyl-vs-fg: var(--ctp-text);
+	--tridactyl-vs-bg: var(--ctp-base);
+	--tridactyl-externaledit-bg: var(--ctp-surface1);
+
+	/* Spoiler box on Tridactyl's own pages */
+	--tridactyl-highlight-box-bg: var(--ctp-surface1);
+	--tridactyl-highlight-box-fg: var(--ctp-text);
+}
+
+/* A rule of its own, because the variable is only consulted for the border and
+   the private-window indicator needs to read as distinct from normal mode. */
+.TridactylPrivate {
+	border: 1px solid var(--ctp-red) !important;
+	background: var(--ctp-mantle) !important;
+}
+
+#command-line-holder {
+	border-top: 1px solid var(--ctp-surface1);
+	border-bottom: none;
+}
+
+/* Prompt marker, the way tokyonight does it */
+:root #tridactyl-colon::before,
+:root .ExcmdCompletionOption td.excmd::before {
+	color: var(--ctp-mauve);
+	content: "> ";
+	font-weight: bold;
+}
+
+:root #tridactyl-input {
+	width: calc(100% - 3em);
+	padding-left: 0 !important;
+}
+
+:root #completions .focused,
+:root #completions .focused .url {
+	text-decoration: none;
+}
+
+:root #completions td.documentation,
+:root #completions td.doc {
+	color: var(--ctp-overlay1);
+	font-style: italic;
+	white-space: nowrap;
+	overflow: auto;
+	text-overflow: ellipsis;
+}
+
+.focused td.documentation,
+.focused td.doc {
+	color: var(--ctp-base);
+}
+
+td.excmd,
+td.name {
+	color: var(--ctp-teal);
+}
+
+td.excmd {
+	padding-left: 0.125ex !important;
+}
+
+td.title {
+	color: var(--ctp-text);
+}
+
+/* Links on Tridactyl's own pages (:help, its newtab, the changelog) */
+:root.TridactylOwnNamespace a {
+	color: var(--ctp-blue);
+}

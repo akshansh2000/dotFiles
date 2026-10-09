@@ -1,0 +1,10 @@
+# Give the `input` group write access to the ASUS ROG N-Key keyboard's hidraw
+# nodes, so ~/.config/river/kbd-backlight can set the keyboard backlight
+# without root. hid-asus fails to register asus::kbd_backlight on this machine,
+# so the normal /sys/class/leds path (and therefore `brillo -k`) is unavailable
+# and we talk to the device directly.
+#
+# Staged copy - the repo copy is the source. Install with:
+#   ~/.config/system/install.sh etc/udev/rules.d/99-asus-nkey-hidraw.rules
+#   sudo udevadm control --reload && sudo udevadm trigger --subsystem-match=hidraw
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", ATTRS{idProduct}=="19b6", MODE="0660", GROUP="input"

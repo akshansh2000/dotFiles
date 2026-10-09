@@ -1,0 +1,27 @@
+[Desktop Entry]
+# Zen browser, trial install from the official tarball (2026-10-02).
+# Lives in ~/.local/opt/zen (self-updates in place via Mozilla's updater);
+# ~/.local/bin/zen links to it. NOT the default browser - mimeapps.list still
+# points at firefox.desktop during the trial. StartupWMClass = Zen's
+# RemotingName (application.ini), its Wayland app_id.
+Type=Application
+Name=Zen Browser
+GenericName=Web Browser
+Comment=Firefox-based browser with workspaces and window sync
+Exec=/home/akshansh/.local/opt/zen/zen %u
+Icon=/home/akshansh/.local/opt/zen/browser/chrome/icons/default/default128.png
+Terminal=false
+Categories=Network;WebBrowser;
+MimeType=text/html;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+StartupWMClass=zen
+Keywords=Internet;WWW;Browser;Web;Zen;
+Actions=new-window;new-private-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=/home/akshansh/.local/opt/zen/zen --new-window %u
+
+[Desktop Action new-private-window]
+Name=New Private Window
+Exec=/home/akshansh/.local/opt/zen/zen --private-window %u

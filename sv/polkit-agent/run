@@ -1,0 +1,11 @@
+#!/bin/sh
+# Polkit authentication agent. polkitd delegates every auth_admin prompt to the
+# agent registered by the session; river registers none, so without this any
+# polkit-gated action fails outright rather than asking for a password -
+# system-config-printer's "+Add" button sat greyed out with
+# "Failed to acquire permission for action-id ...cupspkhelper...all-edit".
+#
+# Supervised rather than backgrounded from river/init: only one agent may be
+# registered per session, so if it dies every privileged GUI action silently
+# breaks again with no visible symptom.
+exec /usr/libexec/polkit-gnome-authentication-agent-1

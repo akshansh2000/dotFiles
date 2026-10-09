@@ -1,0 +1,67 @@
+/* TEMPLATE - chrome/userChrome.css is generated from this file by
+   ~/.config/theme/apply-theme.sh; edit this, not the output. Placeholders
+   come from ~/.config/theme/colors.sh + fonts.sh.
+
+   userChrome.css styles the "personal" profile's browser frame. It reaches the
+   profile through <profile>/chrome -> ~/.config/firefox/chrome, needs
+   toolkit.legacyUserProfileCustomizations.stylesheets (set in user.js), and is
+   read only at startup: every change needs a FULL Firefox restart.
+
+   Before styling a chrome element, read Firefox's own rules for it out of
+   /usr/lib/firefox/browser/omni.ja (unzip it somewhere scratch) - these
+   selectors change between releases. */
+
+/* Backdrop behind every page, shown until the page's first paint (2026-09-30).
+   Firefox's own is #2b2a33 (content-area.css). A frame-by-frame recording showed
+   it for ~0.5 s on new tabs, new windows and switching to unpainted tabs - and
+   on EVERY cross-site navigation, because each site gets its own content
+   process and the backdrop shows during the handover.
+   Private windows keep Firefox's purple backdrop, as the private-mode cue. */
+:root:not([privatebrowsingmode="temporary"]) {
+  --tabpanel-background-color: #{{BASE}} !important;
+}
+
+/* Selected tab: surface0 fill + mauve title/icons, the same selection style as
+   rofi (2026-10-02, the user's pick from rendered variants). Firefox's own fill
+   is --toolbar-background-color, which on Linux is "GTK dialog colour mixed 85%
+   with 15% white" - #40404d here, not a palette colour.
+   A plain surface0 fill without the mauve was rejected: Firefox's hover wash
+   (--tab-background-color-hover, currentColor at 11%, ~#2d2d3c) is nearly the
+   same colour, so selected and hovered tabs looked alike. Hover is still
+   Firefox's own; the mauve is what keeps the two apart.
+   Colours are set as variables, not on tab selectors, so they follow the tabs
+   wherever the layout puts them.
+   Toolbar/sidebar surfaces are NOT set here: they come from the GTK theme
+   (Colloid compiled from colors.sh) - mantle + text when focused, base + 70%
+   text when unfocused (GTK :backdrop). That dimming is kept as a focus cue. */
+:root {
+  --tab-background-color-selected: #{{SURFACE0}} !important;
+  --tab-selected-textcolor: #{{MAUVE}} !important;
+}
+
+/* Status panel (link targets, "Transferring data from..."): bottom RIGHT.
+   Firefox puts it bottom-left, on top of Tridactyl's command line.
+
+   Pinned right in BOTH states on purpose. Firefox flips it ([mirror]) when
+   the pointer enters a hit box that tabbrowser.js always places at the
+   bottom-LEFT (getMouseTargetRect), wherever the panel is drawn - so a
+   "mirrored = left" rule would throw it under the pointer, onto the cmdline.
+   Accepted cost (2026-09-30): it no longer dodges the pointer, so hovering a
+   link in the bottom-right corner draws the preview over that link. */
+#statuspanel {
+  left: auto !important;
+  right: 0 !important;
+}
+
+/* The label's border, corner and gap are styled per side; use the right-hand
+   variant Firefox applies to its own mirrored state (content-area.css). */
+#statuspanel-label {
+  border-right-style: none !important;
+  border-left-style: solid !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0.3em !important;
+  margin-right: 0 !important;
+  margin-left: 1em !important;
+  padding-left: 4px !important;
+  padding-right: max(4px, calc(var(--chrome-block-radius, 0px) / 2)) !important;
+}
