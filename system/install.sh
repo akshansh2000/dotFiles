@@ -11,8 +11,10 @@
 #   install.sh FILE...     per file: show the diff, ask, sudo-install it
 #                          (FILE as etc/..., system/etc/... or /etc/...)
 #
-# The installed mode is the staged file's mode (git keeps only the exec bit,
-# so 755 or 644), owner root:root. Needs a terminal: sudo asks for a password
+# Installed root:root, 755 if the staged file is executable, else 644 - only
+# the exec bit is taken from the staged file, which is all git keeps anyway
+# (copying the whole mode installed two files 664 on 2026-10-10, because some
+# staged copies were group-writable). Needs a terminal: sudo asks for a password
 # and the y/N prompt reads stdin.
 
 cd "$(dirname "$0")" || exit 1
@@ -75,6 +77,7 @@ for arg; do
 	printf 'install /%s? [y/N] ' "$f"
 	read -r ans
 	[ "$ans" = y ] || { echo "skipped"; continue; }
-	sudo install -D -m "$(stat -c %a "$f")" -o root -g root "$f" "/$f" &&
+	if [ -x "$f" ]; then mode=755; else mode=644; fi
+	sudo install -D -m "$mode" -o root -g root "$f" "/$f" &&
 		echo "installed" && hint "$f"
 done
