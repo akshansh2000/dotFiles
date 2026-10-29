@@ -132,6 +132,7 @@ riverctl focus-follows-cursor normal
 
 # --- Core: terminal, close, session menu ---
 riverctl map normal Super Return spawn 'foot ~/.config/river/term.sh tmux'
+riverctl map normal Super+Shift Return spawn 'env PYTHONPYCACHEPREFIX=$HOME/.cache/kitty-pycache kitty -1 env -u PYTHONPYCACHEPREFIX tmux'
 riverctl map normal Super Q close
 riverctl map normal Super+Shift Q spawn '~/.config/river/session-menu.sh'
 

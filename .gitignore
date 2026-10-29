@@ -65,6 +65,8 @@
 /foot/foot.ini
 !/alacritty/
 /alacritty/alacritty.toml
+!/kitty/
+/kitty/kitty.conf
 !/fish/
 /fish/*
 !/fish/config.fish

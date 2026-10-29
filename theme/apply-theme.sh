@@ -67,6 +67,7 @@ for pair in \
 	"$HOME/.config/alacritty/alacritty.toml.tmpl:$HOME/.config/alacritty/alacritty.toml" \
 	"$HOME/.config/rofi/colors.rasi.tmpl:$HOME/.config/rofi/colors.rasi" \
 	"$HOME/.config/foot/foot.ini.tmpl:$HOME/.config/foot/foot.ini" \
+	"$HOME/.config/kitty/kitty.conf.tmpl:$HOME/.config/kitty/kitty.conf" \
 	"$HOME/.config/yazi/theme.toml.tmpl:$HOME/.config/yazi/theme.toml" \
 	"$HOME/.config/startpage/index.html.tmpl:$HOME/.config/startpage/index.html" \
 	"$HOME/.config/firefox/userChrome.css.tmpl:$HOME/.config/firefox/chrome/userChrome.css" \
@@ -114,6 +115,12 @@ echo "colors.fish/fonts.fish regenerated from the .sh sources"
 if [ -x "$HOME/.local/sv/waybar/run" ] && [ ! -e "$HOME/.local/sv/waybar/down" ]; then
 	sv restart "$HOME/.local/sv/waybar" >/dev/null && echo "waybar restarted"
 fi
+
+# kitty re-reads kitty.conf on SIGUSR1, so open windows pick up the new
+# colours at once. Signalled by PID, exact process name - never a pattern.
+for _pid in $(pgrep -u "$USER" -x kitty); do
+	kill -USR1 "$_pid" && echo "kitty $_pid reloaded"
+done
 
 # mako re-reads its config on SIGUSR2; no restart, no lost notifications.
 if pgrep -u "$USER" -x mako >/dev/null 2>&1; then
@@ -169,7 +176,7 @@ else
 	echo "gtk: theme is current"
 fi
 
-echo "foot/alacritty/rofi/yazi pick up the new colors on next launch"
+echo "foot/alacritty/rofi/yazi pick up the new colors on next launch (kitty reloads live)"
 echo "tridactyl: re-run ':colourscheme --url http://127.0.0.1:8123/tridactyl-catppuccin.css --update catppuccin'"
 echo "firefox: userChrome.css is read at startup only - fully restart Firefox"
 echo "zen: same - fully restart Zen to pick up zen-rice/chrome/userChrome.css"
