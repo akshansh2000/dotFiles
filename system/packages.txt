@@ -35,6 +35,7 @@ foot
 fzf
 gcc
 git
+git-filter-repo
 github-cli
 gnome-themes-extra
 greetd
@@ -47,6 +48,7 @@ hicolor-icon-theme
 iwd
 jq
 kanshi
+kitty
 libreoffice-calc
 libreoffice-dictionaries
 libreoffice-gnome
@@ -95,6 +97,7 @@ satty
 seatd
 slurp
 socklog-void
+strace
 swayidle
 system-config-printer
 tectonic
