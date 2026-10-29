@@ -131,7 +131,7 @@ riverctl focus-follows-cursor normal
 # >>> BEGIN GENERATED KEYBINDINGS - do not edit, see keybindings.conf >>>
 
 # --- Core: terminal, close, session menu ---
-riverctl map normal Super Return spawn 'foot'
+riverctl map normal Super Return spawn 'foot ~/.config/river/term.sh tmux'
 riverctl map normal Super Q close
 riverctl map normal Super+Shift Q spawn '~/.config/river/session-menu.sh'
 
