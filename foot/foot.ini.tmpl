@@ -67,3 +67,15 @@ urgent=yes
 # Neovim caveat (for when it is set up): in insert mode ESC DEL arrives as
 # <M-BS>; map that to <C-w> there, or it reads as Esc followed by Backspace.
 \x1b\x7f = Control+BackSpace
+
+[key-bindings]
+# URL mode: Ctrl+Shift+O (foot's default) labels every URL on screen and opens
+# the one whose label you type; Ctrl+Shift+Y is the same but copies it. foot
+# has no copy binding by default. Inside tmux this only sees tmux's screen -
+# tmux has its own Ctrl+click and prefix u (tmux.conf, links).
+show-urls-copy=Control+Shift+y
+
+[url]
+# Underline OSC 8 hyperlinks all the time (default: only in URL mode), so a
+# link whose text isn't a URL (ls --hyperlink file names, gh) is visible.
+osc8-underline=always

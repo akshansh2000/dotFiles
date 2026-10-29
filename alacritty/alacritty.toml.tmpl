@@ -36,3 +36,17 @@ white   = "#{{TEXT}}"
 [colors.cursor]
 text   = "#{{BASE}}"
 cursor = "#{{TEXT}}"
+
+# Links (2026-10-17): Ctrl+click opens a URL or OSC 8 hyperlink, matching
+# tmux's Ctrl+click; Ctrl+Shift+O labels them all, as in foot. This restates
+# alacritty's default hint - defining any hint replaces the whole default list -
+# changing only mouse.mods (default: plain click, too easy to hit by accident).
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+mouse.mods = "Control"
+binding = { key = "O", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`\\\\]+"
