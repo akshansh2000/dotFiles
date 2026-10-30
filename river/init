@@ -208,8 +208,8 @@ riverctl map normal Super Space toggle-float
 riverctl map normal Super F toggle-fullscreen
 
 # --- Hide / unhide (2026-10-30) ---
-riverctl map normal Super U set-view-tags 1048576
-riverctl map normal Super+Shift U spawn 'riverctl set-focused-tags 1048576 && riverctl send-to-previous-tags && riverctl focus-previous-tags'
+riverctl map normal Super U spawn '~/.config/river/hide.sh'
+riverctl map normal Super+Shift U spawn '~/.config/river/unhide.sh'
 
 # --- Multi-output ---
 riverctl map normal Super Period focus-output next
