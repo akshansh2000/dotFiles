@@ -1,0 +1,5 @@
+#!/bin/sh
+# Low-battery warning at 25%, over fullscreen windows too (2026-10-30). See
+# ~/.config/river/battery-notify.py. Supervised like mako and swayidle: a dead
+# watcher would fail silently, which is the one thing a battery warning can't.
+exec python3 "$HOME/.config/river/battery-notify.py"

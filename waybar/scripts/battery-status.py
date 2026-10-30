@@ -14,7 +14,7 @@ Classes (colours live in style.css.tmpl):
   charging  - status Charging                         -> yellow
   full      - AC online and Full / Not charging        -> green
               ("Not charging" = held at the charge limit)
-  low       - not charging and below LOW_PCT           -> red
+  low       - not charging and at or below LOW_PCT     -> red
   (none)    - everything else                          -> bar text colour
 Charging wins over low: a low battery that is charging shows yellow.
 """
@@ -22,7 +22,7 @@ import ctypes, json, os, select, signal, subprocess, sys
 
 BAT = "/sys/class/power_supply/BAT0"
 AC = "/sys/class/power_supply/AC0"
-LOW_PCT = 20
+LOW_PCT = 25  # = river/battery-notify.py's warning level (2026-10-30)
 REFRESH = 30  # seconds
 ICONS = [chr(c) for c in (0xF244, 0xF243, 0xF242, 0xF241, 0xF240)]
 
@@ -65,7 +65,7 @@ def state():
         cls = "charging"
     elif ac and (status in ("Full", "Not charging") or cap >= top - 1):
         cls = "full"
-    elif cap < LOW_PCT:
+    elif cap <= LOW_PCT:
         cls = "low"
     else:
         cls = ""
