@@ -44,3 +44,15 @@
   builds them from the number (python chr(0xF240)); verify afterwards with a
   codepoint dump; and when the user needs to SEE one, render it to an image
   with `fc-match -f '%{file}' 'Symbols Nerd Font'` and show that.
+
+# Working agreement
+
+- Discuss before changing anything: for every change to files, configs,
+  services or system state, first lay out the options with pros and cons,
+  how each would work, and the exact changes - then wait for an explicit
+  go-ahead. Investigating needs no approval: reading, measuring, and tests
+  in a throwaway headless river or on an isolated tmux server.
+- An approval covers what was agreed. A fix found along the way that stays
+  within that scope may be applied, but say so; anything wider (other
+  files, new behaviour, new packages) goes back to discussion first.
+- Commit and push only when asked.
