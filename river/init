@@ -154,8 +154,8 @@ riverctl map normal Super+Shift P spawn '~/.config/path/path-menu.sh'
 riverctl map normal Super V spawn 'sh -c '\''cliphist list | rofi -dmenu -p clipboard | cliphist decode | wl-copy'\'''
 
 # --- Focus / swap / zoom ---
-riverctl map normal Super J focus-view next
-riverctl map normal Super K focus-view previous
+riverctl map normal Super J spawn '~/.config/river/focus-view.sh next'
+riverctl map normal Super K spawn '~/.config/river/focus-view.sh previous'
 riverctl map normal Super+Shift J swap next
 riverctl map normal Super+Shift K swap previous
 
@@ -206,6 +206,10 @@ riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 # --- Floating / fullscreen ---
 riverctl map normal Super Space toggle-float
 riverctl map normal Super F toggle-fullscreen
+
+# --- Hide / unhide (2026-10-30) ---
+riverctl map normal Super U set-view-tags 1048576
+riverctl map normal Super+Shift U spawn 'riverctl set-focused-tags 1048576 && riverctl send-to-previous-tags && riverctl focus-previous-tags'
 
 # --- Multi-output ---
 riverctl map normal Super Period focus-output next
