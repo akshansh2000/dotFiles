@@ -96,6 +96,7 @@ window#waybar {
 
 #window,
 #custom-layout,
+#custom-hidden,
 #clock,
 #custom-volume,
 #custom-battery,
@@ -112,11 +113,17 @@ window#waybar {
 	font-family: "{{FONT_MONO_FAMILY}}";
 }
 
+/* Hidden-windows count (Super+U): in the accent, so a window put away
+   doesn't get forgotten. Only shown while there is one. */
+#custom-hidden {
+	color: #{{PEACH}};
+}
+
 /* Volume + battery are icon-only as of 2026-10-09, in the bar's text colour
    (the same subtext0 as connected wifi/bluetooth). Muted = the empty volume
    circle in red. Battery states are classes set by battery-status.py:
    charging yellow (wins over low), plugged-in-and-full / held at the charge
-   limit green, below 20% and not charging red. */
+   limit green, at or below 25% and not charging red. */
 #custom-volume,
 #custom-battery {
 	color: #{{SUBTEXT0}};

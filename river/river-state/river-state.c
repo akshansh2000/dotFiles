@@ -3,6 +3,13 @@
  *
  *   river-state waybar   run forever, print one JSON line for a waybar
  *                        custom module whenever the answer changes
+ *   river-state hidden   the same, for the hidden-windows indicator: how many
+ *                        windows sit on the hidden tags (Super+U)
+ *   river-state count TAGS   print how many views have exactly the tag
+ *                        bitmask TAGS on the focused output, then exit
+ *                        (e.g. `count 2147483648`: windows hidden while
+ *                        fullscreen; unused since unhide stopped
+ *                        re-fullscreening them, kept for later)
  *   river-state next     print the bitmask of the next tag, then exit
  *   river-state prev     print the bitmask of the previous tag, then exit
  *
@@ -17,6 +24,11 @@
  *     empty.
  *   - Next/previous tag bindings. set-focused-tags takes an absolute bitmask,
  *     so stepping needs the current one.
+ *   - The hidden-windows indicator (2026-10-30). Super+U "hides" a window by
+ *     moving it to tag 31 or 32 (see river/hide.sh), which waybar's tag list
+ *     never shows, so without
+ *     a count a hidden window is easy to forget. view_tags lists every view's
+ *     tags; titles aren't part of river-status, so it is a count, not a list.
  *
  * Tag stepping rules, as agreed 2026-09-25: tags 1..NUM_TAGS, wrapping at both
  * ends; every tag counts, occupied or not; with several tags visible the step
@@ -45,6 +57,10 @@
 
 /* Matches the `for i in $(seq 1 9)` tag bindings in keybindings.conf. */
 #define NUM_TAGS 9
+/* Where river/hide.sh puts windows: tag 31, or tag 32 for one that was
+ * fullscreen. The last two of river's 32 tags. */
+#define HIDDEN_TAG (1u << 30)
+#define HIDDEN_FS_TAG (1u << 31)
 
 struct output {
 	struct wl_list link;
@@ -263,22 +279,70 @@ static void emit_waybar(void) {
 	fflush(stdout);
 }
 
+/* --- hidden mode -------------------------------------------------------- */
+
+/* Views whose tags are exactly `tags` - so a window made sticky with
+ * Super+Shift+0 (all 32 bits, the hidden ones included), which is visible
+ * everywhere, never counts as hidden. Focused output, like Super+Shift+U,
+ * which unhides only from there. */
+static size_t count_exact(const struct output *o, uint32_t tags) {
+	size_t n = 0;
+	for (size_t i = 0; o && i < o->n_view_tags; i++) {
+		if (o->view_tags[i] == tags)
+			n++;
+	}
+	return n;
+}
+
+static size_t hidden_count(const struct output *o) {
+	return count_exact(o, HIDDEN_TAG) + count_exact(o, HIDDEN_FS_TAG);
+}
+
+static void emit_hidden(void) {
+	static long last = -1;
+	long n = (long)hidden_count(current_output());
+	if (n == last)
+		return;
+	last = n;
+	if (n == 0) {
+		/* Empty text: waybar hides the module. */
+		puts("{\"text\":\"\",\"class\":\"hidden\"}");
+	} else {
+		/* \uf070 = Font Awesome eye-slash, written as a JSON escape so the
+		 * Private-Use glyph never has to exist as raw bytes in this file. */
+		printf("{\"text\":\"\\uf070 %ld\",\"tooltip\":\"%ld hidden window%s - "
+				"click or Super+Shift+U brings back the last one\","
+				"\"class\":\"hidden\"}\n", n, n, n == 1 ? "" : "s");
+	}
+	fflush(stdout);
+}
+
 /* --- main --------------------------------------------------------------- */
 
 static int usage(void) {
-	fprintf(stderr, "usage: river-state waybar|next|prev\n");
+	fprintf(stderr, "usage: river-state waybar|hidden|next|prev|count TAGS\n");
 	return 2;
 }
 
 int main(int argc, char **argv) {
-	if (argc != 2)
+	if (argc < 2)
 		return usage();
 	const char *mode = argv[1];
 	bool waybar = strcmp(mode, "waybar") == 0;
+	bool hidden = strcmp(mode, "hidden") == 0;
 	bool next = strcmp(mode, "next") == 0;
 	bool prev = strcmp(mode, "prev") == 0;
-	if (!waybar && !next && !prev)
+	bool count = strcmp(mode, "count") == 0;
+	if (argc != (count ? 3 : 2) || (!waybar && !hidden && !next && !prev && !count))
 		return usage();
+	uint32_t count_tags = 0;
+	if (count) {
+		char *end;
+		unsigned long v = strtoul(argv[2], &end, 0);
+		if (*argv[2] == '\0' || *end != '\0' || v > UINT32_MAX)
+			return usage();
+		count_tags = (uint32_t)v;
+	}
 
 	struct wl_display *display = wl_display_connect(NULL);
 	if (!display) {
@@ -308,6 +372,12 @@ int main(int argc, char **argv) {
 	/* Second roundtrip delivers the initial state of everything above. */
 	wl_display_roundtrip(display);
 
+	if (count) {
+		printf("%zu\n", count_exact(current_output(), count_tags));
+		wl_display_disconnect(display);
+		return 0;
+	}
+
 	if (next || prev) {
 		const struct output *cur = current_output();
 		uint32_t tags = cur ? cur->focused_tags : 1;
@@ -334,9 +404,10 @@ int main(int argc, char **argv) {
 	if (prctl(PR_SET_PDEATHSIG, SIGTERM) == 0 && getppid() != parent)
 		return 0;
 
-	emit_waybar();
+	void (*emit)(void) = hidden ? emit_hidden : emit_waybar;
+	emit();
 	while (wl_display_dispatch(display) != -1)
-		emit_waybar();
+		emit();
 
 	/* The compositor went away (session ending). waybar's restart-interval
 	 * brings us back if this happens while the bar is still up. */

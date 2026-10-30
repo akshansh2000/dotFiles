@@ -2,7 +2,7 @@
 	"layer": "top",
 	"position": "top",
 	"height": 28,
-	"modules-left": ["river/tags", "custom/layout", "river/window"],
+	"modules-left": ["river/tags", "custom/layout", "custom/hidden", "river/window"],
 	"modules-center": ["clock"],
 	"modules-right": ["custom/wifi", "custom/bluetooth", "custom/volume", "custom/battery", "tray"],
 
@@ -25,6 +25,17 @@
 		"restart-interval": 2,
 		"on-click": "riverctl send-layout-cmd wideriver '--layout-toggle'",
 		"tooltip": false
+	},
+	// Hidden windows (2026-10-30): an eye-slash and how many windows sit on the
+	// hidden tags 31/32 (Super+U, river/hide.sh), on the focused output. Same
+	// river-state binary, event-driven; empty text when none, so the module
+	// disappears. Click = Super+Shift+U: brings back the most recently hidden
+	// one. No setsid needed, unhide.sh returns at once (see custom/layout).
+	"custom/hidden": {
+		"exec": "~/.local/bin/river-state hidden",
+		"return-type": "json",
+		"restart-interval": 2,
+		"on-click": "~/.config/river/unhide.sh"
 	},
 	"river/window": {
 		"max-length": 60
