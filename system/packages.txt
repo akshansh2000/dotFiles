@@ -98,6 +98,7 @@ seatd
 slurp
 socklog-void
 strace
+swaybg
 swayidle
 system-config-printer
 tectonic

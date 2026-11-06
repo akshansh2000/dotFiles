@@ -1,0 +1,10 @@
+#!/bin/sh
+# Wallpaper (2026-11-02): ~/Pictures/wallpaper.png, a Mocha duotone of
+# ~/Pictures/wallpapers/wallpaper-2021-01-22.png made with ImageMagick:
+#   magick SRC -colorspace gray -level 10.1%,100% \
+#     +level-colors '#1e1e2e','#cdd6f4' -colorspace sRGB wallpaper.png
+# Supervised like mako/waybar so a crash restarts it. -c paints base wherever
+# the image doesn't cover (it fills 16:9 panels exactly; it's cropped on others).
+. "$HOME/.config/theme/colors.sh"
+exec swaybg -m fill -c "#$THEME_BASE" -i "$HOME/Pictures/wallpaper.png"
+
