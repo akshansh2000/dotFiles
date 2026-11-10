@@ -8,6 +8,7 @@
 // Hand-edited. Zed rewrites this file when settings are changed from its UI,
 // so comments survive but key order may not.
 {
+  "proxy": "",
   "base_keymap": "VSCode",
   // Restricted mode stays on: a newly opened folder runs no language servers or
   // tasks until it is trusted by hand from Zed's prompt. Turning this on would
@@ -69,6 +70,9 @@
   },
   "agent_servers": {
     "claude-acp": {
+      "default_config_options": {
+        "model": "opus"
+      },
       "type": "registry",
       "env": {
         "CLAUDE_CONFIG_DIR": "/home/akshansh/.claude-krypton"
