@@ -1,0 +1,6 @@
+#!/bin/sh
+# Quickshell (2026-11-11): runs ~/.config/quickshell/shell.qml - for now just
+# the volume/brightness OSD (quickshell/osd/). Supervised like waybar/mako so a
+# crash restarts it; it reloads its own QML on file changes, so editing the
+# config never needs `sv restart`. Its own log: /run/user/$UID/quickshell/.
+exec quickshell

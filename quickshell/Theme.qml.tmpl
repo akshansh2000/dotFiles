@@ -1,0 +1,27 @@
+pragma Singleton
+// Colours and fonts for everything under ~/.config/quickshell (2026-11-11).
+// Theme.qml is GENERATED from this template by theme/apply-theme.sh - edit
+// this file or theme/colors.sh + fonts.sh, never Theme.qml. Quickshell
+// reloads on file changes, so a re-render applies live, no restart.
+import Quickshell
+import QtQuick
+
+Singleton {
+	readonly property color crust: "#{{CRUST}}"
+	readonly property color mantle: "#{{MANTLE}}"
+	readonly property color base: "#{{BASE}}"
+	readonly property color surface0: "#{{SURFACE0}}"
+	readonly property color surface1: "#{{SURFACE1}}"
+	readonly property color overlay0: "#{{OVERLAY0}}"
+	readonly property color subtext0: "#{{SUBTEXT0}}"
+	readonly property color text: "#{{TEXT}}"
+	readonly property color mauve: "#{{MAUVE}}"
+	readonly property color yellow: "#{{YELLOW}}"
+	readonly property color red: "#{{RED}}"
+
+	readonly property string fontSans: "{{FONT_SANS_FAMILY}}"
+	// Icon glyphs are Material Design Icons (U+F0000 plane) from this font,
+	// written as String.fromCodePoint(0x...) in the QML, never as literal
+	// glyphs - see AGENTS.md on Private Use Area characters.
+	readonly property string fontIcons: "Symbols Nerd Font"
+}

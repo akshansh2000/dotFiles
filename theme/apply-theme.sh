@@ -75,6 +75,7 @@ for pair in \
 	"$HOME/.config/zen-rice/user.js.tmpl:$HOME/.config/zen-rice/user.js" \
 	"$HOME/.config/tridactyl/themes/catppuccin.css.tmpl:$HOME/.config/tridactyl/themes/catppuccin.css" \
 	"$HOME/.config/mako/config.tmpl:$HOME/.config/mako/config" \
+	"$HOME/.config/quickshell/Theme.qml.tmpl:$HOME/.config/quickshell/Theme.qml" \
 	"$HOME/.config/rofi/fonts.rasi.tmpl:$HOME/.config/rofi/fonts.rasi" \
 	"$HOME/.config/rofi/icons.rasi.tmpl:$HOME/.config/rofi/icons.rasi" \
 	"$HOME/.config/gtk-3.0/settings.ini.tmpl:$HOME/.config/gtk-3.0/settings.ini" \

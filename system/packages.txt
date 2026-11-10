@@ -87,6 +87,7 @@ python3-pip
 qalculate-gtk
 qbittorrent
 qt6-wayland
+quickshell
 ripgrep
 river
 rofi

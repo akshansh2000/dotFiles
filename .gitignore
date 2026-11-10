@@ -59,6 +59,8 @@
 /mako/config
 !/waylock/
 !/kanshi/
+!/quickshell/
+/quickshell/Theme.qml
 
 # --- terminals, shell, tools ---
 !/foot/
