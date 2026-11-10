@@ -251,6 +251,13 @@ riverctl map normal None XF86AudioLowerVolume spawn 'wpctl set-volume @DEFAULT_A
 riverctl map locked None XF86AudioLowerVolume spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
 riverctl map normal None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
 riverctl map locked None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
+# The dedicated mic button sends KEY_MICMUTE from "Asus Keyboard" (checked with
+# `libinput debug-events --show-keycodes`, 2026-11-11), which xkb's evdev keymap
+# names XF86AudioMicMute. The button has no LED on this machine. The Quickshell
+# OSD shows the result. The Armoury Crate button next to it is KEY_PROG1 =
+# XF86Launch1, still free.
+riverctl map normal None XF86AudioMicMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle'
+riverctl map locked None XF86AudioMicMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle'
 
 # `brillo -O` after each change stores the level in ~/.cache/brillo, which
 # `brillo -I` in river/init restores at session start. Nothing else does this:
