@@ -74,11 +74,11 @@ Rectangle {
 			Rectangle {
 				visible: card.markAt >= 0
 				width: 2
-				height: parent.height + 6
+				height: parent.height + 12
 				radius: 1
 				anchors.verticalCenter: parent.verticalCenter
 				x: parent.width * card.markAt / card.maxValue - width / 2
-				color: Theme.subtext0
+				color: Theme.red
 			}
 		}
 	}
