@@ -254,10 +254,13 @@ riverctl map locked None XF86AudioMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK
 # The dedicated mic button sends KEY_MICMUTE from "Asus Keyboard" (checked with
 # `libinput debug-events --show-keycodes`, 2026-11-11), which xkb's evdev keymap
 # names XF86AudioMicMute. The button has no LED on this machine. The Quickshell
-# OSD shows the result. The Armoury Crate button next to it is KEY_PROG1 =
-# XF86Launch1, still free.
+# OSD shows the result.
 riverctl map normal None XF86AudioMicMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle'
 riverctl map locked None XF86AudioMicMute spawn 'wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle'
+# The Armoury Crate button next to it (KEY_PROG1 = XF86Launch1) opens and hides
+# the Control centre (2026-11-13, quickshell/control/): an IpcHandler in the
+# live Quickshell shell. Normal mode only - not on the lock screen.
+riverctl map normal None XF86Launch1 spawn 'qs ipc call control toggle'
 
 # `brillo -O` after each change stores the level in ~/.cache/brillo, which
 # `brillo -I` in river/init restores at session start. Nothing else does this:
