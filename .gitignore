@@ -22,6 +22,8 @@
 !/README.md
 !/AGENTS.md
 !/mimeapps.list
+# Control centre topic docs: one Markdown file per topic (quickshell/control/)
+!/docs/
 
 # --- system (staged /etc copies + inventories) ---
 !/system/
@@ -61,6 +63,7 @@
 !/kanshi/
 !/quickshell/
 /quickshell/Theme.qml
+/quickshell/control/__pycache__/
 
 # --- terminals, shell, tools ---
 !/foot/

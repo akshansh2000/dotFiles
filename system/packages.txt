@@ -45,6 +45,7 @@ gtk+
 gutenprint
 gvfs
 hicolor-icon-theme
+inotify-tools
 iwd
 jq
 kanshi
