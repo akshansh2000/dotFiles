@@ -7,3 +7,9 @@
 # Keyboard backlight on at boot - runs as root here, independent of any
 # river/graphical session, so it applies in plain tty mode too.
 for i in 1 2 3 4 5; do /home/akshansh/.config/river/kbd-backlight set 1 && break; sleep 1; done
+
+# Battery charge limit chosen in the Control centre (2026-11-13): the
+# firmware resets it to 100 at every boot, so re-apply the saved value.
+# Written only by /usr/local/libexec/control-centre-helper (root).
+[ -r /etc/control-centre/charge-limit ] &&
+	cat /etc/control-centre/charge-limit > /sys/class/power_supply/BAT0/charge_control_end_threshold

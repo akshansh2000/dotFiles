@@ -1,6 +1,7 @@
 #!/bin/sh
-# Staged system files (2026-10-10). system/etc/... mirrors /etc/... and the
-# repo copy is the source of truth: edit here, then install. They are COPIES on
+# Staged system files (2026-10-10). system/etc/... mirrors /etc/... (and, since
+# 2026-11-13, system/usr/local/libexec/... mirrors /usr/local/libexec/... - the
+# Control centre's root helper) and the repo copy is the source of truth: edit here, then install. They are COPIES on
 # purpose, not symlinks into $HOME - every one is read by root (or polkitd) and
 # can make root do things (rc.local runs as root, udev RUN+=, polkit rules,
 # greetd's initial_session, modprobe install lines, grub's init=), so a link
@@ -9,7 +10,8 @@
 #
 #   install.sh             status of every staged file vs the live one
 #   install.sh FILE...     per file: show the diff, ask, sudo-install it
-#                          (FILE as etc/..., system/etc/... or /etc/...)
+#                          (FILE as etc/..., system/etc/... or /etc/...;
+#                          likewise usr/local/libexec/...)
 #
 # Installed root:root, 755 if the staged file is executable, else 644 - only
 # the exec bit is taken from the staged file, which is all git keeps anyway
@@ -19,12 +21,12 @@
 
 cd "$(dirname "$0")" || exit 1
 
-norm() {   # any spelling -> etc/...
+norm() {   # any spelling -> etc/... or usr/local/libexec/...
 	case $1 in
-	/etc/*)        printf '%s\n' "${1#/}" ;;
-	system/etc/*)  printf '%s\n' "${1#system/}" ;;
-	./etc/*)       printf '%s\n' "${1#./}" ;;
-	etc/*)         printf '%s\n' "$1" ;;
+	/etc/* | /usr/local/libexec/*)              printf '%s\n' "${1#/}" ;;
+	system/etc/* | system/usr/local/libexec/*)  printf '%s\n' "${1#system/}" ;;
+	./etc/* | ./usr/local/libexec/*)            printf '%s\n' "${1#./}" ;;
+	etc/* | usr/local/libexec/*)                printf '%s\n' "$1" ;;
 	*)             printf 'etc/%s\n' "$1" ;;
 	esac
 }
@@ -39,15 +41,16 @@ hint() {   # what makes the new file take effect
 	etc/modprobe.d/*)   echo "  -> rebuild the initramfs (sudo xbps-reconfigure -f linux<ver>), then reboot" ;;
 	etc/rc.local|etc/rc.conf) echo "  -> used from the next boot" ;;
 	etc/xbps.d/*)       echo "  -> used by the next xbps-install -S" ;;
+	usr/local/libexec/control-centre-helper) echo "  -> used by the Control centre's pkexec calls" ;;
 	esac
 }
 
-readable_dir() {   # can we even look inside /etc/...'s directory?
-	[ -x "$(dirname "/$1")" ]
+readable_dir() {   # can we even look inside /etc/...'s directory? (a missing one is fine: install -D creates it)
+	[ ! -e "$(dirname "/$1")" ] || [ -x "$(dirname "/$1")" ]
 }
 
 if [ $# -eq 0 ]; then
-	find etc -type f | sort | while read -r f; do
+	find etc usr -type f 2>/dev/null | sort | while read -r f; do
 		if ! readable_dir "$f" || { [ -e "/$f" ] && [ ! -r "/$f" ]; }; then
 			st="unreadable without sudo"
 		elif [ ! -e "/$f" ]; then st="NOT INSTALLED"

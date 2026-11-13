@@ -1,0 +1,71 @@
+#!/bin/sh
+# Root helper for the Control centre (2026-11-13). The app runs it through
+#   pkexec /usr/local/libexec/control-centre-helper <action> <value>
+# and polkit asks for the admin password (kept a few minutes by
+# /etc/polkit-1/rules.d/50-control-centre.rules). It does a FIXED set of
+# things and validates every argument, because whatever can run it as root
+# can only ever do this:
+#   charge-limit 60-100       battery charge stop threshold; also saved to
+#                             /etc/control-centre/charge-limit, which
+#                             /etc/rc.local re-applies at boot (the firmware
+#                             resets it to 100)
+#   power-profile <name>      one of /sys/firmware/acpi/platform_profile_choices
+#   --dry-run (first)         print the writes instead of doing them (tests)
+# Exit 0 = done, 2 = bad input (nothing written), 1 = a write failed.
+# Staged copy: ~/.config/system/usr/local/libexec/; install with system/install.sh.
+# Tests: sh ~/.config/system/test-control-centre-helper.sh
+set -f
+umask 022
+PATH=/usr/bin:/bin
+export PATH
+
+me=control-centre-helper
+THRESHOLD=/sys/class/power_supply/BAT0/charge_control_end_threshold
+SAVED=/etc/control-centre/charge-limit
+PROFILE=/sys/firmware/acpi/platform_profile
+CHOICES=/sys/firmware/acpi/platform_profile_choices
+
+usage() {
+	echo "$me: $1" >&2
+	echo "usage: $me [--dry-run] charge-limit 60-100 | power-profile <$(cat "$CHOICES" 2>/dev/null)>" >&2
+	exit 2
+}
+
+dry=no
+if [ "${1-}" = --dry-run ]; then
+	dry=yes
+	shift
+fi
+[ $# -eq 2 ] || usage "expected an action and exactly one value"
+
+write() {   # value path
+	if [ $dry = yes ]; then
+		echo "write $1 -> $2"
+	elif ! printf '%s\n' "$1" > "$2"; then
+		echo "$me: cannot write $2" >&2
+		exit 1
+	fi
+}
+
+case $1 in
+charge-limit)
+	case $2 in
+	[6-9][0-9] | 100) ;;
+	*) usage "charge limit must be a whole number 60-100, got '$2'" ;;
+	esac
+	write "$2" "$THRESHOLD"
+	[ $dry = yes ] || mkdir -p "${SAVED%/*}"
+	write "$2" "$SAVED"
+	;;
+power-profile)
+	ok=no
+	for c in $(cat "$CHOICES" 2>/dev/null); do
+		[ "$c" = "$2" ] && ok=yes
+	done
+	[ $ok = yes ] || usage "power profile must be one of: $(cat "$CHOICES" 2>/dev/null), got '$2'"
+	write "$2" "$PROFILE"
+	;;
+*)
+	usage "unknown action '$1'"
+	;;
+esac

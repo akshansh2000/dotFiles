@@ -1,0 +1,13 @@
+// Control centre (2026-11-13): pkexec of its root helper asks for the admin
+// password once, then keeps it for a few minutes (auth_admin_keep), instead
+// of asking on every slider release. Only for this one program, only for a
+// local, active session of someone in wheel. pkexec's own default action
+// (org.freedesktop.policykit.exec) is auth_admin, so without this rule it
+// still works, it just asks every time. No .policy file: polkit reads those
+// only from /usr/share/polkit-1/actions.
+polkit.addRule(function(action, subject) {
+	if (action.id == "org.freedesktop.policykit.exec" &&
+	    action.lookup("program") == "/usr/local/libexec/control-centre-helper" &&
+	    subject.local && subject.active && subject.isInGroup("wheel"))
+		return polkit.Result.AUTH_ADMIN_KEEP;
+});
