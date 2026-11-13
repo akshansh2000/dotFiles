@@ -15,6 +15,14 @@ Singleton {
 	readonly property string device: "/sys/class/backlight/amdgpu_bl0"
 	property real level: 0
 
+	// Set the panel to `fraction` (0-1) the same way the brightness keys do:
+	// brillo, then -O so river/init's `brillo -I` restores it at next login.
+	// `level` then follows through the udev event like any other change.
+	function set(fraction: real) {
+		const pct = Math.max(1, Math.min(100, Math.round(fraction * 100)));
+		Quickshell.execDetached(["sh", "-c", "brillo -S " + pct + " && brillo -O"]);
+	}
+
 	FileView {
 		id: maxFile
 		path: root.device + "/max_brightness"
