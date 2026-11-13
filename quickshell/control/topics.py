@@ -17,6 +17,9 @@ instead of being ignored, so a typo is visible in the app:
 
 See quickshell/control/DESIGN.md (sections 4.3 and 5) for the whole contract.
 
+The body is also split into blocks for the right panel (summary, facts,
+cards with callouts and commands, known issues): see structure() below.
+
   python3 -I topics.py --root ~/.config --docs ~/.config/docs \\
       --sections ~/.config/quickshell/control/sections
 """
@@ -140,6 +143,103 @@ def pascal(topic_id):
     return "".join(p[:1].upper() + p[1:] for p in re.split(r"[-_]", topic_id) if p)
 
 
+# ---- the body as blocks, for the right panel (2026-11-13) ------------------
+# Conventions (all optional; a doc using none is just a summary):
+#   text before the first "## "        summary (an H1 equal to the title is dropped)
+#   "## At a glance" with "- Key: value"  facts
+#   "## Known issues"                  issues (its callouts, on their own)
+#   any other "## Heading"             a card: points ("- "), callouts, commands, text
+#   "> [!IMPORTANT|WARNING|CAUTION|TIP|NOTE]"  callouts (GitHub alert syntax);
+#                                      IMPORTANT reads as the "why" of a decision
+#   a ```sh fence                      one command row per line
+# A code span naming a listed path (as written, or its basename when only one
+# entry has it) becomes a link "open:<full path>".
+ALERTS = {"IMPORTANT": "why", "WARNING": "warning", "CAUTION": "caution", "TIP": "tip", "NOTE": "note"}
+_ALERT = re.compile(r"^>\s*\[!(\w+)\]\s*$")
+
+
+def _path_index(groups):
+    idx, bases = {}, {}
+    for g in groups:
+        for e in g["entries"]:
+            idx[e["path"]] = idx[e["path"].rstrip("/")] = e["full"]
+            base = e["path"].rstrip("/").split("/")[-1]
+            bases.setdefault(base, set()).add(e["full"])
+    for base, fulls in bases.items():
+        if len(fulls) == 1:
+            idx.setdefault(base, next(iter(fulls)))
+    return idx
+
+
+def _link(md, idx):
+    def rep(m):
+        full = idx.get(m.group(1)) or idx.get(m.group(1).rstrip("/"))
+        return f"[{m.group(1)}](open:{full})" if full else m.group(0)
+    return re.sub(r"(?<![\[\w])`([^`\n]+)`(?!\])", rep, md)
+
+
+def _items(lines, idx):
+    items, i = [], 0
+    while i < len(lines):
+        line = lines[i]
+        if not line.strip():
+            i += 1
+        elif line.startswith("```"):
+            i += 1
+            while i < len(lines) and not lines[i].startswith("```"):
+                if lines[i].strip():
+                    items.append({"type": "command", "text": lines[i].strip()})
+                i += 1
+            i += 1
+        elif _ALERT.match(line):
+            kind = ALERTS.get(_ALERT.match(line).group(1).upper(), "note")
+            body, i = [], i + 1
+            while i < len(lines) and lines[i].startswith(">") and not _ALERT.match(lines[i]):
+                body.append(lines[i][1:].strip())
+                i += 1
+            items.append({"type": "callout", "kind": kind, "md": _link(" ".join(body), idx)})
+        elif line.startswith("- "):
+            text, i = [line[2:].strip()], i + 1
+            while i < len(lines) and lines[i].startswith("  ") and lines[i].strip():
+                text.append(lines[i].strip())
+                i += 1
+            items.append({"type": "point", "md": _link(" ".join(text), idx)})
+        else:
+            text, i = [line.strip()], i + 1
+            while i < len(lines) and lines[i].strip() and not re.match(r"^(- |>|```|## )", lines[i]):
+                text.append(lines[i].strip())
+                i += 1
+            items.append({"type": "text", "md": _link(" ".join(text), idx)})
+    return items
+
+
+def structure(body, title, groups):
+    """(summary, blocks) for the right panel - see the conventions above."""
+    idx = _path_index(groups)
+    lines = body.split("\n")
+    if lines and re.match(r"^#\s", lines[0]) and lines[0].lstrip("#").strip().lower() == title.lower():
+        lines = lines[1:]
+    cut = next((i for i, l in enumerate(lines) if l.startswith("## ")), len(lines))
+    summary = _link(" ".join(l.strip() for l in lines[:cut] if l.strip()), idx)
+    blocks, i = [], cut
+    while i < len(lines):
+        head = lines[i][3:].strip()
+        j = next((k for k in range(i + 1, len(lines)) if lines[k].startswith("## ")), len(lines))
+        items = _items(lines[i + 1:j], idx)
+        if head.lower() == "at a glance":
+            facts = []
+            for it in items:
+                k, sep, v = it.get("md", it.get("text", "")).partition(": ")
+                facts.append({"key": k, "value": v} if sep else {"key": "", "value": k})
+            blocks.append({"type": "facts", "items": facts})
+        elif head.lower() == "known issues":
+            blocks.append({"type": "issues", "items": items})
+        else:
+            blocks.append({"type": "card", "title": head, "items": items})
+        i = j
+    return summary, blocks
+
+
 def _topic(path, tid, root, sections):
     with open(path, errors="replace") as f:
         text = f.read()
@@ -154,12 +254,16 @@ def _topic(path, tid, root, sections):
         for e in g["entries"]:
             e.update(describe(e["path"], root))
     controls = pascal(tid)
+    title = meta.get("title") or tid
+    summary, blocks = structure(body.strip(), title, groups)
     return {
         "id": tid,
-        "title": meta.get("title") or tid,
+        "title": title,
         "order": meta.get("order", 99),
         "icon": meta.get("icon", ""),
         "body": body.strip(),
+        "summary": summary,
+        "blocks": blocks,
         "error": error,
         "controls": controls if os.path.isfile(os.path.join(sections, controls + ".qml")) else "",
         "groups": groups,

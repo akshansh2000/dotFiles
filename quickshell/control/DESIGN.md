@@ -234,6 +234,62 @@ Markdown body...
 - **[my call]** The app finds out which section files exist with one
   `ls` via topics.py, so QML holds no list of them.
 
+### 5.5 Writing a topic's body (added 2026-11-13, with the right-panel redesign)
+
+The right panel isn't one Markdown text. `topics.py` (`structure()`) splits
+the body into blocks, and `DocPanel.qml` draws each kind differently. Every
+convention is optional; a body that uses none is shown as a single summary.
+
+| In the Markdown | On the panel |
+|---|---|
+| text before the first `##` | **summary**, larger and softer (an H1 equal to the title is dropped) |
+| `## At a glance` with `- Key: value` lines | **fact table** |
+| `## Known issues` | its callouts on their own, at the end |
+| any other `## Area` | a **card**: bullet points, callouts, commands, text |
+| `> [!IMPORTANT]` | **WHY** (a decision), mauve |
+| `> [!WARNING]` / `> [!CAUTION]` | red / peach |
+| `> [!TIP]` / `> [!NOTE]` | green / blue |
+| a ```` ```sh ```` fence | one copyable command row per line |
+| `` `name` `` matching a listed path (or its unique basename) | a link that opens it |
+
+GitHub renders the same file sensibly: the alerts are GitHub's own syntax.
+
+**Writing rules:**
+- about 200 words per doc;
+- a summary of at most 2 sentences;
+- at most about 4 areas, each with short bullets, not prose;
+- write facts, decisions and gotchas, not descriptions of the controls on
+  screen;
+- refer to listed files by name in backticks, so they become links;
+- put each command in its own `sh` block.
+
+Example:
+
+```markdown
+---
+title: Audio
+order: 2
+icon: F057E
+paths:
+  config:
+    - wireplumber/
+  keys:
+    - path: river/keybindings.conf
+      note: Volume / brightness / media keys (normal + locked, per river's own docs)
+checks:
+  - sv: wireplumber
+---
+PipeWire with WirePlumber, as runit user services.
+
+## At a glance
+- Output: Laptop Speakers
+
+## Device names
+- `wireplumber/` renames the built-in devices
+> [!CAUTION]
+> WirePlumber saves volume with a delay: wait before restarting it.
+```
+
 ## 6. Sections
 
 Draft list. The user will refine it once the app exists.

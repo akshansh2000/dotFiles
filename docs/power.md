@@ -29,47 +29,31 @@ paths:
 checks:
   - sv: battery-notify
 ---
-# Power & battery
+Battery stats, a 25% low-battery warning, and a charge limit and power profile that need root.
+
+## At a glance
+- Warning: 25%, once per discharge
+- Charge limit: 60–100% (root)
+- Profiles: quiet · balanced · performance
+- Health: full ÷ design capacity
 
 ## Low-battery warning
+- `sv/battery-notify`, wakes on power_supply events + every 15 s
+- cleared when AC returns, re-armed for the next discharge
+- `mako/config.tmpl` puts critical notifications above fullscreen
+> [!IMPORTANT]
+> "Discharging" = `AC0/online`, not `BAT0/status`: at the limit BAT0 says "Not charging".
 
-- `sv/battery-notify` sends **one** critical notification per discharge,
-  at 25% or below, with the time left.
-- It is dismissed again when AC comes back, and armed for the next
-  discharge.
-- It wakes on kernel `power_supply` events, and every 15 s because the
-  battery is old.
-- "Discharging" is read from `AC0/online`, not `BAT0/status`: at the
-  charge limit, BAT0 says *Not charging*.
-- Critical notifications use mako's **overlay** layer, so they show above
-  fullscreen windows. waybar's battery turns red at the same 25%.
+## Root changes
+- one helper via pkexec, fixed allow-list, validated values
+- password kept a few minutes (`50-control-centre.rules`)
+- limit re-applied at boot by `/etc/rc.local`
+> [!TIP]
+> A lower limit is kind to an old battery that mostly sits on AC.
+```sh
+system/install.sh usr/local/libexec/control-centre-helper etc/polkit-1/rules.d/50-control-centre.rules etc/rc.local
+```
 
-## Charge limit and power profile
-
-Both are sysfs files only root can write:
-
-- `charge_control_end_threshold`, 60–100%;
-- `platform_profile`: quiet / balanced / performance.
-
-This section changes them through **one small root helper** run by `pkexec`.
-
-- **What the helper accepts:** exactly those two actions, with validated
-  values. Anything else exits 2 and writes nothing. Tests:
-  `sh ~/.config/system/test-control-centre-helper.sh`.
-- **The password:** polkit asks once, then keeps it for a few minutes
-  (`50-control-centre.rules`).
-- **The charge limit after a reboot:** the firmware resets it to 100 at
-  every boot. So the helper also saves it to
-  `/etc/control-centre/charge-limit`, and `/etc/rc.local` writes it back.
-- **Installing:** both live in `~/.config/system/` like the other
-  root-owned files:
-  `system/install.sh usr/local/libexec/control-centre-helper etc/polkit-1/rules.d/50-control-centre.rules etc/rc.local`.
-
-A lower limit is kind to an old battery when the laptop mostly sits on AC.
-
-## Known issue
-
-Suspend (s2idle) on battery can drain it to zero. The hardware clock then
-falls back to 2023 until chrony fixes it after Wi-Fi comes up, and anything
-started before that sees TLS certificates as "not yet valid". Planned fix:
-hibernate after a while in suspend.
+## Known issues
+> [!WARNING]
+> s2idle on battery drains it to 0 → clock resets to 2023 → TLS fails until chrony syncs. Planned fix: hibernate after a while.

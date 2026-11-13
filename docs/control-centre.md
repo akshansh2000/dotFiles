@@ -25,86 +25,41 @@ paths:
     - path: river/keybindings.conf
       note: the Armoury Crate button opens this window
 ---
-# Control centre
+Where everything is, why, and how it works - and changes made by running the scripts that already exist. The config files stay the truth; everything still works from a terminal.
 
-This app shows **where everything is, why, and how it works**, and changes
-things by running the scripts that already exist. The config files stay the
-source of truth: everything still works from a terminal without it.
+## At a glance
+- Open: Armoury Crate button, or `qs ipc call control toggle`
+- Sections: one per `docs/*.md`, live-reloaded
+- Controls: `sections/<Id>.qml` when it exists
+- Keys: press ? for all of them
 
 ## How it works
+- every `docs/*.md` is a section; its front matter lists the files by role
+- the doc's body becomes this panel: summary, facts, cards, callouts
+- click a file chip or a linked name to open it: folder → yazi, file → nvim
+- a file only root can edit opens with sudoedit (password first, nvim as you)
+> [!IMPORTANT]
+> The app is loaded by file URL, not imported, so a typo in it can only break this window, never the OSD.
 
-- **Sections are files.** Every `docs/*.md` is a section. Its YAML front
-  matter says what the left panel shows and which files belong to it. The
-  Markdown below it is what you're reading now.
-- **The right panel** is that Markdown plus the topic's files, grouped by
-  role. A `NOTES.md` inside a listed folder shows up under that folder.
-- **The centre** shows a topic's controls when
-  `quickshell/control/sections/<Id>.qml` exists. Otherwise it shows the
-  files.
-- **Live reload.** Saving any doc in `docs/` updates the app within a
-  moment (`inotifywait` watches the folder).
+## Write a topic
+- front matter: title, order, icon, paths by role, checks
+- body: a short summary, then `## At a glance`, `## <area>` cards, `## Known issues`
+- callouts: `> [!IMPORTANT]` (why), WARNING, CAUTION, TIP, NOTE
+- full conventions: `quickshell/control/DESIGN.md` §5.5
+> [!TIP]
+> Keep it terse: about 200 words, short bullets, no sentences that describe the controls on screen.
 
-## Add a topic
-
-Create `docs/<id>.md`:
-
-```yaml
----
-title: Audio          # left-panel name
-order: 2              # sort key (ties sort by title)
-icon: F057E           # optional: Material Design Icons codepoint, hex
-paths:                # groups BY ROLE, shown in this order
-  config:
-    - wireplumber/    # relative to ~/.config, or ~/..., or /absolute
-  keys:
-    - path: river/keybindings.conf
-      note: Volume / brightness / media keys (normal + locked, per river's own docs)
-checks:               # optional, for the health overview
-  - sv: wireplumber
----
+## Editing the app
+- changes under `quickshell/control/` need a shell restart (no hot reload)
+- `r` re-reads folder notes and whether listed paths exist
+```sh
+sv restart ~/.local/sv/quickshell
 ```
 
-- **Usual group names:** config, services, scripts, ui, keys, logs, system.
-  Any name works.
-- **A typo in the front matter** shows as a red line at the top of the topic,
-  with its line number.
-- **Hidden files, `*~` backups and `README.md`** in `docs/` are ignored.
-
-## Give a topic controls
-
-Add `quickshell/control/sections/<Id>.qml`, where `<Id>` is the file name in
-PascalCase (`login-logs.md` → `LoginLogs.qml`). Build it from the Mocha
-widgets in `quickshell/control/widgets/`, never Qt's default look. Every
-control shows the command it is equivalent to.
-
-## Tips
-
-- Press `?` for every key.
-- **Click any file entry to open it** (`quickshell/control/open-path.sh`):
-  - a folder opens in yazi;
-  - a file opens in nvim inside tmux;
-  - a file only root can edit opens with `sudoedit`: sudo asks for your
-    password in that window, nvim edits a copy as you, and sudo writes it
-    back when you `:wq`.
-- `Tab` moves focus between the panels. With the docs focused, `j`/`k`
-  scroll them.
-- `r` re-reads everything, including folder notes and whether listed paths
-  still exist. Those aren't watched live.
-- **Editing anything under `quickshell/control/`** is *not* picked up by
-  Quickshell's hot reload. The app is loaded by file URL on purpose: that
-  way a typo in it can only break this window, never the OSD. Restart the
-  shell with `sv restart ~/.local/sv/quickshell`; the OSD comes back with it.
-  Topic docs in `docs/` still reload live.
-- Changes that need root (charge limit, power profile) go through
-  `pkexec` and the small helper listed above. It accepts only a fixed set of
-  actions.
-
-## Known issues (accepted for now)
-
-- Clicking a file entry that doesn't exist does nothing visible.
-  `open-path.sh` exits quietly when the path is missing and its folder is
-  readable.
-- The OSD pops up "Laptop Speakers" whenever wireplumber restarts, because
-  the device is re-created.
-- The OSD misses the **first** brightness change after Quickshell starts or
-  restarts. The second one shows.
+## Known issues
+> [!CAUTION]
+> Clicking a file that doesn't exist does nothing visible.
+> [!CAUTION]
+> The OSD pops up "Laptop Speakers" whenever wireplumber restarts (the device is re-created).
+> [!WARNING]
+> The OSD misses the first brightness change after Quickshell starts or restarts; the second one shows.

@@ -155,5 +155,85 @@ class TestTopics(Tree):
         self.assertEqual([t["title"] for t in self.load()["topics"]], ["Zero", "Alpha", "Beta"])
 
 
+STRUCTURED = """---
+title: Power
+paths:
+  services:
+    - sv/battery-notify/
+  scripts:
+    - river/battery-notify.py
+    - other/battery-notify.py
+---
+# Power
+
+Battery stats and a 25% warning.
+
+## At a glance
+- Warning: 25%, once per discharge
+- no colon here
+
+## Low-battery warning
+- `sv/battery-notify`, wakes on events
+  and every 15 s
+- `battery-notify.py` is ambiguous, `nope.conf` isn't listed
+> [!IMPORTANT]
+> "Discharging" = `AC0/online`,
+> not `BAT0/status`.
+```sh
+sv restart ~/.local/sv/battery-notify
+```
+A plain sentence.
+
+## Known issues
+> [!WARNING]
+> s2idle drains it to 0.
+> [!TIP]
+> unknown kinds fall back
+"""
+
+
+class TestStructure(Tree):
+    def power(self):
+        self.write("docs/power.md", STRUCTURED)
+        return self.topic("power")
+
+    def test_summary_drops_h1_equal_to_title(self):
+        self.assertEqual(self.power()["summary"], "Battery stats and a 25% warning.")
+
+    def test_block_types_in_order(self):
+        self.assertEqual([(b["type"], b.get("title", "")) for b in self.power()["blocks"]],
+                         [("facts", ""), ("card", "Low-battery warning"), ("issues", "")])
+
+    def test_facts_split_on_first_colon(self):
+        facts = self.power()["blocks"][0]["items"]
+        self.assertEqual(facts, [{"key": "Warning", "value": "25%, once per discharge"},
+                                 {"key": "", "value": "no colon here"}])
+
+    def test_card_items(self):
+        items = self.power()["blocks"][1]["items"]
+        self.assertEqual([i["type"] for i in items], ["point", "point", "callout", "command", "text"])
+        self.assertTrue(items[0]["md"].endswith("wakes on events and every 15 s"))   # continuation joined
+        self.assertEqual(items[2]["kind"], "why")                                    # [!IMPORTANT]
+        self.assertEqual(items[2]["md"], '"Discharging" = `AC0/online`, not `BAT0/status`.')
+        self.assertEqual(items[3]["text"], "sv restart ~/.local/sv/battery-notify")
+        self.assertEqual(items[4]["md"], "A plain sentence.")
+
+    def test_issue_callout_kinds(self):
+        self.assertEqual([i["kind"] for i in self.power()["blocks"][2]["items"]], ["warning", "tip"])
+
+    def test_listed_paths_become_links(self):
+        md = self.power()["blocks"][1]["items"][0]["md"]
+        self.assertTrue(md.startswith("[sv/battery-notify](open:" + os.path.join(self.root, "sv/battery-notify") + ")"), md)
+
+    def test_ambiguous_and_unlisted_names_stay_code(self):
+        md = self.power()["blocks"][1]["items"][1]["md"]
+        self.assertEqual(md, "`battery-notify.py` is ambiguous, `nope.conf` isn't listed")
+
+    def test_plain_doc_is_one_summary(self):
+        self.write("docs/plain.md", "Just a paragraph.\n\nAnd another.\n")
+        t = self.topic("plain")
+        self.assertEqual((t["summary"], t["blocks"]), ("Just a paragraph. And another.", []))
+
+
 if __name__ == "__main__":
     unittest.main()

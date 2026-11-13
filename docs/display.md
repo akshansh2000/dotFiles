@@ -24,28 +24,29 @@ checks:
   - sv: kanshi
   - sv: swaybg
 ---
-# Display & wallpaper
+The laptop panel and an optional HDMI screen via kanshi; brightness from the keys or here; the wallpaper drawn by swaybg.
 
-The laptop panel (`eDP-1`) is 2560×1440 at 120 Hz, at scale **1.3**.
-**kanshi** (`sv/kanshi`) switches between the *laptop* and *docked*
-profiles in `kanshi/config`. Docked adds HDMI-A-1 at 1920×1080 to the
-right.
+## At a glance
+- Panel: eDP-1, 2560×1440 at 120 Hz, scale 1.3
+- Docked: + HDMI-A-1 1920×1080, to the right
+- Brightness: brillo, 5% per key, restored at login
+- Wallpaper: swaybg, fill mode, base colour behind
+
+## Screens
+- `kanshi/` switches the laptop and docked profiles
+- `sv/kanshi` keeps it running; outputs here are read-only (wlr-randr)
 
 ## Brightness
-
-- The keys run `brillo -A/-U 5 && brillo -O`.
-- `-O` saves the level, and `brillo -I` in `river/init` restores it at
-  login.
-- The slider here does the same with `brillo -S N && brillo -O`.
-- The OSD reacts to every change, whatever made it: it listens for the
-  kernel's backlight events.
+- keys run `brillo -A/-U 5 && brillo -O`
+- `-O` saves the level; `brillo -I` in river/init restores it at login
+> [!NOTE]
+> The OSD listens for the kernel's backlight events, so it shows every change, whatever made it.
 
 ## Wallpaper
-
-**swaybg** (`sv/swaybg`) draws it in `fill` mode, with the theme's base
-colour behind it. It shows `~/.local/state/wallpaper/current`. Picking an
-image here repoints that symlink and restarts the service.
-
-Without the link, it falls back to `~/Pictures/wallpaper.png`. That's a
-Mocha duotone made with ImageMagick (the command is in `sv/swaybg/run`). At
-1920×1080 it looks a little soft on this 2560×1440 panel.
+- swaybg shows `~/.local/state/wallpaper/current`, the symlink a click here sets
+- no link → `~/Pictures/wallpaper.png`, the Mocha duotone
+```sh
+ln -sfn <image> ~/.local/state/wallpaper/current && sv restart ~/.local/sv/swaybg
+```
+> [!TIP]
+> The duotone is 1920×1080, so it's a little soft on this 2560×1440 panel. Its ImageMagick command is in `sv/swaybg/`'s run script.

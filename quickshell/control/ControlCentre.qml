@@ -87,7 +87,9 @@ FloatingWindow {
 
 		DocPanel {
 			id: right
-			width: 500
+			// Fit the widest file chip in ANY topic (so switching topics doesn't
+			// shift the panels), at least 500 px, at most 40% of the window.
+			width: Math.max(500, Math.min(cc.width * 0.4, right.neededWidth(Topics.topics)))
 			anchors.top: parent.top
 			anchors.bottom: parent.bottom
 			anchors.right: parent.right
