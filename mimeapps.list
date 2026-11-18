@@ -54,6 +54,7 @@ application/x-tiled-tsx=dev.zed.Zed.desktop
 text/x-csrc=dev.zed.Zed.desktop
 text/x-chdr=dev.zed.Zed.desktop
 application/yaml=dev.zed.Zed.desktop
+x-scheme-handler/discord=vesktop.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;firefox.desktop;
