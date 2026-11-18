@@ -8,5 +8,6 @@
   "terminal_line_height": 1,
   "terminal_cell_width": 1,
   "terminal_scroll_speed": 1,
-  "minimum_contrast": 1
+  "minimum_contrast": 1,
+  "telemetry": false
 }
