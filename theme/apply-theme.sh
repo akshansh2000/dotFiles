@@ -81,7 +81,8 @@ for pair in \
 	"$HOME/.config/gtk-3.0/settings.ini.tmpl:$HOME/.config/gtk-3.0/settings.ini" \
 	"$HOME/.config/gtk-3.0/settings.ini.tmpl:$HOME/.config/gtk-4.0/settings.ini" \
 	"$HOME/.config/mpv/script-opts/uosc.conf.tmpl:$HOME/.config/mpv/script-opts/uosc.conf" \
-	"$HOME/.config/fontconfig/fonts.conf.tmpl:$HOME/.config/fontconfig/fonts.conf"
+	"$HOME/.config/fontconfig/fonts.conf.tmpl:$HOME/.config/fontconfig/fonts.conf" \
+	"$HOME/.config/herdr-app/themes/catppuccin-mocha.json.tmpl:$HOME/.config/herdr-app/themes/catppuccin-mocha.json"
 do
 	src=${pair%%:*}
 	dst=${pair#*:}

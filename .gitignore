@@ -83,6 +83,18 @@
 # fontconfig: only the template; fonts.conf is rendered by apply-theme.sh
 !/fontconfig/
 /fontconfig/fonts.conf
+# Herdr app: only my own files. Herdr rewrites its shipped layouts/mods, the
+# .d.ts/AGENTS.md, icons and frame/ on every start, and writes view/window/
+# shared/data/seen/installed itself - none of that is config. The theme JSON
+# is rendered from its .tmpl by apply-theme.sh. Own layouts/mods get a line each.
+!/herdr-app/
+/herdr-app/*
+!/herdr-app/settings.json
+!/herdr-app/keys.json
+!/herdr-app/programs.json
+!/herdr-app/themes/
+/herdr-app/themes/*
+!/herdr-app/themes/catppuccin-mocha.json.tmpl
 !/tmux/
 !/yazi/
 /yazi/theme.toml

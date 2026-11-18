@@ -1,0 +1,9 @@
+{
+  "programs": {
+    "claudek": {
+      "name": "Claude (Krypton)",
+      "icon": "icons/claude.svg",
+      "run": ["fish", "-c", "claudek"]
+    }
+  }
+}
