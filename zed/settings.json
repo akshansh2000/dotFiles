@@ -85,5 +85,12 @@
       },
       "type": "registry"
     }
+  },
+  "context_servers": {
+    "browseros-neo": {
+      "url": "http://127.0.0.1:9010/mcp",
+      "source": "custom",
+      "enabled": true
+    }
   }
 }
