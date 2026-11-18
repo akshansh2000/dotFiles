@@ -80,7 +80,8 @@ for pair in \
 	"$HOME/.config/rofi/icons.rasi.tmpl:$HOME/.config/rofi/icons.rasi" \
 	"$HOME/.config/gtk-3.0/settings.ini.tmpl:$HOME/.config/gtk-3.0/settings.ini" \
 	"$HOME/.config/gtk-3.0/settings.ini.tmpl:$HOME/.config/gtk-4.0/settings.ini" \
-	"$HOME/.config/mpv/script-opts/uosc.conf.tmpl:$HOME/.config/mpv/script-opts/uosc.conf"
+	"$HOME/.config/mpv/script-opts/uosc.conf.tmpl:$HOME/.config/mpv/script-opts/uosc.conf" \
+	"$HOME/.config/fontconfig/fonts.conf.tmpl:$HOME/.config/fontconfig/fonts.conf"
 do
 	src=${pair%%:*}
 	dst=${pair#*:}
@@ -158,6 +159,7 @@ if command -v gsettings >/dev/null 2>&1; then
 	gsettings set org.gnome.desktop.interface cursor-size "$GTK_CURSOR_SIZE"
 	gsettings set org.gnome.desktop.interface font-name "$FONT_SANS_FAMILY $FONT_SANS_SIZE_GTK"
 	gsettings set org.gnome.desktop.interface document-font-name "$FONT_SANS_FAMILY $FONT_SANS_SIZE_GTK"
+	gsettings set org.gnome.desktop.interface monospace-font-name "$FONT_MONO_FAMILY $FONT_MONO_STYLE $FONT_MONO_SIZE_GTK"
 	echo "gsettings interface keys synced with settings.ini"
 fi
 

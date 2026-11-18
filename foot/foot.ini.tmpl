@@ -46,7 +46,12 @@ urls={{BLUE}}
 [main]
 # Monospace font - single source of truth is theme/fonts.sh, not this
 # file. Editing here gets overwritten on the next apply-theme.sh run.
-font={{FONT_MONO_FAMILY}}:size={{FONT_MONO_SIZE_FOOT}}
+# Bold/italic are spelled out: foot derives bold by appending weight=bold to
+# the main pattern, and with style=Medium there that still resolves to Medium.
+font={{FONT_MONO_FAMILY}}:size={{FONT_MONO_SIZE_FOOT}}:style={{FONT_MONO_STYLE}}
+font-bold={{FONT_MONO_FAMILY}}:size={{FONT_MONO_SIZE_FOOT}}:style=Bold
+font-italic={{FONT_MONO_FAMILY}}:size={{FONT_MONO_SIZE_FOOT}}:style={{FONT_MONO_STYLE}} Italic
+font-bold-italic={{FONT_MONO_FAMILY}}:size={{FONT_MONO_SIZE_FOOT}}:style=Bold Italic
 
 [bell]
 # Signal urgency to river over xdg-activation when BEL arrives in an unfocused

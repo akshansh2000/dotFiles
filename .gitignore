@@ -80,6 +80,9 @@
 /fish/functions/*
 !/fish/functions/claude.fish
 !/fish/functions/claudek.fish
+# fontconfig: only the template; fonts.conf is rendered by apply-theme.sh
+!/fontconfig/
+/fontconfig/fonts.conf
 !/tmux/
 !/yazi/
 /yazi/theme.toml

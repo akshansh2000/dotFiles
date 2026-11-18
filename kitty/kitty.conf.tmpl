@@ -8,7 +8,11 @@
 # --- font ---
 # Single source of truth is theme/fonts.sh (FONT_MONO_SIZE_KITTY = foot's
 # size: both draw an 11x22 px cell at size 10 on the 1.3 scale).
-font_family {{FONT_MONO_FAMILY}}
+# Bold/italic spelled out, like foot's, so the Medium base can't leak into them.
+font_family      family="{{FONT_MONO_FAMILY}}" style="{{FONT_MONO_STYLE}}"
+bold_font        family="{{FONT_MONO_FAMILY}}" style="Bold"
+italic_font      family="{{FONT_MONO_FAMILY}}" style="{{FONT_MONO_STYLE}} Italic"
+bold_italic_font family="{{FONT_MONO_FAMILY}}" style="Bold Italic"
 font_size {{FONT_MONO_SIZE_KITTY}}
 
 # --- colours: Catppuccin Mocha, the same mapping as foot.ini.tmpl ---

@@ -38,7 +38,9 @@
   // FONT_SANS_FAMILY). Sizes are Zed's px at the panel's 1.3 scale, tuned by
   // eye: 15 (Zed's default) read large for the buffer; the terminal's size is
   // set under "terminal" below - unset, it would follow the buffer's.
-  "buffer_font_family": "Fira Code",
+  // Hand-copied (this file is not templated): weight 500 = FONT_MONO_WEIGHT.
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_weight": 500,
   "buffer_font_size": 14,
   "ui_font_family": "Noto Sans",
   "ui_font_size": 16,
@@ -62,7 +64,8 @@
   // means Krypton, and claude.fish's personal-account hint stays quiet) and
   // the agent panel. Codex needs nothing: ~/.codex is already Krypton's.
   "terminal": {
-    "font_family": "Fira Code",
+    "font_family": "JetBrains Mono",
+    "font_weight": 500,
     "font_size": 13,
     "env": {
       "CLAUDE_CONFIG_DIR": "/home/akshansh/.claude-krypton"

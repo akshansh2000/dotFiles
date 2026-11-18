@@ -8,6 +8,13 @@ size = {{FONT_MONO_SIZE_ALACRITTY}}
 
 [font.normal]
 family = "{{FONT_MONO_FAMILY}}"
+style = "{{FONT_MONO_STYLE}}"
+
+# Bold and bold italic default to the normal family with "Bold"/"Bold Italic";
+# plain italic would default to Regular Italic, so it is set to match.
+[font.italic]
+family = "{{FONT_MONO_FAMILY}}"
+style = "{{FONT_MONO_STYLE}} Italic"
 
 [colors.primary]
 background = "#{{BASE}}"
