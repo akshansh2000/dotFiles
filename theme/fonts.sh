@@ -23,12 +23,16 @@ FONT_MONO_FAMILY="JetBrains Mono"
 FONT_MONO_STYLE=Medium
 FONT_MONO_WEIGHT=500
 FONT_MONO_SIZE_GTK=11
-FONT_MONO_SIZE_FOOT=10
+# 10.5 pt = 14 px, Herdr's terminal size, so text is the same height in both
+# (2026-11-18; at 10 foot read ~5% smaller than Herdr: 13.3 vs 14 px, both
+# times the 1.3 output scale). Alacritty stays at 11 by choice.
+FONT_MONO_SIZE_FOOT=10.5
 FONT_MONO_SIZE_ALACRITTY=11
-# kitty and foot count sizes the same way: 10 draws foot's 11x22 px cell at
-# the 1.3 scale (measured 2026-10-17; a first try matched a foot window that
-# had been zoomed with Ctrl+= and came out a size too big).
-FONT_MONO_SIZE_KITTY=10
+# kitty and foot count sizes the same way, so they stay equal (measured
+# 2026-10-17 at size 10: both drew an 11x22 px cell at the 1.3 scale; a first
+# try matched a foot window that had been zoomed with Ctrl+= and came out a
+# size too big).
+FONT_MONO_SIZE_KITTY=10.5
 
 # --- sans ---
 # The UI font, shared by GTK apps, waybar, rofi and mako. Before this existed
