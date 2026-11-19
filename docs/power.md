@@ -29,16 +29,16 @@ paths:
 checks:
   - sv: battery-notify
 ---
-Battery stats, a 25% low-battery warning, and a charge limit and power profile that need root.
+Battery stats, a 20% low-battery warning, and a charge limit and power profile that need root.
 
 ## At a glance
-- Warning: 25%, once per discharge
+- Warning: 20%, once per discharge
 - Charge limit: 60–100% (root)
 - Profiles: quiet · balanced · performance
 - Health: full ÷ design capacity
 
 ## Low-battery warning
-- `sv/battery-notify`, wakes on power_supply events + every 15 s
+- `sv/battery-notify`, wakes on power_supply events + every 30 s
 - cleared when AC returns, re-armed for the next discharge
 - `mako/config.tmpl` puts critical notifications above fullscreen
 > [!IMPORTANT]

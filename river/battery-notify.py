@@ -9,9 +9,10 @@ normal top layer is hidden under them. Plugging in dismisses it again and
 re-arms the warning for the next discharge.
 
 Wakes on kernel power_supply events (`udevadm monitor`, so plugging in clears
-the warning at once) and every REFRESH seconds for the level itself - 15 s,
-not 30 like the waybar module, because this battery is old and its level can
-drop fast. LOW_PCT matches waybar's red battery icon (battery-status.py).
+the warning at once) and every REFRESH seconds for the level itself - 30 s,
+like the waybar module. (It was 15 s and 25% while the old battery could drop
+fast; the battery was replaced, so 20% and 30 s since 2026-11-19.) LOW_PCT
+matches waybar's red battery icon (battery-status.py).
 
 "Discharging" is taken from AC0/online, not BAT0/status: on AC at the charge
 limit the status reads "Not charging", which must not warn.
@@ -26,8 +27,8 @@ import os, select, subprocess, sys
 
 BAT = os.environ.get("BATTERY_NOTIFY_BAT", "/sys/class/power_supply/BAT0")
 AC = os.environ.get("BATTERY_NOTIFY_AC", "/sys/class/power_supply/AC0")
-LOW_PCT = 25
-REFRESH = float(os.environ.get("BATTERY_NOTIFY_REFRESH", 15))  # seconds
+LOW_PCT = 20
+REFRESH = float(os.environ.get("BATTERY_NOTIFY_REFRESH", 30))  # seconds
 
 
 def read(path):

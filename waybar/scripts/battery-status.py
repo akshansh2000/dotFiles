@@ -22,7 +22,7 @@ import ctypes, json, os, select, signal, subprocess, sys
 
 BAT = "/sys/class/power_supply/BAT0"
 AC = "/sys/class/power_supply/AC0"
-LOW_PCT = 25  # = river/battery-notify.py's warning level (2026-10-30)
+LOW_PCT = 20  # = river/battery-notify.py's warning level (25 until the 2026-11-19 battery swap)
 REFRESH = 30  # seconds
 ICONS = [chr(c) for c in (0xF244, 0xF243, 0xF242, 0xF241, 0xF240)]
 
