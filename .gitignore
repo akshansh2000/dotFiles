@@ -95,6 +95,9 @@
 !/herdr-app/themes/
 /herdr-app/themes/*
 !/herdr-app/themes/catppuccin-mocha.json.tmpl
+# Over9k (layout + mods) is upstream's, installed from ~/.local/src/herdr-over9k;
+# only this machine's patches and updater are config.
+!/herdr-app/over9k-local/
 !/tmux/
 !/yazi/
 /yazi/theme.toml

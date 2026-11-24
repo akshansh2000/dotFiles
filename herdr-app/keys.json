@@ -70,5 +70,14 @@
     "ctrl-v": "terminal.paste_image",
     "ctrl-insert": "terminal.copy",
     "shift-insert": "terminal.paste"
+  },
+  "layout:over9k": {
+    "ctrl-tab": "over9k.switcher",
+    "ctrl-shift-w": "over9k.close-tab",
+    "ctrl-shift-x": "over9k.close-pane"
+  },
+  "mod:over9k-switcher": {
+    "ctrl-tab": "over9k-switcher.next",
+    "ctrl-shift-tab": "over9k-switcher.prev"
   }
 }
