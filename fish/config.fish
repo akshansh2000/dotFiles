@@ -96,3 +96,14 @@ if status is-interactive
 --color=header:#$THEME_RED,border:#$THEME_OVERLAY0,label:#$THEME_TEXT,selected-bg:#$THEME_SURFACE1"
     fzf --fish | source
 end
+
+# --- ls after cd ---
+# List the folder after every directory change (cd, cd -, prevd/nextd, alt-c,
+# typing a path), except going home. An event instead of a `cd` function, so
+# fish's own cd keeps its history (cd -, prevd/nextd) and its failure status.
+if status is-interactive
+    function __ls_after_cd --on-variable PWD
+        test "$PWD" = ~; and return
+        ls -AFl --color
+    end
+end
