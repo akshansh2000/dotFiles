@@ -1,13 +1,13 @@
 {
-  "zoom": 1,
-  "theme": "catppuccin-mocha",
+  "zoom": 1.0,
   "sounds": {
     "enabled": true
   },
   "font_ligatures": false,
-  "terminal_line_height": 1,
-  "terminal_cell_width": 1,
-  "terminal_scroll_speed": 1,
-  "minimum_contrast": 1,
-  "telemetry": false
+  "terminal_line_height": 1.0,
+  "terminal_cell_width": 1.0,
+  "terminal_scroll_speed": 1.0,
+  "telemetry": false,
+  "minimum_contrast": 1.0,
+  "theme": "catppuccin-mocha"
 }
