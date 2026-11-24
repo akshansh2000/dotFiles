@@ -4,7 +4,7 @@
 	"height": 28,
 	"modules-left": ["river/tags", "custom/layout", "custom/hidden", "river/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["custom/wifi", "custom/bluetooth", "custom/volume", "custom/battery", "tray"],
+	"modules-right": ["custom/mic", "custom/wifi", "custom/bluetooth", "custom/volume", "custom/battery", "tray"],
 
 	"river/tags": {
 		"num-tags": 9
@@ -55,6 +55,17 @@
 		"return-type": "json",
 		"restart-interval": 5,
 		"on-click": "setsid -f ~/.config/waybar/scripts/audio-menu.sh",
+		"on-click-right": "setsid -f pwvucontrol"
+	},
+	// Mic (2026-11-25): a red microphone-off icon ONLY while the default mic is
+	// muted - the script prints empty text otherwise, which hides the module.
+	// Same `pactl subscribe` pattern as custom/volume, so no "interval".
+	// Left-click unmutes (and so hides it); right-click opens pwvucontrol.
+	"custom/mic": {
+		"exec": "~/.config/waybar/scripts/mic-status.py",
+		"return-type": "json",
+		"restart-interval": 5,
+		"on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
 		"on-click-right": "setsid -f pwvucontrol"
 	},
 	// Battery: icon only, custom module (2026-10-09). The script prints a line

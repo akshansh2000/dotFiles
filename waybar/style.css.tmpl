@@ -99,6 +99,7 @@ window#waybar {
 #custom-hidden,
 #clock,
 #custom-volume,
+#custom-mic,
 #custom-battery,
 #tray,
 #custom-wifi,
@@ -129,7 +130,9 @@ window#waybar {
 	color: #{{SUBTEXT0}};
 }
 
+/* Mic: only ever shown while muted (mic-status.py), so always red. */
 #custom-volume.muted,
+#custom-mic.muted,
 #custom-battery.low {
 	color: #{{RED}};
 }
