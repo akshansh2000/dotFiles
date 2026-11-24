@@ -62,7 +62,7 @@
   // (~/.config/fish/functions/claudek.fish). Set in both places Claude can
   // start from: the integrated terminal (where a plain `claude` then also
   // means Krypton, and claude.fish's personal-account hint stays quiet) and
-  // the agent panel. Codex needs nothing: ~/.codex is already Krypton's.
+  // the agent panel.
   "terminal": {
     "font_family": "JetBrains Mono",
     "font_weight": 500,
@@ -80,13 +80,6 @@
       "env": {
         "CLAUDE_CONFIG_DIR": "/home/akshansh/.claude-krypton"
       }
-    },
-    "codex-acp": {
-      "default_config_options": {
-        "fast-mode": false,
-        "model": "gpt-6.1-sol"
-      },
-      "type": "registry"
     }
   },
   "context_servers": {
