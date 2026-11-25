@@ -130,10 +130,19 @@ window#waybar {
 	color: #{{SUBTEXT0}};
 }
 
-/* Mic: only ever shown while muted (mic-status.py), so always red. */
 #custom-volume.muted,
-#custom-mic.muted,
 #custom-battery.low {
+	color: #{{RED}};
+}
+
+/* Mic (mic-status.py): the mic is kept muted nearly all the time, so muted is
+   the quiet state - mic-off in the plain text colour - and a LIVE mic is the
+   one in red. Muted-in-red was tried first (2026-11-25) and was too loud. */
+#custom-mic {
+	color: #{{SUBTEXT0}};
+}
+
+#custom-mic.live {
 	color: #{{RED}};
 }
 

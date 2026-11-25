@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""waybar custom/mic - a microphone-off icon while the mic is muted (2026-11-25).
+"""waybar custom/mic - microphone state, leftmost in modules-right (2026-11-25).
 
-Shown ONLY while the default source is muted; otherwise it prints empty text,
-which makes waybar hide the module entirely. Sits leftmost in modules-right,
-before wifi. Left-click toggles the mute (so it unmutes and disappears),
-right-click opens pwvucontrol - see config.jsonc.
+Always shown while there is a default source. The mic is normally kept muted,
+so the muted state is the quiet one: microphone-off (U+F036D) in the bar's
+plain text colour. A LIVE mic is what should catch the eye: microphone
+(U+F036C), class "live", red in style.css.tmpl. (First version, same day:
+red mic-off shown only while muted, hidden otherwise - too loud for a mic
+that is muted nearly all the time.) No default source at all -> empty text,
+which hides the module. Left-click toggles the mute, right-click opens
+pwvucontrol - see config.jsonc.
 
 Built like volume-status.py: one JSON line per change, woken by `pactl
 subscribe` events for sources (mute/volume) and the server (default source
-changes), so no polling. The icon is the same MDI microphone-off (U+F036D) as
-the Quickshell OSD, built with chr() per AGENTS.md; class "muted" is red in
-style.css.tmpl.
+changes), so no polling. The icons are the same MDI pair as the Quickshell
+OSD, built with chr() per AGENTS.md.
 """
 import ctypes, json, select, signal, subprocess, sys
 
 MIC_OFF = chr(0xF036D)
+MIC_ON = chr(0xF036C)
 HIDDEN = {"text": "", "tooltip": "", "class": ""}
 
 
@@ -28,10 +32,12 @@ def state():
     except (OSError, ValueError, subprocess.TimeoutExpired):
         return HIDDEN
     src = next((s for s in sources if s.get("name") == default), None)
-    if not src or not src.get("mute"):
+    if not src:
         return HIDDEN
     name = src.get("description") or default
-    return {"text": MIC_OFF, "tooltip": f"Microphone muted\n{name}", "class": "muted"}
+    if src.get("mute"):
+        return {"text": MIC_OFF, "tooltip": f"Microphone muted\n{name}", "class": "muted"}
+    return {"text": MIC_ON, "tooltip": f"Microphone on\n{name}", "class": "live"}
 
 
 def main():
