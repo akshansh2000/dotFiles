@@ -102,6 +102,9 @@
 !/yazi/
 /yazi/theme.toml
 !/path/
+# beam.py: DLNA casting to the projector; ~/.local/bin/beam is a symlink to it
+# (not "cast": Foundry's cast comes first in PATH).
+!/beam/
 !/zed/
 
 # --- browsers ---
