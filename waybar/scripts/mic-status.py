@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""waybar custom/mic - microphone state, leftmost in modules-right (2026-11-25).
+"""waybar custom/mic - microphone state, between volume and battery (2026-11-25).
 
 Always shown while there is a default source. The mic is normally kept muted,
 so the muted state is the quiet one: microphone-off (U+F036D) in the bar's

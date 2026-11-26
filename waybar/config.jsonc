@@ -4,7 +4,7 @@
 	"height": 28,
 	"modules-left": ["river/tags", "custom/layout", "custom/hidden", "river/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["custom/mic", "custom/wifi", "custom/bluetooth", "custom/volume", "custom/battery", "tray"],
+	"modules-right": ["custom/wifi", "custom/bluetooth", "custom/volume", "custom/mic", "custom/battery", "tray"],
 
 	"river/tags": {
 		"num-tags": 9

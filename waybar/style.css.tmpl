@@ -137,9 +137,15 @@ window#waybar {
 
 /* Mic (mic-status.py): the mic is kept muted nearly all the time, so muted is
    the quiet state - mic-off in the plain text colour - and a LIVE mic is the
-   one in red. Muted-in-red was tried first (2026-11-25) and was too loud. */
+   one in red. Muted-in-red was tried first (2026-11-25) and was too loud.
+   min-width: the two glyphs have different advances (mic-off 0.75 em,
+   mic-on 0.58 em = 10.5 vs 8.2 px at 14px), so without a fixed width the
+   module resized on every toggle and, packed from the right, shifted itself
+   and everything left of it. 11px fits the wider one; the label centres the
+   narrower one inside it. */
 #custom-mic {
 	color: #{{SUBTEXT0}};
+	min-width: 11px;
 }
 
 #custom-mic.live {
